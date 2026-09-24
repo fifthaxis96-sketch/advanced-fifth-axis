@@ -134,3 +134,23 @@ export const company = {
   vat: "310463296800003",
   cr: "4030336147",
 };
+
+export type Collection = {
+  slug: string;
+  name: string;
+  nameAr: string;
+  description: string;
+  descriptionAr: string;
+  categories: string[];
+};
+
+export const collections: Collection[] = [
+  { slug: "foundation-tools", name: "Foundation Drilling Tools", nameAr: "أدوات حفر الأساسات", description: "Augers, drilling buckets, core barrels and continuous-flight tools for piling and foundation drilling projects.", descriptionAr: "أوجرات وبكيتات وكور بارل وأدوات الحفر المستمر لمشاريع الخوازيق وحفر الأساسات.", categories: ["Foundation Tools"] },
+  { slug: "wear-parts", name: "Cutting & Wear Parts", nameAr: "أسنان وقطع التآكل", description: "Cutting tools, teeth, holders and replaceable wear components for foundation drilling equipment.", descriptionAr: "أدوات قطع وأسنان وحوامل وقطع تآكل قابلة للاستبدال لمعدات حفر الأساسات.", categories: ["Cutting Tools", "Wear Parts"] },
+  { slug: "casing", name: "Casing & Components", nameAr: "مواسير التغليف ومكوناتها", description: "Casing sections, casing components and related solutions for foundation drilling applications.", descriptionAr: "مواسير تغليف ومكوناتها وحلول مرتبطة بتطبيقات حفر الأساسات.", categories: ["Casing"] },
+  { slug: "drive-systems", name: "Kelly & Drive Systems", nameAr: "أنظمة كيلي ونقل الحركة", description: "Kelly bars, Kelly boxes and adapters for connecting rotary drilling rigs to foundation tools.", descriptionAr: "قضبان كيلي وكيلي بوكس ووصلات لربط معدات الحفر الدوار بأدوات الأساسات.", categories: ["Drive Systems"] },
+  { slug: "fabricated-components", name: "Custom Fabricated Components", nameAr: "مكونات مصنعة حسب الطلب", description: "Heavy steel fabricated components produced to confirmed drawings, dimensions and project requirements.", descriptionAr: "مكونات فولاذية ثقيلة تُصنع حسب الرسومات والأبعاد ومتطلبات المشروع المؤكدة.", categories: ["Fabricated Components"] },
+];
+
+export const productsForCollection = (collection: Collection) =>
+  products.filter((product) => collection.categories.includes(product.category));
