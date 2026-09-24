@@ -7,6 +7,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: base, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/ar`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/products`, changeFrequency: "weekly", priority: 0.95 },
+    { url: `${base}/ar/products`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/collections`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/ar/collections`, changeFrequency: "weekly", priority: 0.85 },
     ...collections.flatMap((c) => [
