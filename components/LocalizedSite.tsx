@@ -1,5 +1,4 @@
-import { products, collections, productsForCollection, company, type Product, type Collection } from "@/lib/site";
-import type { ReactNode } from "react";
+import { products, collections, productsForCollection, collectionForProduct, relatedProducts, company, type Product, type Collection } from "@/lib/site";
 
 export type Lang = "en" | "ar";
 const copy = {
@@ -69,7 +68,12 @@ function Header({ lang, product }: { lang: Lang; product?: Product }) {
   const t = copy[lang];
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co. logo" width="112" height="92"/></a>
-    {!product && <nav className="siteNav" aria-label="Main navigation">{["products","collections","capabilities","contact"].map((id,i) => <a key={id} href={`#${id}`}>{t.nav[i]}</a>)}</nav>}
+    <nav className="siteNav" aria-label="Main navigation">
+      <a href={`${lang === "ar" ? "/ar" : ""}/products`}>{t.nav[0]}</a>
+      <a href={`${lang === "ar" ? "/ar" : ""}/collections`}>{t.nav[1]}</a>
+      <a href={`${home(lang)}#capabilities`}>{t.nav[2]}</a>
+      <a href={`${home(lang)}#contact`}>{t.nav[3]}</a>
+    </nav>
     <div className="headerActions"><Switcher lang={lang} product={product}/><a className="headerCta" href={`${home(lang)}#contact`}>{t.quote}</a></div>
   </div></header>;
 }
@@ -96,11 +100,23 @@ export function HomePage({ lang }: { lang: Lang }) {
     </main><Footer lang={lang}/>
   </div>;
 }
+export function ProductIndex({ lang }: { lang: Lang }) {
+  const t = copy[lang];
+  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang}/><main className="wrap catalogPage">
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang === "ar" ? "الرئيسية" : "Home"}</a><span>/</span><span>{t.nav[0]}</span></nav>
+    <div className="catalogHero"><span className="sectionKicker"><i/> {t.productsLabel}</span><h1>{t.productsTitle}</h1><p>{t.productsIntro}</p><div className="catalogMeta">{products.length} {lang === "ar" ? "منتجًا وفئة منتج" : "products and product families"}</div></div>
+    <div className="productGrid">{products.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length ? <div className="tileImage"><img loading="lazy" decoding="async" src={p.images[0]} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div> : <span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{p.category}</span><h2>{lang === "ar" ? p.nameAr : p.name}</h2><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div>
+  </main><Footer lang={lang}/></div>;
+}
+
 export function ProductView({ lang, product: p }: { lang: Lang; product: Product }) {
   const t = copy[lang], name = lang === "ar" ? p.nameAr : p.name;
+  const collection = collectionForProduct(p);
+  const related = relatedProducts(p, 3);
   return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} product={p}/><main className="wrap productPage">
-    <a className="backLink" href={`${home(lang)}#products`}>← {t.back}</a>
-    <div className="productLayout">{p.images?.length ? <div className="ownerGallery">{p.images.map((src,i)=><img src={src} alt={`${name} — ${i+1}`} key={src}/>)}{p.visualNote && <p className="visualNote">{lang === "ar" ? p.visualNoteAr : p.visualNote}</p>}</div> : null}<div className="productDetails"><span className="sectionKicker"><i/> {t.productsLabel}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? p.descriptionAr : p.description}</p><div className="detailRule"/>{p.variants.length > 0 && <><h2>{t.sizes}</h2><ul className="variantList">{p.variants.map(variant=><li key={variant}><a href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود الاستفسار عن ${p.nameAr} - ${variant}. يرجى تأكيد المواصفات والتوفر.` : `Hello, I would like to inquire about ${p.name} - ${variant}. Please confirm specifications and availability.`)}`}>{variant} <span aria-hidden="true">↗</span></a></li>)}</ul></>}<p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang === "ar" ? "الرئيسية" : "Home"}</a><span>/</span><a href={`${lang === "ar" ? "/ar" : ""}/products`}>{t.nav[0]}</a><span>/</span><span>{name}</span></nav>
+    <div className="productLayout">{p.images?.length ? <div className="ownerGallery">{p.images.map((src,i)=><img loading={i===0?"eager":"lazy"} decoding="async" src={src} alt={`${name} — ${i+1}`} key={src}/>)}{p.visualNote && <p className="visualNote">{lang === "ar" ? p.visualNoteAr : p.visualNote}</p>}</div> : <div className="productPlaceholder"><span>{lang === "ar" ? "صورة المنتج قيد الإضافة" : "Product image being added"}</span></div>}<div className="productDetails"><span className="sectionKicker"><i/> {p.category}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? p.descriptionAr : p.description}</p>{collection && <a className="collectionPill" href={`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`}>{lang === "ar" ? collection.nameAr : collection.name} ↗</a>}<div className="detailRule"/>{p.variants.length > 0 && <><h2>{t.sizes}</h2><ul className="variantList">{p.variants.map(variant=><li key={variant}><a href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود الاستفسار عن ${p.nameAr} - ${variant}. يرجى تأكيد المواصفات والتوفر.` : `Hello, I would like to inquire about ${p.name} - ${variant}. Please confirm specifications and availability.`)}`}>{variant} <span aria-hidden="true">↗</span></a></li>)}</ul></>}<div className="orderChecklist"><h2>{lang === "ar" ? "معلومات تساعدنا على التسعير" : "Information for an accurate quotation"}</h2><ul><li>{lang === "ar" ? "نوع وموديل المعدة" : "Rig make and model"}</li><li>{lang === "ar" ? "المقاس أو القطر المطلوب" : "Required size or diameter"}</li><li>{lang === "ar" ? "نوع التربة أو الاستخدام" : "Ground condition or application"}</li><li>{lang === "ar" ? "الكمية والرسومات إن وجدت" : "Quantity and drawings if available"}</li></ul></div><p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
+    {related.length > 0 && <section className="relatedSection"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {lang === "ar" ? "منتجات مرتبطة" : "RELATED PRODUCTS"}</span><h2>{lang === "ar" ? "قد تحتاج أيضًا" : "You may also need"}</h2></div></div><div className="productGrid">{related.map((item,i)=><a className="productTile" href={productUrl(lang,item.slug)} key={item.slug}>{item.images?.[0] ? <div className="tileImage"><img loading="lazy" decoding="async" src={item.images[0]} alt={lang === "ar" ? item.nameAr : item.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div> : <span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{item.category}</span><h3>{lang === "ar" ? item.nameAr : item.name}</h3><p>{lang === "ar" ? item.descriptionAr : item.description}</p><b>{t.view} ↗</b></div></a>)}</div></section>}
   </main><Footer lang={lang}/></div>;
 }
 
