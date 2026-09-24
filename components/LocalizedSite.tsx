@@ -76,13 +76,13 @@ function Switcher({ lang, product }: { lang: Lang; product?: Product }) {
 function Header({ lang, product }: { lang: Lang; product?: Product }) {
   const t = copy[lang];
   return <header className="siteHeader"><div className="wrap headerInner">
-    <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><span className="logoMark">A<span>⁵</span></span><span>ADVANCED<br/><b>FIFTH AXIS</b></span></a>
+    <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co. logo" width="112" height="92"/></a>
     {!product && <nav className="siteNav" aria-label="Main navigation">{["products","capabilities","about","contact"].map((id,i) => <a key={id} href={`#${id}`}>{t.nav[i]}</a>)}</nav>}
     <div className="headerActions"><Switcher lang={lang} product={product}/><a className="headerCta" href={`${home(lang)}#contact`}>{t.quote}</a></div>
   </div></header>;
 }
 function Footer({lang}:{lang:Lang}) {
-  return <footer className="siteFooter"><div className="wrap footerInner"><span>ADVANCED FIFTH AXIS</span><span>{copy[lang].footer}</span><span>© 2026</span></div></footer>;
+  return <footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><span>© 2026</span></div></footer>;
 }
 export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
@@ -91,7 +91,7 @@ export function HomePage({ lang }: { lang: Lang }) {
     <main>
       <section className="heroNew"><div className="wrap heroNewInner">
         <div className="heroCopy"><span className="sectionKicker"><i/> {t.eyebrow}</span><h1>{t.headline}</h1><p>{t.intro}</p><div className="heroButtons"><a className="primaryButton" href="#products">{t.explore} <span aria-hidden="true">↗</span></a><a className="outlineButton" href="#contact">{t.quote}</a></div></div>
-        <div className="heroArt" role="img" aria-label={lang === "ar" ? "أدوات حفر الأساسات" : "Foundation drilling equipment"}><div className="artGrid"/><span className="artNumber">01 / 04</span><div className="artLabel"><b>ADVANCED FIFTH AXIS</b><small>FOUNDATION EQUIPMENT</small></div></div>
+        <div className="heroArt" role="img" aria-label={lang === "ar" ? "أدوات حفر الأساسات" : "Foundation drilling equipment"}><div className="artGrid"/><img className="heroBrandLogo" src="/advanced-fifth-axis-logo.webp" alt=""/><span className="artNumber">ADVANCED FIFTH AXIS CO.</span><div className="artLabel"><b>ENGINEERED FOR FOUNDATIONS</b><small>JEDDAH · SAUDI ARABIA</small></div></div>
       </div></section>
       <div className="trustStrip"><div className="wrap">{t.tags.map((tag,i)=><span key={tag}><b>0{i+1}</b>{tag}</span>)}</div></div>
       <section id="products" className="siteSection wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsTitle}</h2></div><p>{t.productsIntro}</p></div>
