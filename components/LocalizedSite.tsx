@@ -57,7 +57,7 @@ const copy = {
 const whatsapp = "https://wa.me/" + company.phone.replace("+", "");
 const home = (lang: Lang) => lang === "ar" ? "/ar" : "/";
 const productUrl = (lang: Lang, slug: string) => `${home(lang) === "/" ? "" : "/ar"}/products/${slug}`;
-function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" }) {
+function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "about" | "contact" }) {
   const en = product ? productUrl("en", product.slug) : collection ? `/collections/${collection.slug}` : section ? `/${section}` : "/";
   const ar = product ? productUrl("ar", product.slug) : collection ? `/ar/collections/${collection.slug}` : section ? `/ar/${section}` : "/ar";
   return <nav className="language" aria-label="Language selector">
@@ -66,7 +66,7 @@ function Switcher({ lang, product, collection, section }: { lang: Lang; product?
     <a href={ar} lang="ar" hrefLang="ar" aria-current={lang === "ar" ? "page" : undefined}>العربية</a>
   </nav>;
 }
-function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" }) {
+function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "about" | "contact" }) {
   const t = copy[lang];
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co. logo" width="112" height="92"/></a>
@@ -148,7 +148,7 @@ export function CollectionView({ lang, collection }: { lang: Lang; collection: C
 
 export function AboutPage({ lang }: { lang: Lang }) {
   const t=copy[lang];
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang}/><main className="wrap infoPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="about"/><main className="wrap infoPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{lang==="ar"?"من نحن":"About"}</span></nav>
     <section className="infoHero"><span className="sectionKicker"><i/> {t.aboutLabel}</span><h1>{lang==="ar"?"معدات ومكونات حفر تُجهز لمتطلبات المشروع.":"Foundation drilling equipment built around project requirements."}</h1><p>{t.about}</p></section>
     <section className="infoStats"><article><b>{products.length}+</b><span>{lang==="ar"?"فئات ومنتجات في الكتالوج":"catalog products and families"}</span></article><article><b>2</b><span>{lang==="ar"?"لغات للموقع والمحتوى الفني":"site and technical-content languages"}</span></article><article><b>JEDDAH</b><span>{lang==="ar"?"قاعدة التوريد والتصنيع":"supply and fabrication base"}</span></article></section>
@@ -159,7 +159,7 @@ export function AboutPage({ lang }: { lang: Lang }) {
 
 export function ContactPage({ lang }: { lang: Lang }) {
   const t=copy[lang];
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang}/><main className="wrap infoPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="contact"/><main className="wrap infoPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{t.nav[3]}</span></nav>
     <section className="infoHero"><span className="sectionKicker"><i/> {t.contactLabel}</span><h1>{t.contactTitle}</h1><p>{t.contactIntro}</p></section>
     <section className="contactCards"><a href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود طلب عرض سعر.":"Hello, I would like a quotation.")}`}><span>01</span><h2>{t.whatsapp}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"ابدأ المحادثة":"Start conversation"} ↗</b></a><a href={`tel:${company.phone}`}><span>02</span><h2>{t.call}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"اتصل الآن":"Call now"} ↗</b></a><article><span>03</span><h2>{t.address}</h2><p>{company.address}</p><b>{lang==="ar"?"جدة، السعودية":"Jeddah, Saudi Arabia"}</b></article></section>
