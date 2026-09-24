@@ -100,3 +100,17 @@
 .collectionCta .primaryButton{margin-top:10px;background:#d9e4ef;color:#143c69}
 @media(max-width:900px){.collectionGrid{grid-template-columns:1fr}.collectionCard{grid-template-columns:150px 1fr}}
 @media(max-width:600px){.collectionCard{grid-template-columns:1fr}.collectionCover{min-height:180px}.catalogHero{padding-top:30px}.collectionCta{padding:28px}.catalogHero h1{font-size:42px}}
+
+
+/* Product detail quality layer */
+.productPlaceholder{min-height:420px;display:grid;place-items:center;background:linear-gradient(145deg,#eef3f8,#dfe7f0);border:1px solid #d5e0eb;color:#667b92;font-size:13px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.collectionPill{display:inline-flex;align-items:center;margin-top:18px;padding:9px 12px;border:1px solid #c6d4e2;background:#f8fbfe;color:#145b9f;font-size:12px;font-weight:800}
+.orderChecklist{margin-top:28px;padding:22px 24px;background:#eef3f8;border-inline-start:3px solid #0c5ba9}
+.orderChecklist h2{margin:0 0 12px;font-size:16px}
+.orderChecklist ul{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px 22px;margin:0!important;padding-inline-start:20px!important;line-height:1.55!important;font-size:13px;color:#526d88}
+.relatedSection{margin-top:90px;padding-top:55px;border-top:1px solid #d6e0e9}
+.catalogPage .productTile h2{font-size:23px;margin:8px 0 9px;line-height:1.25}
+.siteNav a{position:relative}
+.siteNav a:after{content:"";position:absolute;inset-inline:0;bottom:-9px;height:2px;background:#0c5ba9;transform:scaleX(0);transition:transform .18s}
+.siteNav a:hover:after{transform:scaleX(1)}
+@media(max-width:750px){.productPlaceholder{min-height:260px}.orderChecklist ul{grid-template-columns:1fr}.relatedSection{margin-top:60px;padding-top:40px}}
