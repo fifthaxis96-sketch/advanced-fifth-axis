@@ -57,14 +57,16 @@ const copy = {
 const whatsapp = "https://wa.me/" + company.phone.replace("+", "");
 const home = (lang: Lang) => lang === "ar" ? "/ar" : "/";
 const productUrl = (lang: Lang, slug: string) => `${home(lang) === "/" ? "" : "/ar"}/products/${slug}`;
-function Switcher({ lang, product }: { lang: Lang; product?: Product }) {
+function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" }) {
+  const en = product ? productUrl("en", product.slug) : collection ? `/collections/${collection.slug}` : section ? `/${section}` : "/";
+  const ar = product ? productUrl("ar", product.slug) : collection ? `/ar/collections/${collection.slug}` : section ? `/ar/${section}` : "/ar";
   return <nav className="language" aria-label="Language selector">
-    <a href={product ? productUrl("en", product.slug) : "/"} lang="en" hrefLang="en" aria-current={lang === "en" ? "page" : undefined}>EN</a>
+    <a href={en} lang="en" hrefLang="en" aria-current={lang === "en" ? "page" : undefined}>EN</a>
     <span aria-hidden="true">/</span>
-    <a href={product ? productUrl("ar", product.slug) : "/ar"} lang="ar" hrefLang="ar" aria-current={lang === "ar" ? "page" : undefined}>العربية</a>
+    <a href={ar} lang="ar" hrefLang="ar" aria-current={lang === "ar" ? "page" : undefined}>العربية</a>
   </nav>;
 }
-function Header({ lang, product }: { lang: Lang; product?: Product }) {
+function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" }) {
   const t = copy[lang];
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co. logo" width="112" height="92"/></a>
@@ -74,7 +76,7 @@ function Header({ lang, product }: { lang: Lang; product?: Product }) {
       <a href={`${home(lang)}#capabilities`}>{t.nav[2]}</a>
       <a href={`${home(lang)}#contact`}>{t.nav[3]}</a>
     </nav>
-    <div className="headerActions"><Switcher lang={lang} product={product}/><a className="headerCta" href={`${home(lang)}#contact`}>{t.quote}</a></div>
+    <div className="headerActions"><Switcher lang={lang} product={product} collection={collection} section={section}/><a className="headerCta" href={`${home(lang)}#contact`}>{t.quote}</a></div>
   </div></header>;
 }
 function Footer({lang}:{lang:Lang}) {
@@ -102,7 +104,7 @@ export function HomePage({ lang }: { lang: Lang }) {
 }
 export function ProductIndex({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang}/><main className="wrap catalogPage">
+  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} section="products"/><main className="wrap catalogPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang === "ar" ? "الرئيسية" : "Home"}</a><span>/</span><span>{t.nav[0]}</span></nav>
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.productsLabel}</span><h1>{t.productsTitle}</h1><p>{t.productsIntro}</p><div className="catalogMeta">{products.length} {lang === "ar" ? "منتجًا وفئة منتج" : "products and product families"}</div></div>
     <div className="productGrid">{products.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length ? <div className="tileImage"><img loading="lazy" decoding="async" src={p.images[0]} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div> : <span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{p.category}</span><h2>{lang === "ar" ? p.nameAr : p.name}</h2><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div>
@@ -122,7 +124,7 @@ export function ProductView({ lang, product: p }: { lang: Lang; product: Product
 
 export function CollectionIndex({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang}/><main className="wrap catalogPage">
+  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} section="collections"/><main className="wrap catalogPage">
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.collectionsLabel}</span><h1>{t.collectionsTitle}</h1><p>{t.collectionsIntro}</p></div>
     <div className="collectionGrid">{collections.map((collection,i)=>{const items=productsForCollection(collection);const cover=items.find(p=>p.images?.length)?.images?.[0];return <a className="collectionCard" href={`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`} key={collection.slug}>{cover ? <div className="collectionCover"><img src={cover} alt=""/><span>{String(i+1).padStart(2,"0")}</span></div> : <div className="collectionCover collectionCoverText"><span>{String(i+1).padStart(2,"0")}</span></div>}<div><small>{items.length} {lang === "ar" ? "منتجات" : "products"}</small><h2>{lang === "ar" ? collection.nameAr : collection.name}</h2><p>{lang === "ar" ? collection.descriptionAr : collection.description}</p><b>{t.viewCollection} ↗</b></div></a>})}</div>
   </main><Footer lang={lang}/></div>;
@@ -130,7 +132,7 @@ export function CollectionIndex({ lang }: { lang: Lang }) {
 
 export function CollectionView({ lang, collection }: { lang: Lang; collection: Collection }) {
   const t=copy[lang], items=productsForCollection(collection), name=lang==="ar"?collection.nameAr:collection.name;
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang}/><main className="wrap catalogPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} collection={collection}/><main className="wrap catalogPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><a href={`${lang==="ar"?"/ar":""}/collections`}>{lang==="ar"?"الفئات":"Collections"}</a><span>/</span><span>{name}</span></nav>
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.collectionsLabel}</span><h1>{name}</h1><p>{lang==="ar"?collection.descriptionAr:collection.description}</p><div className="catalogMeta">{items.length} {lang==="ar"?"منتجات":"products"} · {lang==="ar"?"تصنيع وتوريد من جدة، السعودية":"Manufacturing & supply from Jeddah, Saudi Arabia"}</div></div>
     <section><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsInCollection}</h2></div></div><div className="productGrid">{items.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length?<div className="tileImage"><img src={p.images[0]} alt={lang==="ar"?p.nameAr:p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div>:<span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{p.category}</span><h3>{lang==="ar"?p.nameAr:p.name}</h3><p>{lang==="ar"?p.descriptionAr:p.description}</p><b>{t.view} ↗</b></div></a>)}</div></section>
