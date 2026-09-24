@@ -1,5 +1,6 @@
 import { products, collections, productsForCollection, collectionForProduct, relatedProducts, company, type Product, type Collection } from "@/lib/site";
 import { ProductCatalog } from "@/components/ProductCatalog";
+import { QuoteBuilder } from "@/components/QuoteBuilder";
 
 export type Lang = "en" | "ar";
 const copy = {
@@ -165,6 +166,7 @@ export function ContactPage({ lang }: { lang: Lang }) {
     <section className="infoHero"><span className="sectionKicker"><i/> {t.contactLabel}</span><h1>{t.contactTitle}</h1><p>{t.contactIntro}</p></section>
     <section className="contactCards"><a href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود طلب عرض سعر.":"Hello, I would like a quotation.")}`}><span>01</span><h2>{t.whatsapp}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"ابدأ المحادثة":"Start conversation"} ↗</b></a><a href={`tel:${company.phone}`}><span>02</span><h2>{t.call}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"اتصل الآن":"Call now"} ↗</b></a><article><span>03</span><h2>{t.address}</h2><p>{company.address}</p><b>{lang==="ar"?"جدة، السعودية":"Jeddah, Saudi Arabia"}</b></article></section>
     <section className="quoteGuide"><div><span className="sectionKicker"><i/> {lang==="ar"?"لتسعير أسرع":"FASTER QUOTATION"}</span><h2>{lang==="ar"?"أرسل هذه التفاصيل مع استفسارك.":"Include these details with your inquiry."}</h2></div><ol><li>{lang==="ar"?"اسم المنتج أو صورة واضحة":"Product name or a clear photo"}</li><li>{lang==="ar"?"نوع وموديل المعدة":"Rig make and model"}</li><li>{lang==="ar"?"الأبعاد أو القطر والوصلة":"Dimensions or diameter and connection"}</li><li>{lang==="ar"?"الكمية المطلوبة":"Required quantity"}</li><li>{lang==="ar"?"الرسم الفني إن وجد":"Technical drawing, if available"}</li><li>{lang==="ar"?"ظروف التربة أو الاستخدام":"Ground condition or application"}</li></ol></section>
+    <QuoteBuilder lang={lang}/>
     <section className="companyLegal"><div><span>{t.vat}</span><b>{company.vat}</b></div><div><span>{t.registration}</span><b>{company.cr}</b></div></section>
   </main><Footer lang={lang}/></div>;
 }
