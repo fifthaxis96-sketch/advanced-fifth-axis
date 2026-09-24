@@ -34,8 +34,8 @@ export const products: Product[] = [
   },
   {
     slug: "bucket-teeth", name: "Bucket Teeth", nameAr: "أسنان بكيتات الحفر", category: "Wear Parts",
-    description: "Bucket tooth model names shown in the supplied reference.",
-    descriptionAr: "موديلات أسنان بكيتات الحفر الواردة في المرجع المقدم.",
+    description: "Replaceable drilling-bucket teeth for foundation work. Confirm the tooth profile, adapter or holder interface, quantity and intended operating conditions before ordering.",
+    descriptionAr: "أسنان بكيتات حفر قابلة للاستبدال لأعمال الأساسات. يرجى تأكيد شكل السن وواجهة المحول أو الحامل والكمية وظروف التشغيل المطلوبة قبل الطلب.",
     variants: ["V20", "25T", "25RC-12"],
   },
   {
@@ -58,14 +58,14 @@ export const products: Product[] = [
   },
   {
     slug: "casing", name: "Casing & Components", nameAr: "مواسير التغليف وملحقاتها", category: "Casing",
-    description: "Casing and related component types shown in the supplied lineup.",
-    descriptionAr: "أنواع مواسير التغليف ومكوناتها الواردة في القائمة المقدمة.",
+    description: "Foundation drilling casing and related components for bore support and casing operations. Diameter, wall arrangement, joint type, length and tool interface are confirmed for the project before supply.",
+    descriptionAr: "مواسير تغليف ومكونات مرتبطة بحفر الأساسات لدعم الحفرة وعمليات التغليف. يتم تأكيد القطر وتركيب الجدار ونوع الوصلة والطول وواجهة الأداة حسب المشروع قبل التوريد.",
     variants: ["Double wall casing", "Casing drive", "Casing shoe"],
   },
   {
     slug: "cfa", name: "CFA Augers", nameAr: "أوجرات الحفر المستمر", category: "Foundation Tools",
-    description: "Continuous flight augers for foundation drilling inquiries.",
-    descriptionAr: "أوجرات الحفر المستمر للاستفسارات الخاصة بأعمال الأساسات.",
+    description: "Continuous flight auger sections and configurations for foundation drilling applications. Diameter, length, flight pitch, center tube and connection are selected to suit the project and drilling system.",
+    descriptionAr: "مقاطع وتكوينات أوجر الحفر المستمر لتطبيقات الأساسات. يتم اختيار القطر والطول وخطوة الحلزون والأنبوب المركزي والوصلة بما يناسب المشروع ونظام الحفر.",
     variants: ["Continuous flight auger"],
   },
   {
@@ -76,8 +76,8 @@ export const products: Product[] = [
   },
   {
     slug: "kelly-bars", name: "Kelly Bars", nameAr: "قضبان كيلي", category: "Drive Systems",
-    description: "Interlocking and friction Kelly bar types shown in the supplied lineup.",
-    descriptionAr: "قضبان كيلي التعشيق والاحتكاك حسب المرجع المقدم.",
+    description: "Interlocking and friction Kelly bar solutions for rotary drilling rigs. Section geometry, length, locking arrangement, drive interfaces and rig compatibility are confirmed for each project.",
+    descriptionAr: "حلول قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. يتم تأكيد مقاطع القضيب والطول ونظام التعشيق وواجهات الحركة والتوافق مع المعدة لكل مشروع.",
     variants: ["Interlocking Kelly bar", "Friction Kelly bar"],
   },
   {
