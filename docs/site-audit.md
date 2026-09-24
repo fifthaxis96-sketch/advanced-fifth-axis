@@ -4,7 +4,7 @@
 
 - Repository: `fifthaxis96-sketch/advanced-fifth-axis`; Next.js static export to Cloudflare Workers assets.
 - 16 product families, five collections, two languages. Product slugs are unique. Each product belongs to exactly one collection; no repeated product image path is assigned to separate products in the catalog.
-- The production domain responded successfully over HTTPS during the audit. The repository has a typecheck/build workflow but no deployment workflow; Cloudflare's external Git connection and zone settings cannot be inferred from this repository.
+- The production domain responded successfully over HTTPS during the audit. GitHub Actions runs typecheck/build checks. Cloudflare Workers Builds is connected to this repository and watches `main`; its deploy command is `npx wrangler deploy`. The Cloudflare trigger now runs `npm ci`, typecheck, build and the exported site check before deployment.
 - The live response already included `X-Content-Type-Options`, `Referrer-Policy`, `Permissions-Policy`, and `X-Frame-Options` headers. Domain-level settings, analytics ownership, Search Console indexing, and Web Vitals field data require account access.
 
 ## Issues addressed
@@ -21,7 +21,7 @@
 - Nine catalog product families have no product-specific photograph. Obtain verified owner photographs rather than reusing an unrelated item's image. The current page deliberately indicates when an image is pending.
 - Individual dimensions, capacities, material grades, certifications, lead times, prices, and machine compatibility are not substantiated for every model. Confirm against drawings and factory records before publishing precise claims or offers.
 - Confirm the exact legal privacy language, retention procedure, business email, and any shipping or sales terms before expanding those sections.
-- Check Search Console and Bing indexing, analytics goals, Cloudflare deployment logs, DNS and security settings with their respective account access. No measurement score is claimed without a real performance run.
+- Check Search Console and Bing indexing, analytics goals, and domain security settings with their respective account access. No measurement score is claimed without a real performance run.
 
 ## Verification
 
