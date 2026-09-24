@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { company } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://advanced-fifthaxis.com"),
@@ -11,4 +12,35 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: "Advanced Fifth Axis", description: "Foundation drilling tools and fabricated components in Saudi Arabia." },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
-export default function RootLayout({children}:{children:React.ReactNode}){return <html lang="en"><body>{children}</body></html>}
+
+const organization = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: company.name,
+  url: "https://advanced-fifthaxis.com",
+  logo: "https://advanced-fifthaxis.com/advanced-fifth-axis-logo.webp",
+  telephone: company.phone,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Al Muftakira Street 4474, Jeddah Industrial",
+    addressLocality: "Jeddah",
+    addressCountry: "SA"
+  },
+  vatID: company.vat
+};
+
+const website = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: company.name,
+  url: "https://advanced-fifthaxis.com",
+  inLanguage: ["en-SA","ar-SA"]
+};
+
+export default function RootLayout({children}:{children:React.ReactNode}){
+  return <html lang="en"><body>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organization)}}/>
+    <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(website)}}/>
+    {children}
+  </body></html>;
+}
