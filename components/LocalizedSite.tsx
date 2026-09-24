@@ -1,3 +1,4 @@
+import { productPhotos } from "@/lib/productPhotos";
 import { products, company, type Product } from "@/lib/site";
 import type { ReactNode } from "react";
 
@@ -25,7 +26,7 @@ const copy = {
     call: "Call us", address: "Address", vat: "VAT number", registration: "Commercial registration",
     view: "View product", sizes: "Models in the supplied lineup", back: "All products",
     productNote: "Ask us to confirm availability, dimensions, connection and compatibility before ordering.",
-    photoNote: "Owner-supplied category photo; individual models may look different.", referenceNote: "Small reference image from the supplied product lineup.",
+    photoNote: "Owner-supplied category photo; individual models may look different.", referenceNote: "Manufacturer reference photo; confirm the exact configuration before ordering.", pending: "Verified photo pending", photoSource: "Photo: Meclead",
     whatsapp: "WhatsApp", footer: "Foundation drilling tools · Jeddah, Saudi Arabia"
   },
   ar: {
@@ -50,7 +51,7 @@ const copy = {
     call: "اتصل بنا", address: "العنوان", vat: "الرقم الضريبي", registration: "السجل التجاري",
     view: "عرض المنتج", sizes: "الموديلات الواردة في القائمة", back: "جميع المنتجات",
     productNote: "يرجى تأكيد التوفر والأبعاد والوصلات والتوافق قبل الطلب.",
-    photoNote: "صورة مقدمة للفئة؛ قد يختلف شكل الموديلات الفردية.", referenceNote: "صورة مرجعية صغيرة من قائمة المنتجات المقدمة.",
+    photoNote: "صورة مقدمة للفئة؛ قد يختلف شكل الموديلات الفردية.", referenceNote: "صورة مرجعية من الشركة المصنعة؛ يرجى تأكيد التكوين المطلوب قبل الطلب.", pending: "بانتظار صورة موثقة", photoSource: "الصورة: Meclead",
     whatsapp: "واتساب", footer: "معدات حفر الأساسات · جدة، المملكة العربية السعودية"
   }
 } as const;
@@ -87,7 +88,7 @@ export function HomePage({ lang }: { lang: Lang }) {
       </div></section>
       <div className="trustStrip"><div className="wrap">{t.tags.map((tag,i)=><span key={tag}><b>0{i+1}</b>{tag}</span>)}</div></div>
       <section id="products" className="siteSection wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsTitle}</h2></div><p>{t.productsIntro}</p></div>
-        <div className="productGrid">{products.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}><div className={`tileImage ${p.imageType === "reference-thumbnail" ? "referenceImage" : "ownerImage"}`}><img src={p.image} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div><div className="tileText"><span>{lang === "ar" ? p.name : p.nameAr}</span><h3>{lang === "ar" ? p.nameAr : p.name}</h3><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div>
+        <div className="productGrid">{products.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}><div className="tileImage">{p.image ? <img src={p.image} alt={lang === "ar" ? p.nameAr : p.name}/> : <span className="photoPending">{t.pending}</span>}<span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div><div className="tileText"><span>{lang === "ar" ? p.name : p.nameAr}</span><h3>{lang === "ar" ? p.nameAr : p.name}</h3><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div>
       </section>
       <section id="capabilities" className="capSection"><div className="wrap"><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h2>{t.capabilitiesTitle}</h2><div className="capCards">{t.capabilities.map(([n,title,detail])=><article key={n}><span>{n}</span><h3>{title}</h3><p>{detail}</p></article>)}</div></div></section>
       <section id="about" className="aboutSection wrap"><div><span className="sectionKicker"><i/> {t.aboutLabel}</span><h2>{t.aboutTitle}</h2></div><p>{t.about}</p></section>
@@ -99,6 +100,6 @@ export function ProductView({ lang, product: p }: { lang: Lang; product: Product
   const t = copy[lang], name = lang === "ar" ? p.nameAr : p.name;
   return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} product={p}/><main className="wrap productPage">
     <a className="backLink" href={`${home(lang)}#products`}>← {t.back}</a>
-    <div className="productLayout"><div className={`productImageNew ${p.imageType === "reference-thumbnail" ? "referenceImage" : "ownerImage"}`}><img src={p.image} alt={name}/><small>{p.imageType === "reference-thumbnail" ? t.referenceNote : t.photoNote}</small></div><div className="productDetails"><span className="sectionKicker"><i/> {t.productsLabel}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? p.descriptionAr : p.description}</p><div className="detailRule"/><h2>{t.sizes}</h2><ul className="variantList">{p.variants.map(variant=><li key={variant}><a href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود الاستفسار عن ${p.nameAr} - ${variant}. يرجى تأكيد المواصفات والتوفر.` : `Hello, I would like to inquire about ${p.name} - ${variant}. Please confirm specifications and availability.`)}`}>{variant} <span aria-hidden="true">↗</span></a></li>)}</ul><p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
+    <div className="productLayout"><div className="productImageNew">{p.image ? <img src={p.image} alt={name}/> : <span className="photoPending">{t.pending}</span>}<small>{p.image ? <>{t.referenceNote} <a href={Object.values(productPhotos[p.slug] ?? {})[0]?.source} target="_blank" rel="noopener noreferrer">{t.photoSource} ↗</a></> : t.pending}</small></div><div className="productDetails"><span className="sectionKicker"><i/> {t.productsLabel}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? p.descriptionAr : p.description}</p><div className="detailRule"/><h2>{t.sizes}</h2><ul className="variantList">{p.variants.map(variant=><li key={variant}>{productPhotos[p.slug]?.[variant] ? <div className="variantPhoto"><img src={productPhotos[p.slug][variant].image} alt={variant}/><a href={productPhotos[p.slug][variant].source} target="_blank" rel="noopener noreferrer">{t.photoSource} ↗</a></div> : <span className="variantPending">{t.pending}</span>}<a href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود الاستفسار عن ${p.nameAr} - ${variant}. يرجى تأكيد المواصفات والتوفر.` : `Hello, I would like to inquire about ${p.name} - ${variant}. Please confirm specifications and availability.`)}`}>{variant} <span aria-hidden="true">↗</span></a></li>)}</ul><p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
   </main><Footer lang={lang}/></div>;
 }

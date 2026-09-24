@@ -42,3 +42,16 @@
 .variantList{list-style:none!important;padding:0!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:15px 0 20px}
 .variantList li{line-height:1.35}.variantList a{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 13px;border:1px solid #cbd6e2;color:#174875;font-size:13px;font-weight:700;min-height:48px}.variantList a:hover{border-color:#0c58a2;background:#eef3f9}
 @media(max-width:750px){.variantList{grid-template-columns:1fr}.productImageNew.referenceImage img{width:45%;height:60%}}
+/* Manufacturer photos retain their original branding; captions link to the source. */
+.tileImage,.productImageNew{background:#f4f6f9}
+.productImageNew{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px}
+.productImageNew img{min-height:0;flex:1;object-fit:contain}
+.productImageNew small a,.variantPhoto a{color:#135899;text-decoration:underline;text-underline-offset:2px}
+.photoPending,.variantPending{color:#70849b;font-size:13px}
+.tileImage .photoPending{display:grid;place-items:center;height:100%}
+.variantList li{border:1px solid #cbd6e2;background:#fff}
+.variantList li>a{border:0}
+.variantPhoto{height:145px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:6px 12px 0}
+.variantPhoto img{max-width:100%;height:115px;object-fit:contain}
+.variantPhoto a{font-size:11px;align-self:flex-end}
+.variantPending{display:block;padding:12px 13px 0}
