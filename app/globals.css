@@ -196,3 +196,13 @@
 .emptyCatalog{text-align:center;padding:70px 20px;border:1px dashed #bac9d8;background:#f7f9fb}
 .emptyCatalog h2{font-size:28px;margin:0 0 10px}.emptyCatalog p{color:#6a7c90}.emptyCatalog button{margin-top:12px}
 @media(max-width:950px){.catalogTools{grid-template-columns:1fr}.catalogResultCount{padding-bottom:0}.categoryFilters{overflow-x:auto;flex-wrap:nowrap;padding-bottom:4px}.categoryFilters button{white-space:nowrap}}
+
+
+/* Capabilities detail page */
+.capabilityDetailGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-bottom:70px}
+.capabilityDetailGrid article{background:#fff;border:1px solid #d7e0eb;border-top:3px solid #0b5caa;padding:30px;min-height:330px}
+.capabilityDetailGrid article>span{font-size:12px;font-weight:900;color:#6484a7}
+.capabilityDetailGrid h2{font-size:25px;margin:24px 0 10px}
+.capabilityDetailGrid p{font-size:14px;color:#62768d;line-height:1.7}
+.capabilityDetailGrid ul{padding-inline-start:20px;color:#526b85;font-size:13px;line-height:1.8}
+@media(max-width:850px){.capabilityDetailGrid{grid-template-columns:1fr}}
