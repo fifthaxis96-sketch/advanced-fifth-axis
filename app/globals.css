@@ -30,3 +30,15 @@
 .siteFooter img{width:74px;height:55px;object-fit:contain;background:#fff;border-radius:2px;padding:3px}.footerInner{align-items:center}
 .site .productTile:focus-visible,.site a:focus-visible{outline:3px solid #0c63b5;outline-offset:3px}
 @media(max-width:750px){.siteLogo{min-width:80px}.siteLogo img{width:74px;height:58px}.heroBrandLogo{width:74%;height:72%;top:12%}.heroArt .artNumber{font-size:9px}.heroArt .artLabel b{font-size:10px}}
+
+/* Owner supplied catalog imagery and model inquiry list. */
+.tileImage.referenceImage,.productImageNew.referenceImage{background:#252525}
+.tileImage.referenceImage img{object-fit:contain;width:70%;height:75%;margin:12.5% 15%}
+.productImageNew.referenceImage{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:25px}
+.productImageNew.referenceImage img{width:45%;height:58%;object-fit:contain;image-rendering:auto}
+.productImageNew.ownerImage img{object-fit:contain}
+.productImageNew small{color:#66798e;font-size:12px;line-height:1.5;text-align:center}
+.productImageNew.referenceImage small{color:#cbd5e0}
+.variantList{list-style:none!important;padding:0!important;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:15px 0 20px}
+.variantList li{line-height:1.35}.variantList a{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 13px;border:1px solid #cbd6e2;color:#174875;font-size:13px;font-weight:700;min-height:48px}.variantList a:hover{border-color:#0c58a2;background:#eef3f9}
+@media(max-width:750px){.variantList{grid-template-columns:1fr}.productImageNew.referenceImage img{width:45%;height:60%}}

@@ -11,7 +11,7 @@ const copy = {
     explore: "Explore products", quote: "Request a quotation",
     tags: ["Manufactured for your project", "Saudi-based supply", "Technical support"],
     productsLabel: "OUR PRODUCT RANGE", productsTitle: "Equipment for every foundation.",
-    productsIntro: "Explore our core range. Dimensions, cutting systems and connections can be tailored to your machine and ground conditions.",
+    productsIntro: "Explore the product families and model names in the supplied lineup. Ask us to confirm specifications before ordering.",
     capabilitiesLabel: "WHAT WE DO", capabilitiesTitle: "Built around your requirements.",
     capabilities: [
       ["01", "Drilling tools", "Buckets, augers and core barrels for piling and foundation work."],
@@ -23,9 +23,9 @@ const copy = {
     contactLabel: "LET'S WORK TOGETHER", contactTitle: "Tell us what you need to drill.",
     contactIntro: "Send your drawings or specifications to our team in Jeddah.",
     call: "Call us", address: "Address", vat: "VAT number", registration: "Commercial registration",
-    view: "View product", sizes: "Custom specifications", back: "All products",
-    productNote: "Tell us the required diameter, connection, teeth arrangement, rig model and ground conditions for an accurate quotation.",
-    productFeatures: ["Project-specific dimensions", "Connection options", "Cutting and wear part options"],
+    view: "View product", sizes: "Models in the supplied lineup", back: "All products",
+    productNote: "Ask us to confirm availability, dimensions, connection and compatibility before ordering.",
+    photoNote: "Owner-supplied category photo; individual models may look different.", referenceNote: "Small reference image from the supplied product lineup.",
     whatsapp: "WhatsApp", footer: "Foundation drilling tools · Jeddah, Saudi Arabia"
   },
   ar: {
@@ -36,7 +36,7 @@ const copy = {
     explore: "تصفح المنتجات", quote: "اطلب عرض سعر",
     tags: ["تصنيع حسب المشروع", "توريد داخل المملكة", "دعم فني"],
     productsLabel: "مجموعة المنتجات", productsTitle: "حلول متكاملة لأعمال الأساسات.",
-    productsIntro: "تصفح منتجاتنا الأساسية. يمكن تجهيز الأقطار وأنظمة القطع والوصلات وفق المعدة وطبيعة التربة.",
+    productsIntro: "تصفح فئات المنتجات والموديلات الواردة في القائمة المقدمة. يرجى تأكيد المواصفات قبل الطلب.",
     capabilitiesLabel: "ما نقدمه", capabilitiesTitle: "نصنع وفق متطلباتك.",
     capabilities: [
       ["01", "أدوات الحفر", "بكيتات وأوجرات وكور بارل لأعمال الخوازيق والأساسات."],
@@ -48,21 +48,13 @@ const copy = {
     contactLabel: "لنعمل معًا", contactTitle: "أخبرنا بما يحتاجه مشروعك.",
     contactIntro: "أرسل الرسومات أو المواصفات إلى فريقنا في جدة.",
     call: "اتصل بنا", address: "العنوان", vat: "الرقم الضريبي", registration: "السجل التجاري",
-    view: "عرض المنتج", sizes: "مواصفات حسب الطلب", back: "جميع المنتجات",
-    productNote: "أرسل القطر المطلوب ونوع الوصلة وترتيب الأسنان وموديل المعدة وطبيعة التربة للحصول على عرض سعر دقيق.",
-    productFeatures: ["أبعاد حسب المشروع", "خيارات متعددة للوصلات", "خيارات لأسنان القطع وقطع التآكل"],
+    view: "عرض المنتج", sizes: "الموديلات الواردة في القائمة", back: "جميع المنتجات",
+    productNote: "يرجى تأكيد التوفر والأبعاد والوصلات والتوافق قبل الطلب.",
+    photoNote: "صورة مقدمة للفئة؛ قد يختلف شكل الموديلات الفردية.", referenceNote: "صورة مرجعية صغيرة من قائمة المنتجات المقدمة.",
     whatsapp: "واتساب", footer: "معدات حفر الأساسات · جدة، المملكة العربية السعودية"
   }
 } as const;
 
-const descriptionsAr: Record<string, string> = {
-  "drilling-buckets": "بكيتات حفر للخوازق والتربة الصعبة، مع خيارات للأقطار وأسنان القطع.",
-  "rock-augers": "أوجرات حفر للصخور والتربة المختلطة مع وصلات وأسنان قابلة للتخصيص.",
-  "core-barrels": "كور بارل قوي لحفر الطبقات الصلبة والأقطار الكبيرة.",
-  "drilling-augers": "أوجرات حلزونية لأعمال الخوازيق وحفر الأساسات.",
-  "kelly-accessories": "وصلات ومحولات وحوامل أسنان وملحقات للحفر.",
-  "custom-fabrication": "معدات حفر ومكونات فولاذية تُصنع وفق رسومات ومتطلبات المشروع."
-};
 const whatsapp = "https://wa.me/" + company.phone.replace("+", "");
 const home = (lang: Lang) => lang === "ar" ? "/ar" : "/";
 const productUrl = (lang: Lang, slug: string) => `${home(lang) === "/" ? "" : "/ar"}/products/${slug}`;
@@ -95,7 +87,7 @@ export function HomePage({ lang }: { lang: Lang }) {
       </div></section>
       <div className="trustStrip"><div className="wrap">{t.tags.map((tag,i)=><span key={tag}><b>0{i+1}</b>{tag}</span>)}</div></div>
       <section id="products" className="siteSection wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsTitle}</h2></div><p>{t.productsIntro}</p></div>
-        <div className="productGrid">{products.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}><div className="tileImage"><img src={p.image} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div><div className="tileText"><span>{lang === "ar" ? p.name : p.nameAr}</span><h3>{lang === "ar" ? p.nameAr : p.name}</h3><p>{lang === "ar" ? descriptionsAr[p.slug] : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div>
+        <div className="productGrid">{products.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}><div className={`tileImage ${p.imageType === "reference-thumbnail" ? "referenceImage" : "ownerImage"}`}><img src={p.image} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div><div className="tileText"><span>{lang === "ar" ? p.name : p.nameAr}</span><h3>{lang === "ar" ? p.nameAr : p.name}</h3><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div>
       </section>
       <section id="capabilities" className="capSection"><div className="wrap"><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h2>{t.capabilitiesTitle}</h2><div className="capCards">{t.capabilities.map(([n,title,detail])=><article key={n}><span>{n}</span><h3>{title}</h3><p>{detail}</p></article>)}</div></div></section>
       <section id="about" className="aboutSection wrap"><div><span className="sectionKicker"><i/> {t.aboutLabel}</span><h2>{t.aboutTitle}</h2></div><p>{t.about}</p></section>
@@ -107,6 +99,6 @@ export function ProductView({ lang, product: p }: { lang: Lang; product: Product
   const t = copy[lang], name = lang === "ar" ? p.nameAr : p.name;
   return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} product={p}/><main className="wrap productPage">
     <a className="backLink" href={`${home(lang)}#products`}>← {t.back}</a>
-    <div className="productLayout"><div className="productImageNew"><img src={p.image} alt={name}/></div><div className="productDetails"><span className="sectionKicker"><i/> {t.productsLabel}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? descriptionsAr[p.slug] : p.description}</p><div className="detailRule"/><h2>{t.sizes}</h2><ul>{t.productFeatures.map(f=><li key={f}>{f}</li>)}</ul><p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
+    <div className="productLayout"><div className={`productImageNew ${p.imageType === "reference-thumbnail" ? "referenceImage" : "ownerImage"}`}><img src={p.image} alt={name}/><small>{p.imageType === "reference-thumbnail" ? t.referenceNote : t.photoNote}</small></div><div className="productDetails"><span className="sectionKicker"><i/> {t.productsLabel}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? p.descriptionAr : p.description}</p><div className="detailRule"/><h2>{t.sizes}</h2><ul className="variantList">{p.variants.map(variant=><li key={variant}><a href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود الاستفسار عن ${p.nameAr} - ${variant}. يرجى تأكيد المواصفات والتوفر.` : `Hello, I would like to inquire about ${p.name} - ${variant}. Please confirm specifications and availability.`)}`}>{variant} <span aria-hidden="true">↗</span></a></li>)}</ul><p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
   </main><Footer lang={lang}/></div>;
 }
