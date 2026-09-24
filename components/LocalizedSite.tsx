@@ -80,7 +80,7 @@ function Header({ lang, product, collection, section }: { lang: Lang; product?: 
   </div></header>;
 }
 function Footer({lang}:{lang:Lang}) {
-  return <footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><span>© 2026</span></div></footer>;
+  return <footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><nav className="footerNav"><a href={`${lang==="ar"?"/ar":""}/products`}>{copy[lang].nav[0]}</a><a href={`${lang==="ar"?"/ar":""}/collections`}>{copy[lang].nav[1]}</a><a href={`${lang==="ar"?"/ar":""}/about`}>{lang==="ar"?"من نحن":"About"}</a><a href={`${lang==="ar"?"/ar":""}/contact`}>{copy[lang].nav[3]}</a></nav><span>© 2026</span></div></footer>;
 }
 export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
@@ -142,5 +142,28 @@ export function CollectionView({ lang, collection }: { lang: Lang; collection: C
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.collectionsLabel}</span><h1>{name}</h1><p>{lang==="ar"?collection.descriptionAr:collection.description}</p><div className="catalogMeta">{items.length} {lang==="ar"?"منتجات":"products"} · {lang==="ar"?"تصنيع وتوريد من جدة، السعودية":"Manufacturing & supply from Jeddah, Saudi Arabia"}</div></div>
     <section><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsInCollection}</h2></div></div><div className="productGrid">{items.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length?<div className="tileImage"><img src={p.images[0]} alt={lang==="ar"?p.nameAr:p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div>:<span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{p.category}</span><h3>{lang==="ar"?p.nameAr:p.name}</h3><p>{lang==="ar"?p.descriptionAr:p.description}</p><b>{t.view} ↗</b></div></a>)}</div></section>
     <section className="collectionCta"><h2>{lang==="ar"?"تحتاج مقاسًا أو وصلة مخصصة؟":"Need a custom size or connection?"}</h2><p>{lang==="ar"?"أرسل نوع المعدة والقطر والرسومات والكمية، وسنراجع متطلبات التصنيع.":"Send your rig model, diameter, drawings and quantity so we can review the fabrication requirements."}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?`مرحبًا، أود الاستفسار عن فئة ${collection.nameAr}`:`Hello, I would like to inquire about the ${collection.name} collection`)}`}>{t.quote} ↗</a></section>
+  </main><Footer lang={lang}/></div>;
+}
+
+
+export function AboutPage({ lang }: { lang: Lang }) {
+  const t=copy[lang];
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang}/><main className="wrap infoPage">
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{lang==="ar"?"من نحن":"About"}</span></nav>
+    <section className="infoHero"><span className="sectionKicker"><i/> {t.aboutLabel}</span><h1>{lang==="ar"?"معدات ومكونات حفر تُجهز لمتطلبات المشروع.":"Foundation drilling equipment built around project requirements."}</h1><p>{t.about}</p></section>
+    <section className="infoStats"><article><b>{products.length}+</b><span>{lang==="ar"?"فئات ومنتجات في الكتالوج":"catalog products and families"}</span></article><article><b>2</b><span>{lang==="ar"?"لغات للموقع والمحتوى الفني":"site and technical-content languages"}</span></article><article><b>JEDDAH</b><span>{lang==="ar"?"قاعدة التوريد والتصنيع":"supply and fabrication base"}</span></article></section>
+    <section className="infoSplit"><div><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h2>{t.capabilitiesTitle}</h2></div><div className="capList">{t.capabilities.map(([n,title,detail])=><article key={n}><span>{n}</span><div><h3>{title}</h3><p>{detail}</p></div></article>)}</div></section>
+    <section className="collectionCta"><h2>{lang==="ar"?"لديك رسم أو مقاس خاص؟":"Have a drawing or custom requirement?"}</h2><p>{lang==="ar"?"أرسل تفاصيل المشروع ونوع المعدة والمقاس والكمية لفريقنا لمراجعة المتطلبات.":"Send the project details, rig model, required dimensions and quantity for technical review."}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، لدي متطلبات تصنيع خاصة وأود مناقشتها.":"Hello, I have a custom fabrication requirement I would like to discuss.")}`}>{t.quote} ↗</a></section>
+  </main><Footer lang={lang}/></div>;
+}
+
+export function ContactPage({ lang }: { lang: Lang }) {
+  const t=copy[lang];
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang}/><main className="wrap infoPage">
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{t.nav[3]}</span></nav>
+    <section className="infoHero"><span className="sectionKicker"><i/> {t.contactLabel}</span><h1>{t.contactTitle}</h1><p>{t.contactIntro}</p></section>
+    <section className="contactCards"><a href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود طلب عرض سعر.":"Hello, I would like a quotation.")}`}><span>01</span><h2>{t.whatsapp}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"ابدأ المحادثة":"Start conversation"} ↗</b></a><a href={`tel:${company.phone}`}><span>02</span><h2>{t.call}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"اتصل الآن":"Call now"} ↗</b></a><article><span>03</span><h2>{t.address}</h2><p>{company.address}</p><b>{lang==="ar"?"جدة، السعودية":"Jeddah, Saudi Arabia"}</b></article></section>
+    <section className="quoteGuide"><div><span className="sectionKicker"><i/> {lang==="ar"?"لتسعير أسرع":"FASTER QUOTATION"}</span><h2>{lang==="ar"?"أرسل هذه التفاصيل مع استفسارك.":"Include these details with your inquiry."}</h2></div><ol><li>{lang==="ar"?"اسم المنتج أو صورة واضحة":"Product name or a clear photo"}</li><li>{lang==="ar"?"نوع وموديل المعدة":"Rig make and model"}</li><li>{lang==="ar"?"الأبعاد أو القطر والوصلة":"Dimensions or diameter and connection"}</li><li>{lang==="ar"?"الكمية المطلوبة":"Required quantity"}</li><li>{lang==="ar"?"الرسم الفني إن وجد":"Technical drawing, if available"}</li><li>{lang==="ar"?"ظروف التربة أو الاستخدام":"Ground condition or application"}</li></ol></section>
+    <section className="companyLegal"><div><span>{t.vat}</span><b>{company.vat}</b></div><div><span>{t.registration}</span><b>{company.cr}</b></div></section>
   </main><Footer lang={lang}/></div>;
 }
