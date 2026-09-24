@@ -94,7 +94,7 @@ function Header({ lang, product, collection, section }: { lang: Lang; product?: 
   </div></header>;
 }
 function Footer({lang}:{lang:Lang}) {
-  return <footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><nav className="footerNav"><a href={`${lang==="ar"?"/ar":""}/products`}>{copy[lang].nav[0]}</a><a href={`${lang==="ar"?"/ar":""}/collections`}>{copy[lang].nav[1]}</a><a href={`${lang==="ar"?"/ar":""}/about`}>{lang==="ar"?"من نحن":"About"}</a><a href={`${lang==="ar"?"/ar":""}/contact`}>{copy[lang].nav[3]}</a></nav><span>© 2026</span></div></footer>;
+  return <><footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><nav className="footerNav"><a href={`${lang==="ar"?"/ar":""}/products`}>{copy[lang].nav[0]}</a><a href={`${lang==="ar"?"/ar":""}/collections`}>{copy[lang].nav[1]}</a><a href={`${lang==="ar"?"/ar":""}/about`}>{lang==="ar"?"من نحن":"About"}</a><a href={`${lang==="ar"?"/ar":""}/contact`}>{copy[lang].nav[3]}</a></nav><span>© 2026</span></div></footer><a className="floatingWhatsApp" href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود الاستفسار عن منتجاتكم.":"Hello, I would like to inquire about your products.")}`} aria-label={lang==="ar"?"تواصل عبر واتساب":"Contact us on WhatsApp"}><span>WA</span><b>{lang==="ar"?"واتساب":"WhatsApp"}</b></a></>;
 }
 export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
