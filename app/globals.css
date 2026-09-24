@@ -124,3 +124,12 @@
 .notFoundCard h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:14px 0}
 .notFoundCard p{color:#65798f;line-height:1.8}
 .notFoundCard>div{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:28px}
+
+
+/* Product FAQ */
+.faqSection{margin-top:80px;padding-top:55px;border-top:1px solid #d6e0e9}
+.faqGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.faqGrid article{background:#fff;border:1px solid #d7e0eb;padding:24px;min-height:180px}
+.faqGrid h3{font-size:17px;line-height:1.35;margin:0 0 12px}
+.faqGrid p{font-size:13px;line-height:1.7;color:#66798f;margin:0}
+@media(max-width:850px){.faqGrid{grid-template-columns:1fr}.faqSection{margin-top:55px;padding-top:40px}}
