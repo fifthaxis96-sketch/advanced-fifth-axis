@@ -223,3 +223,20 @@
 .quoteNotes{grid-column:1/-1}.quoteSend{grid-column:1/-1;margin-top:4px;background:#dce8f3!important;color:#143b68!important}
 .quoteSend:hover{background:#fff!important}
 @media(max-width:850px){.quoteBuilder{grid-template-columns:1fr;padding:28px}.quoteForm{grid-template-columns:1fr}.quoteNotes,.quoteSend{grid-column:auto}}
+
+
+/* Product-led hero composition */
+.heroProductStage{position:absolute;inset:62px 42px 54px;display:grid;place-items:center;z-index:1}
+.heroProductMain{position:relative;z-index:3;width:72%;height:78%;object-fit:contain;filter:drop-shadow(0 24px 22px #133b6728)}
+.heroProductSide{position:absolute;z-index:2;width:34%;height:34%;object-fit:contain;background:#ffffffd9;border:1px solid #cfdae5;padding:10px;box-shadow:0 15px 35px #173d6b14}
+.heroProductSideOne{left:0;bottom:8%}.heroProductSideTwo{right:0;top:9%}
+.heroCornerLogo{position:absolute;z-index:4;right:22px;top:18px;width:72px;height:54px;object-fit:contain;background:#ffffffd9;padding:4px;border:1px solid #d4dfe9}
+.heroArt .artNumber{z-index:5;left:24px;top:22px}
+.heroArt .artLabel{z-index:5;background:#ffffffd9;border:1px solid #d1dce7;padding:10px 12px;bottom:18px;right:18px}
+@media(max-width:750px){
+  .heroProductStage{inset:45px 24px 44px}
+  .heroProductMain{width:78%;height:78%}
+  .heroProductSide{width:32%;height:32%;padding:6px}
+  .heroCornerLogo{width:58px;height:44px}
+  .heroArt .artLabel{padding:7px 8px}
+}
