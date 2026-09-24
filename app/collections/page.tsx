@@ -1,0 +1,4 @@
+import type { Metadata } from "next";
+import { CollectionIndex } from "@/components/LocalizedSite";
+export const metadata: Metadata = { title: "Foundation Drilling Product Collections Saudi Arabia", description: "Browse foundation drilling tools, cutting and wear parts, casing, Kelly systems and custom fabricated components in Saudi Arabia.", alternates:{canonical:"https://advanced-fifthaxis.com/collections",languages:{en:"https://advanced-fifthaxis.com/collections",ar:"https://advanced-fifthaxis.com/ar/collections"}} };
+export default function CollectionsPage(){return <CollectionIndex lang="en"/>;}
