@@ -4,12 +4,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "check:site": "node scripts/check-site.mjs"
   },
   "dependencies": {
-    "@supabase/ssr": "latest",
-    "@supabase/supabase-js": "latest",
-    "lucide-react": "latest",
     "next": "15.5.26",
     "react": "19.1.0",
     "react-dom": "19.1.0"

@@ -23,8 +23,10 @@ jobs:
           cache: npm
           cache-dependency-path: package.json
       - name: Install dependencies
-        run: npm install --no-audit --no-fund
+        run: npm ci --no-audit --no-fund
       - name: Type check
         run: npm run typecheck
       - name: Production build
         run: npm run build
+      - name: Check exported routes and assets
+        run: npm run check:site

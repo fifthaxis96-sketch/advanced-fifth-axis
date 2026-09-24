@@ -267,3 +267,6 @@
 .whatsappButton .whatsAppIcon{margin-inline-end:2px}
 .floatingWhatsApp .whatsAppIcon{width:34px;height:34px;border-radius:50%;background:#25D366;color:#fff}
 .floatingWhatsApp .whatsAppIcon svg{width:21px;height:21px}
+
+.faqPageGrid{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 64px}.faqPageGrid h2,.policyContent h2{font-size:20px;line-height:1.35;margin:0 0 12px}.policyContent{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:0 0 64px}.policyContent article{background:#fff;border:1px solid #d7e0eb;padding:30px}.policyContent p{line-height:1.7;color:#5f748c}.footerNav{flex-wrap:wrap}.site a:focus-visible,.site button:focus-visible,.site input:focus-visible,.site textarea:focus-visible,.site select:focus-visible{outline:3px solid #e6a900;outline-offset:3px}
+@media(max-width:750px){.faqPageGrid,.policyContent{grid-template-columns:1fr}}

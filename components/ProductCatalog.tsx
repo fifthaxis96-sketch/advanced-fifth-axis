@@ -5,6 +5,22 @@ import { products } from "@/lib/site";
 
 type Lang = "en" | "ar";
 
+const normalizeSearch = (value: string) => value.toLocaleLowerCase().normalize("NFKD")
+  .replace(/[\u064b-\u065f\u0670\u0640]/g, "")
+  .replace(/[أإآ]/g, "ا").replace(/ى/g, "ي").replace(/ة/g, "ه")
+  .replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+
+const searchTerms: Record<string, string> = {
+  "roller-bits": "roller bit single roller bit رولر بت راس حفر دوار",
+  "rock-augers": "auger اوجر بريمه حفر صخور",
+  "drilling-buckets": "bucket بكيت باكيت حفر تنظيف",
+  "core-barrels": "core barrel كور بارل",
+  "casing": "casing pipe casing shoe مواسير تغليف ماسوره",
+  "cfa": "continuous flight auger CFA اوجر مستمر",
+  "kelly-boxes": "kelly box كيلي بوكس وصله",
+  "pile-testing-reaction-beam": "load test beam reaction beam كمرة اختبار تحميل",
+};
+
 const categoryLabel = (lang: Lang, category: string) => {
   if (category === "All") return lang === "ar" ? "الكل" : "All";
   if (lang === "en") return category;
@@ -23,9 +39,9 @@ export function ProductCatalog({ lang }: { lang: Lang }) {
   const [query,setQuery]=useState("");
   const [category,setCategory]=useState("All");
   const categories=useMemo(()=>["All",...Array.from(new Set(products.map(p=>p.category)))],[]);
-  const normalized=query.trim().toLowerCase();
+  const normalized=normalizeSearch(query);
   const visible=products.filter(p=>{
-    const text=[p.name,p.nameAr,p.category,p.description,p.descriptionAr,...p.variants].join(" ").toLowerCase();
+    const text=normalizeSearch([p.name,p.nameAr,p.category,p.description,p.descriptionAr,...p.variants,searchTerms[p.slug] || ""].join(" "));
     return (category==="All"||p.category===category)&&(!normalized||text.includes(normalized));
   });
   const base=lang==="ar"?"/ar":"";

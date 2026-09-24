@@ -17,6 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ar/about`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/ar/contact`, changeFrequency: "monthly", priority: 0.75 },
+    ...["faq", "privacy"].flatMap(slug => [
+      { url: `${base}/${slug}`, changeFrequency: "yearly" as const, priority: 0.4 },
+      { url: `${base}/ar/${slug}`, changeFrequency: "yearly" as const, priority: 0.4 },
+    ]),
     ...collections.flatMap((c) => [
       { url: `${base}/collections/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.85 },
       { url: `${base}/ar/collections/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.8 },

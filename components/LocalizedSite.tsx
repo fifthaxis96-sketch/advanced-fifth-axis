@@ -71,7 +71,7 @@ const categoryLabel = (lang: Lang, category: string) => {
   };
   return labels[category] || category;
 };
-function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" }) {
+function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" | "faq" | "privacy" }) {
   const en = product ? productUrl("en", product.slug) : collection ? `/collections/${collection.slug}` : section ? `/${section}` : "/";
   const ar = product ? productUrl("ar", product.slug) : collection ? `/ar/collections/${collection.slug}` : section ? `/ar/${section}` : "/ar";
   return <nav className="language" aria-label="Language selector">
@@ -80,7 +80,7 @@ function Switcher({ lang, product, collection, section }: { lang: Lang; product?
     <a href={ar} lang="ar" hrefLang="ar" aria-current={lang === "ar" ? "page" : undefined}>العربية</a>
   </nav>;
 }
-function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" }) {
+function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" | "faq" | "privacy" }) {
   const t = copy[lang];
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co. logo" width="112" height="92"/></a>
@@ -94,7 +94,7 @@ function Header({ lang, product, collection, section }: { lang: Lang; product?: 
   </div></header>;
 }
 function Footer({lang}:{lang:Lang}) {
-  return <><footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><nav className="footerNav"><a href={`${lang==="ar"?"/ar":""}/products`}>{copy[lang].nav[0]}</a><a href={`${lang==="ar"?"/ar":""}/collections`}>{copy[lang].nav[1]}</a><a href={`${lang==="ar"?"/ar":""}/about`}>{lang==="ar"?"من نحن":"About"}</a><a href={`${lang==="ar"?"/ar":""}/contact`}>{copy[lang].nav[3]}</a></nav><span>© 2026</span></div></footer><a className="floatingWhatsApp" href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود الاستفسار عن منتجاتكم.":"Hello, I would like to inquire about your products.")}`} aria-label={lang==="ar"?"تواصل عبر واتساب":"Contact us on WhatsApp"}><span className="whatsAppIcon" aria-hidden="true"><svg viewBox="0 0 32 32" role="img"><path fill="currentColor" d="M19.11 17.27c-.29-.15-1.72-.85-1.99-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.51.07-.78.37-.27.29-1.03 1.01-1.03 2.47 0 1.46 1.06 2.87 1.2 3.07.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.12.57-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.2-.56-.34Z"/><path fill="currentColor" d="M16.03 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.71 6.4L3.13 29l6.76-1.77a12.73 12.73 0 0 0 6.14 1.56h.01c7.06 0 12.8-5.74 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05a12.71 12.71 0 0 0-9.06-3.74Zm0 23.43h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.01 1.05 1.07-3.91-.25-.4A10.61 10.61 0 1 1 16.03 26.63Z"/></svg></span><b>{lang==="ar"?"واتساب":"WhatsApp"}</b></a></>;
+  return <><footer className="siteFooter"><div className="wrap footerInner"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co."/><span>{copy[lang].footer}</span><nav className="footerNav"><a href={`${lang==="ar"?"/ar":""}/products`}>{copy[lang].nav[0]}</a><a href={`${lang==="ar"?"/ar":""}/collections`}>{copy[lang].nav[1]}</a><a href={`${lang==="ar"?"/ar":""}/about`}>{lang==="ar"?"من نحن":"About"}</a><a href={`${lang==="ar"?"/ar":""}/contact`}>{copy[lang].nav[3]}</a><a href={`${lang==="ar"?"/ar":""}/faq`}>{lang==="ar"?"الأسئلة الشائعة":"FAQ"}</a><a href={`${lang==="ar"?"/ar":""}/privacy`}>{lang==="ar"?"الخصوصية":"Privacy"}</a></nav><span>© 2026</span></div></footer><a className="floatingWhatsApp" href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود الاستفسار عن منتجاتكم.":"Hello, I would like to inquire about your products.")}`} aria-label={lang==="ar"?"تواصل عبر واتساب":"Contact us on WhatsApp"}><span className="whatsAppIcon" aria-hidden="true"><svg viewBox="0 0 32 32" role="img"><path fill="currentColor" d="M19.11 17.27c-.29-.15-1.72-.85-1.99-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.51.07-.78.37-.27.29-1.03 1.01-1.03 2.47 0 1.46 1.06 2.87 1.2 3.07.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.12.57-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.2-.56-.34Z"/><path fill="currentColor" d="M16.03 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.71 6.4L3.13 29l6.76-1.77a12.73 12.73 0 0 0 6.14 1.56h.01c7.06 0 12.8-5.74 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05a12.71 12.71 0 0 0-9.06-3.74Zm0 23.43h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.01 1.05 1.07-3.91-.25-.4A10.61 10.61 0 1 1 16.03 26.63Z"/></svg></span><b>{lang==="ar"?"واتساب":"WhatsApp"}</b></a></>;
 }
 export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
@@ -193,5 +193,49 @@ export function CapabilitiesPage({ lang }: { lang: Lang }) {
     <section className="infoHero"><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h1>{t.capabilitiesTitle}</h1><p>{lang==="ar"?"نركز على أدوات حفر الأساسات والمكونات المصنعة ومستلزمات الحفر مع مراجعة المقاسات والوصلات ومتطلبات المشروع قبل التصنيع أو التوريد.":"We focus on foundation drilling tools, fabricated components and drilling accessories, with dimensions, connections and project requirements reviewed before fabrication or supply."}</p></section>
     <section className="capabilityDetailGrid">{t.capabilities.map(([n,title,detail],i)=><article key={n}><span>{n}</span><h2>{title}</h2><p>{detail}</p><ul>{(i===0?[lang==="ar"?"أوجرات وبكيتات وكور بارل":"Augers, buckets and core barrels",lang==="ar"?"تكوينات وأقطار حسب المشروع":"Project-specific configurations and diameters",lang==="ar"?"مراجعة الوصلة والتوافق":"Connection and compatibility review"]:i===1?[lang==="ar"?"تصنيع من الرسومات أو العينات":"Fabrication from drawings or samples",lang==="ar"?"مقاسات ووصلات مخصصة":"Custom dimensions and interfaces",lang==="ar"?"مراجعة متطلبات الاستخدام":"Application requirement review"]:[lang==="ar"?"مواسير تغليف ومكونات":"Casing and components",lang==="ar"?"قطع تآكل واستبدال":"Wear and replacement parts",lang==="ar"?"مطابقة الموديل قبل الطلب":"Model matching before ordering"]).map(x=><li key={x}>{x}</li>)}</ul></article>)}</section>
     <section className="collectionCta"><h2>{lang==="ar"?"أرسل متطلبات مشروعك للمراجعة":"Send your project requirements for review"}</h2><p>{lang==="ar"?"نوع المعدة، القطر، طبيعة التربة، الكمية والرسومات تساعدنا على تجهيز استفسار أدق.":"Rig model, diameter, ground condition, quantity and drawings help us prepare a more accurate quotation."}</p><a className="primaryButton" href={`${lang==="ar"?"/ar":""}/contact`}>{t.quote} ↗</a></section>
+  </main><Footer lang={lang}/></div>;
+}
+
+export function FAQPage({ lang }: { lang: Lang }) {
+  const ar = lang === "ar";
+  const questions = ar ? [
+    ["ما المعلومات اللازمة لطلب عرض سعر؟", "أرسل اسم المنتج، نوع المعدة وموديلها، القطر والأبعاد، نوع الوصلة، الكمية، وطبيعة التربة. أرفق الرسم الفني أو صورة القطعة إن توفرت."],
+    ["هل يمكن طلب أبعاد أو وصلات خاصة؟", "يمكن إرسال الرسم أو العينة للمراجعة. نؤكد إمكانية التصنيع والأبعاد والوصلة بعد دراسة المتطلبات الفنية."],
+    ["هل جميع الموديلات المعروضة متوفرة فورًا؟", "الموديلات المعروضة خيارات للاستفسار. يُرجى تأكيد المواصفات والتوفر ومدة التوريد عند طلب عرض السعر."],
+    ["كيف أتأكد من توافق القطعة مع المعدة؟", "أرسل موديل المعدة ومقاسات الوصلة وأرقام القطع إن وجدت. نراجع الأبعاد والتكوين قبل تأكيد العرض."],
+    ["كيف أرسل ملف الرسم الفني؟", "تواصل معنا عبر واتساب من صفحة الاتصال، ثم أرفق الملف أو الصورة داخل المحادثة."],
+  ] : [
+    ["What do I need for a quotation?", "Send the product name, rig make and model, diameter and dimensions, connection, quantity, and ground condition. Include a drawing or component photo if available."],
+    ["Can I request custom dimensions or connections?", "Send your drawing or sample for review. We confirm manufacturing scope, dimensions, and connection after checking the technical requirements."],
+    ["Are all listed models immediately available?", "Listed models are inquiry options. Please confirm specifications, availability, and lead time when requesting a quotation."],
+    ["How do I confirm compatibility with my rig?", "Share the rig model, connection dimensions, and part numbers if available. We review the fit and configuration before confirming the offer."],
+    ["How can I send a technical drawing?", "Contact us through WhatsApp on the contact page, then attach the file or photo in the conversation."],
+  ];
+  return <div className="site" lang={lang} dir={ar ? "rtl" : "ltr"}><Header lang={lang} section="faq"/><main id="main-content" className="wrap infoPage">
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{ar?"الرئيسية":"Home"}</a><span>/</span><span>{ar?"الأسئلة الشائعة":"FAQ"}</span></nav>
+    <section className="infoHero"><span className="sectionKicker"><i/>{ar?"معلومات قبل الطلب":"BEFORE YOU ORDER"}</span><h1>{ar?"الأسئلة الشائعة":"Frequently asked questions"}</h1><p>{ar?"إجابات عملية تساعدك على تجهيز طلب عرض السعر وتأكيد توافق معدات الحفر.":"Practical answers to help you prepare a quotation request and confirm drilling equipment compatibility."}</p></section>
+    <section className="faqGrid faqPageGrid">{questions.map(([question, answer])=><article key={question}><h2>{question}</h2><p>{answer}</p></article>)}</section>
+    <section className="collectionCta"><h2>{ar?"هل لديك متطلبات خاصة؟":"Have a specific requirement?"}</h2><p>{ar?"أرسل الرسم والمقاسات لفريقنا في جدة.":"Send your drawing and dimensions to our team in Jeddah."}</p><a className="primaryButton" href={`${ar?"/ar":""}/contact`}>{ar?"جهّز طلب عرض السعر":"Prepare a quotation request"} ↗</a></section>
+  </main><Footer lang={lang}/></div>;
+}
+
+export function PrivacyPage({ lang }: { lang: Lang }) {
+  const ar=lang==="ar";
+  const sections = ar ? [
+    ["المعلومات التي ترسلها", "عند التواصل معنا عبر الهاتف أو واتساب قد تزودنا باسمك وبيانات الاتصال ومعلومات مشروعك والرسومات والمواصفات التي تختار إرسالها."],
+    ["استخدام المعلومات", "نستخدم هذه المعلومات للرد على الاستفسارات ودراسة المتطلبات الفنية وإعداد عروض الأسعار والتواصل بخصوص طلبك."],
+    ["خدمات خارجية", "روابط واتساب تفتح خدمة خارجية تخضع لسياسات مزودها. قد يستقبل مزود الاستضافة سجلات تقنية لازمة لتقديم الموقع وحمايته."],
+    ["التواصل وطلبات الخصوصية", "للاستفسار عن المعلومات التي أرسلتها أو لطلب تصحيحها أو حذفها، تواصل معنا باستخدام الرقم الموجود في صفحة الاتصال."],
+  ] : [
+    ["Information you send", "When you contact us by phone or WhatsApp, you may provide your name, contact details, project requirements, drawings, and specifications that you choose to share."],
+    ["How we use it", "We use this information to answer inquiries, review technical requirements, prepare quotations, and communicate about your request."],
+    ["External services", "WhatsApp links open an external service governed by its provider's policies. Our hosting provider may process technical logs required to serve and protect the website."],
+    ["Privacy requests", "To ask about information you have sent, or request its correction or deletion, contact us using the number on our contact page."],
+  ];
+  return <div className="site" lang={lang} dir={ar?"rtl":"ltr"}><Header lang={lang} section="privacy"/><main id="main-content" className="wrap infoPage">
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{ar?"الرئيسية":"Home"}</a><span>/</span><span>{ar?"الخصوصية":"Privacy"}</span></nav>
+    <section className="infoHero"><span className="sectionKicker"><i/>{ar?"معلومات الموقع":"SITE INFORMATION"}</span><h1>{ar?"الخصوصية":"Privacy"}</h1><p>{ar?"نوضح هنا كيف نتعامل مع المعلومات التي تختار مشاركتها عند الاستفسار عن منتجاتنا.":"This page explains how we handle information you choose to share when inquiring about our products."}</p></section>
+    <section className="policyContent">{sections.map(([title,body])=><article key={title}><h2>{title}</h2><p>{body}</p></article>)}</section>
+    <section className="collectionCta"><h2>{ar?"تواصل معنا":"Contact us"}</h2><a className="primaryButton" href={`${ar?"/ar":""}/contact`}>{ar?"صفحة الاتصال":"Contact page"} ↗</a></section>
   </main><Footer lang={lang}/></div>;
 }
