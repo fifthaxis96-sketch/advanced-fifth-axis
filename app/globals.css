@@ -250,3 +250,12 @@
 .skipLink{position:fixed;top:10px;left:10px;z-index:9999;background:#fff;color:#0b376d;border:2px solid #0b5caa;padding:10px 14px;font:700 13px Arial,Tahoma,sans-serif;transform:translateY(-150%);transition:transform .15s}
 .skipLink:focus{transform:translateY(0)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;animation-iteration-count:1!important}}
+
+
+/* Floating contact action */
+.floatingWhatsApp{position:fixed;z-index:70;right:22px;bottom:22px;display:flex;align-items:center;gap:9px;background:#fff;color:#143c68;border:1px solid #bfd0df;box-shadow:0 14px 36px #0a2d5b2a;padding:9px 13px 9px 9px;border-radius:999px;font-size:12px}
+.floatingWhatsApp span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:#0b5caa;color:#fff;font-size:10px;font-weight:900;letter-spacing:.05em}
+.floatingWhatsApp b{font-size:12px}.floatingWhatsApp:hover{transform:translateY(-2px);box-shadow:0 18px 42px #0a2d5b38}
+.site[dir="rtl"] .floatingWhatsApp{right:auto;left:22px;padding:9px 9px 9px 13px}
+@media(max-width:600px){.floatingWhatsApp{right:14px;bottom:14px}.site[dir="rtl"] .floatingWhatsApp{left:14px}.floatingWhatsApp b{display:none}.floatingWhatsApp{padding:7px}.floatingWhatsApp span{width:38px;height:38px}}
+@media print{.floatingWhatsApp,.siteHeader{display:none!important}}
