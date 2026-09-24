@@ -206,3 +206,20 @@
 .capabilityDetailGrid p{font-size:14px;color:#62768d;line-height:1.7}
 .capabilityDetailGrid ul{padding-inline-start:20px;color:#526b85;font-size:13px;line-height:1.8}
 @media(max-width:850px){.capabilityDetailGrid{grid-template-columns:1fr}}
+
+
+/* Quotation builder */
+.quoteBuilder{margin-top:76px;display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;padding:42px;background:#0b376d;color:#fff}
+.quoteBuilderHead>span{display:block;font-size:11px;font-weight:900;letter-spacing:.14em;color:#b8cde2}
+.quoteBuilderHead h2{font-size:clamp(30px,3.5vw,46px);line-height:1.08;letter-spacing:-.04em;margin:15px 0}
+.quoteBuilderHead p{color:#c7d7e7;line-height:1.7;max-width:520px}
+.quoteForm{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.quoteForm label{display:grid;gap:7px}
+.quoteForm label>span{font-size:11px;font-weight:800;letter-spacing:.05em;color:#d2deea}
+.quoteForm input,.quoteForm select,.quoteForm textarea{width:100%;border:1px solid #ffffff35;background:#fff;color:#173450;padding:12px 13px;font:inherit;outline:none}
+.quoteForm input,.quoteForm select{height:46px}
+.quoteForm textarea{resize:vertical;min-height:110px}
+.quoteForm input:focus,.quoteForm select:focus,.quoteForm textarea:focus{border-color:#8fc5f3;box-shadow:0 0 0 3px #8fc5f31c}
+.quoteNotes{grid-column:1/-1}.quoteSend{grid-column:1/-1;margin-top:4px;background:#dce8f3!important;color:#143b68!important}
+.quoteSend:hover{background:#fff!important}
+@media(max-width:850px){.quoteBuilder{grid-template-columns:1fr;padding:28px}.quoteForm{grid-template-columns:1fr}.quoteNotes,.quoteSend{grid-column:auto}}
