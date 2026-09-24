@@ -154,3 +154,10 @@ export const collections: Collection[] = [
 
 export const productsForCollection = (collection: Collection) =>
   products.filter((product) => collection.categories.includes(product.category));
+
+
+export const collectionForProduct = (product: Product) =>
+  collections.find((collection) => collection.categories.includes(product.category));
+
+export const relatedProducts = (product: Product, limit = 3) =>
+  products.filter((item) => item.slug !== product.slug && item.category === product.category).slice(0, limit);
