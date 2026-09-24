@@ -1,6 +1,8 @@
 import "./globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { company } from "@/lib/site";
+
+export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0b376d" };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://advanced-fifthaxis.com"),
@@ -38,7 +40,7 @@ const website = {
 };
 
 export default function RootLayout({children}:{children:React.ReactNode}){
-  return <html lang="en"><body>
+  return <html lang="en"><body><a className="skipLink" href="#main-content">Skip to content</a>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organization)}}/>
     <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(website)}}/>
     {children}
