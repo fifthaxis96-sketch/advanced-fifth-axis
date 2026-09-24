@@ -58,7 +58,7 @@ const copy = {
 const whatsapp = "https://wa.me/" + company.phone.replace("+", "");
 const home = (lang: Lang) => lang === "ar" ? "/ar" : "/";
 const productUrl = (lang: Lang, slug: string) => `${home(lang) === "/" ? "" : "/ar"}/products/${slug}`;
-function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "about" | "contact" }) {
+function Switcher({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" }) {
   const en = product ? productUrl("en", product.slug) : collection ? `/collections/${collection.slug}` : section ? `/${section}` : "/";
   const ar = product ? productUrl("ar", product.slug) : collection ? `/ar/collections/${collection.slug}` : section ? `/ar/${section}` : "/ar";
   return <nav className="language" aria-label="Language selector">
@@ -67,14 +67,14 @@ function Switcher({ lang, product, collection, section }: { lang: Lang; product?
     <a href={ar} lang="ar" hrefLang="ar" aria-current={lang === "ar" ? "page" : undefined}>العربية</a>
   </nav>;
 }
-function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "about" | "contact" }) {
+function Header({ lang, product, collection, section }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" }) {
   const t = copy[lang];
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label="Advanced Fifth Axis home"><img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis Co. logo" width="112" height="92"/></a>
     <nav className="siteNav" aria-label="Main navigation">
       <a href={`${lang === "ar" ? "/ar" : ""}/products`}>{t.nav[0]}</a>
       <a href={`${lang === "ar" ? "/ar" : ""}/collections`}>{t.nav[1]}</a>
-      <a href={`${home(lang)}#capabilities`}>{t.nav[2]}</a>
+      <a href={`${lang === "ar" ? "/ar" : ""}/capabilities`}>{t.nav[2]}</a>
       <a href={`${lang === "ar" ? "/ar" : ""}/contact`}>{t.nav[3]}</a>
     </nav>
     <div className="headerActions"><Switcher lang={lang} product={product} collection={collection} section={section}/><a className="headerCta" href={`${lang === "ar" ? "/ar" : ""}/contact`}>{t.quote}</a></div>
@@ -166,5 +166,16 @@ export function ContactPage({ lang }: { lang: Lang }) {
     <section className="contactCards"><a href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود طلب عرض سعر.":"Hello, I would like a quotation.")}`}><span>01</span><h2>{t.whatsapp}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"ابدأ المحادثة":"Start conversation"} ↗</b></a><a href={`tel:${company.phone}`}><span>02</span><h2>{t.call}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"اتصل الآن":"Call now"} ↗</b></a><article><span>03</span><h2>{t.address}</h2><p>{company.address}</p><b>{lang==="ar"?"جدة، السعودية":"Jeddah, Saudi Arabia"}</b></article></section>
     <section className="quoteGuide"><div><span className="sectionKicker"><i/> {lang==="ar"?"لتسعير أسرع":"FASTER QUOTATION"}</span><h2>{lang==="ar"?"أرسل هذه التفاصيل مع استفسارك.":"Include these details with your inquiry."}</h2></div><ol><li>{lang==="ar"?"اسم المنتج أو صورة واضحة":"Product name or a clear photo"}</li><li>{lang==="ar"?"نوع وموديل المعدة":"Rig make and model"}</li><li>{lang==="ar"?"الأبعاد أو القطر والوصلة":"Dimensions or diameter and connection"}</li><li>{lang==="ar"?"الكمية المطلوبة":"Required quantity"}</li><li>{lang==="ar"?"الرسم الفني إن وجد":"Technical drawing, if available"}</li><li>{lang==="ar"?"ظروف التربة أو الاستخدام":"Ground condition or application"}</li></ol></section>
     <section className="companyLegal"><div><span>{t.vat}</span><b>{company.vat}</b></div><div><span>{t.registration}</span><b>{company.cr}</b></div></section>
+  </main><Footer lang={lang}/></div>;
+}
+
+
+export function CapabilitiesPage({ lang }: { lang: Lang }) {
+  const t=copy[lang];
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="capabilities"/><main className="wrap infoPage">
+    <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{t.nav[2]}</span></nav>
+    <section className="infoHero"><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h1>{t.capabilitiesTitle}</h1><p>{lang==="ar"?"نركز على أدوات حفر الأساسات والمكونات المصنعة ومستلزمات الحفر مع مراجعة المقاسات والوصلات ومتطلبات المشروع قبل التصنيع أو التوريد.":"We focus on foundation drilling tools, fabricated components and drilling accessories, with dimensions, connections and project requirements reviewed before fabrication or supply."}</p></section>
+    <section className="capabilityDetailGrid">{t.capabilities.map(([n,title,detail],i)=><article key={n}><span>{n}</span><h2>{title}</h2><p>{detail}</p><ul>{i===0?[lang==="ar"?"أوجرات وبكيتات وكور بارل":"Augers, buckets and core barrels",lang==="ar"?"تكوينات وأقطار حسب المشروع":"Project-specific configurations and diameters",lang==="ar"?"مراجعة الوصلة والتوافق":"Connection and compatibility review"]:i===1?[lang==="ar"?"تصنيع من الرسومات أو العينات":"Fabrication from drawings or samples",lang==="ar"?"مقاسات ووصلات مخصصة":"Custom dimensions and interfaces",lang==="ar"?"مراجعة متطلبات الاستخدام":"Application requirement review"]:[lang==="ar"?"مواسير تغليف ومكونات":"Casing and components",lang==="ar"?"قطع تآكل واستبدال":"Wear and replacement parts",lang==="ar"?"مطابقة الموديل قبل الطلب":"Model matching before ordering"]}.map(x=><li key={x}>{x}</li>)}</ul></article>)}</section>
+    <section className="collectionCta"><h2>{lang==="ar"?"أرسل متطلبات مشروعك للمراجعة":"Send your project requirements for review"}</h2><p>{lang==="ar"?"نوع المعدة، القطر، طبيعة التربة، الكمية والرسومات تساعدنا على تجهيز استفسار أدق.":"Rig model, diameter, ground condition, quantity and drawings help us prepare a more accurate quotation."}</p><a className="primaryButton" href={`${lang==="ar"?"/ar":""}/contact`}>{t.quote} ↗</a></section>
   </main><Footer lang={lang}/></div>;
 }
