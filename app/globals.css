@@ -72,3 +72,31 @@
 @media(max-width:750px){.productLayout:has(.ownerGallery){grid-template-columns:1fr;gap:25px}}
 
 .visualNote{font-size:12px;line-height:1.6;color:#66798e;margin:0}
+
+/* Premium collection browsing */
+.collectionSection{padding-block:100px;background:#f9fbfd;border-top:1px solid #dce4ed;border-bottom:1px solid #dce4ed}
+.collectionGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.collectionCard{display:grid;grid-template-columns:180px 1fr;min-height:220px;background:#fff;border:1px solid #d7e0eb;overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s}
+.collectionCard:hover{transform:translateY(-3px);box-shadow:0 18px 40px #173d6b14;border-color:#b8c8d9}
+.collectionCover{position:relative;background:linear-gradient(145deg,#eef3f8,#dfe8f1);min-height:220px;overflow:hidden}
+.collectionCover img{width:100%;height:100%;object-fit:contain;padding:18px}
+.collectionCover span{position:absolute;top:16px;inset-inline-start:16px;background:#0b5caa;color:#fff;font-size:11px;font-weight:800;padding:7px 8px}
+.collectionCoverText:after{content:"AFA";position:absolute;inset:0;display:grid;place-items:center;font-size:48px;font-weight:900;letter-spacing:.08em;color:#1b4b7b18}
+.collectionCard>div:last-child{padding:28px;display:flex;flex-direction:column}
+.collectionCard small{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#64809f}
+.collectionCard h2,.collectionCard h3{font-size:25px;line-height:1.2;margin:10px 0 10px}
+.collectionCard p{color:#66788e;line-height:1.65;font-size:14px;margin:0 0 18px}
+.collectionCard b{margin-top:auto;color:#0b5caa;font-size:12px}
+.catalogPage{padding-block:44px 100px}
+.catalogHero{padding:54px 0 50px;max-width:850px}
+.catalogHero h1{font-size:clamp(44px,5vw,72px);line-height:1.04;letter-spacing:-.05em;margin:16px 0 20px}
+.catalogHero p{font-size:18px;line-height:1.7;color:#61758d;max-width:760px}
+.catalogMeta{margin-top:20px;font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#486b92}
+.breadcrumbs{display:flex;gap:9px;flex-wrap:wrap;font-size:12px;color:#6f8196}
+.breadcrumbs a{color:#245f9d}
+.collectionCta{margin-top:70px;background:#0b376d;color:#fff;padding:42px}
+.collectionCta h2{font-size:34px;margin:0 0 12px}
+.collectionCta p{color:#c8d6e6;line-height:1.7;max-width:700px}
+.collectionCta .primaryButton{margin-top:10px;background:#d9e4ef;color:#143c69}
+@media(max-width:900px){.collectionGrid{grid-template-columns:1fr}.collectionCard{grid-template-columns:150px 1fr}}
+@media(max-width:600px){.collectionCard{grid-template-columns:1fr}.collectionCover{min-height:180px}.catalogHero{padding-top:30px}.collectionCta{padding:28px}.catalogHero h1{font-size:42px}}
