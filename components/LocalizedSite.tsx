@@ -102,7 +102,7 @@ export function HomePage({ lang }: { lang: Lang }) {
   const featuredProducts = featuredSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
   return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
     <Header lang={lang}/>
-    <main>
+    <main id="main-content">
       <section className="heroNew"><div className="wrap heroNewInner">
         <div className="heroCopy"><span className="sectionKicker"><i/> {t.eyebrow}</span><h1>{t.headline}</h1><p>{t.intro}</p><div className="heroButtons"><a className="primaryButton" href="#products">{t.explore} <span aria-hidden="true">↗</span></a><a className="outlineButton" href="#contact">{t.quote}</a></div></div>
         <div className="heroArt" aria-label={lang === "ar" ? "أدوات ومكونات حفر الأساسات" : "Foundation drilling tools and components"}><div className="artGrid"/><div className="heroProductStage"><img className="heroProductMain" src="/products/owner-blue-toothed-casing.webp" alt={lang === "ar" ? "مقطع تغليف بأجزاء قطع" : "Foundation drilling casing component"} width="720" height="720"/><img className="heroProductSide heroProductSideOne" src="/products/pile-testing-reaction-beam-blue.webp" alt="" width="420" height="320"/><img className="heroProductSide heroProductSideTwo" src="/products/owner-tapered-steel-fabrication.webp" alt="" width="420" height="320"/></div><img className="heroCornerLogo" src="/advanced-fifth-axis-logo.webp" alt="" width="100" height="76"/><span className="artNumber">ADVANCED FIFTH AXIS CO.</span><div className="artLabel"><b>ENGINEERED FOR FOUNDATIONS</b><small>JEDDAH · SAUDI ARABIA</small></div></div>
@@ -120,7 +120,7 @@ export function HomePage({ lang }: { lang: Lang }) {
 }
 export function ProductIndex({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} section="products"/><main className="wrap catalogPage">
+  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} section="products"/><main id="main-content" className="wrap catalogPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang === "ar" ? "الرئيسية" : "Home"}</a><span>/</span><span>{t.nav[0]}</span></nav>
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.productsLabel}</span><h1>{t.productsTitle}</h1><p>{t.productsIntro}</p><div className="catalogMeta">{products.length} {lang === "ar" ? "منتجًا وفئة منتج" : "products and product families"}</div></div>
     <ProductCatalog lang={lang}/>
@@ -131,7 +131,7 @@ export function ProductView({ lang, product: p }: { lang: Lang; product: Product
   const t = copy[lang], name = lang === "ar" ? p.nameAr : p.name;
   const collection = collectionForProduct(p);
   const related = relatedProducts(p, 3);
-  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} product={p}/><main className="wrap productPage">
+  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} product={p}/><main id="main-content" className="wrap productPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang === "ar" ? "الرئيسية" : "Home"}</a><span>/</span><a href={`${lang === "ar" ? "/ar" : ""}/products`}>{t.nav[0]}</a><span>/</span><span>{name}</span></nav>
     <div className="productLayout">{p.images?.length ? <div className="ownerGallery">{p.images.map((src,i)=><img loading={i===0?"eager":"lazy"} decoding="async" width="900" height="900" src={src} alt={`${name} — ${i+1}`} key={src}/>)}{p.visualNote && <p className="visualNote">{lang === "ar" ? p.visualNoteAr : p.visualNote}</p>}</div> : <div className="productPlaceholder"><span>{lang === "ar" ? "صورة المنتج قيد الإضافة" : "Product image being added"}</span></div>}<div className="productDetails"><span className="sectionKicker"><i/> {categoryLabel(lang,p.category)}</span><span className="productSecondName">{lang === "ar" ? p.name : p.nameAr}</span><h1>{name}</h1><p>{lang === "ar" ? p.descriptionAr : p.description}</p>{collection && <a className="collectionPill" href={`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`}>{lang === "ar" ? collection.nameAr : collection.name} ↗</a>}<div className="detailRule"/>{p.variants.length > 0 && <><h2>{t.sizes}</h2><ul className="variantList">{p.variants.map(variant=><li key={variant}><a href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود الاستفسار عن ${p.nameAr} - ${variant}. يرجى تأكيد المواصفات والتوفر.` : `Hello, I would like to inquire about ${p.name} - ${variant}. Please confirm specifications and availability.`)}`}>{variant} <span aria-hidden="true">↗</span></a></li>)}</ul></>}<div className="orderChecklist"><h2>{lang === "ar" ? "معلومات تساعدنا على التسعير" : "Information for an accurate quotation"}</h2><ul><li>{lang === "ar" ? "نوع وموديل المعدة" : "Rig make and model"}</li><li>{lang === "ar" ? "المقاس أو القطر المطلوب" : "Required size or diameter"}</li><li>{lang === "ar" ? "نوع التربة أو الاستخدام" : "Ground condition or application"}</li><li>{lang === "ar" ? "الكمية والرسومات إن وجدت" : "Quantity and drawings if available"}</li></ul></div><p className="productNote">{t.productNote}</p><a className="primaryButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? `مرحبًا، أود عرض سعر لمنتج ${p.nameAr}` : `Hello, I would like a quotation for ${p.name}`)}`}>{t.quote} <span>↗</span></a></div></div>
     <section className="faqSection"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {lang === "ar" ? "أسئلة شائعة" : "PRODUCT FAQ"}</span><h2>{lang === "ar" ? "قبل طلب عرض السعر" : "Before requesting a quote"}</h2></div></div><div className="faqGrid">
@@ -145,7 +145,7 @@ export function ProductView({ lang, product: p }: { lang: Lang; product: Product
 
 export function CollectionIndex({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} section="collections"/><main className="wrap catalogPage">
+  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}><Header lang={lang} section="collections"/><main id="main-content" className="wrap catalogPage">
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.collectionsLabel}</span><h1>{t.collectionsTitle}</h1><p>{t.collectionsIntro}</p></div>
     <div className="collectionGrid">{collections.map((collection,i)=>{const items=productsForCollection(collection);const cover=items.find(p=>p.images?.length)?.images?.[0];return <a className="collectionCard" href={`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`} key={collection.slug}>{cover ? <div className="collectionCover"><img loading="lazy" decoding="async" width="540" height="420" src={cover} alt=""/><span>{String(i+1).padStart(2,"0")}</span></div> : <div className="collectionCover collectionCoverText"><span>{String(i+1).padStart(2,"0")}</span></div>}<div><small>{items.length} {lang === "ar" ? "منتجات" : "products"}</small><h2>{lang === "ar" ? collection.nameAr : collection.name}</h2><p>{lang === "ar" ? collection.descriptionAr : collection.description}</p><b>{t.viewCollection} ↗</b></div></a>})}</div>
   </main><Footer lang={lang}/></div>;
@@ -153,7 +153,7 @@ export function CollectionIndex({ lang }: { lang: Lang }) {
 
 export function CollectionView({ lang, collection }: { lang: Lang; collection: Collection }) {
   const t=copy[lang], items=productsForCollection(collection), name=lang==="ar"?collection.nameAr:collection.name;
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} collection={collection}/><main className="wrap catalogPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} collection={collection}/><main id="main-content" className="wrap catalogPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><a href={`${lang==="ar"?"/ar":""}/collections`}>{lang==="ar"?"الفئات":"Collections"}</a><span>/</span><span>{name}</span></nav>
     <div className="catalogHero"><span className="sectionKicker"><i/> {t.collectionsLabel}</span><h1>{name}</h1><p>{lang==="ar"?collection.descriptionAr:collection.description}</p><div className="catalogMeta">{items.length} {lang==="ar"?"منتجات":"products"} · {lang==="ar"?"تصنيع وتوريد من جدة، السعودية":"Manufacturing & supply from Jeddah, Saudi Arabia"}</div></div>
     <section><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsInCollection}</h2></div></div><div className="productGrid">{items.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length?<div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={p.images[0]} alt={lang==="ar"?p.nameAr:p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div>:<span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{categoryLabel(lang,p.category)}</span><h3>{lang==="ar"?p.nameAr:p.name}</h3><p>{lang==="ar"?p.descriptionAr:p.description}</p><b>{t.view} ↗</b></div></a>)}</div></section>
@@ -164,7 +164,7 @@ export function CollectionView({ lang, collection }: { lang: Lang; collection: C
 
 export function AboutPage({ lang }: { lang: Lang }) {
   const t=copy[lang];
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="about"/><main className="wrap infoPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="about"/><main id="main-content" className="wrap infoPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{lang==="ar"?"من نحن":"About"}</span></nav>
     <section className="infoHero"><span className="sectionKicker"><i/> {t.aboutLabel}</span><h1>{lang==="ar"?"معدات ومكونات حفر تُجهز لمتطلبات المشروع.":"Foundation drilling equipment built around project requirements."}</h1><p>{t.about}</p></section>
     <section className="infoStats"><article><b>{products.length}+</b><span>{lang==="ar"?"فئات ومنتجات في الكتالوج":"catalog products and families"}</span></article><article><b>2</b><span>{lang==="ar"?"لغات للموقع والمحتوى الفني":"site and technical-content languages"}</span></article><article><b>JEDDAH</b><span>{lang==="ar"?"قاعدة التوريد والتصنيع":"supply and fabrication base"}</span></article></section>
@@ -175,7 +175,7 @@ export function AboutPage({ lang }: { lang: Lang }) {
 
 export function ContactPage({ lang }: { lang: Lang }) {
   const t=copy[lang];
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="contact"/><main className="wrap infoPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="contact"/><main id="main-content" className="wrap infoPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{t.nav[3]}</span></nav>
     <section className="infoHero"><span className="sectionKicker"><i/> {t.contactLabel}</span><h1>{t.contactTitle}</h1><p>{t.contactIntro}</p></section>
     <section className="contactCards"><a href={`${whatsapp}?text=${encodeURIComponent(lang==="ar"?"مرحبًا، أود طلب عرض سعر.":"Hello, I would like a quotation.")}`}><span>01</span><h2>{t.whatsapp}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"ابدأ المحادثة":"Start conversation"} ↗</b></a><a href={`tel:${company.phone}`}><span>02</span><h2>{t.call}</h2><p>{company.phoneDisplay}</p><b>{lang==="ar"?"اتصل الآن":"Call now"} ↗</b></a><article><span>03</span><h2>{t.address}</h2><p>{company.address}</p><b>{lang==="ar"?"جدة، السعودية":"Jeddah, Saudi Arabia"}</b></article></section>
@@ -188,7 +188,7 @@ export function ContactPage({ lang }: { lang: Lang }) {
 
 export function CapabilitiesPage({ lang }: { lang: Lang }) {
   const t=copy[lang];
-  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="capabilities"/><main className="wrap infoPage">
+  return <div className="site" lang={lang} dir={lang==="ar"?"rtl":"ltr"}><Header lang={lang} section="capabilities"/><main id="main-content" className="wrap infoPage">
     <nav className="breadcrumbs" aria-label="Breadcrumb"><a href={home(lang)}>{lang==="ar"?"الرئيسية":"Home"}</a><span>/</span><span>{t.nav[2]}</span></nav>
     <section className="infoHero"><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h1>{t.capabilitiesTitle}</h1><p>{lang==="ar"?"نركز على أدوات حفر الأساسات والمكونات المصنعة ومستلزمات الحفر مع مراجعة المقاسات والوصلات ومتطلبات المشروع قبل التصنيع أو التوريد.":"We focus on foundation drilling tools, fabricated components and drilling accessories, with dimensions, connections and project requirements reviewed before fabrication or supply."}</p></section>
     <section className="capabilityDetailGrid">{t.capabilities.map(([n,title,detail],i)=><article key={n}><span>{n}</span><h2>{title}</h2><p>{detail}</p><ul>{(i===0?[lang==="ar"?"أوجرات وبكيتات وكور بارل":"Augers, buckets and core barrels",lang==="ar"?"تكوينات وأقطار حسب المشروع":"Project-specific configurations and diameters",lang==="ar"?"مراجعة الوصلة والتوافق":"Connection and compatibility review"]:i===1?[lang==="ar"?"تصنيع من الرسومات أو العينات":"Fabrication from drawings or samples",lang==="ar"?"مقاسات ووصلات مخصصة":"Custom dimensions and interfaces",lang==="ar"?"مراجعة متطلبات الاستخدام":"Application requirement review"]:[lang==="ar"?"مواسير تغليف ومكونات":"Casing and components",lang==="ar"?"قطع تآكل واستبدال":"Wear and replacement parts",lang==="ar"?"مطابقة الموديل قبل الطلب":"Model matching before ordering"]).map(x=><li key={x}>{x}</li>)}</ul></article>)}</section>
