@@ -1,5 +1,7 @@
+import type { Metadata } from "next";
 import { products } from "@/lib/site";
 import { ProductView } from "@/components/LocalizedSite";
 import { notFound } from "next/navigation";
-export function generateStaticParams() { return products.map(p => ({slug:p.slug})); }
-export default async function ProductPage({params}:{params:Promise<{slug:string}>}) { const {slug}=await params; const product=products.find(p=>p.slug===slug); if(!product) notFound(); return <ProductView lang="en" product={product}/>; }
+export function generateStaticParams(){return products.map(p=>({slug:p.slug}));}
+export async function generateMetadata({params}:{params:Promise<{slug:string}>}):Promise<Metadata>{const {slug}=await params;const p=products.find(x=>x.slug===slug);if(!p)return {};const base="https://advanced-fifthaxis.com";const url=`${base}/products/${p.slug}`;const title=p.name+" | Foundation Drilling Saudi Arabia";const description=p.description;return {title,description,alternates:{canonical:url,languages:{en:`${base}/products/${p.slug}`,ar:`${base}/ar/products/${p.slug}`}},openGraph:{title,description,url,type:"website",images:p.images?.[0]?[{url:`${base}${p.images[0]}`,alt:p.name}]:undefined}};}
+export default async function ProductPage({params}:{params:Promise<{slug:string}>}){const {slug}=await params;const p=products.find(x=>x.slug===slug);if(!p)notFound();const base="https://advanced-fifthaxis.com";const jsonLd={"@context":"https://schema.org","@type":"Product",name:p.name,alternateName:p.nameAr,description:p.description,image:p.images?.map(src=>base+src),brand:{"@type":"Brand",name:"Advanced Fifth Axis"},category:p.category,url:`${base}/products/${p.slug}`};return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}}/><ProductView lang="en" product={p}/></>;}
