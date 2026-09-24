@@ -61,12 +61,14 @@ export const products: Product[] = [
     description: "Foundation drilling casing and related components for bore support and casing operations. Diameter, wall arrangement, joint type, length and tool interface are confirmed for the project before supply.",
     descriptionAr: "مواسير تغليف ومكونات مرتبطة بحفر الأساسات لدعم الحفرة وعمليات التغليف. يتم تأكيد القطر وتركيب الجدار ونوع الوصلة والطول وواجهة الأداة حسب المشروع قبل التوريد.",
     variants: ["Double wall casing", "Casing drive", "Casing shoe"],
+    images: ["/products/owner-blue-toothed-casing.webp"],
   },
   {
     slug: "cfa", name: "CFA Augers", nameAr: "أوجرات الحفر المستمر", category: "Foundation Tools",
     description: "Continuous flight auger sections and configurations for foundation drilling applications. Diameter, length, flight pitch, center tube and connection are selected to suit the project and drilling system.",
     descriptionAr: "مقاطع وتكوينات أوجر الحفر المستمر لتطبيقات الأساسات. يتم اختيار القطر والطول وخطوة الحلزون والأنبوب المركزي والوصلة بما يناسب المشروع ونظام الحفر.",
     variants: ["Continuous flight auger"],
+    images: ["/products/owner-continuous-flight-auger-coupling.webp", "/products/owner-continuous-flight-auger-flight.webp"],
   },
   {
     slug: "kelly-boxes", name: "Kelly Boxes & Adapters", nameAr: "كيلي بوكس ووصلات الحفر", category: "Drive Systems",
@@ -85,18 +87,6 @@ export const products: Product[] = [
     description: "Tapered, rib-reinforced steel fabrication shown in our product photograph. Share your drawing and required dimensions for an accurate quotation.",
     descriptionAr: "قطعة فولاذية مخروطية مع تقويات ظاهرة في الصورة. أرسل الرسم والأبعاد المطلوبة للحصول على عرض سعر دقيق.",
     variants: [], images: ["/products/owner-tapered-steel-fabrication.webp"],
-  },
-  {
-    slug: "black-continuous-flight-auger", name: "Continuous Flight Auger — Black Steel", nameAr: "أوجر حفر مستمر فولاذي أسود", category: "Foundation Tools",
-    description: "Continuous flight auger photographed from both ends. Confirm diameter, length, flight pitch and connection before ordering.",
-    descriptionAr: "أوجر حفر مستمر مصوّر من الطرفين. يرجى تأكيد القطر والطول وخطوة الحلزون والوصلة قبل الطلب.",
-    variants: [], images: ["/products/owner-continuous-flight-auger-coupling.webp", "/products/owner-continuous-flight-auger-flight.webp"],
-  },
-  {
-    slug: "blue-toothed-casing-section", name: "Blue Toothed Casing Section", nameAr: "مقطع تغليف أزرق بأسنان طرفية", category: "Casing",
-    description: "Blue tubular steel section with cutting elements around its visible rim. Dimensions and connection details are available on inquiry.",
-    descriptionAr: "مقطع فولاذي أسطواني أزرق مع عناصر قطع على الحافة الظاهرة. الأبعاد وتفاصيل الوصلة تُحدَّد عند الاستفسار.",
-    variants: [], images: ["/products/owner-blue-toothed-casing.webp"],
   },
   {
     slug: "rectangular-drilling-wear-component", name: "Rectangular Drilling Wear Component", nameAr: "قطعة تآكل حفر مستطيلة", category: "Wear Parts",
