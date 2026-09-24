@@ -11,6 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ar/products`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/collections`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/ar/collections`, changeFrequency: "weekly", priority: 0.85 },
+    { url: `${base}/about`, changeFrequency: "monthly", priority: 0.75 },
+    { url: `${base}/ar/about`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/contact`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/ar/contact`, changeFrequency: "monthly", priority: 0.75 },
     ...collections.flatMap((c) => [
       { url: `${base}/collections/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.85 },
       { url: `${base}/ar/collections/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.8 },
