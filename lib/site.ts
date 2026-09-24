@@ -6,6 +6,7 @@ export type Product = {
   description: string;
   descriptionAr: string;
   variants: string[];
+  images?: string[];
 };
 
 // Product families and model names transcribed from the lineup supplied by the owner.
@@ -76,6 +77,42 @@ export const products: Product[] = [
     description: "Interlocking and friction Kelly bar types shown in the supplied lineup.",
     descriptionAr: "قضبان كيلي التعشيق والاحتكاك حسب المرجع المقدم.",
     variants: ["Interlocking Kelly bar", "Friction Kelly bar"],
+  },
+  {
+    slug: "tapered-steel-fabrication", name: "Tapered Steel Fabrication", nameAr: "قطعة فولاذية مخروطية مصنّعة", category: "Fabricated Components",
+    description: "Tapered, rib-reinforced steel fabrication shown in our product photograph. Share your drawing and required dimensions for an accurate quotation.",
+    descriptionAr: "قطعة فولاذية مخروطية مع تقويات ظاهرة في الصورة. أرسل الرسم والأبعاد المطلوبة للحصول على عرض سعر دقيق.",
+    variants: [], images: ["/products/owner-tapered-steel-fabrication.webp"],
+  },
+  {
+    slug: "black-continuous-flight-auger", name: "Continuous Flight Auger — Black Steel", nameAr: "أوجر حفر مستمر فولاذي أسود", category: "Foundation Tools",
+    description: "Continuous flight auger photographed from both ends. Confirm diameter, length, flight pitch and connection before ordering.",
+    descriptionAr: "أوجر حفر مستمر مصوّر من الطرفين. يرجى تأكيد القطر والطول وخطوة الحلزون والوصلة قبل الطلب.",
+    variants: [], images: ["/products/owner-continuous-flight-auger-coupling.webp", "/products/owner-continuous-flight-auger-flight.webp"],
+  },
+  {
+    slug: "blue-toothed-casing-section", name: "Blue Toothed Casing Section", nameAr: "مقطع تغليف أزرق بأسنان طرفية", category: "Casing",
+    description: "Blue tubular steel section with cutting elements around its visible rim. Dimensions and connection details are available on inquiry.",
+    descriptionAr: "مقطع فولاذي أسطواني أزرق مع عناصر قطع على الحافة الظاهرة. الأبعاد وتفاصيل الوصلة تُحدَّد عند الاستفسار.",
+    variants: [], images: ["/products/owner-blue-toothed-casing.webp"],
+  },
+  {
+    slug: "rectangular-drilling-wear-component", name: "Rectangular Drilling Wear Component", nameAr: "قطعة تآكل حفر مستطيلة", category: "Wear Parts",
+    description: "Rectangular steel wear component shown with a central bore and a lower shank. Confirm fit and dimensions before ordering.",
+    descriptionAr: "قطعة تآكل فولاذية مستطيلة بفتحة وسطية وساق سفلية ظاهرتين. يرجى تأكيد الملاءمة والأبعاد قبل الطلب.",
+    variants: [], images: ["/products/owner-rectangular-wear-component.webp"],
+  },
+  {
+    slug: "drilling-wear-block", name: "Drilling Wear Block", nameAr: "كتلة تآكل للحفر", category: "Wear Parts",
+    description: "Steel drilling wear component with a top bore and front slot as shown. Model and compatibility require confirmation.",
+    descriptionAr: "قطعة تآكل فولاذية للحفر بفتحة علوية وشق أمامي كما في الصورة. يُرجى تأكيد الموديل والتوافق.",
+    variants: [], images: ["/products/owner-drilling-wear-block.webp"],
+  },
+  {
+    slug: "carbide-insert-wear-component", name: "Carbide Insert Wear Component", nameAr: "قطعة تآكل بإدخالات كربيد", category: "Wear Parts",
+    description: "Rounded steel wear component with visible gold-toned insert seats and a central opening. Confirm the exact application and dimensions before ordering.",
+    descriptionAr: "قطعة تآكل فولاذية مستديرة مع مواضع إدخالات ظاهرة وفتحة مركزية. يرجى تأكيد الاستخدام والأبعاد قبل الطلب.",
+    variants: [], images: ["/products/owner-carbide-insert-component.webp"],
   },
 ];
 
