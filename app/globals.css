@@ -70,3 +70,5 @@
 .ownerGallery{display:grid;gap:16px}
 .ownerGallery img{width:100%;height:auto;max-height:540px;object-fit:contain;background:#fff;border:1px solid #d7e0eb}
 @media(max-width:750px){.productLayout:has(.ownerGallery){grid-template-columns:1fr;gap:25px}}
+
+.visualNote{font-size:12px;line-height:1.6;color:#66798e;margin:0}

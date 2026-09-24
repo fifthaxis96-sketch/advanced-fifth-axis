@@ -7,6 +7,8 @@ export type Product = {
   descriptionAr: string;
   variants: string[];
   images?: string[];
+  visualNote?: string;
+  visualNoteAr?: string;
 };
 
 // Product families and model names transcribed from the lineup supplied by the owner.
@@ -109,10 +111,18 @@ export const products: Product[] = [
     variants: [], images: ["/products/owner-drilling-wear-block.webp"],
   },
   {
-    slug: "carbide-insert-wear-component", name: "Carbide Insert Wear Component", nameAr: "قطعة تآكل بإدخالات كربيد", category: "Wear Parts",
+    slug: "carbide-insert-wear-component", name: "Rounded Steel Wear Component", nameAr: "قطعة تآكل فولاذية مستديرة", category: "Wear Parts",
     description: "Rounded steel wear component with visible gold-toned insert seats and a central opening. Confirm the exact application and dimensions before ordering.",
     descriptionAr: "قطعة تآكل فولاذية مستديرة مع مواضع إدخالات ظاهرة وفتحة مركزية. يرجى تأكيد الاستخدام والأبعاد قبل الطلب.",
     variants: [], images: ["/products/owner-carbide-insert-component.webp"],
+  },
+  {
+    slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الخوازيق", category: "Fabricated Components",
+    description: "Fabricated reaction beam for pile load testing inquiries. Configuration, length, connections and load rating must be engineered and confirmed for the testing arrangement.",
+    descriptionAr: "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الخوازيق. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار.",
+    variants: [], images: ["/products/pile-testing-reaction-beam-blue.webp"],
+    visualNote: "Concept visualization based on the supplied site photo; confirm the fabrication design before ordering.",
+    visualNoteAr: "تصور مرئي مبني على صورة الموقع المقدمة؛ يرجى تأكيد التصميم التصنيعي قبل الطلب.",
   },
 ];
 
