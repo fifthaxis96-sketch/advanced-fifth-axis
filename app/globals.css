@@ -167,3 +167,17 @@
 .companyLegal span{color:#6a7d91;font-size:12px}.companyLegal b{font-size:13px}
 .footerNav{display:flex;gap:14px;flex-wrap:wrap}.footerNav a:hover{color:#fff}
 @media(max-width:850px){.infoStats,.contactCards{grid-template-columns:1fr}.infoSplit,.quoteGuide{grid-template-columns:1fr;gap:30px}.quoteGuide ol{grid-template-columns:1fr}.companyLegal{grid-template-columns:1fr}.companyLegal div+div{border-inline-start:0;border-top:1px solid #d7e0eb}.footerNav{order:3}}
+
+
+/* Accessible mobile navigation */
+@media(max-width:1000px){
+  .headerInner{flex-wrap:wrap;gap:10px 18px;padding-block:8px}
+  .siteHeader .siteNav{display:flex;order:3;width:100%;margin:0;gap:8px;overflow-x:auto;padding:4px 0 8px;scrollbar-width:thin}
+  .siteHeader .siteNav a{white-space:nowrap;background:#fff;border:1px solid #d6e0ea;padding:9px 12px;border-radius:999px;font-size:11px}
+  .siteHeader .siteNav a:after{display:none}
+  .headerActions{margin-inline-start:auto}
+}
+@media(max-width:520px){
+  .siteHeader .siteNav{gap:6px}
+  .siteHeader .siteNav a{padding:8px 10px}
+}
