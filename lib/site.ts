@@ -117,9 +117,9 @@ export const products: Product[] = [
     variants: [], images: ["/products/owner-carbide-insert-component.webp"],
   },
   {
-    slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الخوازيق", category: "Fabricated Components",
+    slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الأساسات", category: "Fabricated Components",
     description: "Fabricated reaction beam for pile load testing inquiries. Configuration, length, connections and load rating must be engineered and confirmed for the testing arrangement.",
-    descriptionAr: "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الخوازيق. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار.",
+    descriptionAr: "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الأساسات. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار.",
     variants: [], images: ["/products/pile-testing-reaction-beam-blue.webp"],
     visualNote: "Concept visualization based on the supplied site photo; confirm the fabrication design before ordering.",
     visualNoteAr: "تصور مرئي مبني على صورة الموقع المقدمة؛ يرجى تأكيد التصميم التصنيعي قبل الطلب.",
