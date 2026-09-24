@@ -133,3 +133,37 @@
 .faqGrid h3{font-size:17px;line-height:1.35;margin:0 0 12px}
 .faqGrid p{font-size:13px;line-height:1.7;color:#66798f;margin:0}
 @media(max-width:850px){.faqGrid{grid-template-columns:1fr}.faqSection{margin-top:55px;padding-top:40px}}
+
+
+/* About and contact pages */
+.infoPage{padding-block:42px 100px}
+.infoHero{max-width:900px;padding:52px 0 58px}
+.infoHero h1{font-size:clamp(44px,5vw,72px);line-height:1.04;letter-spacing:-.05em;margin:16px 0 22px}
+.infoHero p{font-size:19px;line-height:1.75;color:#5f748c;max-width:800px}
+.infoStats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:80px}
+.infoStats article{background:#fff;border:1px solid #d7e0eb;padding:28px;min-height:145px}
+.infoStats b{display:block;font-size:30px;color:#0b5caa;margin-bottom:12px}
+.infoStats span{font-size:13px;line-height:1.5;color:#65788e}
+.infoSplit{display:grid;grid-template-columns:.8fr 1.2fr;gap:70px;align-items:start;padding:70px 0;border-top:1px solid #d6e0e9}
+.infoSplit h2{font-size:clamp(34px,4vw,54px);letter-spacing:-.045em;line-height:1.08;margin:16px 0}
+.capList{border-top:1px solid #ccd8e4}
+.capList article{display:grid;grid-template-columns:48px 1fr;gap:18px;padding:23px 0;border-bottom:1px solid #ccd8e4}
+.capList article>span{color:#0b5caa;font-size:12px;font-weight:800}
+.capList h3{margin:0 0 7px;font-size:20px}
+.capList p{margin:0;color:#65788e;line-height:1.65;font-size:14px}
+.contactCards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.contactCards>a,.contactCards>article{background:#fff;border:1px solid #d7e0eb;padding:28px;min-height:230px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.contactCards>a:hover{transform:translateY(-3px);box-shadow:0 18px 40px #173d6b14}
+.contactCards span{font-size:11px;font-weight:900;color:#0b5caa}
+.contactCards h2{font-size:25px;margin:24px 0 8px}
+.contactCards p{color:#60758d;line-height:1.6;margin:0 0 18px}
+.contactCards b{margin-top:auto;color:#0b5caa;font-size:12px}
+.quoteGuide{margin-top:75px;padding:48px;background:#e8eef5;display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.quoteGuide h2{font-size:34px;line-height:1.15;margin:15px 0 0}
+.quoteGuide ol{margin:0;padding-inline-start:22px;display:grid;grid-template-columns:1fr 1fr;gap:15px 30px;color:#4e6986;font-size:14px}
+.companyLegal{display:grid;grid-template-columns:1fr 1fr;border:1px solid #d7e0eb;border-top:0;background:#fff}
+.companyLegal div{padding:22px 28px;display:flex;justify-content:space-between;gap:20px}
+.companyLegal div+div{border-inline-start:1px solid #d7e0eb}
+.companyLegal span{color:#6a7d91;font-size:12px}.companyLegal b{font-size:13px}
+.footerNav{display:flex;gap:14px;flex-wrap:wrap}.footerNav a:hover{color:#fff}
+@media(max-width:850px){.infoStats,.contactCards{grid-template-columns:1fr}.infoSplit,.quoteGuide{grid-template-columns:1fr;gap:30px}.quoteGuide ol{grid-template-columns:1fr}.companyLegal{grid-template-columns:1fr}.companyLegal div+div{border-inline-start:0;border-top:1px solid #d7e0eb}.footerNav{order:3}}
