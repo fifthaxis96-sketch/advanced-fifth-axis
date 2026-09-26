@@ -61,6 +61,13 @@ export const products: Product[] = [
     variants: [], images: ["/products/cleaning-bucket-white-background.webp"],
   },
   {
+    slug: "wire-tremie-pipe", name: "Wire Tremie Pipe Set", nameAr: "مجموعة مواسير تريمي واير", category: "Foundation Tools",
+    description: "Wire tremie pipe set for foundation concrete placement in 8-inch and 10-inch sizes. The full set includes a hopper, lift and suspension jig. Confirm the pipe length, connections and set configuration before ordering.",
+    descriptionAr: "مجموعة مواسير تريمي واير لصب خرسانة الأساسات بمقاسي 8 و10 بوصات. تشمل المجموعة الكاملة قمع الصب (Hopper) وقطعة الرفع (Lift) وحامل التعليق (Suspension Jig). يُرجى تأكيد طول المواسير والوصلات وتكوين المجموعة قبل الطلب.",
+    variants: ["8-inch full set — pipe, hopper, lift & suspension jig", "10-inch full set — pipe, hopper, lift & suspension jig"],
+    images: ["/products/wire-tremie-pipe-set.webp"],
+  },
+  {
     slug: "core-barrels", name: "Core Barrels", nameAr: "كور بارل", category: "Foundation Tools",
     description: "Core barrels for cutting an annular ring in rock and hard formations, with bullet teeth or roller bits. Standard Kelly box: 200×200 mm. Confirm the rig interface before ordering.",
     descriptionAr: "كور بارل لقطع حلقة محيطية في الصخور والطبقات الصلبة، بخيارات أسنان مخروطية أو رولر بت. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد التوافق مع المعدة قبل الطلب.",
