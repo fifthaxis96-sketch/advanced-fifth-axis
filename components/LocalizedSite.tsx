@@ -100,13 +100,40 @@ export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
   const featuredSlugs = ["rock-augers","drilling-buckets","core-barrels","casing","kelly-boxes","pile-testing-reaction-beam"];
   const featuredProducts = featuredSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
-  return <div className="site" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
+  const hotSlugs = ["casing", "drilling-buckets", "core-barrels", "rock-augers", "kelly-boxes", "bullet-teeth", "cfa", "rectangular-drilling-wear-component"];
+  const hotProducts = hotSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
+  return <div className="site siteHome" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
     <Header lang={lang}/>
     <main id="main-content">
-      <section className="heroNew"><div className="wrap heroNewInner">
-        <div className="heroCopy"><span className="sectionKicker"><i/> {t.eyebrow}</span><h1>{t.headline}</h1><p>{t.intro}</p><div className="heroButtons"><a className="primaryButton" href="#products">{t.explore} <span aria-hidden="true">↗</span></a><a className="outlineButton" href="#contact">{t.quote}</a></div></div>
-        <div className="heroArt" aria-label={lang === "ar" ? "أدوات ومكونات حفر الأساسات" : "Foundation drilling tools and components"}><div className="artGrid"/><div className="heroProductStage"><img className="heroProductMain" src="/products/owner-blue-toothed-casing.webp" alt={lang === "ar" ? "مقطع تغليف بأجزاء قطع" : "Foundation drilling casing component"} width="720" height="720"/><img className="heroProductSide heroProductSideOne" src="/products/pile-testing-reaction-beam-blue.webp" alt="" width="420" height="320"/><img className="heroProductSide heroProductSideTwo" src="/products/owner-tapered-steel-fabrication.webp" alt="" width="420" height="320"/></div><img className="heroCornerLogo" src="/advanced-fifth-axis-logo.webp" alt="" width="100" height="76"/><span className="artNumber">ADVANCED FIFTH AXIS CO.</span><div className="artLabel"><b>ENGINEERED FOR FOUNDATIONS</b><small>JEDDAH · SAUDI ARABIA</small></div></div>
-      </div></section>
+      <section className="heroShowcase" aria-label={lang === "ar" ? "معدات حفر الأساسات" : "Foundation drilling equipment"}>
+        <picture className="heroShowcaseMedia">
+          <source media="(max-width: 700px)" srcSet="/home/foundation-drilling-showcase-mobile.webp"/>
+          <img src="/home/foundation-drilling-showcase.webp" alt={lang === "ar" ? "مجموعة من أدوات حفر الأساسات الزرقاء وقطع القطع الصفراء في موقع إنشاءات" : "Blue foundation drilling tools with yellow cutting teeth at a construction site"} width="1671" height="941" fetchPriority="high"/>
+        </picture>
+        <div className="heroShowcaseShade" aria-hidden="true"/>
+        <div className="wrap heroShowcaseContent">
+          <div className="heroShowcaseCopy">
+            <span className="heroShowcaseEyebrow">{t.eyebrow}</span>
+            <h1>{t.headline}</h1>
+            <p>{t.intro}</p>
+            <div className="heroButtons"><a className="primaryButton" href="#hot-products">{t.explore} <span aria-hidden="true">↗</span></a><a className="outlineButton" href={`${lang === "ar" ? "/ar" : ""}/contact`}>{t.quote} <span aria-hidden="true">↗</span></a></div>
+          </div>
+          <span className="heroShowcaseCredit">ADVANCED FIFTH AXIS <span aria-hidden="true">/</span> JEDDAH, SAUDI ARABIA</span>
+        </div>
+      </section>
+      <section id="hot-products" className="hotProducts" aria-labelledby="hot-products-title">
+        <div className="wrap">
+          <div className="hotProductsIntro"><span className="sectionKicker"><i/> {lang === "ar" ? "منتجاتنا" : "EXPLORE THE RANGE"}</span><h2 id="hot-products-title">{lang === "ar" ? "منتجات مميزة" : "Hot Products"}</h2><span className="hotProductsRule" aria-hidden="true"/><p>{lang === "ar" ? "تصفح أدوات الحفر والمكونات، وأرسل المقاس وموديل المعدة للحصول على عرض مناسب." : "Explore drilling tools and components. Share your dimensions and rig model for a tailored quotation."}</p></div>
+          <div className="hotProductsRail">{hotProducts.map((p,i)=><a className="hotProduct" href={productUrl(lang,p.slug)} key={p.slug}>
+            <span className={`hotProductThumb hotProductThumb--${p.slug}`}>
+              {p.images?.[0] ? <img src={p.images[0]} alt="" loading="lazy" decoding="async" width="160" height="160"/> : <span className="hotProductScene" aria-hidden="true"/>}
+            </span>
+            <span className="hotProductName">{lang === "ar" ? p.nameAr : p.name}</span>
+            <span className="hotProductArrow" aria-hidden="true">↗</span>
+          </a>)}</div>
+          <div className="hotProductsAll"><a href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View all products"} <span aria-hidden="true">↗</span></a></div>
+        </div>
+      </section>
       <div className="trustStrip"><div className="wrap">{t.tags.map((tag,i)=><span key={tag}><b>0{i+1}</b>{tag}</span>)}</div></div>
       <section id="products" className="siteSection wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsTitle}</h2></div><p>{t.productsIntro}</p></div>
         <div className="productGrid">{featuredProducts.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length ? <div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={p.images[0]} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div> : <span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{lang === "ar" ? p.name : p.nameAr}</span><h3>{lang === "ar" ? p.nameAr : p.name}</h3><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div><div className="sectionFooterCta"><a className="outlineButton" href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View full product catalog"} <span aria-hidden="true">↗</span></a></div>

@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   icons: { icon: "/favicon.svg" },
   keywords: ["foundation drilling tools Saudi Arabia","drilling bucket Jeddah","rock auger Saudi Arabia","piling tools","core barrel","casing","Kelly box","drilling accessories"],
   alternates: { canonical: "/", languages: { en: "/", ar: "/ar" } },
-  openGraph: { type: "website", locale: "en_SA", alternateLocale: ["ar_SA"], siteName: "Advanced Fifth Axis", title: "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia", description: "Foundation drilling tools and custom fabricated components for piling contractors in Saudi Arabia.", url: "/", images: [{ url: "/products/owner-blue-toothed-casing.webp", alt: "Advanced Fifth Axis foundation drilling equipment" }] },
-  twitter: { card: "summary_large_image", title: "Advanced Fifth Axis", description: "Foundation drilling tools and fabricated components in Saudi Arabia.", images: ["/products/owner-blue-toothed-casing.webp"] },
+  openGraph: { type: "website", locale: "en_SA", alternateLocale: ["ar_SA"], siteName: "Advanced Fifth Axis", title: "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia", description: "Foundation drilling tools and custom fabricated components for piling contractors in Saudi Arabia.", url: "/", images: [{ url: "/home/foundation-drilling-showcase.webp", alt: "Advanced Fifth Axis foundation drilling equipment" }] },
+  twitter: { card: "summary_large_image", title: "Advanced Fifth Axis", description: "Foundation drilling tools and fabricated components in Saudi Arabia.", images: ["/home/foundation-drilling-showcase.webp"] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
 };
 
