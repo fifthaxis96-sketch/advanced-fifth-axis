@@ -1,6 +1,7 @@
 import { products, collections, productsForCollection, collectionForProduct, relatedProducts, company, type Product, type Collection } from "@/lib/site";
 import { ProductCatalog } from "@/components/ProductCatalog";
 import { QuoteBuilder } from "@/components/QuoteBuilder";
+import { HotProductsRail } from "@/components/HotProductsRail";
 
 export type Lang = "en" | "ar";
 const copy = {
@@ -135,11 +136,7 @@ export function HomePage({ lang }: { lang: Lang }) {
       <section id="hot-products" className="hotProducts" aria-labelledby="hot-products-title">
         <div className="wrap">
           <div className="hotProductsIntro"><span className="sectionKicker"><i/> {lang === "ar" ? "منتجاتنا" : "EXPLORE THE RANGE"}</span><h2 id="hot-products-title">{lang === "ar" ? "منتجات مميزة" : "Hot Products"}</h2><span className="hotProductsRule" aria-hidden="true"/><p>{lang === "ar" ? "تصفح أدوات الحفر والمكونات، وأرسل المقاس وموديل المعدة للحصول على عرض مناسب." : "Explore drilling tools and components. Share your dimensions and rig model for a tailored quotation."}</p></div>
-          <div className="hotProductsRail">{homeCards.map(item=><a className="hotProduct" href={item.href} key={item.key}>
-            <span className="hotProductThumb"><img src={item.image} alt="" loading="lazy" decoding="async" width="160" height="160"/></span>
-            <span className="hotProductName">{lang === "ar" ? item.nameAr : item.name}</span>
-            <span className="hotProductArrow" aria-hidden="true">↗</span>
-          </a>)}</div>
+          <HotProductsRail lang={lang} items={homeCards.map(item => ({key:item.key, href:item.href, image:item.image, name:lang === "ar" ? item.nameAr : item.name}))}/>
           <div className="hotProductsAll"><a href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View all products"} <span aria-hidden="true">↗</span></a></div>
         </div>
       </section>
