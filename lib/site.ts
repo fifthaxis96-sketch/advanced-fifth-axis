@@ -25,6 +25,7 @@ export const products: Product[] = [
     description: "Bullet teeth and holder model names from our supplied lineup.",
     descriptionAr: "موديلات أسنان الحفر المخروطية وحواملها وفق القائمة المقدمة.",
     variants: ["B47K22H", "C31HD", "M50-22x27S", "M60-22x27", "69-95 Holder", "78-95 Holder", "B43 Holder", "C30 Holder"],
+    images: ["/products/bullet-teeth-white-background.webp"],
   },
   {
     slug: "bauer-teeth", name: "Bauer Teeth", nameAr: "أسنان باور", category: "Wear Parts",
@@ -43,18 +44,21 @@ export const products: Product[] = [
     description: "Straight and conical rock augers for rotary piling. Typical configurations use bullet teeth; diameter, flight geometry, pilot and Kelly connection are selected for the ground and rig.",
     descriptionAr: "أوجرات صخور مستقيمة ومخروطية للحفر الدوار، عادةً بأسنان صخرية مخروطية. يتم تحديد القطر وتصميم الحلزون والسن المركزي ووصلة كيلي حسب التربة والمعدة.",
     variants: ["Straight Rock Auger", "Conical Rock Auger", "Rock Auger Pilot Bit / Pilot Head"],
+    images: ["/products/rock-augers-white-background.webp"],
   },
   {
     slug: "drilling-buckets", name: "Drilling Buckets", nameAr: "بكيتات الحفر", category: "Foundation Tools",
     description: "Rotary drilling buckets for soil, rock and bore cleaning. Rock buckets commonly use bullet teeth and reinforced wear protection; final diameter, shell and Kelly box are project-specific.",
     descriptionAr: "بكيتات حفر دوارة للتربة والصخور وتنظيف قاع الحفرة. بكيتات الصخور تستخدم عادةً أسنانًا مخروطية وحماية تآكل معززة؛ القطر والجسم ووصلة كيلي حسب المشروع.",
     variants: ["Bucket with soil teeth", "Bucket with rock teeth", "Cleaning bucket"],
+    images: ["/products/drilling-buckets-white-background.webp"],
   },
   {
     slug: "core-barrels", name: "Core Barrels", nameAr: "كور بارل", category: "Foundation Tools",
     description: "Core barrels for cutting an annular ring in rock and hard formations. Available with bullet teeth or roller bits; common Kelly box sizes include 130×130, 150×150 and 200×200 mm, subject to confirmation.",
     descriptionAr: "كور بارل لقطع حلقة محيطية في الصخور والطبقات الصلبة، بخيارات أسنان مخروطية أو رولر بت. مقاسات كيلي الشائعة 130×130 و150×150 و200×200 مم، مع تأكيد المقاس قبل التصنيع.",
     variants: ["Core barrel with bullet teeth", "Core barrel with roller bit"],
+    images: ["/products/core-barrels-white-background.webp"],
   },
   {
     slug: "casing", name: "Casing & Components", nameAr: "مواسير التغليف وملحقاتها", category: "Casing",
@@ -75,6 +79,7 @@ export const products: Product[] = [
     description: "Heavy-duty square Kelly boxes and adapters for rotary drilling tools. Common connection sizes are 130×130, 150×150 and 200×200 mm; pin-hole layout and tool-side dimensions are made to the confirmed rig/tool interface.",
     descriptionAr: "كيلي بوكس ووصلات مربعة شديدة التحمل لأدوات الحفر الدوار. المقاسات الشائعة 130×130 و150×150 و200×200 مم؛ يتم تصنيع فتحات التثبيت وأبعاد جهة الأداة حسب الوصلة المؤكدة للمعدة.",
     variants: ["130×130 mm Kelly Box", "150×150 mm Kelly Box", "200×200 mm Kelly Box", "Custom Kelly Adapter"],
+    images: ["/products/kelly-boxes-white-background.webp"],
   },
   {
     slug: "kelly-bars", name: "Kelly Bars", nameAr: "قضبان كيلي", category: "Drive Systems",
@@ -92,19 +97,19 @@ export const products: Product[] = [
     slug: "rectangular-drilling-wear-component", name: "Rectangular Drilling Wear Component", nameAr: "قطعة تآكل حفر مستطيلة", category: "Wear Parts",
     description: "Rectangular steel wear component shown with a central bore and a lower shank. Confirm fit and dimensions before ordering.",
     descriptionAr: "قطعة تآكل فولاذية مستطيلة بفتحة وسطية وساق سفلية ظاهرتين. يرجى تأكيد الملاءمة والأبعاد قبل الطلب.",
-    variants: [], images: ["/products/owner-rectangular-wear-component.webp"],
+    variants: [],
   },
   {
     slug: "drilling-wear-block", name: "Drilling Wear Block", nameAr: "كتلة تآكل للحفر", category: "Wear Parts",
     description: "Steel drilling wear component with a top bore and front slot as shown. Model and compatibility require confirmation.",
     descriptionAr: "قطعة تآكل فولاذية للحفر بفتحة علوية وشق أمامي كما في الصورة. يُرجى تأكيد الموديل والتوافق.",
-    variants: [], images: ["/products/owner-drilling-wear-block.webp"],
+    variants: [],
   },
   {
     slug: "carbide-insert-wear-component", name: "Rounded Steel Wear Component", nameAr: "قطعة تآكل فولاذية مستديرة", category: "Wear Parts",
     description: "Rounded steel wear component with visible gold-toned insert seats and a central opening. Confirm the exact application and dimensions before ordering.",
     descriptionAr: "قطعة تآكل فولاذية مستديرة مع مواضع إدخالات ظاهرة وفتحة مركزية. يرجى تأكيد الاستخدام والأبعاد قبل الطلب.",
-    variants: [], images: ["/products/owner-carbide-insert-component.webp"],
+    variants: [],
   },
   {
     slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الأساسات", category: "Fabricated Components",
