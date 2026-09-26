@@ -100,7 +100,7 @@ export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
   const featuredSlugs = ["rock-augers","drilling-buckets","core-barrels","casing","kelly-boxes","pile-testing-reaction-beam"];
   const featuredProducts = featuredSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
-  const hotSlugs = ["casing", "drilling-buckets", "core-barrels", "rock-augers", "kelly-boxes", "bullet-teeth", "cfa", "rectangular-drilling-wear-component"];
+  const hotSlugs = ["casing", "drilling-buckets", "core-barrels", "rock-augers", "kelly-boxes", "bullet-teeth", "cfa", "tapered-steel-fabrication"];
   const hotProducts = hotSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
   return <div className="site siteHome" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
     <Header lang={lang}/>
