@@ -98,10 +98,21 @@ function Footer({lang}:{lang:Lang}) {
 }
 export function HomePage({ lang }: { lang: Lang }) {
   const t = copy[lang];
-  const featuredSlugs = ["rock-augers","core-barrels","drilling-buckets","casing","kelly-boxes","pile-testing-reaction-beam"];
-  const featuredProducts = featuredSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
-  const hotSlugs = ["casing", "core-barrels", "drilling-buckets", "rock-augers", "kelly-boxes", "bullet-teeth", "cfa"];
-  const hotProducts = hotSlugs.map(slug => products.find(p => p.slug === slug)).filter((p): p is Product => Boolean(p));
+  const order = [
+    {product:"drilling-buckets"}, {product:"rock-augers"}, {product:"core-barrels"},
+    {product:"cleaning-buckets"}, {product:"casing"}, {product:"cfa"},
+    {collection:"wear-parts", name:"Cutting & Wear Parts", nameAr:"أسنان وقطع التآكل", image:"/products/bullet-teeth-white-background.webp"},
+    {collection:"drive-systems", name:"Kelly & Adapters", nameAr:"كيلي بوكس ووصلات الحفر", image:"/products/kelly-boxes-white-background.webp"},
+    {product:"wire-tremie-pipe"}, {product:"pile-testing-reaction-beam"}
+  ] as const;
+  const homeCards = order.map(item => {
+    if ("product" in item) {
+      const p = products.find(product => product.slug === item.product);
+      return p ? {key:p.slug, href:productUrl(lang,p.slug), image:p.images?.[0], name:p.name, nameAr:p.nameAr, description:p.description, descriptionAr:p.descriptionAr, isCollection:false} : null;
+    }
+    const collection = collections.find(c => c.slug === item.collection);
+    return collection ? {key:collection.slug, href:`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`, image:item.image, name:item.name, nameAr:item.nameAr, description:collection.description, descriptionAr:collection.descriptionAr, isCollection:true} : null;
+  }).filter((item): item is NonNullable<typeof item> => item !== null);
   return <div className="site siteHome" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
     <Header lang={lang}/>
     <main id="main-content">
@@ -124,11 +135,9 @@ export function HomePage({ lang }: { lang: Lang }) {
       <section id="hot-products" className="hotProducts" aria-labelledby="hot-products-title">
         <div className="wrap">
           <div className="hotProductsIntro"><span className="sectionKicker"><i/> {lang === "ar" ? "منتجاتنا" : "EXPLORE THE RANGE"}</span><h2 id="hot-products-title">{lang === "ar" ? "منتجات مميزة" : "Hot Products"}</h2><span className="hotProductsRule" aria-hidden="true"/><p>{lang === "ar" ? "تصفح أدوات الحفر والمكونات، وأرسل المقاس وموديل المعدة للحصول على عرض مناسب." : "Explore drilling tools and components. Share your dimensions and rig model for a tailored quotation."}</p></div>
-          <div className="hotProductsRail">{hotProducts.map((p,i)=><a className="hotProduct" href={productUrl(lang,p.slug)} key={p.slug}>
-            <span className={`hotProductThumb hotProductThumb--${p.slug}`}>
-              {p.images?.[0] ? <img src={p.images[0]} alt="" loading="lazy" decoding="async" width="160" height="160"/> : <span className="hotProductScene" aria-hidden="true"/>}
-            </span>
-            <span className="hotProductName">{lang === "ar" ? p.nameAr : p.name}</span>
+          <div className="hotProductsRail">{homeCards.map(item=><a className="hotProduct" href={item.href} key={item.key}>
+            <span className="hotProductThumb"><img src={item.image} alt="" loading="lazy" decoding="async" width="160" height="160"/></span>
+            <span className="hotProductName">{lang === "ar" ? item.nameAr : item.name}</span>
             <span className="hotProductArrow" aria-hidden="true">↗</span>
           </a>)}</div>
           <div className="hotProductsAll"><a href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View all products"} <span aria-hidden="true">↗</span></a></div>
@@ -136,7 +145,7 @@ export function HomePage({ lang }: { lang: Lang }) {
       </section>
       <div className="trustStrip"><div className="wrap">{t.tags.map((tag,i)=><span key={tag}><b>0{i+1}</b>{tag}</span>)}</div></div>
       <section id="products" className="siteSection wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsTitle}</h2></div><p>{t.productsIntro}</p></div>
-        <div className="productGrid">{featuredProducts.map((p,i)=><a className="productTile" href={productUrl(lang,p.slug)} key={p.slug}>{p.images?.length ? <div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={p.images[0]} alt={lang === "ar" ? p.nameAr : p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div> : <span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{lang === "ar" ? p.name : p.nameAr}</span><h3>{lang === "ar" ? p.nameAr : p.name}</h3><p>{lang === "ar" ? p.descriptionAr : p.description}</p><b>{t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div><div className="sectionFooterCta"><a className="outlineButton" href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View full product catalog"} <span aria-hidden="true">↗</span></a></div>
+        <div className="productGrid homeProductGrid">{homeCards.map((item,i)=><a className="productTile" href={item.href} key={item.key}><div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={item.image} alt={lang === "ar" ? item.nameAr : item.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div><div className="tileText"><span>{lang === "ar" ? item.name : item.nameAr}</span><h3>{lang === "ar" ? item.nameAr : item.name}</h3><p>{lang === "ar" ? item.descriptionAr : item.description}</p><b>{item.isCollection ? t.viewCollection : t.view} <span aria-hidden="true">↗</span></b></div></a>)}</div><div className="sectionFooterCta"><a className="outlineButton" href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View full product catalog"} <span aria-hidden="true">↗</span></a></div>
       </section>
       <section id="collections" className="collectionSection"><div className="wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.collectionsLabel}</span><h2>{t.collectionsTitle}</h2></div><p>{t.collectionsIntro}</p></div><div className="collectionGrid">{collections.map((collection,i)=>{const items=productsForCollection(collection);const cover=items.find(p=>p.images?.length)?.images?.[0];return <a className="collectionCard" href={`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`} key={collection.slug}>{cover ? <div className="collectionCover"><img loading="lazy" decoding="async" width="540" height="420" src={cover} alt=""/><span>{String(i+1).padStart(2,"0")}</span></div> : <div className="collectionCover collectionCoverText"><span>{String(i+1).padStart(2,"0")}</span></div>}<div><small>{items.length} {lang === "ar" ? "منتجات" : "products"}</small><h3>{lang === "ar" ? collection.nameAr : collection.name}</h3><p>{lang === "ar" ? collection.descriptionAr : collection.description}</p><b>{t.viewCollection} ↗</b></div></a>})}</div></div></section>
       <section id="capabilities" className="capSection"><div className="wrap"><span className="sectionKicker"><i/> {t.capabilitiesLabel}</span><h2>{t.capabilitiesTitle}</h2><div className="capCards">{t.capabilities.map(([n,title,detail])=><article key={n}><span>{n}</span><h3>{title}</h3><p>{detail}</p></article>)}</div></div></section>
