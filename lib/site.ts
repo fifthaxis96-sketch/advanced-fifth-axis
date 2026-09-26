@@ -47,10 +47,10 @@ export const products: Product[] = [
     images: ["/products/rock-augers-white-background.webp"],
   },
   {
-    slug: "drilling-buckets", name: "Drilling Buckets", nameAr: "بكيتات الحفر", category: "Foundation Tools",
-    description: "Rotary drilling buckets for soil, rock and bore cleaning. Rock buckets commonly use bullet teeth and reinforced wear protection; final diameter, shell and Kelly box are project-specific.",
-    descriptionAr: "بكيتات حفر دوارة للتربة والصخور وتنظيف قاع الحفرة. بكيتات الصخور تستخدم عادةً أسنانًا مخروطية وحماية تآكل معززة؛ القطر والجسم ووصلة كيلي حسب المشروع.",
-    variants: ["Bucket with soil teeth", "Bucket with rock teeth", "Cleaning bucket"],
+    slug: "drilling-buckets", name: "Rock Buckets", nameAr: "بكيتات حفر الصخور", category: "Foundation Tools",
+    description: "Rock drilling buckets with cutting teeth for foundation work. Confirm the diameter, cutting teeth, shell and Kelly connection for the project before ordering.",
+    descriptionAr: "بكيتات حفر الصخور بأسنان قطع لأعمال الأساسات. يُرجى تأكيد القطر والأسنان وجسم البكيت ووصلة كيلي حسب المشروع قبل الطلب.",
+    variants: ["Rock bucket with bullet teeth"],
     images: ["/products/drilling-buckets-white-background.webp"],
   },
   {

@@ -13,7 +13,7 @@ const normalizeSearch = (value: string) => value.toLocaleLowerCase().normalize("
 const searchTerms: Record<string, string> = {
   "roller-bits": "roller bit single roller bit رولر بت راس حفر دوار",
   "rock-augers": "auger اوجر بريمه حفر صخور",
-  "drilling-buckets": "bucket بكيت باكيت حفر تنظيف",
+  "drilling-buckets": "rock bucket بكيت باكيت حفر صخور",
   "core-barrels": "core barrel كور بارل",
   "casing": "casing pipe casing shoe مواسير تغليف ماسوره",
   "cfa": "continuous flight auger CFA اوجر مستمر",
