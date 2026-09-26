@@ -14,10 +14,12 @@ const searchTerms: Record<string, string> = {
   "roller-bits": "roller bit single roller bit رولر بت راس حفر دوار",
   "rock-augers": "auger اوجر بريمه حفر صخور",
   "drilling-buckets": "rock bucket بكيت باكيت حفر صخور",
+  "cleaning-buckets": "cleaning bucket بكيت تنظيف قاع الحفر",
   "core-barrels": "core barrel كور بارل",
   "casing": "casing pipe casing shoe مواسير تغليف ماسوره",
   "cfa": "continuous flight auger CFA اوجر مستمر",
   "kelly-boxes": "kelly box كيلي بوكس وصله",
+  "kelly-box-pins": "kelly box pins locking pins بنوز كيلي بوكس بن تثبيت",
   "pile-testing-reaction-beam": "load test beam reaction beam كمرة اختبار تحميل",
 };
 

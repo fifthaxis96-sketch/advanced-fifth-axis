@@ -19,6 +19,7 @@ export const products: Product[] = [
     description: "Roller-bit models for foundation drilling inquiries.",
     descriptionAr: "موديلات رؤوس الحفر الدوارة للاستفسارات الخاصة بحفر الأساسات.",
     variants: ["MH-1 Classic", "MH-2 Traditional", "MH-3 Flagship", "MH-3R Holder type", "MH-3B Replaceable", "MH-3H 12-1/4\"", "MH-3P Reinforced"],
+    images: ["/products/single-roller-bit-500x500.webp"],
   },
   {
     slug: "bullet-teeth", name: "Bullet Teeth & Holders", nameAr: "أسنان الحفر المخروطية وحواملها", category: "Wear Parts",
@@ -54,6 +55,12 @@ export const products: Product[] = [
     images: ["/products/drilling-buckets-white-background.webp"],
   },
   {
+    slug: "cleaning-buckets", name: "Cleaning Bucket", nameAr: "بكيت تنظيف قاع الحفر", category: "Foundation Tools",
+    description: "Cleaning bucket for clearing loose material from the bottom of foundation boreholes. Standard Kelly box: 200×200 mm. Confirm bucket diameter, bottom configuration and rig interface before ordering.",
+    descriptionAr: "بكيت تنظيف لإزالة المواد المفككة من قاع حفرة الأساسات. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد قطر البكيت وتصميم القاع والتوافق مع المعدة قبل الطلب.",
+    variants: [], images: ["/products/cleaning-bucket-white-background.webp"],
+  },
+  {
     slug: "core-barrels", name: "Core Barrels", nameAr: "كور بارل", category: "Foundation Tools",
     description: "Core barrels for cutting an annular ring in rock and hard formations, with bullet teeth or roller bits. Standard Kelly box: 200×200 mm. Confirm the rig interface before ordering.",
     descriptionAr: "كور بارل لقطع حلقة محيطية في الصخور والطبقات الصلبة، بخيارات أسنان مخروطية أو رولر بت. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد التوافق مع المعدة قبل الطلب.",
@@ -79,7 +86,7 @@ export const products: Product[] = [
     description: "Heavy-duty square Kelly boxes for rotary drilling tools in 150×150, 200×200 and 250×250 mm. The standard tool connection is 200×200 mm; confirm pin-hole layout and rig interface before ordering.",
     descriptionAr: "كيلي بوكس مربع شديد التحمل لأدوات الحفر الدوار بمقاسات 150×150 و200×200 و250×250 مم. المقاس القياسي للأدوات 200×200 مم؛ يُرجى تأكيد فتحات التثبيت والتوافق مع المعدة قبل الطلب.",
     variants: ["150×150 mm Kelly Box", "200×200 mm Kelly Box", "250×250 mm Kelly Box"],
-    images: ["/products/kelly-boxes-white-background.webp"],
+    images: ["/products/kelly-boxes-white-background.webp", "/products/kelly-box-welded-steel.webp"],
   },
   {
     slug: "kelly-bars", name: "Kelly Bars", nameAr: "قضبان كيلي", category: "Drive Systems",
@@ -88,16 +95,22 @@ export const products: Product[] = [
     variants: ["Interlocking Kelly bar", "Friction Kelly bar"],
   },
   {
+    slug: "kelly-box-pins", name: "Kelly Box Pins", nameAr: "بنوز كيلي بوكس", category: "Drive Systems",
+    description: "Kelly box pins in outside diameters of 50 or 60 mm and corresponding lengths of 320 or 400 mm. Confirm the pin hole position and rig/tool interface before ordering.",
+    descriptionAr: "بنوز كيلي بوكس بقطر خارجي 50 أو 60 مم وطول مطابق 320 أو 400 مم. يُرجى تأكيد موضع فتحة البن والتوافق مع المعدة والأداة قبل الطلب.",
+    variants: ["OD 50 mm × Length 320 mm", "OD 60 mm × Length 400 mm"], images: ["/products/kelly-box-pins-white-background.webp"],
+  },
+  {
     slug: "rectangular-drilling-wear-component", name: "Rectangular Drilling Wear Component", nameAr: "قطعة تآكل حفر مستطيلة", category: "Wear Parts",
     description: "Rectangular steel wear component shown with a central bore and a lower shank. Confirm fit and dimensions before ordering.",
     descriptionAr: "قطعة تآكل فولاذية مستطيلة بفتحة وسطية وساق سفلية ظاهرتين. يرجى تأكيد الملاءمة والأبعاد قبل الطلب.",
-    variants: [],
+    variants: [], images: ["/products/rectangular-drilling-wear-component-photo.webp"],
   },
   {
     slug: "drilling-wear-block", name: "Drilling Wear Block", nameAr: "كتلة تآكل للحفر", category: "Wear Parts",
     description: "Steel drilling wear component with a top bore and front slot as shown. Model and compatibility require confirmation.",
     descriptionAr: "قطعة تآكل فولاذية للحفر بفتحة علوية وشق أمامي كما في الصورة. يُرجى تأكيد الموديل والتوافق.",
-    variants: [],
+    variants: [], images: ["/products/drilling-wear-block-photo.webp"],
   },
   {
     slug: "carbide-insert-wear-component", name: "Rounded Steel Wear Component", nameAr: "قطعة تآكل فولاذية مستديرة", category: "Wear Parts",
