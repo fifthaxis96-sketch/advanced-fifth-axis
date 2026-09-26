@@ -25,8 +25,26 @@ export const products: Product[] = [
     slug: "bullet-teeth", name: "Bullet Teeth & Holders", nameAr: "أسنان الحفر المخروطية وحواملها", category: "Wear Parts",
     description: "Bullet teeth and holder model names from our supplied lineup.",
     descriptionAr: "موديلات أسنان الحفر المخروطية وحواملها وفق القائمة المقدمة.",
-    variants: ["B47K22H", "C31HD", "M50-22x27S", "M60-22x27", "69-95 Holder", "78-95 Holder", "B43 Holder", "C30 Holder"],
+    variants: ["B47K22H", "M50-22x27S", "M60-22x27", "69-95 Holder", "78-95 Holder", "B43 Holder"],
     images: ["/products/bullet-teeth-white-background.webp"],
+  },
+  {
+    slug: "c31hd-teeth", name: "C31HD Cutting Teeth", nameAr: "أسنان حفر C31HD", category: "Wear Parts",
+    description: "C31HD replaceable cutting teeth for foundation drilling tools. Send the holder profile, tool model and required quantity so the fit can be confirmed before quotation in Saudi Arabia.",
+    descriptionAr: "أسنان قطع قابلة للاستبدال موديل C31HD لأدوات حفر الأساسات. أرسل شكل الحامل وموديل الأداة والكمية المطلوبة لتأكيد الملاءمة قبل عرض السعر في السعودية.",
+    variants: [], images: ["/products/c31hd-cutting-tooth.webp"],
+  },
+  {
+    slug: "c30-round-holder", name: "C30 Round Holder", nameAr: "حامل أسنان C30 دائري", category: "Wear Parts",
+    description: "Round C30 holder for a compatible foundation drilling cutting-tooth system. Confirm the holder bore, mounting dimensions and mating tooth against your tool before ordering.",
+    descriptionAr: "حامل C30 دائري لنظام أسنان قطع متوافق مع أدوات حفر الأساسات. يُرجى تأكيد فتحة الحامل وأبعاد التثبيت والسن المناسب وفق الأداة قبل الطلب.",
+    variants: [], images: ["/products/c30-round-holder.webp"],
+  },
+  {
+    slug: "c30-square-holder", name: "C30 Square Holder", nameAr: "حامل أسنان C30 مربع", category: "Wear Parts",
+    description: "Square-profile C30 holder for foundation drilling cutting tools. Share the mounting profile, bore dimensions and mating tooth details to confirm compatibility before quotation.",
+    descriptionAr: "حامل C30 بمقطع مربع لأدوات قطع حفر الأساسات. أرسل شكل التثبيت وأبعاد الفتحة وبيانات السن المطلوب لتأكيد التوافق قبل عرض السعر.",
+    variants: [], images: ["/products/c30-square-holder.webp"],
   },
   {
     slug: "bauer-teeth", name: "Bauer Teeth", nameAr: "أسنان باور", category: "Wear Parts",
