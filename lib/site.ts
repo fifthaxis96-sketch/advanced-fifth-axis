@@ -88,12 +88,6 @@ export const products: Product[] = [
     variants: ["Interlocking Kelly bar", "Friction Kelly bar"],
   },
   {
-    slug: "tapered-steel-fabrication", name: "Tapered Steel Fabrication", nameAr: "قطعة فولاذية مخروطية مصنّعة", category: "Fabricated Components",
-    description: "Tapered, rib-reinforced steel fabrication shown in our product photograph. Share your drawing and required dimensions for an accurate quotation.",
-    descriptionAr: "قطعة فولاذية مخروطية مع تقويات ظاهرة في الصورة. أرسل الرسم والأبعاد المطلوبة للحصول على عرض سعر دقيق.",
-    variants: [], images: ["/products/owner-tapered-steel-fabrication.webp"],
-  },
-  {
     slug: "rectangular-drilling-wear-component", name: "Rectangular Drilling Wear Component", nameAr: "قطعة تآكل حفر مستطيلة", category: "Wear Parts",
     description: "Rectangular steel wear component shown with a central bore and a lower shank. Confirm fit and dimensions before ordering.",
     descriptionAr: "قطعة تآكل فولاذية مستطيلة بفتحة وسطية وساق سفلية ظاهرتين. يرجى تأكيد الملاءمة والأبعاد قبل الطلب.",
