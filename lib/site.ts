@@ -162,6 +162,7 @@ export const company = {
   name: "Advanced Fifth Axis",
   phone: "+966550071571",
   phoneDisplay: "055 007 1571",
+  email: "fifthaxis96@gmail.com",
   address: "Al Muftakira Street 4474, Jeddah Industrial, Saudi Arabia",
   vat: "310463296800003",
   cr: "4030336147",
