@@ -28,6 +28,18 @@ export const products: Product[] = [
     variants: [], images: ["/products/center-pilot-attachment-holder.webp"],
   },
   {
+    slug: "bfz70-tooth", name: "BFZ70 Tooth", nameAr: "سن حفر BFZ70", category: "Wear Parts",
+    description: "BFZ70 cutting tooth shown in the supplied product photo. Confirm fit, dimensions and the matching holder before ordering.",
+    descriptionAr: "سن حفر BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد التوافق والأبعاد والحامل المطابق قبل الطلب.",
+    variants: [], images: ["/products/bfz70-tooth.webp"],
+  },
+  {
+    slug: "bfz70-holder", name: "BFZ70 Holder", nameAr: "حامل سن BFZ70", category: "Wear Parts",
+    description: "BFZ70 tooth holder shown in the supplied product photo. Confirm mounting dimensions and tooth compatibility before ordering.",
+    descriptionAr: "حامل سن BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+    variants: [], images: ["/products/bfz70-holder.webp"],
+  },
+  {
     slug: "c31hd-tooth", name: "C31HD Tooth", nameAr: "سن حفر C31HD", category: "Wear Parts",
     description: "C31HD cutting tooth shown in the supplied product photograph. Confirm the shank, matching holder and required quantity before ordering.",
     descriptionAr: "سن حفر C31HD كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والكمية المطلوبة قبل الطلب.",
