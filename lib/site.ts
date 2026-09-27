@@ -70,18 +70,6 @@ export const products: Product[] = [
     variants: [], images: ["/products/b43-holder.webp"],
   },
   {
-    slug: "bauer-teeth", name: "Bauer Teeth", nameAr: "أسنان باور", category: "Wear Parts",
-    description: "Bauer tooth model names shown in the supplied reference.",
-    descriptionAr: "موديلات أسنان باور الواردة في المرجع المقدم.",
-    variants: ["BFZ70", "BFZ72", "BFZ80"],
-  },
-  {
-    slug: "bucket-teeth", name: "Bucket Teeth", nameAr: "أسنان بكيتات الحفر", category: "Wear Parts",
-    description: "Replaceable drilling-bucket teeth for foundation work. Confirm the tooth profile, adapter or holder interface, quantity and intended operating conditions before ordering.",
-    descriptionAr: "أسنان بكيتات حفر قابلة للاستبدال لأعمال الأساسات. يرجى تأكيد شكل السن وواجهة المحول أو الحامل والكمية وظروف التشغيل المطلوبة قبل الطلب.",
-    variants: ["V20", "25T", "25RC-12"],
-  },
-  {
     slug: "rock-augers", name: "Rock Augers", nameAr: "أوجرات حفر الصخور", category: "Foundation Tools",
     description: "Straight and conical rock augers for rotary foundation drilling with bullet teeth. Standard Kelly box: 200×200 mm. Confirm the diameter, flight geometry, pilot and rig interface for each order.",
     descriptionAr: "أوجرات صخور مستقيمة ومخروطية للحفر الدوار بأسنان صخرية. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد القطر وتصميم الحلزون والسن المركزي والتوافق مع المعدة لكل طلب.",
@@ -147,24 +135,6 @@ export const products: Product[] = [
     description: "Kelly box pins in outside diameters of 50 or 60 mm and corresponding lengths of 320 or 400 mm. Confirm the pin hole position and rig/tool interface before ordering.",
     descriptionAr: "بنوز كيلي بوكس بقطر خارجي 50 أو 60 مم وطول مطابق 320 أو 400 مم. يُرجى تأكيد موضع فتحة البن والتوافق مع المعدة والأداة قبل الطلب.",
     variants: ["OD 50 mm × Length 320 mm", "OD 60 mm × Length 400 mm"], images: ["/products/kelly-box-pins-white-background.webp"],
-  },
-  {
-    slug: "rectangular-drilling-wear-component", name: "Rectangular Drilling Wear Component", nameAr: "قطعة تآكل حفر مستطيلة", category: "Wear Parts",
-    description: "Rectangular steel wear component shown with a central bore and a lower shank. Confirm fit and dimensions before ordering.",
-    descriptionAr: "قطعة تآكل فولاذية مستطيلة بفتحة وسطية وساق سفلية ظاهرتين. يرجى تأكيد الملاءمة والأبعاد قبل الطلب.",
-    variants: [], images: ["/products/rectangular-drilling-wear-component-photo.webp"],
-  },
-  {
-    slug: "drilling-wear-block", name: "Drilling Wear Block", nameAr: "كتلة تآكل للحفر", category: "Wear Parts",
-    description: "Steel drilling wear component with a top bore and front slot as shown. Model and compatibility require confirmation.",
-    descriptionAr: "قطعة تآكل فولاذية للحفر بفتحة علوية وشق أمامي كما في الصورة. يُرجى تأكيد الموديل والتوافق.",
-    variants: [], images: ["/products/drilling-wear-block-photo.webp"],
-  },
-  {
-    slug: "carbide-insert-wear-component", name: "Rounded Steel Wear Component", nameAr: "قطعة تآكل فولاذية مستديرة", category: "Wear Parts",
-    description: "Rounded steel wear component with visible gold-toned insert seats and a central opening. Confirm the exact application and dimensions before ordering.",
-    descriptionAr: "قطعة تآكل فولاذية مستديرة مع مواضع إدخالات ظاهرة وفتحة مركزية. يرجى تأكيد الاستخدام والأبعاد قبل الطلب.",
-    variants: [],
   },
   {
     slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الأساسات", category: "Fabricated Components",
