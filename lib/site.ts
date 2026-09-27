@@ -25,8 +25,32 @@ export const products: Product[] = [
     slug: "bullet-teeth", name: "Bullet Teeth & Holders", nameAr: "أسنان الحفر المخروطية وحواملها", category: "Wear Parts",
     description: "Bullet teeth and holder model names from our supplied lineup.",
     descriptionAr: "موديلات أسنان الحفر المخروطية وحواملها وفق القائمة المقدمة.",
-    variants: ["B47K22H", "C31HD", "M50-22x27S", "M60-22x27", "69-95 Holder", "78-95 Holder", "B43 Holder", "C30 Holder"],
+    variants: ["C31HD", "M50-22x27S", "M60-22x27", "C30 Holder"],
     images: ["/products/bullet-teeth-white-background.webp"],
+  },
+  {
+    slug: "b-47k22h-tooth", name: "B-47K22H Cutting Tooth", nameAr: "سن حفر B-47K22H", category: "Wear Parts",
+    description: "B-47K22H cutting tooth shown in the supplied product photograph. Confirm shank size, matching holder and operating application before ordering.",
+    descriptionAr: "سن حفر B-47K22H كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والاستخدام المطلوب قبل الطلب.",
+    variants: [], images: ["/products/b-47k22h-tooth.webp"],
+  },
+  {
+    slug: "hq-68-95-holder", name: "HQ-68/95 Holder", nameAr: "حامل سن HQ-68/95", category: "Wear Parts",
+    description: "HQ-68/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering.",
+    descriptionAr: "حامل سن HQ-68/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب.",
+    variants: [], images: ["/products/hq-68-95-holder.webp"],
+  },
+  {
+    slug: "hq-78-95-holder", name: "HQ-78/95 Holder", nameAr: "حامل سن HQ-78/95", category: "Wear Parts",
+    description: "HQ-78/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering.",
+    descriptionAr: "حامل سن HQ-78/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب.",
+    variants: [], images: ["/products/hq-78-95-holder.webp"],
+  },
+  {
+    slug: "b43-holder", name: "B43 Holder", nameAr: "حامل سن B43", category: "Wear Parts",
+    description: "B43 tooth holder shown in the supplied product photograph. Confirm tooth fit, dimensions and installation details before ordering.",
+    descriptionAr: "حامل سن B43 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد توافق السن والأبعاد وتفاصيل التركيب قبل الطلب.",
+    variants: [], images: ["/products/b43-holder.webp"],
   },
   {
     slug: "bauer-teeth", name: "Bauer Teeth", nameAr: "أسنان باور", category: "Wear Parts",
