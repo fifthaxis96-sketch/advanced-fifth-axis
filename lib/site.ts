@@ -22,11 +22,28 @@ export const products: Product[] = [
     images: ["/products/single-roller-bit-500x500.webp"],
   },
   {
-    slug: "bullet-teeth", name: "Bullet Teeth & Holders", nameAr: "أسنان الحفر المخروطية وحواملها", category: "Wear Parts",
-    description: "Bullet teeth and holder model names from our supplied lineup.",
-    descriptionAr: "موديلات أسنان الحفر المخروطية وحواملها وفق القائمة المقدمة.",
-    variants: ["C31HD", "M50-22x27S", "M60-22x27", "C30 Holder"],
-    images: ["/products/bullet-teeth-white-background.webp"],
+    slug: "center-pilot-attachment-holder", name: "Center Pilot Attachment & Holder", nameAr: "ملحق السن المركزي وحامله", category: "Wear Parts",
+    description: "Center pilot attachment and holder assembly shown with a fastening bolt and nut. Confirm pilot dimensions, mounting interface and fit for the drilling tool before ordering.",
+    descriptionAr: "مجموعة ملحق السن المركزي وحامله كما تظهر مع مسمار التثبيت والصامولة. يُرجى تأكيد أبعاد السن المركزي وطريقة التثبيت والتوافق مع أداة الحفر قبل الطلب.",
+    variants: [], images: ["/products/center-pilot-attachment-holder.webp"],
+  },
+  {
+    slug: "c31hd-tooth", name: "C31HD Tooth", nameAr: "سن حفر C31HD", category: "Wear Parts",
+    description: "C31HD cutting tooth shown in the supplied product photograph. Confirm the shank, matching holder and required quantity before ordering.",
+    descriptionAr: "سن حفر C31HD كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والكمية المطلوبة قبل الطلب.",
+    variants: [], images: ["/products/c31hd-tooth.webp"],
+  },
+  {
+    slug: "c30-square-holder", name: "C30 Square Holder", nameAr: "حامل سن C30 مربع", category: "Wear Parts",
+    description: "C30 square holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering.",
+    descriptionAr: "حامل سن C30 المربع كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+    variants: [], images: ["/products/c30-square-holder.webp"],
+  },
+  {
+    slug: "c30-round-holder", name: "C30 Round Holder", nameAr: "حامل سن C30 دائري", category: "Wear Parts",
+    description: "C30 round holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering.",
+    descriptionAr: "حامل سن C30 الدائري كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+    variants: [], images: ["/products/c30-round-holder.webp"],
   },
   {
     slug: "b-47k22h-tooth", name: "B-47K22H Cutting Tooth", nameAr: "سن حفر B-47K22H", category: "Wear Parts",

@@ -102,7 +102,7 @@ export function HomePage({ lang }: { lang: Lang }) {
   const order = [
     {product:"drilling-buckets"}, {product:"rock-augers"}, {product:"core-barrels"},
     {product:"cleaning-buckets"}, {product:"casing"}, {product:"cfa"},
-    {collection:"wear-parts", name:"Cutting & Wear Parts", nameAr:"أسنان وقطع التآكل", image:"/products/bullet-teeth-white-background.webp"},
+    {collection:"wear-parts", name:"Cutting & Wear Parts", nameAr:"أسنان وقطع التآكل", image:"/products/single-roller-bit-500x500.webp"},
     {collection:"drive-systems", name:"Kelly & Adapters", nameAr:"كيلي بوكس ووصلات الحفر", image:"/products/kelly-boxes-white-background.webp"},
     {product:"wire-tremie-pipe"}, {product:"pile-testing-reaction-beam"}
   ] as const;
