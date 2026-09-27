@@ -278,7 +278,7 @@
 .siteHome .siteNav a{color:#fff}.siteHome .siteNav a:hover{color:#ffd43b}
 .siteHome .language{border-color:#ffffff70}.siteHome .language a{color:#e4ebf8}.siteHome .language a[aria-current="page"]{color:#ffdd45}.siteHome .language span{color:#b8c7df}
 .siteHome .headerCta{background:#f2c72e;color:#102b54}.siteHome .headerCta:hover{background:#ffe074}
-.heroShowcase{position:relative;isolation:isolate;min-height:650px;height:min(770px,56vw);color:#fff;background:#102d54;overflow:hidden}
+.heroShowcase{position:relative;isolation:isolate;min-height:650px;height:100svh;color:#fff;background:#102d54;overflow:hidden}
 .heroShowcaseMedia,.heroShowcaseShade{position:absolute;inset:0}
 .heroShowcaseMedia img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 53%}
 .heroShowcaseShade{background:linear-gradient(90deg,#071c3fcf 0%,#092f5c9e 28%,#0c2c4860 52%,#0b2b4a16 78%),linear-gradient(0deg,#061b358c,transparent 42%)}
@@ -317,12 +317,12 @@
 .hotProductsAll{text-align:center;margin-top:22px}.hotProductsAll a{display:inline-flex;gap:12px;align-items:center;color:#0e5aa3;border-bottom:2px solid #ecc529;padding:6px 0;font-size:13px;font-weight:800}
 .homeProductGrid .productTile:last-child{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr}
 .homeProductGrid .productTile:last-child .tileImage{height:100%;min-height:300px}
-@media(max-width:1100px){.heroShowcase{height:650px}.heroShowcaseCopy{max-width:580px}}
+@media(max-width:1100px){.heroShowcaseCopy{max-width:580px}}
 @media(max-width:1000px){.homeProductGrid .productTile:last-child{display:block}.homeProductGrid .productTile:last-child .tileImage{height:240px;min-height:0}}
 @media(max-width:750px){
   .siteHome .siteHeader{margin-bottom:0;background:#0a3169}
   .siteHome .siteNav a{color:#133c72}
-  .heroShowcase{height:660px;min-height:0}
+  .heroShowcase{height:calc(100svh - 68px);min-height:540px}
   .heroShowcaseMedia img{object-position:52% center}
   .heroShowcaseShade,.siteHome[dir="rtl"] .heroShowcaseShade{background:linear-gradient(0deg,#061831f4 0%,#08254ed9 44%,#09295042 100%)}
   .heroShowcaseContent{align-items:flex-end;padding-top:42px;padding-bottom:65px}
@@ -339,4 +339,4 @@
   .hotProductThumb{width:72px}
   .hotProductName{font-size:11px;min-height:32px}
 }
-@media(max-width:420px){.heroShowcase{height:610px}.heroShowcase h1{font-size:38px}.heroShowcaseCredit{display:none}}
+@media(max-width:420px){.heroShowcase h1{font-size:38px}.heroShowcaseCredit{display:none}}
