@@ -123,6 +123,12 @@ export const products: Product[] = [
     images: ["/products/owner-blue-toothed-casing.webp"],
   },
   {
+    slug: "casing-twister", name: "Casing Twister", nameAr: "أداة تدوير مواسير التغليف", category: "Casing",
+    description: "Casing twister shown in the supplied product photo. Confirm casing diameter, connection details and drilling rig compatibility before ordering.",
+    descriptionAr: "أداة تدوير مواسير التغليف كما تظهر في صورة المنتج المقدمة. يُرجى تأكيد قطر الماسورة وتفاصيل الوصلة والتوافق مع معدة الحفر قبل الطلب.",
+    variants: [], images: ["/products/casing-twister.webp"],
+  },
+  {
     slug: "cfa", name: "CFA Augers", nameAr: "أوجرات الحفر المستمر", category: "Foundation Tools",
     description: "Continuous flight auger sections and configurations for foundation drilling applications. Diameter, length, flight pitch, center tube and connection are selected to suit the project and drilling system.",
     descriptionAr: "مقاطع وتكوينات أوجر الحفر المستمر لتطبيقات الأساسات. يتم اختيار القطر والطول وخطوة الحلزون والأنبوب المركزي والوصلة بما يناسب المشروع ونظام الحفر.",
@@ -155,6 +161,12 @@ export const products: Product[] = [
     variants: [], images: ["/products/pile-testing-reaction-beam-blue.webp"],
     visualNote: "Concept visualization based on the supplied site photo; confirm the fabrication design before ordering.",
     visualNoteAr: "تصور مرئي مبني على صورة الموقع المقدمة؛ يرجى تأكيد التصميم التصنيعي قبل الطلب.",
+  },
+  {
+    slug: "customized-bentonite-water-tank", name: "Customized Bentonite & Water Tank", nameAr: "خزان بنتونيت ومياه حسب الطلب", category: "Fabricated Components",
+    description: "Custom fabricated tank for bentonite slurry or water handling on foundation projects. Confirm required capacity, dimensions, lifting points, access and pipe connections for each project.",
+    descriptionAr: "خزان يُصنع حسب الطلب لمناولة سائل البنتونيت أو المياه في مشاريع الأساسات. يُرجى تأكيد السعة والأبعاد ونقاط الرفع وفتحات الوصول ووصلات الأنابيب لكل مشروع.",
+    variants: [], images: ["/products/customized-bentonite-water-tank.webp"],
   },
 ];
 

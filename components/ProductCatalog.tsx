@@ -28,10 +28,12 @@ const searchTerms: Record<string, string> = {
   "wire-tremie-pipe": "wire tremie pipe hopper lift suspension jig ماسوره مواسير تريمي قمع صب",
   "core-barrels": "core barrel كور بارل",
   "casing": "casing pipe casing shoe مواسير تغليف ماسوره",
+  "casing-twister": "casing twister casing rotator casing tool تدوير مواسير التغليف",
   "cfa": "continuous flight auger CFA اوجر مستمر",
   "kelly-boxes": "kelly box كيلي بوكس وصله",
   "kelly-box-pins": "kelly box pins locking pins بنوز كيلي بوكس بن تثبيت",
   "pile-testing-reaction-beam": "load test beam reaction beam كمرة اختبار تحميل",
+  "customized-bentonite-water-tank": "bentonite water tank slurry storage خزان بنتونيت مياه",
 };
 
 const categoryLabel = (lang: Lang, category: string) => {
