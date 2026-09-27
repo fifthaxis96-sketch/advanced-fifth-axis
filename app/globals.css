@@ -270,6 +270,11 @@
 .floatingContacts .whatsAppIcon svg{width:21px;height:21px}
 
 .faqPageGrid{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 64px}.faqPageGrid h2,.policyContent h2{font-size:20px;line-height:1.35;margin:0 0 12px}.policyContent{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:0 0 64px}.policyContent article{background:#fff;border:1px solid #d7e0eb;padding:30px}.policyContent p{line-height:1.7;color:#5f748c}.footerNav{flex-wrap:wrap}.site a:focus-visible,.site button:focus-visible,.site input:focus-visible,.site textarea:focus-visible,.site select:focus-visible{outline:3px solid #e6a900;outline-offset:3px}
+.rockBucketSpecs{margin:72px 0;padding:32px;background:#fff;border:1px solid #d7e0eb;box-shadow:0 12px 32px #10335e0b}
+.rockBucketSpecs h2{color:#123d79;font-size:clamp(25px,3vw,36px);margin:13px 0 10px}.rockBucketSpecs>p{color:#526d8d;line-height:1.6;margin:0 0 24px}
+.rockBucketTableScroll{overflow-x:auto}.rockBucketSpecs table{width:100%;min-width:800px;border-collapse:collapse;text-align:center;font-variant-numeric:tabular-nums}
+.rockBucketSpecs th,.rockBucketSpecs td{padding:12px 10px;border:1px solid #dce5f0}.rockBucketSpecs thead th{background:#103d76;color:#fff;font-size:13px;line-height:1.3;font-weight:750}.rockBucketSpecs thead small{display:block;margin-top:4px;color:#d4e4f9;font-size:11px;font-weight:500}.rockBucketSpecs tbody th{color:#103d76;font-weight:800}.rockBucketSpecs tbody tr:nth-child(even){background:#f2f6fb}.rockBucketSpecs tbody tr:hover{background:#e7f1fc}
+@media(max-width:750px){.rockBucketSpecs{margin:48px 0;padding:22px 16px}.rockBucketSpecs th,.rockBucketSpecs td{padding:10px 8px}}
 @media(max-width:750px){.faqPageGrid,.policyContent{grid-template-columns:1fr}}
 
 /* Home showcase: owner-provided product scene and compact featured-product rail. */
