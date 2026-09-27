@@ -253,12 +253,12 @@
 
 
 /* Floating contact action */
-.floatingContacts{position:fixed;z-index:70;right:22px;bottom:22px;display:grid;justify-items:end;gap:10px}
-.floatingContacts a{display:flex;align-items:center;gap:9px;min-height:52px;background:#fff;color:#143c68;border:1px solid #bfd0df;box-shadow:0 14px 36px #0a2d5b2a;padding:8px 13px 8px 8px;border-radius:999px;font-size:12px;text-decoration:none;transition:transform .2s,box-shadow .2s}
-.floatingContacts a:hover{transform:translateY(-2px);box-shadow:0 18px 42px #0a2d5b38}
-.floatingContacts b{font-size:12px}.floatingContactIcon{width:34px;height:34px;border-radius:50%;background:#0b5caa;color:#fff;display:grid;place-items:center;flex:none}.floatingContactIcon svg{width:19px;height:19px;display:block}
-.site[dir="rtl"] .floatingContacts{right:auto;left:22px;justify-items:start}.site[dir="rtl"] .floatingContacts a{padding:8px 8px 8px 13px}
-@media(max-width:600px){.floatingContacts{right:14px;bottom:14px;gap:8px}.site[dir="rtl"] .floatingContacts{left:14px}.floatingContacts b{display:none}.floatingContacts a,.site[dir="rtl"] .floatingContacts a{padding:7px;min-height:52px}.floatingContacts .whatsAppIcon,.floatingContacts .floatingContactIcon{width:38px;height:38px}}
+.floatingContacts{position:fixed;z-index:70;right:0;top:50%;transform:translateY(-50%);display:grid;gap:10px;width:164px}
+.floatingContacts a{display:flex;flex-direction:row-reverse;align-items:center;justify-content:flex-start;gap:10px;min-height:54px;background:#fff;color:#143c68;border:1px solid #bfd0df;box-shadow:0 10px 30px #0a2d5b26;padding:8px 9px;border-radius:14px 0 0 14px;font-size:12px;text-decoration:none;transform:translateX(calc(100% - 54px));transition:transform .25s ease,box-shadow .25s ease}
+.floatingContacts a:hover,.floatingContacts a:focus-visible{transform:translateX(0);box-shadow:0 14px 36px #0a2d5b38}
+.floatingContacts b{font-size:12px;white-space:nowrap}.floatingContactIcon{width:36px;height:36px;border-radius:50%;background:#0b5caa;color:#fff;display:grid;place-items:center;flex:none}.floatingContactIcon svg{width:19px;height:19px;display:block}
+.site[dir="rtl"] .floatingContacts{right:auto;left:0}.site[dir="rtl"] .floatingContacts a{flex-direction:row;justify-content:flex-start;border-radius:0 14px 14px 0;transform:translateX(calc(-100% + 54px))}.site[dir="rtl"] .floatingContacts a:hover,.site[dir="rtl"] .floatingContacts a:focus-visible{transform:translateX(0)}
+@media(max-width:600px){.floatingContacts{width:150px}.floatingContacts a{min-height:54px}.floatingContacts .whatsAppIcon,.floatingContacts .floatingContactIcon{width:36px;height:36px}}
 @media print{.floatingContacts,.siteHeader{display:none!important}}
 
 
@@ -266,7 +266,7 @@
 .whatsAppIcon{display:inline-grid;place-items:center;flex:none}
 .whatsAppIcon svg{width:22px;height:22px;display:block}
 .whatsappButton .whatsAppIcon{margin-inline-end:2px}
-.floatingContacts .whatsAppIcon{width:34px;height:34px;border-radius:50%;background:#0b5caa;color:#fff}
+.floatingContacts .whatsAppIcon{width:36px;height:36px;border-radius:50%;background:#0b5caa;color:#fff}
 .floatingContacts .whatsAppIcon svg{width:21px;height:21px}
 
 .faqPageGrid{grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 64px}.faqPageGrid h2,.policyContent h2{font-size:20px;line-height:1.35;margin:0 0 12px}.policyContent{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:0 0 64px}.policyContent article{background:#fff;border:1px solid #d7e0eb;padding:30px}.policyContent p{line-height:1.7;color:#5f748c}.footerNav{flex-wrap:wrap}.site a:focus-visible,.site button:focus-visible,.site input:focus-visible,.site textarea:focus-visible,.site select:focus-visible{outline:3px solid #e6a900;outline-offset:3px}
