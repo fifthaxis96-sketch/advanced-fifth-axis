@@ -37,7 +37,7 @@ export const products: Product[] = [
     slug: "c30-square-holder", name: "C30 Square Holder", nameAr: "حامل سن C30 مربع", category: "Wear Parts",
     description: "C30 square holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering.",
     descriptionAr: "حامل سن C30 المربع كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
-    variants: [], images: ["/products/c30-square-holder.webp"],
+    variants: [], images: ["/products/c30-square-holder-20260927.webp"],
   },
   {
     slug: "c30-round-holder", name: "C30 Round Holder", nameAr: "حامل سن C30 دائري", category: "Wear Parts",
