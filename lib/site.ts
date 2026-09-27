@@ -123,6 +123,12 @@ export const products: Product[] = [
     images: ["/products/owner-blue-toothed-casing.webp"],
   },
   {
+    slug: "casing-twister", name: "Casing Twister", nameAr: "ملحق تدوير مواسير التغليف", category: "Casing",
+    description: "Casing twister attachment shown in the supplied product photo for foundation casing operations. Confirm the connection dimensions, pin layout and casing compatibility before quotation.",
+    descriptionAr: "ملحق تدوير مواسير التغليف كما يظهر في صورة المنتج المقدمة لأعمال تغليف حفر الأساسات. يُرجى تأكيد أبعاد الوصلة ومواضع فتحات التثبيت والتوافق مع الماسورة قبل عرض السعر.",
+    variants: [], images: ["/products/casing-twister-owner-photo.webp"],
+  },
+  {
     slug: "cfa", name: "CFA Augers", nameAr: "أوجرات الحفر المستمر", category: "Foundation Tools",
     description: "Continuous flight auger sections and configurations for foundation drilling applications. Diameter, length, flight pitch, center tube and connection are selected to suit the project and drilling system.",
     descriptionAr: "مقاطع وتكوينات أوجر الحفر المستمر لتطبيقات الأساسات. يتم اختيار القطر والطول وخطوة الحلزون والأنبوب المركزي والوصلة بما يناسب المشروع ونظام الحفر.",
