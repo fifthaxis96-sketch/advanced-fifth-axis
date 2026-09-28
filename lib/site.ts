@@ -136,17 +136,11 @@ export const products: Product[] = [
     images: ["/products/owner-continuous-flight-auger-coupling.webp", "/products/owner-continuous-flight-auger-flight.webp"],
   },
   {
-    slug: "kelly-boxes", name: "Kelly Boxes", nameAr: "كيلي بوكس", category: "Drive Systems",
-    description: "Heavy-duty square Kelly boxes for rotary drilling tools in 150×150, 200×200 and 250×250 mm. The standard tool connection is 200×200 mm; confirm pin-hole layout and rig interface before ordering.",
-    descriptionAr: "كيلي بوكس مربع شديد التحمل لأدوات الحفر الدوار بمقاسات 150×150 و200×200 و250×250 مم. المقاس القياسي للأدوات 200×200 مم؛ يُرجى تأكيد فتحات التثبيت والتوافق مع المعدة قبل الطلب.",
-    variants: ["150×150 mm Kelly Box", "200×200 mm Kelly Box", "250×250 mm Kelly Box"],
+    slug: "kelly-boxes", name: "Kelly Box & Adapter", nameAr: "كيلي بوكس ووصلة كيلي", category: "Drive Systems",
+    description: "Heavy-duty square Kelly boxes for rotary drilling tools in 150×150, 200×200 and 250×250 mm, plus a Kelly adapter with a 250×250 mm female connection and a 200×200 mm male connection. The standard tool connection is 200×200 mm; confirm pin-hole layout, engagement length and rig interface before ordering.",
+    descriptionAr: "كيلي بوكس مربع شديد التحمل لأدوات الحفر الدوار بمقاسات 150×150 و200×200 و250×250 مم، بالإضافة إلى وصلة كيلي بطرف أنثى 250×250 مم وطرف ذكر 200×200 مم. المقاس القياسي للأدوات 200×200 مم؛ يُرجى تأكيد فتحات التثبيت وطول التداخل والتوافق مع المعدة قبل الطلب.",
+    variants: ["150×150 mm Kelly Box", "200×200 mm Kelly Box", "250×250 mm Kelly Box", "Kelly Adapter — 250×250 mm Female to 200×200 mm Male"],
     images: ["/products/kelly-boxes-white-background.webp", "/products/kelly-box-welded-steel.webp"],
-  },
-  {
-    slug: "kelly-adapter-250-female-200-male", name: "Kelly Adapter — 250×250 Female to 200×200 Male", nameAr: "وصلة كيلي 250×250 أنثى إلى 200×200 ذكر", category: "Drive Systems",
-    description: "Square Kelly adapter with a 250×250 mm female connection and a 200×200 mm male connection for rotary drilling tools. Confirm the pin-hole layout, engagement length and rig/tool fit before ordering.",
-    descriptionAr: "وصلة كيلي مربعة بطرف أنثى 250×250 مم وطرف ذكر 200×200 مم لأدوات الحفر الدوار. يُرجى تأكيد ترتيب فتحات التثبيت وطول التداخل والتوافق مع المعدة والأداة قبل الطلب.",
-    variants: [],
   },
   {
     slug: "kelly-bars", name: "Kelly Bars", nameAr: "قضبان كيلي", category: "Drive Systems",
