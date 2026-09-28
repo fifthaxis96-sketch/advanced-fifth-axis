@@ -5,6 +5,7 @@ import { HotProductsRail } from "@/components/HotProductsRail";
 import { RockBucketSpecs } from "@/components/RockBucketSpecs";
 import { AugerSpecs } from "@/components/AugerSpecs";
 import { CleaningBucketSpecs } from "@/components/CleaningBucketSpecs";
+import { CoreBarrelSpecs } from "@/components/CoreBarrelSpecs";
 
 export type Lang = "en" | "ar";
 const copy = {
@@ -173,6 +174,7 @@ export function ProductView({ lang, product: p }: { lang: Lang; product: Product
     {p.slug === "drilling-buckets" && <RockBucketSpecs lang={lang}/>}
     {p.slug === "rock-augers" && <AugerSpecs lang={lang}/>}
     {p.slug === "cleaning-buckets" && <CleaningBucketSpecs lang={lang}/>}
+    {p.slug === "core-barrels" && <CoreBarrelSpecs lang={lang}/>}
     <section className="faqSection"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {lang === "ar" ? "أسئلة شائعة" : "PRODUCT FAQ"}</span><h2>{lang === "ar" ? "قبل طلب عرض السعر" : "Before requesting a quote"}</h2></div></div><div className="faqGrid">
       <article><h3>{lang === "ar" ? "هل يمكن التصنيع حسب المقاس؟" : "Can this be supplied to custom dimensions?"}</h3><p>{lang === "ar" ? "نراجع المقاس والوصلة والرسم ومتطلبات الاستخدام قبل تأكيد إمكانية التصنيع." : "We review the dimensions, connection, drawing and operating requirements before confirming the fabrication scope."}</p></article>
       <article><h3>{lang === "ar" ? "ما المعلومات المطلوبة للتسعير؟" : "What information should I send for pricing?"}</h3><p>{lang === "ar" ? "أرسل نوع وموديل المعدة والمقاس المطلوب وطبيعة الاستخدام والكمية وأي رسومات أو صور مرجعية متاحة." : "Send the rig make and model, required size, intended application, quantity, and any available drawings or reference photos."}</p></article>
