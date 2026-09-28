@@ -143,10 +143,10 @@ export const products: Product[] = [
     images: ["/products/kelly-boxes-white-background.webp", "/products/kelly-box-welded-steel.webp"],
   },
   {
-    slug: "kelly-bars", name: "Kelly Bars", nameAr: "قضبان كيلي", category: "Drive Systems",
-    description: "Interlocking and friction Kelly bar solutions for rotary drilling rigs. Section geometry, length, locking arrangement, drive interfaces and rig compatibility are confirmed for each project.",
-    descriptionAr: "حلول قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. يتم تأكيد مقاطع القضيب والطول ونظام التعشيق وواجهات الحركة والتوافق مع المعدة لكل مشروع.",
-    variants: ["Interlocking Kelly bar", "Friction Kelly bar"],
+    slug: "kelly-bars", name: "Kelly Bar Repair", nameAr: "إصلاح قضبان كيلي", category: "Drive Systems",
+    description: "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs. Share photos, dimensions, the rig model and details of the damage so the repair scope and compatibility can be assessed.",
+    descriptionAr: "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. أرسل الصور والأبعاد وموديل المعدة وتفاصيل التلف لتقييم نطاق الإصلاح والتوافق.",
+    variants: ["Interlocking Kelly bar repair", "Friction Kelly bar repair"],
   },
   {
     slug: "kelly-box-pins", name: "Kelly Box Pins", nameAr: "بنوز كيلي بوكس", category: "Drive Systems",
@@ -193,7 +193,7 @@ export const collections: Collection[] = [
   { slug: "foundation-tools", name: "Foundation Drilling Tools", nameAr: "أدوات حفر الأساسات", description: "Augers, drilling buckets, core barrels and continuous-flight tools for piling and foundation drilling projects.", descriptionAr: "أوجرات وبكيتات وكور بارل وأدوات الحفر المستمر لمشاريع حفر الأساسات.", categories: ["Foundation Tools"] },
   { slug: "wear-parts", name: "Cutting & Wear Parts", nameAr: "أسنان وقطع التآكل", description: "Cutting tools, teeth, holders and replaceable wear components for foundation drilling equipment.", descriptionAr: "أدوات قطع وأسنان وحوامل وقطع تآكل قابلة للاستبدال لمعدات حفر الأساسات.", categories: ["Cutting Tools", "Wear Parts"] },
   { slug: "casing", name: "Casing & Components", nameAr: "مواسير التغليف ومكوناتها", description: "Casing sections, casing components and related solutions for foundation drilling applications.", descriptionAr: "مواسير تغليف ومكوناتها وحلول مرتبطة بتطبيقات حفر الأساسات.", categories: ["Casing"] },
-  { slug: "drive-systems", name: "Kelly & Drive Systems", nameAr: "أنظمة كيلي ونقل الحركة", description: "Kelly bars, Kelly boxes and adapters for connecting rotary drilling rigs to foundation tools.", descriptionAr: "قضبان كيلي وكيلي بوكس ووصلات لربط معدات الحفر الدوار بأدوات الأساسات.", categories: ["Drive Systems"] },
+  { slug: "drive-systems", name: "Kelly & Drive Systems", nameAr: "أنظمة كيلي ونقل الحركة", description: "Kelly boxes and adapters for connecting rotary drilling rigs to foundation tools, plus Kelly bar repair services.", descriptionAr: "كيلي بوكس ووصلات لربط معدات الحفر الدوار بأدوات الأساسات، بالإضافة إلى خدمات إصلاح قضبان كيلي.", categories: ["Drive Systems"] },
   { slug: "fabricated-components", name: "Custom Fabricated Components", nameAr: "مكونات مصنعة حسب الطلب", description: "Heavy steel fabricated components produced to confirmed drawings, dimensions and project requirements.", descriptionAr: "مكونات فولاذية ثقيلة تُصنع حسب الرسومات والأبعاد ومتطلبات المشروع المؤكدة.", categories: ["Fabricated Components"] },
 ];
 
