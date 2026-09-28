@@ -143,6 +143,12 @@ export const products: Product[] = [
     images: ["/products/kelly-boxes-white-background.webp", "/products/kelly-box-welded-steel.webp"],
   },
   {
+    slug: "kelly-adapter-250-female-200-male", name: "Kelly Adapter — 250×250 Female to 200×200 Male", nameAr: "وصلة كيلي 250×250 أنثى إلى 200×200 ذكر", category: "Drive Systems",
+    description: "Square Kelly adapter with a 250×250 mm female connection and a 200×200 mm male connection for rotary drilling tools. Confirm the pin-hole layout, engagement length and rig/tool fit before ordering.",
+    descriptionAr: "وصلة كيلي مربعة بطرف أنثى 250×250 مم وطرف ذكر 200×200 مم لأدوات الحفر الدوار. يُرجى تأكيد ترتيب فتحات التثبيت وطول التداخل والتوافق مع المعدة والأداة قبل الطلب.",
+    variants: [],
+  },
+  {
     slug: "kelly-bars", name: "Kelly Bars", nameAr: "قضبان كيلي", category: "Drive Systems",
     description: "Interlocking and friction Kelly bar solutions for rotary drilling rigs. Section geometry, length, locking arrangement, drive interfaces and rig compatibility are confirmed for each project.",
     descriptionAr: "حلول قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. يتم تأكيد مقاطع القضيب والطول ونظام التعشيق وواجهات الحركة والتوافق مع المعدة لكل مشروع.",
