@@ -274,6 +274,7 @@
 .rockBucketSpecs h2{color:#123d79;font-size:clamp(25px,3vw,36px);margin:13px 0 10px}.rockBucketSpecs>p{color:#526d8d;line-height:1.6;margin:0 0 24px}
 .rockBucketTableScroll{overflow-x:auto}.rockBucketSpecs table{width:100%;min-width:800px;border-collapse:collapse;text-align:center;font-variant-numeric:tabular-nums}
 .rockBucketSpecs th,.rockBucketSpecs td{padding:12px 10px;border:1px solid #dce5f0}.rockBucketSpecs thead th{background:#103d76;color:#fff;font-size:13px;line-height:1.3;font-weight:750}.rockBucketSpecs thead small{display:block;margin-top:4px;color:#d4e4f9;font-size:11px;font-weight:500}.rockBucketSpecs tbody th{color:#103d76;font-weight:800}.rockBucketSpecs tbody tr:nth-child(even){background:#f2f6fb}.rockBucketSpecs tbody tr:hover{background:#e7f1fc}
+.augerSpecsGroup+.augerSpecsGroup{margin-top:34px}.augerSpecsGroup h3{color:#123d79;font-size:20px;margin:0 0 12px}
 @media(max-width:750px){.rockBucketSpecs{margin:48px 0;padding:22px 16px}.rockBucketSpecs th,.rockBucketSpecs td{padding:10px 8px}}
 @media(max-width:750px){.faqPageGrid,.policyContent{grid-template-columns:1fr}}
 
