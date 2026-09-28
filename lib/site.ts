@@ -172,8 +172,8 @@ export const products: Product[] = [
 
 export const company = {
   name: "Advanced Fifth Axis",
-  phone: "+966550071571",
-  phoneDisplay: "055 007 1571",
+  phone: "+966559036552",
+  phoneDisplay: "055 903 6552",
   email: "fifthaxis96@gmail.com",
   address: "Al Muftakira Street 4474, Jeddah Industrial, Saudi Arabia",
   vat: "310463296800003",
