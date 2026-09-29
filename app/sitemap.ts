@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { products, collections } from "@/lib/site";
+import { guides } from "@/lib/guides";
 
 export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -22,6 +23,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...["faq", "privacy"].flatMap(slug => [
       { url: `${base}/${slug}`, changeFrequency: "yearly" as const, priority: 0.4 },
       { url: `${base}/ar/${slug}`, changeFrequency: "yearly" as const, priority: 0.4 },
+    ]),
+    { url: `${base}/guides`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/ar/guides`, changeFrequency: "monthly", priority: 0.7 },
+    ...guides.flatMap((g) => [
+      { url: `${base}/guides/${g.slug}`, changeFrequency: "monthly" as const, priority: 0.7 },
+      { url: `${base}/ar/guides/${g.slug}`, changeFrequency: "monthly" as const, priority: 0.7 },
     ]),
     ...collections.flatMap((c) => [
       { url: `${base}/collections/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.85 },
