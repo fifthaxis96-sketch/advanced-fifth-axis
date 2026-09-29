@@ -151,7 +151,7 @@
 .capList article>span{color:#0b5caa;font-size:12px;font-weight:800}
 .capList h3{margin:0 0 7px;font-size:20px}
 .capList p{margin:0;color:#65788e;line-height:1.65;font-size:14px}
-.contactCards{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.contactCards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .contactCards>a,.contactCards>article{background:#fff;border:1px solid #d7e0eb;padding:28px;min-height:230px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
 .contactCards>a:hover{transform:translateY(-3px);box-shadow:0 18px 40px #173d6b14}
 .contactCards span{font-size:11px;font-weight:900;color:#0b5caa}
