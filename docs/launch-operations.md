@@ -20,11 +20,12 @@
 
 The WWW-to-apex redirect is active. Browser checks of `/products?test=1` and `/ar/products/kelly-boxes?source=check` reached the corresponding apex URLs with paths and query strings intact. Keep the WWW hostname proxied in Cloudflare DNS and recheck the rule after future zone changes. The existing `Always Use HTTPS` setting handles HTTP first.
 
-## Search account checks still requiring ownership
+## Search Console status — 29 September 2026
 
 - The local production build passes typecheck and site checks (87 HTML files, 86 sitemap URLs). The browser used for this audit could not inspect the live `/robots.txt` and `/sitemap.xml` responses because its client blocked those XML/text navigations; check their public responses in an ordinary browser or Search Console before treating crawler access as verified.
-- In Google Search Console, inspect the homepage, an English product, its Arabic counterpart, and `/field-work`; submit `https://advanced-fifthaxis.com/sitemap.xml` if it is not already submitted. Use URL Inspection for the actual indexing state rather than a `site:` search estimate.
-- In Bing Webmaster Tools, verify the domain and check its sitemap and URL inspection/indexing reports.
+- The verified Google Search Console domain property `sc-domain:advanced-fifthaxis.com` is connected with site-owner access. `https://advanced-fifthaxis.com/sitemap.xml` was accepted on 29 September and is pending its first Google download. Recheck the Sitemaps report for download, errors, and discovered URLs after Google processes it.
+- URL Inspection for the homepage, English and Arabic rock bucket pages, and `/field-work` currently says **URL is unknown to Google**, with no recorded crawl. Reinspect after Google downloads the sitemap; submission alone does not guarantee indexing.
+- Bing Webmaster Tools is not connected to the available account integration; verify the domain there and check its sitemap and URL inspection/indexing reports.
 - Confirm that company-controlled accounts own the domain registrar, Cloudflare zone and Worker, GitHub repository, Search Console and Bing Webmaster Tools. Use named company administrators and recovery methods; do not put credentials or ownership tokens in this repository.
 
 ## Rollback
