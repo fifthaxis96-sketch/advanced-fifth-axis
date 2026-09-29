@@ -9,6 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/ar`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/products`, changeFrequency: "weekly", priority: 0.95 },
     { url: `${base}/ar/products`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${base}/tool-finder`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${base}/ar/tool-finder`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/collections`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/ar/collections`, changeFrequency: "weekly", priority: 0.85 },
     { url: `${base}/capabilities`, changeFrequency: "monthly", priority: 0.8 },

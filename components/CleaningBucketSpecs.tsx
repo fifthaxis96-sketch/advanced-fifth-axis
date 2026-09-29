@@ -1,15 +1,4 @@
-const cleaningBucketSizes = [
-  [600, 550, 1200, 20, 740],
-  [800, 700, 1200, 20, 920],
-  [900, 800, 1200, 20, 1024],
-  [1000, 900, 1200, 20, 1109],
-  [1200, 1100, 1200, 20, 1431],
-  [1500, 1400, 1200, 20, 1988],
-  [1800, 1700, 1000, 20, 2875],
-  [2000, 1900, 800, 20, 3350],
-  [2200, 2100, 800, 25, 3829],
-  [2500, 2400, 800, 25, 4622],
-];
+import { cleaningBucketSizes } from "@/lib/product-specifications";
 
 export function CleaningBucketSpecs({ lang }: { lang: "en" | "ar" }) {
   const ar = lang === "ar";

@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { products } from "@/lib/site";
+import { rockBucketSizes, cleaningBucketSizes, augerTables, coreBarrelTables } from "@/lib/product-specifications";
 
 type Lang = "en" | "ar";
 
@@ -36,6 +37,13 @@ const searchTerms: Record<string, string> = {
   "customized-bentonite-water-tank": "bentonite water tank slurry storage خزان بنتونيت مياه",
 };
 
+const referenceDiameters: Record<string,string> = {
+  "drilling-buckets": rockBucketSizes.map(row=>row[0]).join(" "),
+  "cleaning-buckets": cleaningBucketSizes.map(row=>row[0]).join(" "),
+  "rock-augers": augerTables.flatMap(table=>table.rows.map(row=>row[0])).join(" "),
+  "core-barrels": coreBarrelTables.flatMap(table=>table.rows.map(row=>row[0])).join(" "),
+};
+
 const categoryLabel = (lang: Lang, category: string) => {
   if (category === "All") return lang === "ar" ? "الكل" : "All";
   if (lang === "en") return category;
@@ -56,7 +64,7 @@ export function ProductCatalog({ lang }: { lang: Lang }) {
   const categories=useMemo(()=>["All",...Array.from(new Set(products.map(p=>p.category)))],[]);
   const normalized=normalizeSearch(query);
   const visible=products.filter(p=>{
-    const text=normalizeSearch([p.name,p.nameAr,p.category,p.description,p.descriptionAr,...p.variants,searchTerms[p.slug] || ""].join(" "));
+    const text=normalizeSearch([p.name,p.nameAr,p.category,p.description,p.descriptionAr,...p.variants,searchTerms[p.slug] || "",referenceDiameters[p.slug] || ""].join(" "));
     return (category==="All"||p.category===category)&&(!normalized||text.includes(normalized));
   });
   const base=lang==="ar"?"/ar":"";
