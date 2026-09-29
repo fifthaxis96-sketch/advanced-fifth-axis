@@ -24,6 +24,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${base}/${slug}`, changeFrequency: "yearly" as const, priority: 0.4 },
       { url: `${base}/ar/${slug}`, changeFrequency: "yearly" as const, priority: 0.4 },
     ]),
+    { url: `${base}/field-work`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${base}/ar/field-work`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/guides`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${base}/ar/guides`, changeFrequency: "monthly", priority: 0.7 },
     ...guides.flatMap((g) => [
