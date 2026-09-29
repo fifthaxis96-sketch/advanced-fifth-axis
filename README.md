@@ -27,7 +27,7 @@ Every push to `main` runs:
 Product and collection detail pages are statically generated from `lib/site.ts`.
 
 ## Content management
-Product names, bilingual descriptions, variants, image paths, collections, and company details are currently managed in `lib/site.ts`. Product images belong in `public/products/`.
+Product names, bilingual descriptions, variants, image paths, collections, and company details are currently managed in `lib/site.ts`. Product images belong in `public/products/`. After adding or replacing a product image, run `python scripts/generate-thumbnails.py` (requires Pillow) and commit the generated `public/thumbs/` files. Cards use 480 px images and compact icons use 160 px images; detail pages retain the original. The site check verifies image format, thumbnail presence, and size budgets.
 
 ## SEO
 The site includes canonical URLs, language alternates, sitemap, robots metadata, Open Graph metadata, Organization/WebSite/Product/Collection structured data, breadcrumbs, and product FAQ structured data.

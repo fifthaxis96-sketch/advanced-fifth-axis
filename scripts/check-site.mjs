@@ -13,6 +13,20 @@ const files = collect(root);
 const htmlFiles = files.filter(file => extname(file) === '.html');
 const failures = [];
 const canonicalUrls = new Set();
+for (const file of files.filter(path => extname(path).toLowerCase() === '.webp')) {
+  const image = readFileSync(file);
+  if (image.length < 12 || image.toString('ascii', 0, 4) !== 'RIFF' || image.toString('ascii', 8, 12) !== 'WEBP') {
+    failures.push(`${file}: invalid WebP image`);
+  }
+  if (file.includes('/thumbs/large/') && image.length > 48 * 1024) failures.push(`${file}: card thumbnail exceeds 48 KiB`);
+  if (file.includes('/thumbs/small/') && image.length > 8 * 1024) failures.push(`${file}: icon thumbnail exceeds 8 KiB`);
+}
+for (const file of files.filter(path => path.startsWith('out/products/') && extname(path) === '.webp')) {
+  const name = file.slice('out/products/'.length);
+  for (const size of ['large', 'small']) {
+    if (!existsSync(join(root, 'thumbs', size, name))) failures.push(`${file}: missing ${size} thumbnail`);
+  }
+}
 function localFile(url) {
   const clean = decodeURIComponent(url.split(/[?#]/)[0]);
   const relative = clean.replace(/^\//, '');

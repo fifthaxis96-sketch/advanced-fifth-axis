@@ -1,5 +1,7 @@
 "use client";
 
+import { productThumbnail } from "@/lib/images";
+
 import { useMemo, useState } from "react";
 import { products } from "@/lib/site";
 import { rockBucketSizes, cleaningBucketSizes, augerTables, coreBarrelTables } from "@/lib/product-specifications";
@@ -79,6 +81,6 @@ export function ProductCatalog({ lang }: { lang: Lang }) {
       </div>
       <div className="catalogResultCount">{visible.length} {lang==="ar"?"نتيجة":"results"}</div>
     </div>
-    {visible.length>0?<div className="productGrid">{visible.map((p,i)=><a className="productTile" href={`${base}/products/${p.slug}`} key={p.slug}>{p.images?.length?<div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={p.images[0]} alt={lang==="ar"?p.nameAr:p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div>:<span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{categoryLabel(lang,p.category)}</span><h2>{lang==="ar"?p.nameAr:p.name}</h2><p>{lang==="ar"?p.descriptionAr:p.description}</p><b>{lang==="ar"?"عرض المنتج":"View product"} <span aria-hidden="true">↗</span></b></div></a>)}</div>:<div className="emptyCatalog"><h2>{lang==="ar"?"لا توجد نتائج مطابقة":"No matching products"}</h2><p>{lang==="ar"?"جرّب كلمة بحث أخرى أو اختر فئة مختلفة.":"Try another search term or choose a different category."}</p><button type="button" onClick={()=>{setQuery("");setCategory("All")}}>{lang==="ar"?"مسح التصفية":"Clear filters"}</button></div>}
+    {visible.length>0?<div className="productGrid">{visible.map((p,i)=><a className="productTile" href={`${base}/products/${p.slug}`} key={p.slug}>{p.images?.length?<div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={productThumbnail(p.images[0])} alt={lang==="ar"?p.nameAr:p.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div>:<span className="tileIndex tileIndexText">{String(i+1).padStart(2,"0")}</span>}<div className="tileText"><span>{categoryLabel(lang,p.category)}</span><h2>{lang==="ar"?p.nameAr:p.name}</h2><p>{lang==="ar"?p.descriptionAr:p.description}</p><b>{lang==="ar"?"عرض المنتج":"View product"} <span aria-hidden="true">↗</span></b></div></a>)}</div>:<div className="emptyCatalog"><h2>{lang==="ar"?"لا توجد نتائج مطابقة":"No matching products"}</h2><p>{lang==="ar"?"جرّب كلمة بحث أخرى أو اختر فئة مختلفة.":"Try another search term or choose a different category."}</p><button type="button" onClick={()=>{setQuery("");setCategory("All")}}>{lang==="ar"?"مسح التصفية":"Clear filters"}</button></div>}
   </div>;
 }

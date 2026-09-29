@@ -1,5 +1,7 @@
 "use client";
 
+import { productThumbnail } from "@/lib/images";
+
 import { useRef } from "react";
 
 type HotItem = { key: string; href: string; image?: string; name: string };
@@ -46,7 +48,7 @@ export function HotProductsRail({ items, lang }: { items: HotItem[]; lang: "en" 
         if (suppressClick.current) { event.preventDefault(); event.stopPropagation(); suppressClick.current = false; }
       }}>
       {items.map(item => <a className="hotProduct" href={item.href} key={item.key} draggable={false}>
-        <span className="hotProductThumb"><img src={item.image} alt="" loading="lazy" decoding="async" width="100" height="100" draggable={false}/></span>
+        <span className="hotProductThumb"><img src={item.image ? productThumbnail(item.image,"small") : undefined} alt="" loading="lazy" decoding="async" width="100" height="100" draggable={false}/></span>
         <span className="hotProductName">{item.name}</span>
         <span className="hotProductArrow" aria-hidden="true">↗</span>
       </a>)}
