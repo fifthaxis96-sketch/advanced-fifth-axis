@@ -147,6 +147,7 @@ export const products: Product[] = [
     description: "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs. Share photos, dimensions, the rig model and details of the damage so the repair scope and compatibility can be assessed.",
     descriptionAr: "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. أرسل الصور والأبعاد وموديل المعدة وتفاصيل التلف لتقييم نطاق الإصلاح والتوافق.",
     variants: ["Interlocking Kelly bar repair", "Friction Kelly bar repair"],
+    images: ["/products/kelly-bar-repair.webp"],
   },
   {
     slug: "kelly-box-pins", name: "Kelly Box Pins", nameAr: "بنوز كيلي بوكس", category: "Drive Systems",
