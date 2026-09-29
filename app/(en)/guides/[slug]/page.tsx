@@ -7,7 +7,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params, g = guides.find(item => item.slug === slug);
   if (!g) return {};
   const base = "https://advanced-fifthaxis.com", url = `${base}/guides/${slug}`;
-  return { title: `${g.en.title} | Advanced Fifth Axis`, description: g.en.description, alternates: { canonical: url, languages: { en: url, ar: `${base}/ar/guides/${slug}` } }, openGraph: { title: g.en.title, description: g.en.description, url, type: "article" } };
+  return { title: g.en.title, description: g.en.description, alternates: { canonical: url, languages: { en: url, ar: `${base}/ar/guides/${slug}` } }, openGraph: { title: g.en.title, description: g.en.description, url, type: "article" } };
 }
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params, g = guides.find(item => item.slug === slug);

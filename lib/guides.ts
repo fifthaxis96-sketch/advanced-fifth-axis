@@ -99,5 +99,65 @@ export const guides: Guide[] = [
       ],
       takeaway: "أرسل القياسات والصور عبر نموذج عرض السعر لمراجعة الوصلة قبل التصنيع."
     }
+  },
+  {
+    slug: "foundation-drilling-rfq-checklist",
+    related: ["drilling-buckets", "rock-augers", "casing", "wire-tremie-pipe"],
+    en: {
+      title: "Foundation drilling RFQ checklist",
+      description: "The dimensions, ground information, drawings and delivery details to send when requesting foundation drilling tools or fabricated components.",
+      intro: "A quotation is more useful when the tool, connection and application are clear. This checklist helps you collect the information the team needs to review an inquiry. Send what you have; missing details can be confirmed before fabrication or supply.",
+      sections: [
+        { heading: "1. Identify the equipment and application", bullets: [
+          "State the product family and intended use: auger, bucket, core barrel, casing, tremie pipe, wear part or fabricated component.",
+          "Give the drilling rig make and model, drilling method, required bore diameter and expected working depth.",
+          "Describe the ground layers and whether drilling is dry or uses fluid. Attach relevant geotechnical information if available."
+        ]},
+        { heading: "2. Define the dimensions and connection", bullets: [
+          "Provide the required outside diameter, working length and any restrictions on overall dimensions.",
+          "Identify the Kelly box or other connection size and mating dimensions. Include pin-hole locations and pin dimensions when applicable.",
+          "For a casing or tremie assembly, specify each component and connection; for the listed wire tremie pipe, confirm whether the 8-inch or 10-inch set and which hopper, lifting and suspension accessories are needed.",
+          "Attach a dimensioned drawing or clear photos of the existing tool with a scale. Mark the critical measurements in millimetres."
+        ]},
+        { heading: "3. Clarify the commercial scope", bullets: [
+          "State quantity for each size or variant and whether you need a complete assembly or replacement parts.",
+          "Give the delivery city, required date and any packaging or site access constraints you already know.",
+          "Provide a contact person and preferred reply method so the team can clarify any uncertain dimension."
+        ]},
+        { heading: "Before approving a drawing", paragraphs: [
+          "Review the final dimensions, connection, cutting layout and included accessories against your rig and project. A catalog photo or nominal size alone is not a fabrication drawing or a compatibility guarantee.",
+          "If you are replacing a worn tool, share the existing part's measurements and photos. Wear can make a single measurement misleading, so confirm against a drawing or unworn reference when possible."
+        ]}
+      ],
+      takeaway: "Use the quotation list to identify products, then send drawings and project details through the contact options for technical review."
+    },
+    ar: {
+      title: "قائمة بيانات طلب عرض سعر معدات حفر الأساسات",
+      description: "الأبعاد ومعلومات التربة والرسومات وبيانات التسليم المطلوبة للاستفسار عن أدوات حفر الأساسات والمكونات المصنعة.",
+      intro: "يكون عرض السعر أدق عندما تتضح الأداة والوصلة والاستخدام. تساعدك هذه القائمة في جمع المعلومات اللازمة لمراجعة الطلب. أرسل ما لديك من بيانات، ويمكن تأكيد التفاصيل الناقصة قبل التصنيع أو التوريد.",
+      sections: [
+        { heading: "١. حدد المعدة والاستخدام", bullets: [
+          "اذكر فئة المنتج والاستخدام المقصود: أوجر أو بكيت أو كور بارل أو مواسير تغليف أو أنابيب تريمي أو قطع تآكل أو مكون مصنع.",
+          "حدد الشركة المصنعة وموديل آلة الحفر وطريقة الحفر وقطر الحفرة المطلوب وعمق العمل المتوقع.",
+          "صف طبقات التربة وما إذا كان الحفر جافًا أو باستخدام سوائل، وأرفق المعلومات الجيوتقنية ذات الصلة إن توفرت."
+        ]},
+        { heading: "٢. حدد الأبعاد والوصلة", bullets: [
+          "أرسل القطر الخارجي وطول العمل المطلوب وأي قيود على الأبعاد الكلية.",
+          "حدد مقاس كيلي بوكس أو الوصلة الأخرى وأبعاد الأجزاء المتداخلة، مع مواقع فتحات التثبيت ومقاسات البنوز عند الحاجة.",
+          "في مجموعة مواسير التغليف أو التريمي، حدد كل مكون ووصلته؛ وبالنسبة لأنبوب التريمي المدرج، أكد مقاس 8 أو 10 بوصات والملحقات المطلوبة من قمع ورافعة وحامل تعليق.",
+          "أرفق رسمًا بالأبعاد أو صورًا واضحة للأداة الحالية مع مقياس، وحدد القياسات المهمة بالملليمتر."
+        ]},
+        { heading: "٣. وضح نطاق الطلب والتسليم", bullets: [
+          "حدد الكمية لكل مقاس أو خيار، وهل المطلوب مجموعة كاملة أم قطع بديلة.",
+          "اذكر مدينة التسليم والموعد المطلوب وأي متطلبات تعبئة أو دخول للموقع تعرفها.",
+          "أرسل اسم جهة الاتصال وطريقة الرد المفضلة للاستفسار عن أي أبعاد غير واضحة."
+        ]},
+        { heading: "قبل اعتماد الرسم", paragraphs: [
+          "راجع الأبعاد النهائية والوصلة وترتيب القطع والملحقات المشمولة بما يناسب المعدة والمشروع. الصورة المرجعية أو المقاس الاسمي لا يحل محل رسم التصنيع أو تأكيد التوافق.",
+          "عند استبدال أداة متآكلة، أرسل مقاساتها وصورها. قد يؤثر التآكل في دقة القياس الواحد، لذا قارن بالرسم أو بجزء غير متآكل إن أمكن."
+        ]}
+      ],
+      takeaway: "حدد المنتجات في قائمة عرض السعر، ثم أرسل الرسومات وبيانات المشروع عبر خيارات الاتصال للمراجعة الفنية."
+    }
   }
 ];
