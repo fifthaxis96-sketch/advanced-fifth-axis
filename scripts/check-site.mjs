@@ -68,6 +68,15 @@ for (const directive of ["base-uri 'self'", "object-src 'none'", "frame-ancestor
   if (!headers.includes(directive)) failures.push(`_headers: missing CSP directive ${directive}`);
 }
 if (!headers.includes('Strict-Transport-Security: max-age=86400')) failures.push('_headers: missing initial HSTS policy');
+const redirects = readFileSync(join(root, '_redirects'), 'utf8');
+for (const [source, target] of [
+  ['/products/kelly-adapter-250-female-200-male', '/products/kelly-boxes'],
+  ['/ar/products/kelly-adapter-250-female-200-male', '/ar/products/kelly-boxes'],
+]) {
+  if (!redirects.includes(`${source} ${target} 301`)) failures.push(`_redirects: missing ${source} permanent redirect`);
+  if (!existsSync(localFile(target))) failures.push(`_redirects: missing target ${target}`);
+}
+
 if (failures.length) {
   console.error(failures.join('\n'));
   process.exitCode = 1;

@@ -35,4 +35,4 @@ The site includes canonical URLs, language alternates, sitemap, robots metadata,
 ## Deployment
 The Next.js build exports to `./out`. `wrangler.jsonc` serves that directory through Cloudflare static assets.
 
-See [site audit](docs/site-audit.md) for verified findings and inputs still needed.
+See [site audit](docs/site-audit.md) for verified findings and [launch operations](docs/launch-operations.md) for production checks, redirects, ownership and rollback.
