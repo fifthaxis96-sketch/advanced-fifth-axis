@@ -63,6 +63,11 @@ for (const match of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) {
 }
 const robots = readFileSync(join(root, 'robots.txt'), 'utf8');
 if (!robots.includes('https://advanced-fifthaxis.com/sitemap.xml')) failures.push('robots.txt: sitemap missing');
+const headers = readFileSync(join(root, '_headers'), 'utf8');
+for (const directive of ["base-uri 'self'", "object-src 'none'", "frame-ancestors 'self'", "form-action 'self'"]) {
+  if (!headers.includes(directive)) failures.push(`_headers: missing CSP directive ${directive}`);
+}
+if (!headers.includes('Strict-Transport-Security: max-age=86400')) failures.push('_headers: missing initial HSTS policy');
 if (failures.length) {
   console.error(failures.join('\n'));
   process.exitCode = 1;
