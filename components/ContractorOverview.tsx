@@ -1,6 +1,4 @@
 import { Footer, Header } from "@/components/LocalizedSite";
-import { company } from "@/lib/site";
-
 type Lang = "en" | "ar";
 
 const packages = {
