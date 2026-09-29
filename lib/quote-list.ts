@@ -1,6 +1,6 @@
 import { products } from "@/lib/site";
 
-export type QuoteItem = { slug: string; variant: string; quantity: number };
+export type QuoteItem = { slug: string; variant: string; quantity: number; size?: string };
 const key = "afa-quote-list-v1";
 const eventName = "afa-quote-list-change";
 let fallback = "[]";
@@ -21,7 +21,8 @@ export function readQuoteList(): QuoteItem[] {
       products.some(product => product.slug === item.slug &&
         (item.variant === "" || product.variants.includes(item.variant))) &&
       typeof item.quantity === "number" && Number.isInteger(item.quantity) &&
-      item.quantity >= 1 && item.quantity <= 9999 && typeof item.variant === "string"
+      item.quantity >= 1 && item.quantity <= 9999 && typeof item.variant === "string" &&
+      (item.size === undefined || (typeof item.size === "string" && item.size.length <= 80))
     ).slice(0, 30);
   } catch { return []; }
 }
@@ -34,7 +35,7 @@ export function saveQuoteList(items: QuoteItem[]) {
 
 export function addQuoteItem(item: QuoteItem) {
   const items = readQuoteList();
-  const existing = items.find(row => row.slug === item.slug && row.variant === item.variant);
+  const existing = items.find(row => row.slug === item.slug && row.variant === item.variant && (row.size || "").trim() === (item.size || "").trim());
   if (existing) existing.quantity = Math.min(9999, existing.quantity + item.quantity);
   else if (items.length < 30) items.push(item);
   saveQuoteList(items);
