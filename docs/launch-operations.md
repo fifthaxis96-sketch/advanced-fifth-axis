@@ -16,12 +16,13 @@
 5. Confirm `https://www.advanced-fifthaxis.com/products` redirects in one 301 hop to `https://advanced-fifthaxis.com/products`, preserving the path and any query string. This requires a Cloudflare zone redirect rule; Worker static `_redirects` cannot match hostnames.
 6. Build a sample quotation with two product sizes and inspect the generated WhatsApp/email links without sending it; remove the sample list afterward.
 
-## Cloudflare hostname rule still requiring account access
+## Cloudflare hostname rule — verified live on 29 September 2026
 
-In the `advanced-fifthaxis.com` zone, create a **Single Redirect** for `https://www.advanced-fifthaxis.com/*` to `https://advanced-fifthaxis.com/${1}` with status **301** and **Preserve query string** enabled. Keep the WWW hostname proxied in Cloudflare DNS. The existing `Always Use HTTPS` setting handles HTTP first. Verify with both `/products` and `/ar/contact?source=test` after saving.
+The WWW-to-apex redirect is active. Browser checks of `/products?test=1` and `/ar/products/kelly-boxes?source=check` reached the corresponding apex URLs with paths and query strings intact. Keep the WWW hostname proxied in Cloudflare DNS and recheck the rule after future zone changes. The existing `Always Use HTTPS` setting handles HTTP first.
 
 ## Search account checks still requiring ownership
 
+- The local production build passes typecheck and site checks (87 HTML files, 86 sitemap URLs). The browser used for this audit could not inspect the live `/robots.txt` and `/sitemap.xml` responses because its client blocked those XML/text navigations; check their public responses in an ordinary browser or Search Console before treating crawler access as verified.
 - In Google Search Console, inspect the homepage, an English product, its Arabic counterpart, and `/field-work`; submit `https://advanced-fifthaxis.com/sitemap.xml` if it is not already submitted. Use URL Inspection for the actual indexing state rather than a `site:` search estimate.
 - In Bing Webmaster Tools, verify the domain and check its sitemap and URL inspection/indexing reports.
 - Confirm that company-controlled accounts own the domain registrar, Cloudflare zone and Worker, GitHub repository, Search Console and Bing Webmaster Tools. Use named company administrators and recovery methods; do not put credentials or ownership tokens in this repository.
