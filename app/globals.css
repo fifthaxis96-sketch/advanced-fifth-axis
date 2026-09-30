@@ -382,7 +382,7 @@
 .partnersMarquee:hover .partnersTrack,.partnersMarquee.isPaused .partnersTrack{animation-play-state:paused}
 .partnersPause{display:block;margin:24px auto 0;padding:8px 16px;border:1px solid #cbd5df;background:#fff;color:#142c3b;border-radius:6px;cursor:pointer;font:inherit;font-size:14px}
 .partnersPause:focus-visible{outline:3px solid #e8bd40;outline-offset:3px}
-@keyframes partnersScroll{from{transform:translateX(50%)}to{transform:translateX(0)}}
+@keyframes partnersScroll{to{transform:translateX(50%)}}
 @media(max-width:700px){.partnersSection{padding:28px 0}.partnersLogoRow li{width:170px;height:100px;padding:12px 18px}}
 @media(prefers-reduced-motion:reduce){.partnersTrack{animation:none}.partnersMarquee{overflow-x:auto;mask-image:none}.partnersLogoRow[aria-hidden="true"]{display:none}.partnersPause{display:none}}
 
@@ -393,4 +393,3 @@
 .partnersMarquee.isVisible .partnersTrack{animation-play-state:running}
 .partnersMarquee:hover .partnersTrack{animation-play-state:paused}
 
-.partnersTrack{animation-fill-mode:both}
