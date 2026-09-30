@@ -378,7 +378,8 @@
 .partnersTrack{display:flex;width:max-content;animation:partnersScroll 65s linear infinite}
 .partnersLogoRow{list-style:none;padding:0;margin:0;display:flex;flex:none;align-items:center}
 .partnersLogoRow li{width:210px;height:100px;flex:none;padding:16px 22px;display:flex;align-items:center;justify-content:center}
-.partnersLogoRow img{width:100%;height:100%;object-fit:contain}
+.partnerLogoFrame{display:block;position:relative;overflow:hidden;flex:none;max-height:68px}
+.partnersLogoRow .partnerLogoFrame img{position:absolute;max-width:none;object-fit:fill}
 .partnersMarquee:hover .partnersTrack,.partnersMarquee.isPaused .partnersTrack{animation-play-state:paused}
 .partnersPause{display:block;margin:24px auto 0;padding:8px 16px;border:1px solid #cbd5df;background:#fff;color:#142c3b;border-radius:6px;cursor:pointer;font:inherit;font-size:14px}
 .partnersPause:focus-visible{outline:3px solid #e8bd40;outline-offset:3px}
