@@ -378,3 +378,5 @@
 .partnersGrid img{width:100%;height:100%;object-fit:contain}
 @media(max-width:1000px){.partnersGrid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:700px){.partnersSection{padding:52px 0}.partnersGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.partnersGrid li{height:112px;padding:14px}}
+
+.partnersCount{font-size:20px;font-weight:700;color:#b77718;margin:16px 0 0}
