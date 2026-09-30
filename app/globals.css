@@ -394,3 +394,5 @@
 .partnersMarquee.isVisible .partnersTrack{animation-play-state:running}
 .partnersMarquee:hover .partnersTrack{animation-play-state:paused}
 
+
+.partnersLogoRow li[data-partner="ahmadiah"] .partnerLogoFrame{transform:scale(1.15)}
