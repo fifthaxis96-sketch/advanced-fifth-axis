@@ -257,7 +257,7 @@
 .floatingContacts a{display:flex;flex-direction:row;align-items:center;justify-content:flex-start;gap:10px;min-height:54px;background:#fff;color:#143c68;border:1px solid #bfd0df;box-shadow:0 10px 30px #0a2d5b26;padding:8px 9px;border-radius:14px 0 0 14px;font-size:12px;text-decoration:none;transform:translateX(calc(100% - 54px));transition:transform .25s ease,box-shadow .25s ease}
 .floatingContacts a:hover,.floatingContacts a:focus-visible{transform:translateX(0);box-shadow:0 14px 36px #0a2d5b38}
 .floatingContacts b{font-size:12px;white-space:nowrap}.floatingContactIcon{width:36px;height:36px;border-radius:50%;background:#0b5caa;color:#fff;display:grid;place-items:center;flex:none}.floatingContactIcon svg{width:19px;height:19px;display:block}
-.site[dir="rtl"] .floatingContacts{right:auto;left:0}.site[dir="rtl"] .floatingContacts a{flex-direction:row-reverse;justify-content:flex-start;border-radius:0 14px 14px 0;transform:translateX(calc(-100% + 54px))}.site[dir="rtl"] .floatingContacts a:hover,.site[dir="rtl"] .floatingContacts a:focus-visible{transform:translateX(0)}
+.floatingContacts{direction:ltr}
 @media(max-width:600px){.floatingContacts{width:150px}.floatingContacts a{min-height:54px}.floatingContacts .whatsAppIcon,.floatingContacts .floatingContactIcon{width:36px;height:36px}}
 @media print{.floatingContacts,.siteHeader{display:none!important}}
 
@@ -369,19 +369,22 @@
 @media(min-width:851px){.quoteBuilder{display:block}.quoteBuilderHead{max-width:760px;margin-bottom:30px}.quoteBuilderHead h2{max-width:720px}.quoteForm{grid-template-columns:repeat(2,minmax(0,1fr))}.quoteAddGrid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
 /* Partner logos retain their original colors and aspect ratios. */
-.partnersSection{background:#fff;padding:64px 0;border-block:1px solid #e8edf0;scroll-margin-top:100px}
-.partnersHeading{text-align:center;margin-bottom:32px}
+.partnersSection{background:#fff;padding:36px 0;border-block:1px solid #e8edf0;scroll-margin-top:100px}
+.partnersHeading{text-align:center;margin-bottom:20px}
 .partnersHeading .sectionKicker{justify-content:center}
 .partnersHeading h2{font-size:clamp(30px,4vw,46px);margin:12px 0;color:#142c3b}
 .partnersCount{font-size:20px;font-weight:700;color:#b77718;margin:16px 0 0}
 .partnersMarquee{overflow:hidden;mask-image:linear-gradient(to right,transparent,#000 4%,#000 96%,transparent)}
 .partnersTrack{display:flex;width:max-content;animation:partnersScroll 65s linear infinite}
 .partnersLogoRow{list-style:none;padding:0;margin:0;display:flex;flex:none;align-items:center}
-.partnersLogoRow li{width:210px;height:120px;flex:none;padding:16px 22px;display:flex;align-items:center;justify-content:center}
+.partnersLogoRow li{width:210px;height:100px;flex:none;padding:16px 22px;display:flex;align-items:center;justify-content:center}
 .partnersLogoRow img{width:100%;height:100%;object-fit:contain}
 .partnersMarquee:hover .partnersTrack,.partnersMarquee.isPaused .partnersTrack{animation-play-state:paused}
 .partnersPause{display:block;margin:24px auto 0;padding:8px 16px;border:1px solid #cbd5df;background:#fff;color:#142c3b;border-radius:6px;cursor:pointer;font:inherit;font-size:14px}
 .partnersPause:focus-visible{outline:3px solid #e8bd40;outline-offset:3px}
 @keyframes partnersScroll{to{transform:translateX(-50%)}}
-@media(max-width:700px){.partnersSection{padding:44px 0}.partnersLogoRow li{width:170px;height:100px;padding:12px 18px}}
+@media(max-width:700px){.partnersSection{padding:28px 0}.partnersLogoRow li{width:170px;height:100px;padding:12px 18px}}
 @media(prefers-reduced-motion:reduce){.partnersTrack{animation:none}.partnersMarquee{overflow-x:auto;mask-image:none}.partnersLogoRow[aria-hidden="true"]{display:none}.partnersPause{display:none}}
+
+.partnersSection>.wrap{width:100%;max-width:none;padding-inline:24px}
+@media(max-width:700px){.partnersSection>.wrap{padding-inline:12px}}
