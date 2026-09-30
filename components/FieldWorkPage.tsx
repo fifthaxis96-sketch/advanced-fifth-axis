@@ -4,6 +4,15 @@ type Scene = { file: string; en: string; ar: string };
 type Group = { en: {title: string; text: string}; ar: {title: string; text: string}; scenes: Scene[] };
 const groups: Group[] = [
   {
+    en: { title: "Foundation drilling beside a roadway", text: "Site photographs of a tracked drilling rig, drilling tools and reinforcement cage beside a roadway." },
+    ar: { title: "حفر الأساسات بجانب الطريق", text: "صور ميدانية لآلة حفر مجنزرة وأدوات الحفر وقفص التسليح بجانب الطريق." },
+    scenes: [
+      {file: "roadway-foundation-rig-4079", en: "Tracked foundation drilling rig and vertical reinforcement cage beside a roadway", ar: "آلة حفر أساسات مجنزرة وقفص تسليح عمودي بجانب الطريق"},
+      {file: "roadway-foundation-rig-4080", en: "Wide site view of a foundation drilling rig and reinforcement cage between road lanes", ar: "منظر عام لآلة حفر أساسات وقفص تسليح بين مسارات الطريق"},
+      {file: "roadway-foundation-rig-4078", en: "Foundation drilling rig working beside a roadway and bridge construction", ar: "آلة حفر أساسات تعمل بجانب الطريق وأعمال إنشاء جسر"}
+    ]
+  },
+  {
     en: { title: "Drilling tools on site", text: "Field views of foundation drilling tools and a rig. The images show the equipment in its working environment; tool dimensions and the ground profile are specific to each inquiry." },
     ar: { title: "أدوات الحفر في الموقع", text: "صور ميدانية لأدوات حفر الأساسات وآلة الحفر. تظهر المعدات في بيئة العمل، فيما تختلف أبعاد الأداة وطبيعة التربة حسب كل طلب." },
     scenes: [
