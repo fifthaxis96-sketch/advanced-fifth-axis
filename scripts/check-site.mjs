@@ -38,6 +38,11 @@ function localFile(url) {
 }
 for (const file of htmlFiles) {
   const html = readFileSync(file, 'utf8');
+  for (const image of html.matchAll(/<img\b[^>]*>/gi)) {
+    const alt = image[0].match(/\balt="([^"]*)"/i);
+    if (!alt) failures.push(`${file}: image missing alt attribute`);
+    else if (!alt[1].trim() && !/\baria-hidden="true"/i.test(image[0])) failures.push(`${file}: informative image has empty alt text`);
+  }
   const canonical = html.match(/<link rel="canonical" href="([^"]+)"/i)?.[1];
   if (!canonical && !file.endsWith('404.html')) failures.push(`${file}: missing canonical`);
   if (canonical && !file.endsWith('404.html')) {
