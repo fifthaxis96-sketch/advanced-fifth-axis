@@ -169,6 +169,12 @@ export const products: Product[] = [
     descriptionAr: "خزان يُصنع حسب الطلب لمناولة سائل البنتونيت أو المياه في مشاريع الأساسات. يُرجى تأكيد السعة والأبعاد ونقاط الرفع وفتحات الوصول ووصلات الأنابيب لكل مشروع.",
     variants: [], images: ["/products/customized-bentonite-water-tank.webp"],
   },
+  {
+    slug: "bi-directional-static-axial-load-plate", name: "Bi-Directional Static Axial Load Plate", nameAr: "صفيحة اختبار التحميل المحوري الساكن ثنائي الاتجاه", category: "Fabricated Components",
+    description: "Custom-made load plate for bi-directional static axial load testing. Plate diameter, thickness, openings and layout are manufactured to confirmed project drawings. Include the required dimensions, testing arrangement and design requirements with your quotation request.",
+    descriptionAr: "صفيحة تُصنع حسب الطلب لاختبار التحميل المحوري الساكن ثنائي الاتجاه. يتم تصنيع القطر والسماكة والفتحات وتوزيعها وفق رسومات المشروع المعتمدة. أرفق الأبعاد المطلوبة ونظام الاختبار ومتطلبات التصميم مع طلب عرض السعر.",
+    variants: ["Custom sizes"], images: ["/products/bi-directional-static-axial-load-plate-1.webp", "/products/bi-directional-static-axial-load-plate-2.webp", "/products/bi-directional-static-axial-load-plate-3.webp"],
+  },
 ];
 
 export const company = {
