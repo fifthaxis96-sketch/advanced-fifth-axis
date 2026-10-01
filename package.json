@@ -5,7 +5,8 @@
     "start": "next start",
     "lint": "next lint",
     "typecheck": "tsc --noEmit",
-    "check:site": "node scripts/check-site.mjs"
+    "check:site": "node scripts/check-site.mjs",
+    "check:seo": "node scripts/check-seo.mjs"
   },
   "dependencies": {
     "next": "15.5.26",

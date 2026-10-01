@@ -1,0 +1,354 @@
+{
+  "/about": {
+    "title": "About Our Foundation Drilling Company | Advanced Fifth Axis",
+    "description": "Learn about Advanced Fifth Axis, a Jeddah-based supplier and fabricator of foundation drilling tools, casing solutions, wear parts and custom components."
+  },
+  "/ar/about": {
+    "title": "عن أدفانسد فيفث أكسس | معدات حفر الأساسات",
+    "description": "تعرف على أدفانسد فيفث أكسس في جدة لتوريد وتصنيع أدوات حفر الأساسات ومواسير التغليف وقطع التآكل والمكونات المخصصة."
+  },
+  "/ar/capabilities": {
+    "title": "قدرات تصنيع وتوريد معدات حفر الأساسات",
+    "description": "أدوات حفر الأساسات والتصنيع المخصص ومواسير التغليف وقطع الاستبدال للمشاريع في المملكة العربية السعودية."
+  },
+  "/ar/collections/casing": {
+    "title": "مواسير التغليف ومكوناتها | معدات حفر الأساسات السعودية",
+    "description": "مواسير تغليف ومكوناتها وحلول مرتبطة بتطبيقات حفر الأساسات."
+  },
+  "/ar/collections/drive-systems": {
+    "title": "أنظمة كيلي ونقل الحركة | معدات حفر الأساسات السعودية",
+    "description": "كيلي بوكس ووصلات لربط معدات الحفر الدوار بأدوات الأساسات، بالإضافة إلى خدمات إصلاح قضبان كيلي."
+  },
+  "/ar/collections/fabricated-components": {
+    "title": "مكونات مصنعة حسب الطلب | معدات حفر الأساسات السعودية",
+    "description": "مكونات فولاذية ثقيلة تُصنع حسب الرسومات والأبعاد ومتطلبات المشروع المؤكدة."
+  },
+  "/ar/collections/foundation-tools": {
+    "title": "أدوات حفر الأساسات | معدات حفر الأساسات السعودية",
+    "description": "أوجرات وبكيتات وكور بارل وأدوات الحفر المستمر لمشاريع حفر الأساسات."
+  },
+  "/ar/collections/wear-parts": {
+    "title": "أسنان وقطع التآكل | معدات حفر الأساسات السعودية",
+    "description": "أدوات قطع وأسنان وحوامل وقطع تآكل قابلة للاستبدال لمعدات حفر الأساسات."
+  },
+  "/ar/collections": {
+    "title": "فئات معدات حفر الأساسات في السعودية",
+    "description": "تصفح أدوات حفر الأساسات وقطع التآكل ومواسير التغليف وأنظمة كيلي والمكونات المصنعة حسب الطلب في السعودية."
+  },
+  "/ar/contact": {
+    "title": "تواصل معنا واطلب عرض سعر | أدفانسد فيفث أكسس",
+    "description": "تواصل مع أدفانسد فيفث أكسس في جدة لطلبات أسعار معدات حفر الأساسات ومواسير التغليف وأنظمة كيلي وقطع التآكل والتصنيع المخصص."
+  },
+  "/ar/faq": {
+    "title": "الأسئلة الشائعة | معدات حفر الأساسات",
+    "description": "إجابات عن معدات حفر الأساسات والتوافق وطلبات عروض الأسعار في السعودية."
+  },
+  "/ar/field-work": {
+    "title": "معرض مشاريع العملاء",
+    "description": "استكشف صورًا شاركها عملاؤنا من مشاريع حفر الأساسات، تعرض أدواتنا ومعداتنا أثناء العمل."
+  },
+  "/ar/guides/drilling-tool-selection": {
+    "title": "الأوجر الصخري أم بكيت الصخور أم الكور بارل؟ | أدفانسد فيفث أكسس",
+    "description": "مقارنة عملية لأدوات حفر الأساسات والمعلومات اللازمة قبل طلب عرض السعر."
+  },
+  "/ar/guides/foundation-drilling-rfq-checklist": {
+    "title": "قائمة بيانات طلب عرض سعر معدات حفر الأساسات | أدفانسد فيفث أكسس",
+    "description": "الأبعاد ومعلومات التربة والرسومات وبيانات التسليم المطلوبة للاستفسار عن أدوات حفر الأساسات والمكونات المصنعة."
+  },
+  "/ar/guides/kelly-connections": {
+    "title": "كيفية تحديد مقاسات الكيلي بوكس والوصلة | أدفانسد فيفث أكسس",
+    "description": "الأبعاد والمسامير والرسومات المطلوبة للاستفسار عن وصلات أدوات حفر الأساسات."
+  },
+  "/ar/guides": {
+    "title": "الأدلة الفنية لمعدات حفر الأساسات | أدفانسد فيفث أكسس",
+    "description": "أدلة عملية حول أدوات الحفر ووصلات الكيلي والمعلومات المطلوبة لطلب عرض سعر معدات الأساسات."
+  },
+  "/ar/privacy": {
+    "title": "الخصوصية | المحور الخامس المتقدم",
+    "description": "كيفية استخدام المعلومات التي ترسلها عند التواصل مع شركة المحور الخامس المتقدم."
+  },
+  "/ar/products/b-47k22h-tooth": {
+    "title": "سن حفر B-47K22H | معدات حفر الأساسات السعودية",
+    "description": "سن حفر B-47K22H كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والاستخدام المطلوب قبل الطلب."
+  },
+  "/ar/products/b43-holder": {
+    "title": "حامل سن B43 | معدات حفر الأساسات السعودية",
+    "description": "حامل سن B43 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد توافق السن والأبعاد وتفاصيل التركيب قبل الطلب."
+  },
+  "/ar/products/bfz70-holder": {
+    "title": "حامل سن BFZ70 | معدات حفر الأساسات السعودية",
+    "description": "حامل سن BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
+  },
+  "/ar/products/bfz70-tooth": {
+    "title": "سن حفر BFZ70 | معدات حفر الأساسات السعودية",
+    "description": "سن حفر BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد التوافق والأبعاد والحامل المطابق قبل الطلب."
+  },
+  "/ar/products/bi-directional-static-axial-load-plate": {
+    "title": "صفيحة اختبار التحميل المحوري الساكن ثنائي الاتجاه | معدات حفر الأساسات السعودية",
+    "description": "صفيحة تُصنع حسب الطلب لاختبار التحميل المحوري الساكن ثنائي الاتجاه. يتم تصنيع القطر والسماكة والفتحات وتوزيعها وفق رسومات المشروع المعتمدة. أرفق الأبعاد المطلوبة ونظام الاختبار ومتطلبات التصميم مع طلب عرض السعر."
+  },
+  "/ar/products/c30-round-holder": {
+    "title": "حامل سن C30 دائري | معدات حفر الأساسات السعودية",
+    "description": "حامل سن C30 الدائري كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
+  },
+  "/ar/products/c30-square-holder": {
+    "title": "حامل سن C30 مربع | معدات حفر الأساسات السعودية",
+    "description": "حامل سن C30 المربع كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
+  },
+  "/ar/products/c31hd-tooth": {
+    "title": "سن حفر C31HD | معدات حفر الأساسات السعودية",
+    "description": "سن حفر C31HD كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والكمية المطلوبة قبل الطلب."
+  },
+  "/ar/products/casing-twister": {
+    "title": "أداة تدوير مواسير التغليف | معدات حفر الأساسات السعودية",
+    "description": "أداة تدوير مواسير التغليف كما تظهر في صورة المنتج المقدمة. يُرجى تأكيد قطر الماسورة وتفاصيل الوصلة والتوافق مع معدة الحفر قبل الطلب."
+  },
+  "/ar/products/casing": {
+    "title": "مواسير التغليف وملحقاتها | معدات حفر الأساسات السعودية",
+    "description": "مواسير تغليف ومكونات مرتبطة بحفر الأساسات لدعم الحفرة وعمليات التغليف. يتم تأكيد القطر وتركيب الجدار ونوع الوصلة والطول وواجهة الأداة حسب المشروع قبل التوريد."
+  },
+  "/ar/products/center-pilot-attachment-holder": {
+    "title": "ملحق السن المركزي وحامله | معدات حفر الأساسات السعودية",
+    "description": "مجموعة ملحق السن المركزي وحامله كما تظهر مع مسمار التثبيت والصامولة. يُرجى تأكيد أبعاد السن المركزي وطريقة التثبيت والتوافق مع أداة الحفر قبل الطلب."
+  },
+  "/ar/products/cfa": {
+    "title": "أوجرات الحفر المستمر | معدات حفر الأساسات السعودية",
+    "description": "مقاطع وتكوينات أوجر الحفر المستمر لتطبيقات الأساسات. يتم اختيار القطر والطول وخطوة الحلزون والأنبوب المركزي والوصلة بما يناسب المشروع ونظام الحفر."
+  },
+  "/ar/products/cleaning-buckets": {
+    "title": "بكيت تنظيف قاع الحفر | معدات حفر الأساسات السعودية",
+    "description": "بكيت تنظيف لإزالة المواد المفككة من قاع حفرة الأساسات. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد قطر البكيت وتصميم القاع والتوافق مع المعدة قبل الطلب."
+  },
+  "/ar/products/core-barrels": {
+    "title": "كور بارل | معدات حفر الأساسات السعودية",
+    "description": "كور بارل لقطع حلقة محيطية في الصخور والطبقات الصلبة، بخيارات أسنان مخروطية أو رولر بت. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد التوافق مع المعدة قبل الطلب."
+  },
+  "/ar/products/customized-bentonite-water-tank": {
+    "title": "خزان بنتونيت ومياه حسب الطلب | معدات حفر الأساسات السعودية",
+    "description": "خزان يُصنع حسب الطلب لمناولة سائل البنتونيت أو المياه في مشاريع الأساسات. يُرجى تأكيد السعة والأبعاد ونقاط الرفع وفتحات الوصول ووصلات الأنابيب لكل مشروع."
+  },
+  "/ar/products/drilling-buckets": {
+    "title": "بكيتات حفر الصخور | معدات حفر الأساسات السعودية",
+    "description": "بكيتات حفر الصخور بأسنان قطع لأعمال الأساسات. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد القطر والأسنان وجسم البكيت والتوافق مع المعدة لكل طلب."
+  },
+  "/ar/products/hq-68-95-holder": {
+    "title": "حامل سن HQ-68/95 | معدات حفر الأساسات السعودية",
+    "description": "حامل سن HQ-68/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب."
+  },
+  "/ar/products/hq-78-95-holder": {
+    "title": "حامل سن HQ-78/95 | معدات حفر الأساسات السعودية",
+    "description": "حامل سن HQ-78/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب."
+  },
+  "/ar/products/kelly-bars": {
+    "title": "إصلاح قضبان كيلي | معدات حفر الأساسات السعودية",
+    "description": "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. أرسل الصور والأبعاد وموديل المعدة وتفاصيل التلف لتقييم نطاق الإصلاح والتوافق."
+  },
+  "/ar/products/kelly-box-pins": {
+    "title": "بنوز كيلي بوكس | معدات حفر الأساسات السعودية",
+    "description": "بنوز كيلي بوكس بقطر خارجي 50 أو 60 مم وطول مطابق 320 أو 400 مم. يُرجى تأكيد موضع فتحة البن والتوافق مع المعدة والأداة قبل الطلب."
+  },
+  "/ar/products/kelly-boxes": {
+    "title": "كيلي بوكس ووصلة كيلي | معدات حفر الأساسات السعودية",
+    "description": "كيلي بوكس مربع شديد التحمل لأدوات الحفر الدوار بمقاسات 150×150 و200×200 و250×250 مم، بالإضافة إلى وصلة كيلي بطرف أنثى 250×250 مم وطرف ذكر 200×200 مم. المقاس القياسي للأدوات 200×200 مم؛ يُرجى تأكيد فتحات التثبيت وطول التداخل والتوافق مع المعدة قبل الطلب."
+  },
+  "/ar/products/pile-testing-reaction-beam": {
+    "title": "كمرة اختبار تحميل الأساسات | معدات حفر الأساسات السعودية",
+    "description": "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الأساسات. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار."
+  },
+  "/ar/products/rock-augers": {
+    "title": "أوجرات حفر الصخور | معدات حفر الأساسات السعودية",
+    "description": "أوجرات صخور مستقيمة ومخروطية للحفر الدوار بأسنان صخرية. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد القطر وتصميم الحلزون والسن المركزي والتوافق مع المعدة لكل طلب."
+  },
+  "/ar/products/roller-bits": {
+    "title": "رؤوس الحفر الدوارة | معدات حفر الأساسات السعودية",
+    "description": "موديلات رؤوس الحفر الدوارة للاستفسارات الخاصة بحفر الأساسات."
+  },
+  "/ar/products/wire-tremie-pipe": {
+    "title": "مجموعة مواسير تريمي واير | معدات حفر الأساسات السعودية",
+    "description": "مجموعة مواسير تريمي واير لصب خرسانة الأساسات بمقاسي 8 و10 بوصات. تشمل المجموعة الكاملة قمع الصب (Hopper) وقطعة الرفع (Lift) وحامل التعليق (Suspension Jig). يُرجى تأكيد طول المواسير والوصلات وتكوين المجموعة قبل الطلب."
+  },
+  "/ar/products": {
+    "title": "منتجات ومعدات حفر الأساسات في السعودية",
+    "description": "تصفح أدوات حفر الأساسات ومواسير التغليف وأنظمة كيلي وأسنان وقطع التآكل والمكونات المصنعة حسب الطلب في السعودية."
+  },
+  "/ar/tool-finder": {
+    "title": "مساعد اختيار أدوات حفر الأساسات",
+    "description": "تصفح فئات أدوات الحفر حسب الاستخدام وأرسل موديل المعدة والقطر وطبيعة التربة للمراجعة الفنية في السعودية."
+  },
+  "/ar": {
+    "title": "معدات حفر الأساسات في السعودية | المحور الخامس المتقدم",
+    "description": "بكيتات وأوجرات الحفر والكور بارل ومواسير التغليف وأسنان القطع في جدة، السعودية. اطلب عرض سعر حسب الموديل والمواصفات."
+  },
+  "/capabilities": {
+    "title": "Foundation Drilling Capabilities | Advanced Fifth Axis",
+    "description": "Foundation drilling tools, custom fabrication, casing and replacement components for projects in Saudi Arabia."
+  },
+  "/collections/casing": {
+    "title": "Casing & Components | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Casing sections, casing components and related solutions for foundation drilling applications."
+  },
+  "/collections/drive-systems": {
+    "title": "Kelly & Drive Systems | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Kelly boxes and adapters for connecting rotary drilling rigs to foundation tools, plus Kelly bar repair services."
+  },
+  "/collections/fabricated-components": {
+    "title": "Custom Fabricated Components | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Heavy steel fabricated components produced to confirmed drawings, dimensions and project requirements."
+  },
+  "/collections/foundation-tools": {
+    "title": "Foundation Drilling Tools | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Augers, drilling buckets, core barrels and continuous-flight tools for piling and foundation drilling projects."
+  },
+  "/collections/wear-parts": {
+    "title": "Cutting & Wear Parts | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Cutting tools, teeth, holders and replaceable wear components for foundation drilling equipment."
+  },
+  "/collections": {
+    "title": "Foundation Drilling Product Collections Saudi Arabia | Advanced Fifth Axis",
+    "description": "Browse foundation drilling tools, cutting and wear parts, casing, Kelly systems and custom fabricated components in Saudi Arabia."
+  },
+  "/contact": {
+    "title": "Contact & Request a Quote | Advanced Fifth Axis",
+    "description": "Contact Advanced Fifth Axis in Jeddah for foundation drilling tools, casing, Kelly systems, wear parts and custom fabrication quotations."
+  },
+  "/faq": {
+    "title": "Frequently Asked Questions | Foundation Drilling | Advanced Fifth Axis",
+    "description": "Answers about foundation drilling tools, custom dimensions and quotation requests in Saudi Arabia."
+  },
+  "/field-work": {
+    "title": "Client Projects Showcase | Advanced Fifth Axis",
+    "description": "Explore photos shared by our clients from foundation drilling projects, showcasing our tools and equipment in action."
+  },
+  "/guides/drilling-tool-selection": {
+    "title": "Rock auger, rock bucket or core barrel? | Advanced Fifth Axis",
+    "description": "A practical comparison of foundation drilling tools and the project details to confirm before requesting a quotation."
+  },
+  "/guides/foundation-drilling-rfq-checklist": {
+    "title": "Foundation drilling RFQ checklist | Advanced Fifth Axis",
+    "description": "The dimensions, ground information, drawings and delivery details to send when requesting foundation drilling tools or fabricated components."
+  },
+  "/guides/kelly-connections": {
+    "title": "How to specify a Kelly box and adapter | Advanced Fifth Axis",
+    "description": "Connection measurements, pins and drawings to check for a foundation drilling tool inquiry."
+  },
+  "/guides": {
+    "title": "Foundation Drilling Technical Guides | Advanced Fifth Axis",
+    "description": "Practical buyer guidance on drilling tools, Kelly connections and the information needed for a foundation equipment quotation."
+  },
+  "/": {
+    "title": "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia",
+    "description": "Foundation drilling tools, drilling buckets, augers, core barrels, casing, Kelly systems, wear parts and custom fabrication in Jeddah, Saudi Arabia."
+  },
+  "/privacy": {
+    "title": "Privacy | Advanced Fifth Axis",
+    "description": "How Advanced Fifth Axis handles the information you share when making an inquiry."
+  },
+  "/products/b-47k22h-tooth": {
+    "title": "B-47K22H Cutting Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "B-47K22H cutting tooth shown in the supplied product photograph. Confirm shank size, matching holder and operating application before ordering."
+  },
+  "/products/b43-holder": {
+    "title": "B43 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "B43 tooth holder shown in the supplied product photograph. Confirm tooth fit, dimensions and installation details before ordering."
+  },
+  "/products/bfz70-holder": {
+    "title": "BFZ70 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "BFZ70 tooth holder shown in the supplied product photo. Confirm mounting dimensions and tooth compatibility before ordering."
+  },
+  "/products/bfz70-tooth": {
+    "title": "BFZ70 Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "BFZ70 cutting tooth shown in the supplied product photo. Confirm fit, dimensions and the matching holder before ordering."
+  },
+  "/products/bi-directional-static-axial-load-plate": {
+    "title": "Bi-Directional Static Axial Load Plate | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Custom-made load plate for bi-directional static axial load testing. Plate diameter, thickness, openings and layout are manufactured to confirmed project drawings. Include the required dimensions, testing arrangement and design requirements with your quotation request."
+  },
+  "/products/c30-round-holder": {
+    "title": "C30 Round Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "C30 round holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering."
+  },
+  "/products/c30-square-holder": {
+    "title": "C30 Square Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "C30 square holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering."
+  },
+  "/products/c31hd-tooth": {
+    "title": "C31HD Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "C31HD cutting tooth shown in the supplied product photograph. Confirm the shank, matching holder and required quantity before ordering."
+  },
+  "/products/casing-twister": {
+    "title": "Casing Twister | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Casing twister shown in the supplied product photo. Confirm casing diameter, connection details and drilling rig compatibility before ordering."
+  },
+  "/products/casing": {
+    "title": "Foundation Drilling Casing | Advanced Fifth Axis",
+    "description": "Foundation drilling casing and related components for bore support and casing operations. Diameter, wall arrangement, joint type, length and tool interface are confirmed for the project before supply."
+  },
+  "/products/center-pilot-attachment-holder": {
+    "title": "Center Pilot Attachment & Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Center pilot attachment and holder assembly shown with a fastening bolt and nut. Confirm pilot dimensions, mounting interface and fit for the drilling tool before ordering."
+  },
+  "/products/cfa": {
+    "title": "CFA Augers | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Continuous flight auger sections and configurations for foundation drilling applications. Diameter, length, flight pitch, center tube and connection are selected to suit the project and drilling system."
+  },
+  "/products/cleaning-buckets": {
+    "title": "Cleaning Bucket | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Cleaning bucket for clearing loose material from the bottom of foundation boreholes. Standard Kelly box: 200×200 mm. Confirm bucket diameter, bottom configuration and rig interface before ordering."
+  },
+  "/products/core-barrels": {
+    "title": "Core Barrels | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Core barrels for cutting an annular ring in rock and hard formations, with bullet teeth or roller bits. Standard Kelly box: 200×200 mm. Confirm the rig interface before ordering."
+  },
+  "/products/customized-bentonite-water-tank": {
+    "title": "Customized Bentonite & Water Tank | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Custom fabricated tank for bentonite slurry or water handling on foundation projects. Confirm required capacity, dimensions, lifting points, access and pipe connections for each project."
+  },
+  "/products/drilling-buckets": {
+    "title": "Rock Buckets | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Rock drilling buckets with cutting teeth for foundation work. Standard Kelly box: 200×200 mm. Confirm the diameter, teeth, shell and rig interface for each order."
+  },
+  "/products/hq-68-95-holder": {
+    "title": "HQ-68/95 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "HQ-68/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering."
+  },
+  "/products/hq-78-95-holder": {
+    "title": "HQ-78/95 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "HQ-78/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering."
+  },
+  "/products/kelly-bars": {
+    "title": "Kelly Bar Repair | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs. Share photos, dimensions, the rig model and details of the damage so the repair scope and compatibility can be assessed."
+  },
+  "/products/kelly-box-pins": {
+    "title": "Kelly Box Pins | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Kelly box pins in outside diameters of 50 or 60 mm and corresponding lengths of 320 or 400 mm. Confirm the pin hole position and rig/tool interface before ordering."
+  },
+  "/products/kelly-boxes": {
+    "title": "Kelly Box & Adapter | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Heavy-duty square Kelly boxes for rotary drilling tools in 150×150, 200×200 and 250×250 mm, plus a Kelly adapter with a 250×250 mm female connection and a 200×200 mm male connection. The standard tool connection is 200×200 mm; confirm pin-hole layout, engagement length and rig interface before ordering."
+  },
+  "/products/pile-testing-reaction-beam": {
+    "title": "Pile Testing Reaction Beam | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Fabricated reaction beam for pile load testing inquiries. Configuration, length, connections and load rating must be engineered and confirmed for the testing arrangement."
+  },
+  "/products/rock-augers": {
+    "title": "Rock Augers | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Straight and conical rock augers for rotary foundation drilling with bullet teeth. Standard Kelly box: 200×200 mm. Confirm the diameter, flight geometry, pilot and rig interface for each order."
+  },
+  "/products/roller-bits": {
+    "title": "Roller Bits | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Roller-bit models for foundation drilling inquiries."
+  },
+  "/products/wire-tremie-pipe": {
+    "title": "Wire Tremie Pipe Set | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "Wire tremie pipe set for foundation concrete placement in 8-inch and 10-inch sizes. The full set includes a hopper, lift and suspension jig. Confirm the pipe length, connections and set configuration before ordering."
+  },
+  "/products": {
+    "title": "Foundation Drilling Products Saudi Arabia | Advanced Fifth Axis",
+    "description": "Browse foundation drilling tools, casing, Kelly systems, cutting and wear parts, and custom fabricated components for projects in Saudi Arabia."
+  },
+  "/tool-finder": {
+    "title": "Find Foundation Drilling Tools | Advanced Fifth Axis",
+    "description": "Explore drilling tool families by application and send your rig, diameter and ground conditions for technical review in Saudi Arabia."
+  }
+}

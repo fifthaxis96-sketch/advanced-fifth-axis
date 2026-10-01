@@ -1,3 +1,4 @@
+import { withSEO } from "@/lib/seo";
 import type { Metadata } from "next";
 import { products } from "@/lib/site";
 import { ProductView } from "@/components/LocalizedSite";
@@ -13,11 +14,11 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   const url=`${base}/products/${p.slug}`;
   const title=p.name+" | Foundation Drilling Saudi Arabia";
   const description=p.description;
-  return {
+  return withSEO(`/products/${slug}`, {
     title, description,
     alternates:{canonical:url,languages:{en:`${base}/products/${p.slug}`,ar:`${base}/ar/products/${p.slug}`}},
     openGraph:{title,description,url,type:"website",images:p.images?.[0]?[{url:`${base}${p.images[0]}`,alt:p.name}]:undefined}
-  };
+  });
 }
 
 export default async function ProductPage({params}:{params:Promise<{slug:string}>}){

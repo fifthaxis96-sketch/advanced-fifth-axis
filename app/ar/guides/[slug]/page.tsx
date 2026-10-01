@@ -1,3 +1,4 @@
+import { withSEO } from "@/lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { GuideView } from "@/components/GuidePages";
@@ -7,7 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params, g = guides.find(item => item.slug === slug);
   if (!g) return {};
   const base = "https://advanced-fifthaxis.com", url = `${base}/ar/guides/${slug}`;
-  return { title: `${g.ar.title} | أدفانسد فيفث أكسس`, description: g.ar.description, alternates: { canonical: url, languages: { en: `${base}/guides/${slug}`, ar: url } }, openGraph: { title: g.ar.title, description: g.ar.description, url, type: "article" } };
+  return withSEO(`/ar/guides/${slug}`, { title: `${g.ar.title} | أدفانسد فيفث أكسس`, description: g.ar.description, alternates: { canonical: url, languages: { en: `${base}/guides/${slug}`, ar: url } }, openGraph: { title: g.ar.title, description: g.ar.description, url, type: "article" } });
 }
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params, g = guides.find(item => item.slug === slug);

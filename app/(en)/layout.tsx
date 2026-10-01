@@ -1,10 +1,11 @@
+import { withSEO } from "@/lib/seo";
 import "../globals.css";
 import type { Metadata, Viewport } from "next";
-import { company } from "@/lib/site";
+import { organization, website } from "@/lib/organization";
 
 export const viewport: Viewport = { width: "device-width", initialScale: 1, themeColor: "#0b376d" };
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSEO("/", {
   metadataBase: new URL("https://advanced-fifthaxis.com"),
   title: { default: "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia", template: "%s | Advanced Fifth Axis" },
   description: "Foundation drilling tools, drilling buckets, augers, core barrels, casing, Kelly systems, wear parts and custom fabrication in Jeddah, Saudi Arabia.",
@@ -18,31 +19,7 @@ export const metadata: Metadata = {
   openGraph: { type: "website", locale: "en_SA", alternateLocale: ["ar_SA"], siteName: "Advanced Fifth Axis", title: "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia", description: "Foundation drilling tools and custom fabricated components for piling contractors in Saudi Arabia.", url: "/", images: [{ url: "/home/foundation-drilling-showcase.webp", alt: "Advanced Fifth Axis foundation drilling equipment" }] },
   twitter: { card: "summary_large_image", title: "Advanced Fifth Axis", description: "Foundation drilling tools and fabricated components in Saudi Arabia.", images: ["/home/foundation-drilling-showcase.webp"] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
-};
-
-const organization = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: company.name,
-  url: "https://advanced-fifthaxis.com",
-  logo: "https://advanced-fifthaxis.com/advanced-fifth-axis-logo.webp",
-  telephone: company.phone,
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Al Muftakira Street 4474, Jeddah Industrial",
-    addressLocality: "Jeddah",
-    addressCountry: "SA"
-  },
-  vatID: company.vat
-};
-
-const website = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: company.name,
-  url: "https://advanced-fifthaxis.com",
-  inLanguage: ["en-SA","ar-SA"]
-};
+});
 
 export default function RootLayout({children}:{children:React.ReactNode}){
   return <html lang="en"><body><a className="skipLink" href="#main-content">Skip to content</a>

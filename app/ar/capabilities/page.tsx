@@ -1,12 +1,13 @@
+import { withSEO } from "@/lib/seo";
 import type { Metadata } from "next";
 import { CapabilitiesPage } from "@/components/LocalizedSite";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSEO("/ar/capabilities", {
   title: "قدرات تصنيع وتوريد معدات حفر الأساسات",
   description: "أدوات حفر الأساسات والتصنيع المخصص ومواسير التغليف وقطع الاستبدال للمشاريع في المملكة العربية السعودية.",
   alternates:{canonical:"https://advanced-fifthaxis.com/ar/capabilities",languages:{en:"https://advanced-fifthaxis.com/capabilities",ar:"https://advanced-fifthaxis.com/ar/capabilities"}},
   openGraph:{title:"قدرات تصنيع وتوريد معدات حفر الأساسات",description:"أدوات حفر الأساسات والتصنيع المخصص ومواسير التغليف وقطع الاستبدال للمشاريع في المملكة العربية السعودية.",url:"https://advanced-fifthaxis.com/ar/capabilities",type:"website"}
-};
+});
 
 export default function Page(){
   const data={"@context":"https://schema.org","@graph":[

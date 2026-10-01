@@ -5,7 +5,7 @@ import { guides } from "@/lib/guides";
 export const dynamic = "force-static";
 export default function sitemap(): MetadataRoute.Sitemap {
   const base = "https://advanced-fifthaxis.com";
-  return [
+  const entries: MetadataRoute.Sitemap = [
     { url: base, changeFrequency: "weekly", priority: 1 },
     { url: `${base}/ar`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${base}/products`, changeFrequency: "weekly", priority: 0.95 },
@@ -41,4 +41,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       { url: `${base}/ar/products/${p.slug}`, changeFrequency: "monthly" as const, priority: 0.75 },
     ]),
   ];
+  return entries.map(entry => {
+    const path = new URL(entry.url).pathname;
+    const englishPath = path.replace(/^\/ar(?=\/|$)/, "") || "/";
+    const english = englishPath === "/" ? base : `${base}${englishPath}`;
+    const arabic = `${base}/ar${englishPath === "/" ? "" : englishPath}`;
+    const product = products.find(p => englishPath === `/products/${p.slug}`);
+    return {
+      ...entry,
+      alternates: { languages: { en: english, ar: arabic, "x-default": english } },
+      ...(product?.images?.length ? { images: product.images.map(image => `${base}${image}`) } : {}),
+    };
+  });
 }

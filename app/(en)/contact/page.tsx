@@ -1,12 +1,13 @@
+import { withSEO } from "@/lib/seo";
 import type { Metadata } from "next";
 import { ContactPage } from "@/components/LocalizedSite";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = withSEO("/contact", {
   title: "Contact & Request a Quote",
   description: "Contact Advanced Fifth Axis in Jeddah for foundation drilling tools, casing, Kelly systems, wear parts and custom fabrication quotations.",
   alternates:{canonical:"https://advanced-fifthaxis.com/contact",languages:{en:"https://advanced-fifthaxis.com/contact",ar:"https://advanced-fifthaxis.com/ar/contact"}},
   openGraph:{title:"Contact & Request a Quote | Advanced Fifth Axis",description:"Contact Advanced Fifth Axis in Jeddah for foundation drilling tools, casing, Kelly systems, wear parts and custom fabrication quotations.",url:"https://advanced-fifthaxis.com/contact",type:"website"}
-};
+});
 
 export default function Page(){
   const data={"@context":"https://schema.org","@graph":[

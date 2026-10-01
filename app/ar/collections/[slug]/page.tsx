@@ -1,3 +1,4 @@
+import { withSEO } from "@/lib/seo";
 import type { Metadata } from "next";
 import { collections, productsForCollection } from "@/lib/site";
 import { CollectionView } from "@/components/LocalizedSite";
@@ -11,12 +12,12 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   if(!c)return {};
   const base="https://advanced-fifthaxis.com";
   const url=`${base}/ar/collections/${c.slug}`;
-  return {
+  return withSEO(`/ar/collections/${slug}`, {
     title:`${c.nameAr} | معدات حفر الأساسات السعودية`,
     description:c.descriptionAr,
     alternates:{canonical:url,languages:{en:`${base}/collections/${c.slug}`,ar:`${base}/ar/collections/${c.slug}`}},
     openGraph:{title:c.nameAr,description:c.descriptionAr,url,type:"website"}
-  };
+  });
 }
 
 export default async function Page({params}:{params:Promise<{slug:string}>}){
