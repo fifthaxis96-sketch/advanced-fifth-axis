@@ -32,6 +32,8 @@ Product names, bilingual descriptions, variants, image paths, collections, and c
 ## SEO
 The site includes canonical URLs, language alternates, sitemap, robots metadata, Open Graph metadata, Organization/WebSite/Product/Collection structured data, breadcrumbs, and product FAQ structured data.
 
+Edit bilingual page titles and descriptions in [`content/seo.json`](content/seo.json). See [SEO editing and indexing instructions](docs/seo-editing.md) for the direct editor link, field guidance and Search Console checks.
+
 ## Deployment
 The Next.js build exports to `./out`. `wrangler.jsonc` serves that directory through Cloudflare static assets.
 
