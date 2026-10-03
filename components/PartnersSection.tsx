@@ -3,11 +3,11 @@
 import { useEffect, useRef, useState } from "react";
 
 const partners = [
-  ["ahmadiah", "Ahmadiah Contracting & Trading Co."],
+  ["sudan-pile", "Sudan Pile for Roads & Bridges"],
   ["keller", "Keller"],
   ["kabbani", "Kabbani Construction Group"],
   ["saudi-bauer", "Saudi Bauer Foundation Contractors"],
-  ["sudan-pile", "Sudan Pile for Roads & Bridges"],
+  ["ahmadiah", "Ahmadiah Contracting & Trading Co."],
   ["edrafor", "Edrafor"],
   ["eamar-eg", "Eamar EG"],
   ["huta", "Huta Foundation"],
