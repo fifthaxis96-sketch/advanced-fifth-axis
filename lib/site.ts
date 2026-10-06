@@ -15,6 +15,20 @@ export type Product = {
 // A model name is an inquiry option, not a confirmed stock or compatibility claim.
 export const products: Product[] = [
   {
+  "slug": "rotary-head-slide-pads",
+  "name": "Rotary Head Slide Pads",
+  "nameAr": "بطانات انزلاق رأس الحفر الدوار",
+  "category": "Wear Parts",
+  "description": "Rotary head slide pads supplied in customer-requested sizes to match the drilling rig. Send the rig make and model, pad length, width, thickness, mounting-hole positions, and a drawing or sample to confirm the required configuration.",
+  "descriptionAr": "بطانات انزلاق رأس الحفر الدوار تُورد بالمقاسات المطلوبة من العميل بما يتناسب مع معدة الحفر. أرسل نوع وموديل المعدة وطول البطانة وعرضها وسماكتها ومواضع فتحات التثبيت، مع رسم أو عينة لتأكيد التكوين المطلوب.",
+  "variants": [
+    "Customer-requested size and drilling rig"
+  ],
+  "images": [
+    "/products/rotary-head-slide-pads.jpg"
+  ]
+},
+  {
   "slug": "drilling-bucket-helical-springs",
   "name": "Drilling Bucket Helical Springs",
   "nameAr": "نوابض حلزونية لبكيتات الحفر",
