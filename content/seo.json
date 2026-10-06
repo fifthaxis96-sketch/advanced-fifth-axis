@@ -350,5 +350,13 @@
   "/tool-finder": {
     "title": "Find Foundation Drilling Tools | Advanced Fifth Axis",
     "description": "Explore drilling tool families by application and send your rig, diameter and ground conditions for technical review in Saudi Arabia."
+  },
+  "/products/rotary-head-slide-pads": {
+    "title": "Rotary Head Plastic Sliding Pads | Advanced Fifth Axis",
+    "description": "POM plastic sliding pads for drilling rig rotary heads, supplied to customer-requested dimensions. Send your rig model and pad measurements for a quote."
+  },
+  "/ar/products/rotary-head-slide-pads": {
+    "title": "بطانات انزلاق بلاستيكية لرأس الحفر الدوار | المحور الخامس المتقدم",
+    "description": "بطانات انزلاق من بلاستيك POM لرأس الحفر الدوار، بالمقاسات المطلوبة حسب معدة الحفر. أرسل موديل المعدة وأبعاد البطانة لطلب عرض سعر."
   }
 }
