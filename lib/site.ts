@@ -15,6 +15,18 @@ export type Product = {
 // A model name is an inquiry option, not a confirmed stock or compatibility claim.
 export const products: Product[] = [
   {
+  "slug": "drilling-bucket-helical-springs",
+  "name": "Drilling Bucket Helical Springs",
+  "nameAr": "نوابض حلزونية لبكيتات الحفر",
+  "category": "Wear Parts",
+  "description": "Replacement helical springs for drilling buckets used in foundation drilling. Share the bucket model, spring outside diameter, wire diameter, free length, end configuration and required quantity to confirm the correct replacement.",
+  "descriptionAr": "نوابض حلزونية بديلة لبكيتات الحفر المستخدمة في أعمال الأساسات. أرسل موديل البكيت والقطر الخارجي للنابض وقطر السلك والطول الحر وشكل الأطراف والكمية المطلوبة لتأكيد القطعة المناسبة.",
+  "variants": [],
+  "images": [
+    "/products/drilling-bucket-helical-springs.webp"
+  ]
+},
+  {
     slug: "roller-bits", name: "Roller Bits", nameAr: "رؤوس الحفر الدوارة", category: "Cutting Tools",
     description: "Roller-bit models for foundation drilling inquiries.",
     descriptionAr: "موديلات رؤوس الحفر الدوارة للاستفسارات الخاصة بحفر الأساسات.",
