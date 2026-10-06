@@ -182,9 +182,9 @@ export const products: Product[] = [
   },
   {
     slug: "kelly-bars", name: "Kelly Bar Repair", nameAr: "إصلاح قضبان كيلي", category: "Drive Systems",
-    description: "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs. Share photos, dimensions, the rig model and details of the damage so the repair scope and compatibility can be assessed.",
-    descriptionAr: "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. أرسل الصور والأبعاد وموديل المعدة وتفاصيل التلف لتقييم نطاق الإصلاح والتوافق.",
-    variants: ["Interlocking Kelly bar repair", "Friction Kelly bar repair"],
+    description: "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs, plus conversion from friction Kelly bar to interlocking Kelly bar following technical assessment. Share photos, dimensions, the rig model and the required repair or conversion so the scope and compatibility can be confirmed.",
+    descriptionAr: "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار، بالإضافة إلى تحويل قضيب كيلي الاحتكاكي إلى قضيب كيلي تعشيق بعد التقييم الفني. أرسل الصور والأبعاد وموديل المعدة وتفاصيل الإصلاح أو التحويل المطلوب لتأكيد نطاق العمل والتوافق.",
+    variants: ["Interlocking Kelly bar repair", "Friction Kelly bar repair", "Friction Kelly bar to interlocking Kelly bar conversion"],
     images: ["/products/kelly-bar-repair.webp"],
   },
   {
