@@ -15,6 +15,18 @@ export type Product = {
 // A model name is an inquiry option, not a confirmed stock or compatibility claim.
 export const products: Product[] = [
   {
+  "slug": "solid-wire-rope-thimble",
+  "name": "Solid Wire Rope Thimble",
+  "nameAr": "كشتبان مصمت للحبل الفولاذي",
+  "category": "Wear Parts",
+  "description": "Solid wire rope thimble for wire rope end connections. Share the rope diameter, required dimensions, connection arrangement and application to confirm the correct size and suitability before ordering.",
+  "descriptionAr": "كشتبان مصمت لوصلات أطراف الحبال الفولاذية. أرسل قطر الحبل والأبعاد المطلوبة وتكوين الوصلة والاستخدام لتأكيد المقاس والملاءمة قبل الطلب.",
+  "variants": [],
+  "images": [
+    "/products/solid-wire-rope-thimble.webp"
+  ]
+},
+  {
   "slug": "rotary-head-slide-pads",
   "name": "Rotary Head Slide Pads",
   "nameAr": "بطانات انزلاق رأس الحفر الدوار",
