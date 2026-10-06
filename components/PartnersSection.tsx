@@ -20,7 +20,7 @@ const partners = [
 ];
 
 const logoFrames = {
-  "demac": { ratio: 1, width: "100%", height: "100%", left: "0%", top: "0%" },
+  "demac": { ratio: 0.648649, width: "208.333333%", height: "135.135135%", left: "-54.166667%", top: "-5.405405%" },
   "ahmadiah": { ratio: 5.350877, width: "118.032787%", height: "210.526316%", left: "-11.475410%", top: "-60.526316%" },
   "asas": { ratio: 1.597619, width: "100.000000%", height: "100.000000%", left: "0.000000%", top: "0.000000%" },
   "eamar-eg": { ratio: 2.352941, width: "100.000000%", height: "100.000000%", left: "0.000000%", top: "0.000000%" },
