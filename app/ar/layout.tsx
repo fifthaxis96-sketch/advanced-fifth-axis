@@ -4,6 +4,7 @@ import "../globals.css";
 import type { Metadata } from "next";
 export const metadata: Metadata = withSEO("/ar", {
   metadataBase: new URL("https://advanced-fifthaxis.com"),
+  icons: { icon: [{ url: "/favicon.png?v=company-logo", type: "image/png", sizes: "64x64" }, { url: "/favicon.ico?v=company-logo" }], shortcut: "/favicon.ico?v=company-logo" },
   title: "معدات حفر الأساسات في السعودية | المحور الخامس المتقدم",
   description: "بكيتات وأوجرات الحفر والكور بارل ومواسير التغليف وأسنان القطع في جدة، السعودية. اطلب عرض سعر حسب الموديل والمواصفات.",
   openGraph: { type: "website", locale: "ar_SA", alternateLocale: ["en_SA"], siteName: "Advanced Fifth Axis", title: "معدات حفر الأساسات في السعودية | المحور الخامس المتقدم", description: "أدوات ومعدات حفر الأساسات ومواسير التغليف والمكونات المصنعة في جدة، المملكة العربية السعودية.", url: "/ar", images: [{ url: "/home/foundation-drilling-showcase.webp", alt: "مكونات حفر الأساسات من المحور الخامس المتقدم" }] },

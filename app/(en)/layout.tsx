@@ -13,7 +13,7 @@ export const metadata: Metadata = withSEO("/", {
   creator: "Advanced Fifth Axis",
   publisher: "Advanced Fifth Axis",
   category: "Industrial Manufacturing",
-  icons: { icon: "/favicon.svg" },
+  icons: { icon: [{ url: "/favicon.png?v=company-logo", type: "image/png", sizes: "64x64" }, { url: "/favicon.ico?v=company-logo" }], shortcut: "/favicon.ico?v=company-logo" },
   keywords: ["foundation drilling tools Saudi Arabia","drilling bucket Jeddah","rock auger Saudi Arabia","piling tools","core barrel","casing","Kelly box","drilling accessories"],
   alternates: { canonical: "/", languages: { en: "/", ar: "/ar" } },
   openGraph: { type: "website", locale: "en_SA", alternateLocale: ["ar_SA"], siteName: "Advanced Fifth Axis", title: "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia", description: "Foundation drilling tools and custom fabricated components for piling contractors in Saudi Arabia.", url: "/", images: [{ url: "/home/foundation-drilling-showcase.webp", alt: "Advanced Fifth Axis foundation drilling equipment" }] },
