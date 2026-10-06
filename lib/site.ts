@@ -28,11 +28,11 @@ export const products: Product[] = [
 },
   {
   "slug": "rotary-head-slide-pads",
-  "name": "Rotary Head Slide Pads",
-  "nameAr": "بطانات انزلاق رأس الحفر الدوار",
+  "name": "Rotary Head Plastic Sliding Pads",
+  "nameAr": "بطانات انزلاق بلاستيكية لرأس الحفر الدوار",
   "category": "Wear Parts",
-  "description": "Rotary head slide pads supplied in customer-requested sizes to match the drilling rig. Send the rig make and model, pad length, width, thickness, mounting-hole positions, and a drawing or sample to confirm the required configuration.",
-  "descriptionAr": "بطانات انزلاق رأس الحفر الدوار تُورد بالمقاسات المطلوبة من العميل بما يتناسب مع معدة الحفر. أرسل نوع وموديل المعدة وطول البطانة وعرضها وسماكتها ومواضع فتحات التثبيت، مع رسم أو عينة لتأكيد التكوين المطلوب.",
+  "description": "Rotary head plastic sliding pads made from POM (polyoxymethylene), supplied in customer-requested sizes to match the drilling rig. Send the rig make and model, pad length, width, thickness, mounting-hole positions, and a drawing or sample to confirm the required configuration.",
+  "descriptionAr": "بطانات انزلاق بلاستيكية لرأس الحفر الدوار مصنوعة من POM (بولي أوكسي ميثيلين)، تُورد بالمقاسات المطلوبة من العميل بما يتناسب مع معدة الحفر. أرسل نوع وموديل المعدة وطول البطانة وعرضها وسماكتها ومواضع فتحات التثبيت، مع رسم أو عينة لتأكيد التكوين المطلوب.",
   "variants": [
     "Customer-requested size and drilling rig"
   ],
