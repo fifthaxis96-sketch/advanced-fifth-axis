@@ -16,9 +16,11 @@ const partners = [
   ["rakayiz", "Rakayiz Concrete Company"],
   ["jeddah-foundation", "Jeddah Foundation Contracting Co."],
   ["asas", "ASAS"],
+  ["demac", "DEMAC"],
 ];
 
 const logoFrames = {
+  "demac": { ratio: 1, width: "100%", height: "100%", left: "0%", top: "0%" },
   "ahmadiah": { ratio: 5.350877, width: "118.032787%", height: "210.526316%", left: "-11.475410%", top: "-60.526316%" },
   "asas": { ratio: 1.597619, width: "100.000000%", height: "100.000000%", left: "0.000000%", top: "0.000000%" },
   "eamar-eg": { ratio: 2.352941, width: "100.000000%", height: "100.000000%", left: "0.000000%", top: "0.000000%" },
