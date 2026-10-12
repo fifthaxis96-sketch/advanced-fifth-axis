@@ -12,4 +12,10 @@ export const metadata: Metadata = withSEO("/ar", {
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   alternates: { canonical: "https://advanced-fifthaxis.com/ar", languages: { en: "https://advanced-fifthaxis.com/", ar: "https://advanced-fifthaxis.com/ar" } },
 });
-export default function ArabicLayout({ children }: { children: React.ReactNode }) { return <html lang="ar" dir="rtl"><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organization)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(website)}}/><a className="skipLink" href="#main-content">الانتقال إلى المحتوى</a>{children}</body></html>; }
+export default function ArabicLayout({ children }: { children: React.ReactNode }) { return <html lang="ar" dir="rtl"><head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N43XLD871" />
+    <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-5N43XLD871');` }} />
+  </head><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organization)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(website)}}/><a className="skipLink" href="#main-content">الانتقال إلى المحتوى</a>{children}</body></html>; }
