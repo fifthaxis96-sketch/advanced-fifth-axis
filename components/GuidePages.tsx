@@ -28,7 +28,7 @@ export function GuideView({ lang, guide }: { lang: Lang; guide: Guide }) {
       {product?.slug === "rock-augers" && <AugerSpecs lang={lang}/>}
       {product?.slug === "core-barrels" && <CoreBarrelSpecs lang={lang}/>}
       {product?.slug === "cleaning-buckets" && <CleaningBucketSpecs lang={lang}/>}
-      <aside className="guideTakeaway"><h2>{ar ? "الخطوة التالية" : "Next step"}</h2><p>{t.takeaway}</p><a className="primaryButton quotationButton" href={`${prefix(lang)}/contact#quote-builder`}>{ar ? "اطلب عرض سعر" : "Request a quotation"}</a></aside>
+      <aside className="guideTakeaway"><h2>{ar ? "الخطوة التالية" : "Next step"}</h2><p>{t.takeaway}</p><a className="primaryButton quotationButton" href={`${prefix(lang)}/contact${product ? `?product=${encodeURIComponent(product.slug)}` : ""}#quote-builder`}>{ar ? "اطلب عرض سعر" : "Request a quotation"}</a></aside>
     </article>
     <section className="guideRelated"><h2>{ar ? "المنتجات ذات الصلة" : "Related products"}</h2><div className="guideLinks">{guide.related.map(slug => {const p = products.find(item => item.slug === slug); return p && <a key={slug} href={`${prefix(lang)}/products/${slug}`}>{ar ? p.nameAr : p.name}</a>;})}</div><a href={`${prefix(lang)}/guides`}>{ar ? "جميع الأدلة" : "All guides"}</a></section>
   </main><Footer lang={lang}/></div>;

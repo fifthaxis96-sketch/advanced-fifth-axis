@@ -92,7 +92,10 @@ function Switcher({ lang, product, collection, section, guideSlug }: { lang: Lan
 }
 export function Header({ lang, product, collection, section, guideSlug }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" | "faq" | "privacy" | "tool-finder" | "guides" | "field-work"; guideSlug?: string }) {
   const t = copy[lang];
-  const quoteHref = !product && !collection && !section && !guideSlug ? "#quote-builder" : `${lang === "ar" ? "/ar" : ""}/contact#quote-builder`;
+  const quoteProduct = product?.slug || guides.find(g => g.slug === guideSlug)?.productSlug;
+  const quoteHref = quoteProduct
+    ? `${lang === "ar" ? "/ar" : ""}/contact?product=${encodeURIComponent(quoteProduct)}#quote-builder`
+    : !collection && !section && !guideSlug ? "#quote-builder" : `${lang === "ar" ? "/ar" : ""}/contact#quote-builder`;
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label={lang === "ar" ? `${company.nameAr} — الرئيسية` : "Advanced Fifth Axis home"}><img src="/logo-small.webp" alt={lang === "ar" ? `شعار ${company.nameAr}` : "Advanced Fifth Axis logo"} width="112" height="92"/></a>
     <nav className="siteNav" aria-label={lang === "ar" ? "التنقل الرئيسي" : "Main navigation"}>

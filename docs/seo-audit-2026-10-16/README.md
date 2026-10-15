@@ -18,6 +18,7 @@
 5. The 404 page exposes the main-content target used by the keyboard skip link.
 6. Sitemap modification dates for the homepage/contact pages reflect this functional form update.
 7. SEO checks now verify article metadata, defined Product references and article social images.
+8. Header and guide quotation buttons retain the selected product, matching the main product quotation button.
 
 ## Validation and limits
 
