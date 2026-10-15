@@ -56,7 +56,7 @@ export const products: Product[] = [
     slug: "roller-bits", name: "Roller Bits", nameAr: "رؤوس الحفر الدوارة", category: "Cutting Tools",
     description: "Roller-bit models for foundation drilling inquiries.",
     descriptionAr: "موديلات رؤوس الحفر الدوارة للاستفسارات الخاصة بحفر الأساسات.",
-    variants: ["MH-1 Classic", "MH-2 Traditional", "MH-3 Flagship", "MH-3R Holder type", "MH-3B Replaceable", "MH-3H 12-1/4\"", "MH-3P Reinforced"],
+    variants: ["8-1/2\""],
     images: ["/products/single-roller-bit-500x500.webp"],
   },
   {
