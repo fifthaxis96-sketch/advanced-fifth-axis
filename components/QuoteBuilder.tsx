@@ -4,6 +4,8 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { company, products } from "@/lib/site";
 import { readQuoteList } from "@/lib/quote-list";
 import { inquiryContextLines } from "@/lib/inquiry-context";
+import { trackInquiryIntent } from "@/lib/analytics";
+import { variantLabel } from "@/lib/localization";
 
 export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
   const ar = lang === "ar";
@@ -30,7 +32,7 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
       if (saved.length === 1) setSlug(saved[0].slug);
       setRequirement(saved.map(item => {
         const p = products.find(p => p.slug === item.slug)!;
-        return `${ar ? p.nameAr : p.name}${item.variant ? ` — ${item.variant}` : ""}${item.size ? ` — ${item.size}` : ""} × ${item.quantity}`;
+        return `${ar ? p.nameAr : p.name}${item.variant ? ` — ${variantLabel(item.variant, lang)}` : ""}${item.size ? ` — ${item.size}` : ""} × ${item.quantity}`;
       }).join("\n"));
     }
   }, [ar]);
@@ -51,6 +53,7 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
     if (details.trim()) lines.push(`${ar ? "تفاصيل المشروع" : "Project details"}: ${details.trim()}`);
     const message = encodeURIComponent(lines.join("\n"));
     const button = (event.nativeEvent as SubmitEvent).submitter as HTMLButtonElement | null;
+    trackInquiryIntent({ channel: button?.value === "email" ? "email" : "whatsapp", language: lang, product_slug: p?.slug, source: "quotation_form" });
     if (button?.value === "email") {
       window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(ar ? "طلب عرض سعر معدات حفر الأساسات" : "Foundation drilling quotation request")}&body=${message}`;
       setStatus(ar ? "أكمل الإرسال في تطبيق البريد وأرفق الصور أو الرسومات هناك." : "Complete sending in your email app. Attach photos or drawings there.");

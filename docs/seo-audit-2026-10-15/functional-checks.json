@@ -1,0 +1,14 @@
+{
+  "scope": "local Cloudflare Workers emulator",
+  "checks": [
+    "en: product inquiry click tracked once with product/language",
+    "en: simple form prefill, changing starter, single preview link and private-data-free intent event passed; no message sent",
+    "en: catalog filtering and comparison options passed",
+    "en: tool finder returns casing and casing drive",
+    "ar: product inquiry click tracked once with product/language",
+    "ar: simple form prefill, changing starter, single preview link and private-data-free intent event passed; no message sent",
+    "ar: catalog filtering and comparison options passed",
+    "ar: tool finder returns casing and casing drive"
+  ],
+  "external_messages_sent": false
+}

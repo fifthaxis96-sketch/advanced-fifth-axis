@@ -54,8 +54,8 @@ export const products: Product[] = [
 },
   {
     slug: "roller-bits", name: "Roller Bits", nameAr: "رؤوس الحفر الدوارة", category: "Cutting Tools",
-    description: "Roller-bit models for foundation drilling inquiries.",
-    descriptionAr: "موديلات رؤوس الحفر الدوارة للاستفسارات الخاصة بحفر الأساسات.",
+    description: "8-1/2-inch roller bits for foundation drilling tool inquiries. Confirm the mounting arrangement, cutting layout and ground conditions with the tool drawing before selecting a replacement. Other sizes are not listed.",
+    descriptionAr: "رؤوس حفر دوارة (رولر بت) بمقاس 8-1/2 بوصة للاستفسارات الخاصة بأدوات حفر الأساسات. أكد طريقة التثبيت وترتيب القطع وطبيعة الطبقات مع رسم الأداة قبل اختيار البديل. لا تتضمن القائمة مقاسات أخرى.",
     variants: ["8-1/2\""],
     images: ["/products/single-roller-bit-500x500.webp"],
   },
@@ -67,20 +67,20 @@ export const products: Product[] = [
   },
   {
     slug: "bfz70-tooth", name: "BFZ70 Tooth", nameAr: "سن حفر BFZ70", category: "Wear Parts",
-    description: "BFZ70 cutting tooth shown in the supplied product photo. Confirm fit, dimensions and the matching holder before ordering.",
-    descriptionAr: "سن حفر BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد التوافق والأبعاد والحامل المطابق قبل الطلب.",
+    description: "BFZ70 replacement cutting tooth for foundation drilling tools. Check the tooth dimensions and its mating holder before ordering; the BFZ70 holder is listed separately. Send a drawing or measurements of the existing assembly to review fit.",
+    descriptionAr: "سن قطع بديل BFZ70 لأدوات حفر الأساسات. تحقق من أبعاد السن والحامل المقابل قبل الطلب؛ يُعرض حامل BFZ70 كمنتج مستقل. أرسل رسمًا أو قياسات للمجموعة الحالية لمراجعة التوافق.",
     variants: [], images: ["/products/bfz70-tooth.webp"],
   },
   {
     slug: "bfz70-holder", name: "BFZ70 Holder", nameAr: "حامل سن BFZ70", category: "Wear Parts",
-    description: "BFZ70 tooth holder shown in the supplied product photo. Confirm mounting dimensions and tooth compatibility before ordering.",
-    descriptionAr: "حامل سن BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+    description: "BFZ70 tooth holder for the cutting assembly of foundation drilling tools. The BFZ70 tooth is listed separately. Confirm the holder mounting dimensions, tooth seating and installation layout against the existing tool or drawing.",
+    descriptionAr: "حامل سن BFZ70 لمجموعة القطع في أدوات حفر الأساسات. يُعرض سن BFZ70 كمنتج مستقل. أكد أبعاد تثبيت الحامل وتجويف السن وترتيب التركيب وفق الأداة الحالية أو الرسم.",
     variants: [], images: ["/products/bfz70-holder.webp"],
   },
   {
     slug: "c31hd-tooth", name: "C31HD Tooth", nameAr: "سن حفر C31HD", category: "Wear Parts",
-    description: "C31HD cutting tooth shown in the supplied product photograph. Confirm the shank, matching holder and required quantity before ordering.",
-    descriptionAr: "سن حفر C31HD كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والكمية المطلوبة قبل الطلب.",
+    description: "C31HD replacement cutting tooth for foundation drilling tools. Specify the shank dimensions, holder seating and required quantity. A model code alone does not confirm fit; send the existing part measurements or a drawing for review.",
+    descriptionAr: "سن قطع بديل C31HD لأدوات حفر الأساسات. حدد أبعاد الساق وتجويف الحامل والكمية المطلوبة. لا يكفي رمز الموديل وحده لتأكيد التوافق؛ أرسل قياسات القطعة الحالية أو رسمًا للمراجعة.",
     variants: [], images: ["/products/c31hd-tooth.webp"],
   },
   {
@@ -92,8 +92,8 @@ export const products: Product[] = [
   },
   {
     slug: "b-47k22h-tooth", name: "B-47K22H Cutting Tooth", nameAr: "سن حفر B-47K22H", category: "Wear Parts",
-    description: "B-47K22H cutting tooth shown in the supplied product photograph. Confirm shank size, matching holder and operating application before ordering.",
-    descriptionAr: "سن حفر B-47K22H كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والاستخدام المطلوب قبل الطلب.",
+    description: "B-47K22H replacement cutting tooth for foundation drilling equipment. Compare the shank and seating dimensions with the existing holder, and describe the tool and ground conditions. Confirm the required configuration and quantity before ordering.",
+    descriptionAr: "سن قطع بديل B-47K22H لمعدات حفر الأساسات. قارن أبعاد الساق والتثبيت بالحامل الحالي، وحدد الأداة وطبيعة الطبقات. أكد التكوين والكمية المطلوبة قبل الطلب.",
     variants: [], images: ["/products/b-47k22h-tooth.webp"],
   },
   {
@@ -105,8 +105,8 @@ export const products: Product[] = [
   },
   {
     slug: "b43-holder", name: "B43 Holder", nameAr: "حامل سن B43", category: "Wear Parts",
-    description: "B43 tooth holder shown in the supplied product photograph. Confirm tooth fit, dimensions and installation details before ordering.",
-    descriptionAr: "حامل سن B43 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد توافق السن والأبعاد وتفاصيل التركيب قبل الطلب.",
+    description: "B43 replacement tooth holder for foundation drilling tools. Send the tooth dimensions, holder mounting measurements and installation drawing or sample details. The required tooth and its fit must be confirmed separately before supply.",
+    descriptionAr: "حامل سن بديل B43 لأدوات حفر الأساسات. أرسل أبعاد السن وقياسات تثبيت الحامل ورسم التركيب أو بيانات العينة. يجب تأكيد السن المطلوب وتوافقه بصورة مستقلة قبل التوريد.",
     variants: [], images: ["/products/b43-holder.webp"],
   },
   {
@@ -152,8 +152,8 @@ export const products: Product[] = [
   },
   {
     slug: "casing-drive", name: "Casing Drive", nameAr: "أداة إدارة مواسير التغليف", category: "Casing",
-    description: "Casing drive shown in the supplied product photo. Confirm casing diameter, connection details and drilling rig compatibility before ordering.",
-    descriptionAr: "أداة إدارة مواسير التغليف كما تظهر في صورة المنتج المقدمة. يُرجى تأكيد قطر الماسورة وتفاصيل الوصلة والتوافق مع معدة الحفر قبل الطلب.",
+    description: "Casing drive for the connection between a drilling rig and casing during casing operations. Specify the casing diameter, mating connection and rig interface. Confirm engagement dimensions and the complete assembly against a drawing before ordering.",
+    descriptionAr: "أداة إدارة مواسير التغليف للربط بين معدة الحفر والماسورة أثناء عمليات التغليف. حدد قطر الماسورة والوصلة المقابلة وواجهة المعدة. أكد أبعاد التعشيق والمجموعة الكاملة وفق الرسم قبل الطلب.",
     variants: [], images: ["/products/casing-twister.webp"],
   },
   {
@@ -187,9 +187,9 @@ export const products: Product[] = [
     slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الأساسات", category: "Fabricated Components",
     description: "Fabricated reaction beam for pile load testing inquiries. Configuration, length, connections and load rating must be engineered and confirmed for the testing arrangement.",
     descriptionAr: "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الأساسات. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار.",
-    variants: [], images: ["/products/pile-testing-reaction-beam-blue.webp"],
-    visualNote: "Concept visualization based on the supplied site photo; confirm the fabrication design before ordering.",
-    visualNoteAr: "تصور مرئي مبني على صورة الموقع المقدمة؛ يرجى تأكيد التصميم التصنيعي قبل الطلب.",
+    variants: [], images: [],
+    visualNote: "A verified product photograph is pending. Send the engineered testing arrangement for fabrication review.",
+    visualNoteAr: "بانتظار صورة منتج موثقة. أرسل نظام الاختبار المعتمد هندسيًا لمراجعة التصنيع.",
   },
   {
     slug: "customized-bentonite-water-tank", name: "Customized Bentonite & Water Tank", nameAr: "خزان بنتونيت ومياه حسب الطلب", category: "Fabricated Components",
@@ -207,10 +207,12 @@ export const products: Product[] = [
 
 export const company = {
   name: "Advanced Fifth Axis",
+  nameAr: "المحور الخامس المتقدمة للصناعة",
   phone: "+966559036552",
   phoneDisplay: "055 903 6552",
   email: "fifthaxis96@gmail.com",
   address: "Al Muftakira Street 4474, Jeddah Industrial, Saudi Arabia",
+  addressAr: "شارع المفتكرة 4474، جدة الصناعية، المملكة العربية السعودية",
   vat: "310463296800003",
   cr: "4030336147",
 };
@@ -239,5 +241,18 @@ export const productsForCollection = (collection: Collection) =>
 export const collectionForProduct = (product: Product) =>
   collections.find((collection) => collection.categories.includes(product.category));
 
-export const relatedProducts = (product: Product, limit = 3) =>
-  products.filter((item) => item.slug !== product.slug && item.category === product.category).slice(0, limit);
+const relatedFamilies: Record<string, string[]> = {
+  "bfz70-tooth": ["bfz70-holder"], "bfz70-holder": ["bfz70-tooth"],
+  "core-barrels": ["roller-bits", "rock-augers", "drilling-buckets"],
+  "roller-bits": ["core-barrels"],
+  "casing": ["casing-drive"], "casing-drive": ["casing"],
+  "kelly-boxes": ["kelly-box-pins", "kelly-bars"],
+  "kelly-box-pins": ["kelly-boxes", "kelly-bars"],
+  "kelly-bars": ["kelly-boxes", "kelly-box-pins"],
+};
+export const relatedProducts = (product: Product, limit = 3) => {
+  const curated = relatedFamilies[product.slug];
+  return curated
+    ? curated.map(slug => products.find(item => item.slug === slug)!).slice(0, limit)
+    : products.filter(item => item.slug !== product.slug && item.category === product.category).slice(0, limit);
+};

@@ -1,0 +1,243 @@
+{
+  "scope": "local Cloudflare Workers emulator",
+  "results": [
+    {
+      "path": "/products/kelly-adapter-250-female-200-male",
+      "status": 301,
+      "location": "/products/kelly-boxes",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/kelly-adapter-250-female-200-male/",
+      "status": 301,
+      "location": "/products/kelly-boxes",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/kelly-adapter-250-female-200-male",
+      "status": 301,
+      "location": "/ar/products/kelly-boxes",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/kelly-adapter-250-female-200-male/",
+      "status": 301,
+      "location": "/ar/products/kelly-boxes",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/casing-twister",
+      "status": 301,
+      "location": "/products/casing-drive",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/casing-twister/",
+      "status": 301,
+      "location": "/products/casing-drive",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/casing-twister",
+      "status": 301,
+      "location": "/ar/products/casing-drive",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/casing-twister/",
+      "status": 301,
+      "location": "/ar/products/casing-drive",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/c30-square-holder",
+      "status": 301,
+      "location": "/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/c30-square-holder/",
+      "status": 301,
+      "location": "/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/c30-round-holder",
+      "status": 301,
+      "location": "/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/c30-round-holder/",
+      "status": 301,
+      "location": "/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/c30-square-holder",
+      "status": 301,
+      "location": "/ar/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/c30-square-holder/",
+      "status": 301,
+      "location": "/ar/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/c30-round-holder",
+      "status": 301,
+      "location": "/ar/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/c30-round-holder/",
+      "status": 301,
+      "location": "/ar/products/c30-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/hq-68-95-holder",
+      "status": 301,
+      "location": "/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/hq-68-95-holder/",
+      "status": 301,
+      "location": "/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/hq-78-95-holder",
+      "status": 301,
+      "location": "/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/hq-78-95-holder/",
+      "status": 301,
+      "location": "/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/hq-68-95-holder",
+      "status": 301,
+      "location": "/ar/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/hq-68-95-holder/",
+      "status": 301,
+      "location": "/ar/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/hq-78-95-holder",
+      "status": 301,
+      "location": "/ar/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/ar/products/hq-78-95-holder/",
+      "status": 301,
+      "location": "/ar/products/hq-round-holders",
+      "target_status": 200,
+      "redirect_hops": 1
+    },
+    {
+      "path": "/products/",
+      "status": 307,
+      "location": "/products"
+    },
+    {
+      "path": "/ar/products/",
+      "status": 307,
+      "location": "/ar/products"
+    },
+    {
+      "path": "/products.html",
+      "status": 307,
+      "location": "/products"
+    },
+    {
+      "path": "/ar/products.html",
+      "status": 307,
+      "location": "/ar/products"
+    },
+    {
+      "path": "/products?utm_source=audit",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/ar/products?filter=audit",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/contact?product=kelly-boxes",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/ar/contact?product=kelly-boxes",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/not-a-real-audit-route",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/ar/not-a-real-audit-route",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/products/not-a-real-audit-product",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/ar/products/not-a-real-audit-product",
+      "status": 404,
+      "location": null
+    },
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "location": null
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "location": null
+    }
+  ]
+}

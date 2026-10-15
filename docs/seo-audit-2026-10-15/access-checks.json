@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-15",
+  "native_git_read": "git ls-remote succeeded for the configured HTTPS origin",
+  "git_push_dry_run_before_commit": "Everything up-to-date; this alone does not prove a later push or deployment succeeded",
+  "github_api": "gh api repository, check-runs and workflow-runs requests returned Forbidden; injected GH_TOKEN name is present but its value was never printed",
+  "cloudflare_cli": "wrangler whoami: You are not authenticated. No Cloudflare binding was present in inspected environment configuration or variable names",
+  "public_site_and_google_docs": "HTTPS CONNECT denied by network proxy with 403 Forbidden, including escalated public read attempt",
+  "google_search_console": "No callable connector exposed; no current property, permission or indexing result available",
+  "bing_and_indexnow": "No callable connector exposed; no existing IndexNow key in inspected repository/configuration; no submission performed",
+  "runtime_network": "Required domain additions saved in environment draft; save does not apply runtime access",
+  "credential_handling": "Inspected names/presence and tool status only; no secret values printed, copied or requested in chat"
+}

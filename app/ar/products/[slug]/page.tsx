@@ -17,7 +17,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   return withSEO(`/ar/products/${slug}`, {
     title, description,
     alternates:{canonical:url,languages:{en:`${base}/products/${p.slug}`,ar:`${base}/ar/products/${p.slug}`}},
-    openGraph:{title,description,url,type:"website",images:p.images?.[0]?[{url:`${base}${p.images[0]}`,alt:p.nameAr}]:undefined}
+    openGraph:{title,description,url,type:"website",images:[{url:`${base}${p.images?.[0] || "/advanced-fifth-axis-logo.webp"}`,alt:p.images?.[0] ? p.nameAr : "شعار المحور الخامس المتقدمة للصناعة"}]}
   });
 }
 
@@ -35,11 +35,6 @@ export default async function ProductPage({params}:{params:Promise<{slug:string}
         {"@type":"ListItem",position:1,name:"الرئيسية",item:`${base}/ar`},
         {"@type":"ListItem",position:2,name:"المنتجات",item:`${base}/ar/products`},
         {"@type":"ListItem",position:3,name:p.nameAr,item:url}
-      ]},
-      {"@type":"FAQPage",mainEntity:[
-        {"@type":"Question",name:"هل يمكن التصنيع حسب المقاس؟",acceptedAnswer:{"@type":"Answer",text:"نراجع المقاس والوصلة والرسم ومتطلبات الاستخدام قبل تأكيد إمكانية التصنيع."}},
-        {"@type":"Question",name:"ما المعلومات المطلوبة للتسعير؟",acceptedAnswer:{"@type":"Answer",text:"أرسل نوع وموديل المعدة والمقاس المطلوب وطبيعة الاستخدام والكمية وأي رسومات أو صور مرجعية متاحة."}},
-        {"@type":"Question",name:"كيف يتم تأكيد التوافق؟",acceptedAnswer:{"@type":"Answer",text:"يتم تأكيد الأبعاد ونوع الوصلة وترتيب فتحات التثبيت أو القطع حسب المنتج والمعدة قبل الطلب."}}
       ]}
     ]
   };

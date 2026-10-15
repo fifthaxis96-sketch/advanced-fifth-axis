@@ -12,6 +12,6 @@ export const metadata: Metadata = withSEO("/ar/products", {
 
 export default function ProductsPage(){
   const base="https://advanced-fifthaxis.com";
-  const data={"@context":"https://schema.org","@type":"ItemList",name:"منتجات أدفانسد فيفث أكسس",itemListElement:products.map((p,i)=>({"@type":"ListItem",position:i+1,name:p.nameAr,url:`${base}/ar/products/${p.slug}`}))};
+  const data={"@context":"https://schema.org","@type":"ItemList",name:"منتجات المحور الخامس المتقدمة للصناعة",itemListElement:products.map((p,i)=>({"@type":"ListItem",position:i+1,name:p.nameAr,url:`${base}/ar/products/${p.slug}`}))};
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(data)}}/><ProductIndex lang="ar"/></>;
 }

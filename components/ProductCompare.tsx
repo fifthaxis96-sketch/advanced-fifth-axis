@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { products } from "@/lib/site";
+import { variantLabel } from "@/lib/localization";
 
 const categoryAr: Record<string,string> = {"Foundation Tools":"أدوات حفر الأساسات","Cutting Tools":"أدوات القطع","Wear Parts":"قطع التآكل","Casing":"مواسير التغليف","Drive Systems":"أنظمة نقل الحركة","Fabricated Components":"مكونات مصنعة"};
 
@@ -16,7 +17,7 @@ export function ProductCompare({lang}:{lang:"en"|"ar"}) {
       <tr><th scope="row">{ar?"الفئة":"Category"}</th>{chosen.map(p=><td key={p.slug}>{ar ? categoryAr[p.category] || p.category : p.category}</td>)}</tr>
       <tr><th scope="row">{ar?"المقاسات والمواصفات":"Sizes and specifications"}</th>{chosen.map(p=><td key={p.slug}>{ar?"حسب طلب العميل":"Upon customer request"}</td>)}</tr>
       <tr><th scope="row">{ar?"الوصف":"Application and details"}</th>{chosen.map(p=><td key={p.slug}>{ar?p.descriptionAr:p.description}</td>)}</tr>
-      <tr><th scope="row">{ar?"التكوينات المذكورة":"Listed configurations"}</th>{chosen.map(p=><td key={p.slug}>{p.variants.length?p.variants.join(" · "):(ar?"حسب متطلبات المشروع":"Project-specific")}</td>)}</tr>
+      <tr><th scope="row">{ar?"التكوينات المذكورة":"Listed configurations"}</th>{chosen.map(p=><td key={p.slug}>{p.variants.length?p.variants.map(v => variantLabel(v, lang)).join(" · "):(ar?"حسب متطلبات المشروع":"Project-specific")}</td>)}</tr>
       <tr><th scope="row">{ar?"طلب عرض السعر":"Quotation"}</th>{chosen.map(p=><td key={p.slug}><a href={`${base}/products/${p.slug}`}>{ar?"عرض المنتج":"View product"} ↗</a></td>)}</tr>
     </tbody></table></div>}
     {chosen.length>=2&&<p className="compareCaveat">{ar?"هذه مقارنة للمعلومات المدرجة، وليست تأكيدًا للتوافق أو التوفر. يرجى إرسال الموديل والمقاسات والرسم للمراجعة.":"This compares listed information only. Compatibility and availability require confirmation against your rig, dimensions and drawings."}</p>}

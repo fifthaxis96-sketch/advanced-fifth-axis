@@ -17,7 +17,7 @@ export const guides: Guide[] = [
         ]},
         { heading: "Do not select on diameter alone", paragraphs: [
           "Two tools with the same nominal diameter can have different connections, tooth patterns and working lengths. Ground descriptions such as ‘rock’ may cover very different conditions. Share the geotechnical report or a concise description of the layers, including any obstructions, where available.",
-          "The product tables on this site show reference sizes from the supplied lineup. They are a starting point for an inquiry, not a promise that every configuration is available or compatible with every rig."
+          "Specifications are available upon customer request. Send the required dimensions and connection for review; the listed configurations do not establish stock or compatibility with every rig."
         ]},
         { heading: "What to send with your inquiry", bullets: [
           "Rig make and model, drilling method and Kelly connection dimensions; include a measured drawing or clear photos if possible.",
@@ -40,7 +40,7 @@ export const guides: Guide[] = [
         ]},
         { heading: "القطر وحده لا يكفي للاختيار", paragraphs: [
           "قد تختلف الوصلات وترتيب الأسنان وطول العمل بين أداتين لهما القطر الاسمي نفسه. وقد تشير كلمة «صخر» إلى ظروف مختلفة جدًا. أرسل التقرير الجيوتقني أو وصفًا موجزًا للطبقات والعوائق إن توفر.",
-          "جداول المنتجات في الموقع تعرض مقاسات مرجعية من القائمة المقدمة. وهي نقطة بداية للاستفسار، وليست تأكيدًا لتوفر كل تكوين أو توافقه مع كل معدة."
+          "المواصفات متاحة حسب طلب العميل. أرسل الأبعاد والوصلة المطلوبة للمراجعة؛ لا تعني التكوينات المذكورة تأكيد التوفر أو التوافق مع كل معدة."
         ]},
         { heading: "المعلومات المطلوبة للاستفسار", bullets: [
           "الشركة المصنعة وموديل المعدة وطريقة الحفر وأبعاد وصلة الكيلي؛ وأرفق رسمًا بمقاسات فعلية أو صورًا واضحة إن أمكن.",
@@ -97,7 +97,7 @@ export const guides: Guide[] = [
           "مدينة التسليم والموعد المطلوب."
         ]}
       ],
-      takeaway: "أرسل القياسات والصور عبر نموذج عرض السعر لمراجعة الوصلة قبل التصنيع."
+      takeaway: "اكتب القياسات في نموذج عرض السعر، ثم أرفق الصور في واتساب أو البريد لمراجعة الوصلة قبل التصنيع."
     }
   },
   {
@@ -129,7 +129,7 @@ export const guides: Guide[] = [
           "If you are replacing a worn tool, share the existing part's measurements and photos. Wear can make a single measurement misleading, so confirm against a drawing or unworn reference when possible."
         ]}
       ],
-      takeaway: "Use the quotation list to identify products, then send drawings and project details through the contact options for technical review."
+      takeaway: "Select a product in the simple quotation form and describe your requirement. Continue in WhatsApp or email, then attach drawings there for technical review."
     },
     ar: {
       title: "قائمة بيانات طلب عرض سعر معدات حفر الأساسات",
@@ -157,7 +157,7 @@ export const guides: Guide[] = [
           "عند استبدال أداة متآكلة، أرسل مقاساتها وصورها. قد يؤثر التآكل في دقة القياس الواحد، لذا قارن بالرسم أو بجزء غير متآكل إن أمكن."
         ]}
       ],
-      takeaway: "حدد المنتجات في قائمة عرض السعر، ثم أرسل الرسومات وبيانات المشروع عبر خيارات الاتصال للمراجعة الفنية."
+      takeaway: "اختر المنتج في نموذج عرض السعر المبسط واكتب طلبك. تابع في واتساب أو البريد الإلكتروني، ثم أرفق الرسومات هناك للمراجعة الفنية."
     }
   }
 ];

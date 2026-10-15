@@ -1,0 +1,262 @@
+{
+  "solid-wire-rope-thimble": {
+    "en": {
+      "question": "Which dimensions identify a rope thimble?",
+      "answer": "Provide rope diameter, the thimble dimensions and the end-connection arrangement. Confirm suitability for the application; the listing does not establish a working-load rating."
+    },
+    "ar": {
+      "question": "ما الأبعاد اللازمة لتحديد كشتبان الحبل؟",
+      "answer": "أرسل قطر الحبل وأبعاد الكشتبان وترتيب وصلة الطرف. يجب تأكيد الملاءمة للاستخدام؛ لا تتضمن هذه الصفحة حمولة تشغيل معتمدة."
+    }
+  },
+  "rotary-head-slide-pads": {
+    "en": {
+      "question": "How do I specify a replacement sliding pad?",
+      "answer": "The listed pads are POM. Send the rig model, length, width, thickness and mounting-hole positions, with a drawing or sample; dimensions are customer-requested."
+    },
+    "ar": {
+      "question": "كيف أحدد بطانة الانزلاق البديلة؟",
+      "answer": "البطانات المدرجة مصنوعة من POM. أرسل موديل المعدة والطول والعرض والسماكة ومواضع فتحات التثبيت مع رسم أو عينة؛ المقاسات حسب طلب العميل."
+    }
+  },
+  "drilling-bucket-helical-springs": {
+    "en": {
+      "question": "What measurements are needed for a bucket spring?",
+      "answer": "Send the bucket model, spring outside diameter, wire diameter, free length and end shape. Confirm the replacement against the existing assembly rather than length alone."
+    },
+    "ar": {
+      "question": "ما القياسات المطلوبة لنابض البكيت؟",
+      "answer": "أرسل موديل البكيت والقطر الخارجي للنابض وقطر السلك والطول الحر وشكل الأطراف. أكد البديل وفق المجموعة الحالية، ولا تعتمد على الطول وحده."
+    }
+  },
+  "roller-bits": {
+    "en": {
+      "question": "Which roller-bit size is listed?",
+      "answer": "Only the 8-1/2-inch option is listed. Share the mounting drawing, existing cutting arrangement and ground conditions to review suitability for the foundation tool."
+    },
+    "ar": {
+      "question": "ما مقاس الرولر بت المدرج؟",
+      "answer": "الخيار المدرج هو 8-1/2 بوصة فقط. أرسل رسم التثبيت وترتيب القطع الحالي وطبيعة الطبقات لمراجعة الملاءمة لأداة حفر الأساسات."
+    }
+  },
+  "center-pilot-attachment-holder": {
+    "en": {
+      "question": "What should I confirm for the pilot assembly?",
+      "answer": "The listed assembly is shown with a fastening bolt and nut. Confirm the pilot dimensions, holder interface and fastening arrangement against the drilling tool drawing."
+    },
+    "ar": {
+      "question": "ما المطلوب تأكيده لمجموعة السن المركزي؟",
+      "answer": "تظهر المجموعة المدرجة مع مسمار تثبيت وصامولة. أكد أبعاد السن المركزي وواجهة الحامل وطريقة التثبيت وفق رسم أداة الحفر."
+    }
+  },
+  "bfz70-tooth": {
+    "en": {
+      "question": "Does the BFZ70 code confirm holder fit?",
+      "answer": "No. Compare tooth seating and dimensions with the holder and tool drawing. The BFZ70 holder has a separate listing; confirm whether your request covers a tooth or both components."
+    },
+    "ar": {
+      "question": "هل يؤكد رمز BFZ70 توافق الحامل؟",
+      "answer": "لا. قارن موضع تثبيت السن وأبعاده بالحامل ورسم الأداة. يُعرض حامل BFZ70 في صفحة مستقلة؛ حدد إن كان طلبك للسن فقط أم للمكونين."
+    }
+  },
+  "bfz70-holder": {
+    "en": {
+      "question": "How do I specify a BFZ70 holder?",
+      "answer": "Send the holder mounting dimensions, tooth seating and installation layout. Identify the required tooth separately so the assembly can be reviewed before supply."
+    },
+    "ar": {
+      "question": "كيف أحدد حامل BFZ70 المطلوب؟",
+      "answer": "أرسل أبعاد تثبيت الحامل وتجويف السن وترتيب التركيب. حدد السن المطلوب بصورة مستقلة لمراجعة المجموعة قبل التوريد."
+    }
+  },
+  "c31hd-tooth": {
+    "en": {
+      "question": "What should accompany a C31HD replacement inquiry?",
+      "answer": "Send the shank and seating dimensions, existing holder details and quantity. Include a drawing or measured photo; a model code alone does not confirm compatibility."
+    },
+    "ar": {
+      "question": "ما بيانات طلب سن C31HD البديل؟",
+      "answer": "أرسل أبعاد الساق وموضع التثبيت وبيانات الحامل الحالي والكمية. أرفق رسمًا أو صورة توضح القياسات؛ رمز الموديل وحده لا يؤكد التوافق."
+    }
+  },
+  "c30-holders": {
+    "en": {
+      "question": "Are square and round C30 holders separate products?",
+      "answer": "Both shapes are options on this page. State square or round, then provide mounting dimensions and the tooth details needed to confirm the correct configuration."
+    },
+    "ar": {
+      "question": "هل حوامل C30 المربعة والدائرية منتجان منفصلان؟",
+      "answer": "الشكلان خياران في هذه الصفحة. حدد المربع أو الدائري، ثم أرسل أبعاد التثبيت وبيانات السن لتأكيد التكوين الصحيح."
+    }
+  },
+  "b-47k22h-tooth": {
+    "en": {
+      "question": "How is a B-47K22H replacement checked?",
+      "answer": "Compare the shank and seating with the existing holder. Include the tool application, ground conditions and quantity so the replacement requirement can be reviewed."
+    },
+    "ar": {
+      "question": "كيف يُراجع بديل السن B-47K22H؟",
+      "answer": "قارن أبعاد الساق وموضع التثبيت بالحامل الحالي. أرفق استخدام الأداة وطبيعة الطبقات والكمية لمراجعة متطلبات الاستبدال."
+    }
+  },
+  "hq-round-holders": {
+    "en": {
+      "question": "Which HQ round-holder configurations are listed?",
+      "answer": "The options are with carbide buttons and without carbide buttons. Specify the option, socket dimensions, mounting details and mating tooth; the option name does not confirm fit."
+    },
+    "ar": {
+      "question": "ما تكوينات حوامل HQ الدائرية المدرجة؟",
+      "answer": "الخياران هما مع أزرار كربيد وبدون أزرار كربيد. حدد الخيار وأبعاد التجويف وتفاصيل التثبيت والسن المقابل؛ اسم الخيار لا يؤكد التوافق."
+    }
+  },
+  "b43-holder": {
+    "en": {
+      "question": "What information identifies a B43 holder replacement?",
+      "answer": "Provide the mating tooth dimensions, holder mounting measurements and a drawing or sample. Confirm the tooth separately; do not infer interchangeability from a similar appearance."
+    },
+    "ar": {
+      "question": "ما البيانات اللازمة لتحديد حامل B43 البديل؟",
+      "answer": "أرسل أبعاد السن المقابل وقياسات تثبيت الحامل ورسمًا أو عينة. أكد السن بصورة مستقلة، ولا تستنتج قابلية التبادل من التشابه في الشكل."
+    }
+  },
+  "rock-augers": {
+    "en": {
+      "question": "How do straight and conical auger inquiries differ?",
+      "answer": "Specify straight or conical, the diameter, flight geometry, pilot and cutting layout. Both require project review; the listed standard Kelly box is 200×200 mm."
+    },
+    "ar": {
+      "question": "كيف يختلف طلب الأوجر المستقيم عن المخروطي؟",
+      "answer": "حدد المستقيم أو المخروطي والقطر وتصميم الحلزون والسن المركزي وترتيب القطع. يتطلب الخياران مراجعة المشروع؛ مقاس كيلي بوكس القياسي المدرج 200×200 مم."
+    }
+  },
+  "drilling-buckets": {
+    "en": {
+      "question": "What needs confirming for a rock bucket?",
+      "answer": "Send the bore diameter, cutting teeth, shell and bottom arrangement, rig model and ground information. The listed standard Kelly box is 200×200 mm; other specifications are available upon customer request."
+    },
+    "ar": {
+      "question": "ما المطلوب تأكيده لبكيت الصخور؟",
+      "answer": "أرسل قطر الحفر والأسنان وتصميم الجسم والقاع وموديل المعدة ومعلومات الطبقات. مقاس كيلي بوكس القياسي المدرج 200×200 مم؛ بقية المواصفات حسب طلب العميل."
+    }
+  },
+  "cleaning-buckets": {
+    "en": {
+      "question": "Is a cleaning bucket selected like a rock bucket?",
+      "answer": "This bucket is listed for removing loose material from the bore bottom. Specify the bore diameter, bottom arrangement and rig connection; do not assume the cutting setup of a rock bucket."
+    },
+    "ar": {
+      "question": "هل يُختار بكيت التنظيف مثل بكيت الصخور؟",
+      "answer": "البكيت المدرج مخصص لإزالة المواد المفككة من قاع الحفرة. حدد قطر الحفر وتصميم القاع ووصلة المعدة، ولا تفترض أنه يستخدم ترتيب القطع الخاص ببكيت الصخور."
+    }
+  },
+  "wire-tremie-pipe": {
+    "en": {
+      "question": "What is included in the listed full tremie sets?",
+      "answer": "The 8-inch and 10-inch full-set options list pipe, hopper, lift and suspension jig. Confirm pipe lengths, connection details and the required set configuration in the quotation."
+    },
+    "ar": {
+      "question": "ماذا تشمل مجموعات التريمي الكاملة المدرجة؟",
+      "answer": "تتضمن خيارات المجموعة الكاملة 8 و10 بوصات المواسير وقمع الصب وقطعة الرفع وحامل التعليق. أكد أطوال المواسير والوصلات وتكوين المجموعة في عرض السعر."
+    }
+  },
+  "core-barrels": {
+    "en": {
+      "question": "Which cutting arrangements can I discuss?",
+      "answer": "The listed core barrels use bullet teeth or roller bits to cut an annular path. Send formation details, barrel diameter, cutting layout and Kelly interface for review."
+    },
+    "ar": {
+      "question": "ما ترتيبات القطع التي يمكن الاستفسار عنها؟",
+      "answer": "تستخدم خيارات الكور بارل المدرجة أسنانًا مخروطية أو رولر بت لقطع مسار حلقي. أرسل طبيعة الطبقات وقطر البرميل وترتيب القطع ووصلة كيلي للمراجعة."
+    }
+  },
+  "casing": {
+    "en": {
+      "question": "Which casing components are currently listed?",
+      "answer": "The approved options are single wall casing and casing shoe. Specify each required component, diameter, length and joint arrangement; confirm the project configuration before supply."
+    },
+    "ar": {
+      "question": "ما مكونات التغليف المدرجة حاليًا؟",
+      "answer": "الخياران المعتمدان هما ماسورة تغليف أحادية الجدار وحذاء ماسورة التغليف. حدد المكونات المطلوبة والقطر والطول ونظام الوصلات، وأكد تكوين المشروع قبل التوريد."
+    }
+  },
+  "casing-drive": {
+    "en": {
+      "question": "What connections must be checked for a casing drive?",
+      "answer": "Provide the casing diameter and connection, drilling rig interface and engagement dimensions. The former Casing Twister listing now refers to this Casing Drive page."
+    },
+    "ar": {
+      "question": "ما الوصلات المطلوبة لمراجعة أداة إدارة التغليف؟",
+      "answer": "أرسل قطر الماسورة ووصلتها وواجهة معدة الحفر وأبعاد التعشيق. تحيل صفحة Casing Twister السابقة الآن إلى أداة إدارة مواسير التغليف Casing Drive."
+    }
+  },
+  "cfa": {
+    "en": {
+      "question": "What details define a CFA section?",
+      "answer": "Specify diameter, working length, flight pitch, center tube and connection. Send the mating-section drawing and drilling-system details so the continuous-flight arrangement can be reviewed."
+    },
+    "ar": {
+      "question": "ما البيانات التي تحدد مقطع أوجر CFA؟",
+      "answer": "حدد القطر وطول العمل وخطوة الحلزون والأنبوب المركزي والوصلة. أرسل رسم المقطع المقابل وبيانات نظام الحفر لمراجعة تكوين الأوجر المستمر."
+    }
+  },
+  "kelly-boxes": {
+    "en": {
+      "question": "Which way does the listed Kelly adapter connect?",
+      "answer": "The listed adapter has a 250×250 mm female side and a 200×200 mm male side. Separate Kelly box options are 150×150, 200×200 and 250×250 mm; confirm engagement and pin-hole dimensions."
+    },
+    "ar": {
+      "question": "ما اتجاه توصيل وصلة كيلي المدرجة؟",
+      "answer": "الوصلة المدرجة بطرف أنثى 250×250 مم وطرف ذكر 200×200 مم. تتوفر خيارات كيلي بوكس مستقلة 150×150 و200×200 و250×250 مم؛ أكد أبعاد التعشيق وفتحات التثبيت."
+    }
+  },
+  "kelly-bars": {
+    "en": {
+      "question": "Can a friction Kelly bar be converted to interlocking?",
+      "answer": "Conversion is listed subject to technical assessment, alongside friction and interlocking repair. Send rig model, dimensions, condition photos and the requested scope; feasibility is confirmed after review."
+    },
+    "ar": {
+      "question": "هل يمكن تحويل كيلي الاحتكاك إلى كيلي تعشيق؟",
+      "answer": "التحويل مدرج بشرط التقييم الفني، إلى جانب إصلاح قضبان الاحتكاك والتعشيق. أرسل موديل المعدة والأبعاد وصور الحالة ونطاق العمل المطلوب؛ تُؤكد الإمكانية بعد المراجعة."
+    }
+  },
+  "kelly-box-pins": {
+    "en": {
+      "question": "Which pin diameter and length combinations are listed?",
+      "answer": "The listed combinations are 50 mm outside diameter × 320 mm length, and 60 mm × 400 mm. Confirm hole position and the rig/tool interface rather than mixing dimensions between options."
+    },
+    "ar": {
+      "question": "ما مجموعات قطر البن وطوله المدرجة؟",
+      "answer": "المجموعتان المدرجتان هما قطر خارجي 50 مم × طول 320 مم، وقطر 60 مم × طول 400 مم. أكد موضع الفتحة وواجهة المعدة والأداة، ولا تخلط أبعاد الخيارين."
+    }
+  },
+  "pile-testing-reaction-beam": {
+    "en": {
+      "question": "Does the listing specify a reaction-beam load rating?",
+      "answer": "No load rating is published. The testing arrangement, connections and required load must be engineered and confirmed with the project drawings before fabrication. A verified product photograph is pending."
+    },
+    "ar": {
+      "question": "هل تحدد الصفحة حمولة كمرة الاختبار؟",
+      "answer": "لا تنشر الصفحة حمولة معتمدة. يجب تصميم نظام الاختبار والوصلات والحمولة المطلوبة هندسيًا وتأكيدها وفق رسومات المشروع قبل التصنيع. صورة المنتج الموثقة قيد الإضافة."
+    }
+  },
+  "customized-bentonite-water-tank": {
+    "en": {
+      "question": "What should I specify for a custom tank?",
+      "answer": "Provide intended contents, required capacity, overall dimensions, access, pipe connections and lifting-point requirements. The final fabrication arrangement needs confirmation for the project."
+    },
+    "ar": {
+      "question": "ما المطلوب تحديده للخزان حسب الطلب؟",
+      "answer": "أرسل نوع المحتوى والسعة المطلوبة والأبعاد الكلية وفتحات الوصول ووصلات الأنابيب ومتطلبات نقاط الرفع. يجب تأكيد التكوين التصنيعي النهائي حسب المشروع."
+    }
+  },
+  "bi-directional-static-axial-load-plate": {
+    "en": {
+      "question": "What drawing is needed for a bi-directional load plate?",
+      "answer": "Provide the confirmed testing layout, plate diameter, thickness, openings and connection details. Dimensions and design requirements must come from the engineered test arrangement."
+    },
+    "ar": {
+      "question": "ما الرسم المطلوب لصفيحة اختبار التحميل ثنائي الاتجاه؟",
+      "answer": "أرسل نظام الاختبار المعتمد وقطر الصفيحة وسماكتها والفتحات وتفاصيل الوصلات. يجب أن تستند الأبعاد ومتطلبات التصميم إلى نظام الاختبار المصمم هندسيًا."
+    }
+  }
+}

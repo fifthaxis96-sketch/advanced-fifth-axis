@@ -22,5 +22,5 @@ export function InquiryLink({ lang, channel, product, variant, className, label,
   const current = product || products.find(p => p.slug === routeSlug) ||
     (/^\/(ar\/)?contact\/?$/.test(pathname) ? products.find(p => p.slug === selectedSlug) : undefined);
   const links = inquiryLinks({ product: current, lang, pathname, variant }, company.phone, company.email);
-  return <a href={links[channel]} className={className} aria-label={label} target={channel === "whatsapp" ? "_blank" : undefined} rel={channel === "whatsapp" ? "noopener noreferrer" : undefined}>{children}</a>;
+  return <a href={links[channel]} data-product-slug={current?.slug} className={className} aria-label={label} target={channel === "whatsapp" ? "_blank" : undefined} rel={channel === "whatsapp" ? "noopener noreferrer" : undefined}>{children}</a>;
 }

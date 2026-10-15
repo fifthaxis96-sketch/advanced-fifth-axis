@@ -17,7 +17,7 @@ export async function generateMetadata({params}:{params:Promise<{slug:string}>})
   return withSEO(`/products/${slug}`, {
     title, description,
     alternates:{canonical:url,languages:{en:`${base}/products/${p.slug}`,ar:`${base}/ar/products/${p.slug}`}},
-    openGraph:{title,description,url,type:"website",images:p.images?.[0]?[{url:`${base}${p.images[0]}`,alt:p.name}]:undefined}
+    openGraph:{title,description,url,type:"website",images:[{url:`${base}${p.images?.[0] || "/advanced-fifth-axis-logo.webp"}`,alt:p.images?.[0] ? p.name : "Advanced Fifth Axis logo"}]}
   });
 }
 
@@ -35,11 +35,6 @@ export default async function ProductPage({params}:{params:Promise<{slug:string}
         {"@type":"ListItem",position:1,name:"Home",item:`${base}`},
         {"@type":"ListItem",position:2,name:"Products",item:`${base}/products`},
         {"@type":"ListItem",position:3,name:p.name,item:url}
-      ]},
-      {"@type":"FAQPage",mainEntity:[
-        {"@type":"Question",name:"Can this be supplied to custom dimensions?",acceptedAnswer:{"@type":"Answer",text:"We review the dimensions, connection, drawing and operating requirements before confirming the fabrication scope."}},
-        {"@type":"Question",name:"What information should I send for pricing?",acceptedAnswer:{"@type":"Answer",text:"Send the rig make and model, required size, intended application, quantity, and any available drawings or reference photos."}},
-        {"@type":"Question",name:"How is compatibility confirmed?",acceptedAnswer:{"@type":"Answer",text:"Dimensions, connection type, pin-hole or cutting layout are confirmed against the relevant tool and rig before ordering."}}
       ]}
     ]
   };

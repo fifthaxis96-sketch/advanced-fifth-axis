@@ -1,0 +1,4590 @@
+{
+  "scope": "local static export",
+  "origin": "https://advanced-fifthaxis.com",
+  "sitemap_count": 90,
+  "page_count": 90,
+  "language_counts": {
+    "en": 45,
+    "ar": 45
+  },
+  "readiness_scores": {
+    "en": 87.1,
+    "ar": 85.3
+  },
+  "rubric": "Ten binary source-readiness checks per page, 10 points each; language score is the mean. Editorial and technical assessment, not a Google or performance score. See checks in each row.",
+  "urls": [
+    {
+      "path": "/",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar",
+      "canonical": "https://advanced-fifthaxis.com",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Advanced Fifth Axis | Foundation Drilling Tools Saudi Arabia"
+      ],
+      "description": "Drilling tools, rock drilling tools, drilling bits, core barrels, casing and wear parts from Advanced Fifth Axis in Jeddah, Saudi Arabia.",
+      "h1": [
+        "Tools built for the ground ahead."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com",
+        "ar": "https://advanced-fifthaxis.com/ar"
+      },
+      "inbound_links": 138,
+      "images": 54,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/about",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/about",
+      "canonical": "https://advanced-fifthaxis.com/about",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "About Our Foundation Drilling Company | Advanced Fifth Axis"
+      ],
+      "description": "Learn about Advanced Fifth Axis, a Jeddah-based supplier and fabricator of foundation drilling tools, casing solutions, wear parts and custom components.",
+      "h1": [
+        "Foundation drilling equipment built around project requirements."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/about",
+        "ar": "https://advanced-fifthaxis.com/ar/about"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/",
+      "canonical": "https://advanced-fifthaxis.com/ar",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "معدات حفر الأساسات في السعودية | المحور الخامس المتقدم"
+      ],
+      "description": "بكيتات وأوجرات الحفر والكور بارل ومواسير التغليف وأسنان القطع في جدة، السعودية. اطلب عرض سعر حسب الموديل والمواصفات.",
+      "h1": [
+        "معدات حفر مصممة لمتطلبات مشروعك."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com",
+        "ar": "https://advanced-fifthaxis.com/ar"
+      },
+      "inbound_links": 46,
+      "images": 54,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": false
+      },
+      "readiness_score": 70,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/about",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/about",
+      "canonical": "https://advanced-fifthaxis.com/ar/about",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "عن أدفانسد فيفث أكسس | معدات حفر الأساسات"
+      ],
+      "description": "تعرف على أدفانسد فيفث أكسس في جدة لتوريد وتصنيع أدوات حفر الأساسات ومواسير التغليف وقطع التآكل والمكونات المخصصة.",
+      "h1": [
+        "معدات ومكونات حفر تُجهز لمتطلبات المشروع."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/about",
+        "ar": "https://advanced-fifthaxis.com/ar/about"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/capabilities",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/capabilities",
+      "canonical": "https://advanced-fifthaxis.com/ar/capabilities",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "قدرات تصنيع وتوريد معدات حفر الأساسات"
+      ],
+      "description": "أدوات حفر الأساسات والتصنيع المخصص ومواسير التغليف وقطع الاستبدال للمشاريع في المملكة العربية السعودية.",
+      "h1": [
+        "نصنع وفق متطلباتك."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/capabilities",
+        "ar": "https://advanced-fifthaxis.com/ar/capabilities"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/collections",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/collections",
+      "canonical": "https://advanced-fifthaxis.com/ar/collections",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "فئات معدات حفر الأساسات في السعودية"
+      ],
+      "description": "تصفح أدوات حفر الأساسات وقطع التآكل ومواسير التغليف وأنظمة كيلي والمكونات المصنعة حسب الطلب في السعودية.",
+      "h1": [
+        "تصفح فئات المنتجات المتخصصة."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections",
+        "ar": "https://advanced-fifthaxis.com/ar/collections"
+      },
+      "inbound_links": 46,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "ItemList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/collections/casing",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/collections/casing",
+      "canonical": "https://advanced-fifthaxis.com/ar/collections/casing",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "مواسير التغليف ومكوناتها | معدات حفر الأساسات السعودية"
+      ],
+      "description": "مواسير تغليف ومكوناتها وحلول مرتبطة بتطبيقات حفر الأساسات.",
+      "h1": [
+        "مواسير التغليف ومكوناتها"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/casing",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/casing"
+      },
+      "inbound_links": 5,
+      "images": 4,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/collections/drive-systems",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/collections/drive-systems",
+      "canonical": "https://advanced-fifthaxis.com/ar/collections/drive-systems",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "أنظمة كيلي ونقل الحركة | معدات حفر الأساسات السعودية"
+      ],
+      "description": "كيلي بوكس ووصلات لربط معدات الحفر الدوار بأدوات الأساسات، بالإضافة إلى خدمات إصلاح قضبان كيلي.",
+      "h1": [
+        "أنظمة كيلي ونقل الحركة"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/drive-systems",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/drive-systems"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/collections/fabricated-components",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/collections/fabricated-components",
+      "canonical": "https://advanced-fifthaxis.com/ar/collections/fabricated-components",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "مكونات مصنعة حسب الطلب | معدات حفر الأساسات السعودية"
+      ],
+      "description": "مكونات فولاذية ثقيلة تُصنع حسب الرسومات والأبعاد ومتطلبات المشروع المؤكدة.",
+      "h1": [
+        "مكونات مصنعة حسب الطلب"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/fabricated-components",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/fabricated-components"
+      },
+      "inbound_links": 6,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/collections/foundation-tools",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/collections/foundation-tools",
+      "canonical": "https://advanced-fifthaxis.com/ar/collections/foundation-tools",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "أدوات حفر الأساسات | معدات حفر الأساسات السعودية"
+      ],
+      "description": "أوجرات وبكيتات وكور بارل وأدوات الحفر المستمر لمشاريع حفر الأساسات.",
+      "h1": [
+        "أدوات حفر الأساسات"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/foundation-tools",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/foundation-tools"
+      },
+      "inbound_links": 9,
+      "images": 8,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/collections/wear-parts",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/collections/wear-parts",
+      "canonical": "https://advanced-fifthaxis.com/ar/collections/wear-parts",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "أسنان وقطع التآكل | معدات حفر الأساسات السعودية"
+      ],
+      "description": "أدوات قطع وأسنان وحوامل وقطع تآكل قابلة للاستبدال لمعدات حفر الأساسات.",
+      "h1": [
+        "أسنان وقطع التآكل"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/wear-parts",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/wear-parts"
+      },
+      "inbound_links": 16,
+      "images": 14,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/contact",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/contact",
+      "canonical": "https://advanced-fifthaxis.com/ar/contact",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "تواصل معنا واطلب عرض سعر | أدفانسد فيفث أكسس"
+      ],
+      "description": "تواصل مع أدفانسد فيفث أكسس في جدة لطلبات أسعار معدات حفر الأساسات ومواسير التغليف وأنظمة كيلي وقطع التآكل والتصنيع المخصص.",
+      "h1": [
+        "أخبرنا بما يحتاجه مشروعك."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/contact",
+        "ar": "https://advanced-fifthaxis.com/ar/contact"
+      },
+      "inbound_links": 117,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/faq",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/faq",
+      "canonical": "https://advanced-fifthaxis.com/ar/faq",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "الأسئلة الشائعة | معدات حفر الأساسات"
+      ],
+      "description": "إجابات عن معدات حفر الأساسات والتوافق وطلبات عروض الأسعار في السعودية.",
+      "h1": [
+        "الأسئلة الشائعة"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/faq",
+        "ar": "https://advanced-fifthaxis.com/ar/faq"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/field-work",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/field-work",
+      "canonical": "https://advanced-fifthaxis.com/ar/field-work",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "معرض مشاريع العملاء"
+      ],
+      "description": "استكشف صورًا شاركها عملاؤنا من مشاريع حفر الأساسات، تعرض أدواتنا ومعداتنا أثناء العمل.",
+      "h1": [
+        "عملاؤنا. أدواتنا. مشاريع على أرض الواقع."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/field-work",
+        "ar": "https://advanced-fifthaxis.com/ar/field-work"
+      },
+      "inbound_links": 46,
+      "images": 14,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/guides",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/guides",
+      "canonical": "https://advanced-fifthaxis.com/ar/guides",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "الأدلة الفنية لمعدات حفر الأساسات | أدفانسد فيفث أكسس"
+      ],
+      "description": "أدلة عملية حول أدوات الحفر ووصلات الكيلي والمعلومات المطلوبة لطلب عرض سعر معدات الأساسات.",
+      "h1": [
+        "أدلة فنية لطلب أكثر دقة."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides",
+        "ar": "https://advanced-fifthaxis.com/ar/guides"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/guides/drilling-tool-selection",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/guides/drilling-tool-selection",
+      "canonical": "https://advanced-fifthaxis.com/ar/guides/drilling-tool-selection",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "الأوجر الصخري أم بكيت الصخور أم الكور بارل؟ | أدفانسد فيفث أكسس"
+      ],
+      "description": "مقارنة عملية لأدوات حفر الأساسات والمعلومات اللازمة قبل طلب عرض السعر.",
+      "h1": [
+        "الأوجر الصخري أم بكيت الصخور أم الكور بارل؟"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides/drilling-tool-selection",
+        "ar": "https://advanced-fifthaxis.com/ar/guides/drilling-tool-selection"
+      },
+      "inbound_links": 8,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/guides/foundation-drilling-rfq-checklist",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/guides/foundation-drilling-rfq-checklist",
+      "canonical": "https://advanced-fifthaxis.com/ar/guides/foundation-drilling-rfq-checklist",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "قائمة بيانات طلب عرض سعر معدات حفر الأساسات | أدفانسد فيفث أكسس"
+      ],
+      "description": "الأبعاد ومعلومات التربة والرسومات وبيانات التسليم المطلوبة للاستفسار عن أدوات حفر الأساسات والمكونات المصنعة.",
+      "h1": [
+        "قائمة بيانات طلب عرض سعر معدات حفر الأساسات"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides/foundation-drilling-rfq-checklist",
+        "ar": "https://advanced-fifthaxis.com/ar/guides/foundation-drilling-rfq-checklist"
+      },
+      "inbound_links": 6,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/guides/kelly-connections",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/guides/kelly-connections",
+      "canonical": "https://advanced-fifthaxis.com/ar/guides/kelly-connections",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "كيفية تحديد مقاسات الكيلي بوكس والوصلة | أدفانسد فيفث أكسس"
+      ],
+      "description": "الأبعاد والمسامير والرسومات المطلوبة للاستفسار عن وصلات أدوات حفر الأساسات.",
+      "h1": [
+        "كيفية تحديد مقاسات الكيلي بوكس والوصلة"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides/kelly-connections",
+        "ar": "https://advanced-fifthaxis.com/ar/guides/kelly-connections"
+      },
+      "inbound_links": 5,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/privacy",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/privacy",
+      "canonical": "https://advanced-fifthaxis.com/ar/privacy",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "الخصوصية | المحور الخامس المتقدم"
+      ],
+      "description": "كيفية استخدام المعلومات التي ترسلها عند التواصل مع شركة المحور الخامس المتقدم.",
+      "h1": [
+        "الخصوصية"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/privacy",
+        "ar": "https://advanced-fifthaxis.com/ar/privacy"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products",
+      "canonical": "https://advanced-fifthaxis.com/ar/products",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "منتجات ومعدات حفر الأساسات في السعودية"
+      ],
+      "description": "تصفح أدوات حفر الأساسات ومواسير التغليف وأنظمة كيلي وأسنان وقطع التآكل والمكونات المصنعة حسب الطلب في السعودية.",
+      "h1": [
+        "حلول متكاملة لأعمال الأساسات."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products",
+        "ar": "https://advanced-fifthaxis.com/ar/products"
+      },
+      "inbound_links": 46,
+      "images": 28,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "ItemList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/b-47k22h-tooth",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/b-47k22h-tooth",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/b-47k22h-tooth",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "سن حفر B-47K22H | معدات حفر الأساسات السعودية"
+      ],
+      "description": "سن حفر B-47K22H كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والاستخدام المطلوب قبل الطلب.",
+      "h1": [
+        "سن حفر B-47K22H"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/b-47k22h-tooth",
+        "ar": "https://advanced-fifthaxis.com/ar/products/b-47k22h-tooth"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/b43-holder",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/b43-holder",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/b43-holder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "حامل سن B43 | معدات حفر الأساسات السعودية"
+      ],
+      "description": "حامل سن B43 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد توافق السن والأبعاد وتفاصيل التركيب قبل الطلب.",
+      "h1": [
+        "حامل سن B43"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/b43-holder",
+        "ar": "https://advanced-fifthaxis.com/ar/products/b43-holder"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/bfz70-holder",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/bfz70-holder",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/bfz70-holder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "حامل سن BFZ70 | معدات حفر الأساسات السعودية"
+      ],
+      "description": "حامل سن BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+      "h1": [
+        "حامل سن BFZ70"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/bfz70-holder",
+        "ar": "https://advanced-fifthaxis.com/ar/products/bfz70-holder"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/bfz70-tooth",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/bfz70-tooth",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/bfz70-tooth",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "سن حفر BFZ70 | معدات حفر الأساسات السعودية"
+      ],
+      "description": "سن حفر BFZ70 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد التوافق والأبعاد والحامل المطابق قبل الطلب.",
+      "h1": [
+        "سن حفر BFZ70"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/bfz70-tooth",
+        "ar": "https://advanced-fifthaxis.com/ar/products/bfz70-tooth"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/bi-directional-static-axial-load-plate",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/bi-directional-static-axial-load-plate",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/bi-directional-static-axial-load-plate",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "صفيحة اختبار التحميل المحوري الساكن ثنائي الاتجاه | معدات حفر الأساسات السعودية"
+      ],
+      "description": "صفيحة تُصنع حسب الطلب لاختبار التحميل المحوري الساكن ثنائي الاتجاه. يتم تصنيع القطر والسماكة والفتحات وتوزيعها وفق رسومات المشروع المعتمدة. أرفق الأبعاد المطلوبة ونظام الاختبار ومتطلبات التصميم مع طلب عرض السعر.",
+      "h1": [
+        "صفيحة اختبار التحميل المحوري الساكن ثنائي الاتجاه"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/bi-directional-static-axial-load-plate",
+        "ar": "https://advanced-fifthaxis.com/ar/products/bi-directional-static-axial-load-plate"
+      },
+      "inbound_links": 6,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products/c30-holders",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/c30-holders",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/c30-holders",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "حوامل أسنان C30 مربعة ودائرية | معدات حفر الأساسات السعودية"
+      ],
+      "description": "حوامل أسنان C30 بشكلين مربع ودائري. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+      "h1": [
+        "حوامل أسنان C30 مربعة ودائرية"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/c30-holders",
+        "ar": "https://advanced-fifthaxis.com/ar/products/c30-holders"
+      },
+      "inbound_links": 4,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products/c31hd-tooth",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/c31hd-tooth",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/c31hd-tooth",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "سن حفر C31HD | معدات حفر الأساسات السعودية"
+      ],
+      "description": "سن حفر C31HD كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والكمية المطلوبة قبل الطلب.",
+      "h1": [
+        "سن حفر C31HD"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/c31hd-tooth",
+        "ar": "https://advanced-fifthaxis.com/ar/products/c31hd-tooth"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/casing",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/casing",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/casing",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "مواسير التغليف وملحقاتها | معدات حفر الأساسات السعودية"
+      ],
+      "description": "مواسير تغليف ومكونات مرتبطة بحفر الأساسات لدعم الحفرة وعمليات التغليف. يتم تأكيد القطر وتركيب الجدار ونوع الوصلة والطول وواجهة الأداة حسب المشروع قبل التوريد.",
+      "h1": [
+        "مواسير التغليف وملحقاتها"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/casing",
+        "ar": "https://advanced-fifthaxis.com/ar/products/casing"
+      },
+      "inbound_links": 7,
+      "images": 4,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/casing-drive",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/casing-drive",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/casing-drive",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "أداة إدارة مواسير التغليف | معدات حفر الأساسات السعودية"
+      ],
+      "description": "أداة إدارة مواسير التغليف كما تظهر في صورة المنتج المقدمة. يُرجى تأكيد قطر الماسورة وتفاصيل الوصلة والتوافق مع معدة الحفر قبل الطلب.",
+      "h1": [
+        "أداة إدارة مواسير التغليف"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/casing-drive",
+        "ar": "https://advanced-fifthaxis.com/ar/products/casing-drive"
+      },
+      "inbound_links": 5,
+      "images": 4,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/ar/products/center-pilot-attachment-holder",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/center-pilot-attachment-holder",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/center-pilot-attachment-holder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "ملحق السن المركزي وحامله | معدات حفر الأساسات السعودية"
+      ],
+      "description": "مجموعة ملحق السن المركزي وحامله كما تظهر مع مسمار التثبيت والصامولة. يُرجى تأكيد أبعاد السن المركزي وطريقة التثبيت والتوافق مع أداة الحفر قبل الطلب.",
+      "h1": [
+        "ملحق السن المركزي وحامله"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/center-pilot-attachment-holder",
+        "ar": "https://advanced-fifthaxis.com/ar/products/center-pilot-attachment-holder"
+      },
+      "inbound_links": 7,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/cfa",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/cfa",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/cfa",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "أوجرات الحفر المستمر | معدات حفر الأساسات السعودية"
+      ],
+      "description": "مقاطع وتكوينات أوجر الحفر المستمر لتطبيقات الأساسات. يتم اختيار القطر والطول وخطوة الحلزون والأنبوب المركزي والوصلة بما يناسب المشروع ونظام الحفر.",
+      "h1": [
+        "أوجرات الحفر المستمر"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/cfa",
+        "ar": "https://advanced-fifthaxis.com/ar/products/cfa"
+      },
+      "inbound_links": 5,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/cleaning-buckets",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/cleaning-buckets",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/cleaning-buckets",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "بكيت تنظيف قاع الحفر | معدات حفر الأساسات السعودية"
+      ],
+      "description": "بكيت تنظيف لإزالة المواد المفككة من قاع حفرة الأساسات. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد قطر البكيت وتصميم القاع والتوافق مع المعدة قبل الطلب.",
+      "h1": [
+        "بكيت تنظيف قاع الحفر"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/cleaning-buckets",
+        "ar": "https://advanced-fifthaxis.com/ar/products/cleaning-buckets"
+      },
+      "inbound_links": 11,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/core-barrels",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/core-barrels",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/core-barrels",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "كور بارل | معدات حفر الأساسات السعودية"
+      ],
+      "description": "كور بارل لقطع حلقة محيطية في الصخور والطبقات الصلبة، بخيارات أسنان مخروطية أو رولر بت. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد التوافق مع المعدة قبل الطلب.",
+      "h1": [
+        "كور بارل"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/core-barrels",
+        "ar": "https://advanced-fifthaxis.com/ar/products/core-barrels"
+      },
+      "inbound_links": 6,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/customized-bentonite-water-tank",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/customized-bentonite-water-tank",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/customized-bentonite-water-tank",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "خزان بنتونيت ومياه حسب الطلب | معدات حفر الأساسات السعودية"
+      ],
+      "description": "خزان يُصنع حسب الطلب لمناولة سائل البنتونيت أو المياه في مشاريع الأساسات. يُرجى تأكيد السعة والأبعاد ونقاط الرفع وفتحات الوصول ووصلات الأنابيب لكل مشروع.",
+      "h1": [
+        "خزان بنتونيت ومياه حسب الطلب"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/customized-bentonite-water-tank",
+        "ar": "https://advanced-fifthaxis.com/ar/products/customized-bentonite-water-tank"
+      },
+      "inbound_links": 6,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/drilling-bucket-helical-springs",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/drilling-bucket-helical-springs",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/drilling-bucket-helical-springs",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "نوابض حلزونية لبكيتات الحفر | المحور الخامس المتقدم"
+      ],
+      "description": "نوابض حلزونية بديلة لبكيتات حفر الأساسات في السعودية. أرسل موديل البكيت وأبعاد النابض والكمية المطلوبة لتأكيد القطعة المناسبة وطلب عرض سعر.",
+      "h1": [
+        "نوابض حلزونية لبكيتات الحفر"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/drilling-bucket-helical-springs",
+        "ar": "https://advanced-fifthaxis.com/ar/products/drilling-bucket-helical-springs"
+      },
+      "inbound_links": 14,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products/drilling-buckets",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/drilling-buckets",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/drilling-buckets",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "بكيتات حفر الصخور | معدات حفر الأساسات السعودية"
+      ],
+      "description": "بكيتات حفر الصخور بأسنان قطع لأعمال الأساسات. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد القطر والأسنان وجسم البكيت والتوافق مع المعدة لكل طلب.",
+      "h1": [
+        "بكيتات حفر الصخور"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/drilling-buckets",
+        "ar": "https://advanced-fifthaxis.com/ar/products/drilling-buckets"
+      },
+      "inbound_links": 12,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/hq-round-holders",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/hq-round-holders",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/hq-round-holders",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "حوامل أسنان HQ الدائرية | معدات حفر الأساسات السعودية"
+      ],
+      "description": "حوامل أسنان HQ دائرية متوفرة مع أزرار كربيد أو بدونها. يُرجى تأكيد أبعاد التجويف وتفاصيل التثبيت وتوافق السن قبل الطلب.",
+      "h1": [
+        "حوامل أسنان HQ الدائرية"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/hq-round-holders",
+        "ar": "https://advanced-fifthaxis.com/ar/products/hq-round-holders"
+      },
+      "inbound_links": 4,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products/kelly-bars",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/kelly-bars",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/kelly-bars",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "إصلاح قضبان كيلي | معدات حفر الأساسات السعودية"
+      ],
+      "description": "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. أرسل الصور والأبعاد وموديل المعدة وتفاصيل التلف لتقييم نطاق الإصلاح والتوافق.",
+      "h1": [
+        "إصلاح قضبان كيلي"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/kelly-bars",
+        "ar": "https://advanced-fifthaxis.com/ar/products/kelly-bars"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/kelly-box-pins",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/kelly-box-pins",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/kelly-box-pins",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "بنوز كيلي بوكس | معدات حفر الأساسات السعودية"
+      ],
+      "description": "بنوز كيلي بوكس بقطر خارجي 50 أو 60 مم وطول مطابق 320 أو 400 مم. يُرجى تأكيد موضع فتحة البن والتوافق مع المعدة والأداة قبل الطلب.",
+      "h1": [
+        "بنوز كيلي بوكس"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/kelly-box-pins",
+        "ar": "https://advanced-fifthaxis.com/ar/products/kelly-box-pins"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/kelly-boxes",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/kelly-boxes",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/kelly-boxes",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "كيلي بوكس ووصلة كيلي | معدات حفر الأساسات السعودية"
+      ],
+      "description": "كيلي بوكس مربع شديد التحمل لأدوات الحفر الدوار بمقاسات 150×150 و200×200 و250×250 مم، بالإضافة إلى وصلة كيلي بطرف أنثى 250×250 مم وطرف ذكر 200×200 مم. المقاس القياسي للأدوات 200×200 مم؛ يُرجى تأكيد فتحات التثبيت وطول التداخل والتوافق مع المعدة قبل الطلب.",
+      "h1": [
+        "كيلي بوكس ووصلة كيلي"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/kelly-boxes",
+        "ar": "https://advanced-fifthaxis.com/ar/products/kelly-boxes"
+      },
+      "inbound_links": 7,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/pile-testing-reaction-beam",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/pile-testing-reaction-beam",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/pile-testing-reaction-beam",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "كمرة اختبار تحميل الأساسات | معدات حفر الأساسات السعودية"
+      ],
+      "description": "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الأساسات. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار.",
+      "h1": [
+        "كمرة اختبار تحميل الأساسات"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/pile-testing-reaction-beam",
+        "ar": "https://advanced-fifthaxis.com/ar/products/pile-testing-reaction-beam"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/rock-augers",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/rock-augers",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/rock-augers",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "أوجرات حفر الصخور | معدات حفر الأساسات السعودية"
+      ],
+      "description": "أوجرات صخور مستقيمة ومخروطية للحفر الدوار بأسنان صخرية. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد القطر وتصميم الحلزون والسن المركزي والتوافق مع المعدة لكل طلب.",
+      "h1": [
+        "أوجرات حفر الصخور"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/rock-augers",
+        "ar": "https://advanced-fifthaxis.com/ar/products/rock-augers"
+      },
+      "inbound_links": 12,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/roller-bits",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/roller-bits",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/roller-bits",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "رؤوس الحفر الدوارة | معدات حفر الأساسات السعودية"
+      ],
+      "description": "موديلات رؤوس الحفر الدوارة للاستفسارات الخاصة بحفر الأساسات.",
+      "h1": [
+        "رؤوس الحفر الدوارة"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/roller-bits",
+        "ar": "https://advanced-fifthaxis.com/ar/products/roller-bits"
+      },
+      "inbound_links": 4,
+      "images": 3,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/products/rotary-head-slide-pads",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/rotary-head-slide-pads",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/rotary-head-slide-pads",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "بطانات انزلاق بلاستيكية لرأس الحفر الدوار | المحور الخامس المتقدم"
+      ],
+      "description": "بطانات انزلاق من بلاستيك POM لرأس الحفر الدوار، بالمقاسات المطلوبة حسب معدة الحفر. أرسل موديل المعدة وأبعاد البطانة لطلب عرض سعر.",
+      "h1": [
+        "بطانات انزلاق بلاستيكية لرأس الحفر الدوار"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/rotary-head-slide-pads",
+        "ar": "https://advanced-fifthaxis.com/ar/products/rotary-head-slide-pads"
+      },
+      "inbound_links": 14,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products/solid-wire-rope-thimble",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/solid-wire-rope-thimble",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/solid-wire-rope-thimble",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "كشتبان مصمت للحبل الفولاذي | المحور الخامس المتقدم"
+      ],
+      "description": "كشتبان مصمت لوصلات أطراف الحبال الفولاذية في السعودية. أرسل قطر الحبل والأبعاد والاستخدام لتأكيد المقاس المناسب وطلب عرض سعر.",
+      "h1": [
+        "كشتبان مصمت للحبل الفولاذي"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/solid-wire-rope-thimble",
+        "ar": "https://advanced-fifthaxis.com/ar/products/solid-wire-rope-thimble"
+      },
+      "inbound_links": 14,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/ar/products/wire-tremie-pipe",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/products/wire-tremie-pipe",
+      "canonical": "https://advanced-fifthaxis.com/ar/products/wire-tremie-pipe",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "مجموعة مواسير تريمي واير | معدات حفر الأساسات السعودية"
+      ],
+      "description": "مجموعة مواسير تريمي واير لصب خرسانة الأساسات بمقاسي 8 و10 بوصات. تشمل المجموعة الكاملة قمع الصب (Hopper) وقطعة الرفع (Lift) وحامل التعليق (Suspension Jig). يُرجى تأكيد طول المواسير والوصلات وتكوين المجموعة قبل الطلب.",
+      "h1": [
+        "مجموعة مواسير تريمي واير"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/wire-tremie-pipe",
+        "ar": "https://advanced-fifthaxis.com/ar/products/wire-tremie-pipe"
+      },
+      "inbound_links": 9,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/ar/tool-finder",
+      "language": "ar",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/tool-finder",
+      "canonical": "https://advanced-fifthaxis.com/ar/tool-finder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "مساعد اختيار أدوات حفر الأساسات"
+      ],
+      "description": "تصفح فئات أدوات الحفر حسب الاستخدام وأرسل موديل المعدة والقطر وطبيعة التربة للمراجعة الفنية في السعودية.",
+      "h1": [
+        "ابدأ بالاستخدام المطلوب."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/tool-finder",
+        "ar": "https://advanced-fifthaxis.com/ar/tool-finder"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/capabilities",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/capabilities",
+      "canonical": "https://advanced-fifthaxis.com/capabilities",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation Drilling Capabilities | Advanced Fifth Axis"
+      ],
+      "description": "Foundation drilling tools, custom fabrication, casing and replacement components for projects in Saudi Arabia.",
+      "h1": [
+        "Built around your requirements."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/capabilities",
+        "ar": "https://advanced-fifthaxis.com/ar/capabilities"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/collections",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/collections",
+      "canonical": "https://advanced-fifthaxis.com/collections",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation Drilling Product Collections Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Browse foundation drilling tools, cutting and wear parts, casing, Kelly systems and custom fabricated components in Saudi Arabia.",
+      "h1": [
+        "Browse focused product collections."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections",
+        "ar": "https://advanced-fifthaxis.com/ar/collections"
+      },
+      "inbound_links": 46,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "ItemList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/collections/casing",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/collections/casing",
+      "canonical": "https://advanced-fifthaxis.com/collections/casing",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Casing & Components | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Casing sections, casing components and related solutions for foundation drilling applications.",
+      "h1": [
+        "Casing & Components"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/casing",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/casing"
+      },
+      "inbound_links": 5,
+      "images": 4,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/collections/drive-systems",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/collections/drive-systems",
+      "canonical": "https://advanced-fifthaxis.com/collections/drive-systems",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Kelly & Drive Systems | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Kelly boxes and adapters for connecting rotary drilling rigs to foundation tools, plus Kelly bar repair services.",
+      "h1": [
+        "Kelly & Drive Systems"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/drive-systems",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/drive-systems"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/collections/fabricated-components",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/collections/fabricated-components",
+      "canonical": "https://advanced-fifthaxis.com/collections/fabricated-components",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Custom Fabricated Components | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Heavy steel fabricated components produced to confirmed drawings, dimensions and project requirements.",
+      "h1": [
+        "Custom Fabricated Components"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/fabricated-components",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/fabricated-components"
+      },
+      "inbound_links": 6,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/collections/foundation-tools",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/collections/foundation-tools",
+      "canonical": "https://advanced-fifthaxis.com/collections/foundation-tools",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation Drilling Tools | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Augers, drilling buckets, core barrels and continuous-flight tools for piling and foundation drilling projects.",
+      "h1": [
+        "Foundation Drilling Tools"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/foundation-tools",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/foundation-tools"
+      },
+      "inbound_links": 9,
+      "images": 8,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/collections/wear-parts",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/collections/wear-parts",
+      "canonical": "https://advanced-fifthaxis.com/collections/wear-parts",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Drilling Bits, Cutting Teeth & Wear Parts | Advanced Fifth Axis"
+      ],
+      "description": "Explore drilling bits, roller bits, cutting teeth and holders for foundation drill equipment. Confirm dimensions and compatibility before ordering.",
+      "h1": [
+        "Cutting & Wear Parts"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/collections/wear-parts",
+        "ar": "https://advanced-fifthaxis.com/ar/collections/wear-parts"
+      },
+      "inbound_links": 16,
+      "images": 14,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "CollectionPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/contact",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/contact",
+      "canonical": "https://advanced-fifthaxis.com/contact",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Contact & Request a Quote | Advanced Fifth Axis"
+      ],
+      "description": "Contact Advanced Fifth Axis in Jeddah for foundation drilling tools, casing, Kelly systems, wear parts and custom fabrication quotations.",
+      "h1": [
+        "Tell us what you need to drill."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/contact",
+        "ar": "https://advanced-fifthaxis.com/ar/contact"
+      },
+      "inbound_links": 117,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "WebPage",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/faq",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/faq",
+      "canonical": "https://advanced-fifthaxis.com/faq",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Frequently Asked Questions | Foundation Drilling | Advanced Fifth Axis"
+      ],
+      "description": "Answers about foundation drilling tools, custom dimensions and quotation requests in Saudi Arabia.",
+      "h1": [
+        "Frequently asked questions"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/faq",
+        "ar": "https://advanced-fifthaxis.com/ar/faq"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/field-work",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/field-work",
+      "canonical": "https://advanced-fifthaxis.com/field-work",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Client Projects Showcase | Advanced Fifth Axis"
+      ],
+      "description": "Explore photos shared by our clients from foundation drilling projects, showcasing our tools and equipment in action.",
+      "h1": [
+        "Our Clients. Our Tools. Real Projects."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/field-work",
+        "ar": "https://advanced-fifthaxis.com/ar/field-work"
+      },
+      "inbound_links": 46,
+      "images": 14,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/guides",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/guides",
+      "canonical": "https://advanced-fifthaxis.com/guides",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation Drilling Technical Guides | Advanced Fifth Axis"
+      ],
+      "description": "Practical buyer guidance on drilling tools, Kelly connections and the information needed for a foundation equipment quotation.",
+      "h1": [
+        "Technical guides for a clearer quotation."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides",
+        "ar": "https://advanced-fifthaxis.com/ar/guides"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/guides/drilling-tool-selection",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/guides/drilling-tool-selection",
+      "canonical": "https://advanced-fifthaxis.com/guides/drilling-tool-selection",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Rock Drilling Tools & Drilling Bits Types | Advanced Fifth Axis"
+      ],
+      "description": "Compare rock augers, rock buckets and core barrel drilling tools. Review ground conditions, cutting arrangements and rig compatibility before ordering.",
+      "h1": [
+        "Rock auger, rock bucket or core barrel?"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides/drilling-tool-selection",
+        "ar": "https://advanced-fifthaxis.com/ar/guides/drilling-tool-selection"
+      },
+      "inbound_links": 8,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/guides/foundation-drilling-rfq-checklist",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/guides/foundation-drilling-rfq-checklist",
+      "canonical": "https://advanced-fifthaxis.com/guides/foundation-drilling-rfq-checklist",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation drilling RFQ checklist | Advanced Fifth Axis"
+      ],
+      "description": "The dimensions, ground information, drawings and delivery details to send when requesting foundation drilling tools or fabricated components.",
+      "h1": [
+        "Foundation drilling RFQ checklist"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides/foundation-drilling-rfq-checklist",
+        "ar": "https://advanced-fifthaxis.com/ar/guides/foundation-drilling-rfq-checklist"
+      },
+      "inbound_links": 6,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": false
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "current_localized_copy"
+      ]
+    },
+    {
+      "path": "/guides/kelly-connections",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/guides/kelly-connections",
+      "canonical": "https://advanced-fifthaxis.com/guides/kelly-connections",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "How to specify a Kelly box and adapter | Advanced Fifth Axis"
+      ],
+      "description": "Connection measurements, pins and drawings to check for a foundation drilling tool inquiry.",
+      "h1": [
+        "How to specify a Kelly box and adapter"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/guides/kelly-connections",
+        "ar": "https://advanced-fifthaxis.com/ar/guides/kelly-connections"
+      },
+      "inbound_links": 5,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Article",
+        "BreadcrumbList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/privacy",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/privacy",
+      "canonical": "https://advanced-fifthaxis.com/privacy",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Privacy | Advanced Fifth Axis"
+      ],
+      "description": "How Advanced Fifth Axis handles the information you share when making an inquiry.",
+      "h1": [
+        "Privacy"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/privacy",
+        "ar": "https://advanced-fifthaxis.com/ar/privacy"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products",
+      "canonical": "https://advanced-fifthaxis.com/products",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation Drilling Products Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Browse foundation drilling tools, casing, Kelly systems, cutting and wear parts, and custom fabricated components for projects in Saudi Arabia.",
+      "h1": [
+        "Equipment for every foundation."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products",
+        "ar": "https://advanced-fifthaxis.com/ar/products"
+      },
+      "inbound_links": 46,
+      "images": 28,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "ItemList"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/b-47k22h-tooth",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/b-47k22h-tooth",
+      "canonical": "https://advanced-fifthaxis.com/products/b-47k22h-tooth",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "B-47K22H Cutting Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "B-47K22H cutting tooth shown in the supplied product photograph. Confirm shank size, matching holder and operating application before ordering.",
+      "h1": [
+        "B-47K22H Cutting Tooth"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/b-47k22h-tooth",
+        "ar": "https://advanced-fifthaxis.com/ar/products/b-47k22h-tooth"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/b43-holder",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/b43-holder",
+      "canonical": "https://advanced-fifthaxis.com/products/b43-holder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "B43 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "B43 tooth holder shown in the supplied product photograph. Confirm tooth fit, dimensions and installation details before ordering.",
+      "h1": [
+        "B43 Holder"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/b43-holder",
+        "ar": "https://advanced-fifthaxis.com/ar/products/b43-holder"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/bfz70-holder",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/bfz70-holder",
+      "canonical": "https://advanced-fifthaxis.com/products/bfz70-holder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "BFZ70 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "BFZ70 tooth holder shown in the supplied product photo. Confirm mounting dimensions and tooth compatibility before ordering.",
+      "h1": [
+        "BFZ70 Holder"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/bfz70-holder",
+        "ar": "https://advanced-fifthaxis.com/ar/products/bfz70-holder"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/bfz70-tooth",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/bfz70-tooth",
+      "canonical": "https://advanced-fifthaxis.com/products/bfz70-tooth",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "BFZ70 Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "BFZ70 cutting tooth shown in the supplied product photo. Confirm fit, dimensions and the matching holder before ordering.",
+      "h1": [
+        "BFZ70 Tooth"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/bfz70-tooth",
+        "ar": "https://advanced-fifthaxis.com/ar/products/bfz70-tooth"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/bi-directional-static-axial-load-plate",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/bi-directional-static-axial-load-plate",
+      "canonical": "https://advanced-fifthaxis.com/products/bi-directional-static-axial-load-plate",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Bi-Directional Static Axial Load Plate | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Custom-made load plate for bi-directional static axial load testing. Plate diameter, thickness, openings and layout are manufactured to confirmed project drawings. Include the required dimensions, testing arrangement and design requirements with your quotation request.",
+      "h1": [
+        "Bi-Directional Static Axial Load Plate"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/bi-directional-static-axial-load-plate",
+        "ar": "https://advanced-fifthaxis.com/ar/products/bi-directional-static-axial-load-plate"
+      },
+      "inbound_links": 6,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/c30-holders",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/c30-holders",
+      "canonical": "https://advanced-fifthaxis.com/products/c30-holders",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "C30 Square & Round Holders | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "C30 tooth holders available in square and round shapes. Confirm the mounting dimensions and tooth compatibility before ordering.",
+      "h1": [
+        "C30 Square & Round Holders"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/c30-holders",
+        "ar": "https://advanced-fifthaxis.com/ar/products/c30-holders"
+      },
+      "inbound_links": 4,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/c31hd-tooth",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/c31hd-tooth",
+      "canonical": "https://advanced-fifthaxis.com/products/c31hd-tooth",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "C31HD Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "C31HD cutting tooth shown in the supplied product photograph. Confirm the shank, matching holder and required quantity before ordering.",
+      "h1": [
+        "C31HD Tooth"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/c31hd-tooth",
+        "ar": "https://advanced-fifthaxis.com/ar/products/c31hd-tooth"
+      },
+      "inbound_links": 4,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/casing",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/casing",
+      "canonical": "https://advanced-fifthaxis.com/products/casing",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Foundation Drilling Casing | Advanced Fifth Axis"
+      ],
+      "description": "Foundation drilling casing and related components for bore support and casing operations. Diameter, wall arrangement, joint type, length and tool interface are confirmed for the project before supply.",
+      "h1": [
+        "Casing & Components"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/casing",
+        "ar": "https://advanced-fifthaxis.com/ar/products/casing"
+      },
+      "inbound_links": 7,
+      "images": 4,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/casing-drive",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/casing-drive",
+      "canonical": "https://advanced-fifthaxis.com/products/casing-drive",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Casing Drive | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Casing drive shown in the supplied product photo. Confirm casing diameter, connection details and drilling rig compatibility before ordering.",
+      "h1": [
+        "Casing Drive"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/casing-drive",
+        "ar": "https://advanced-fifthaxis.com/ar/products/casing-drive"
+      },
+      "inbound_links": 5,
+      "images": 4,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": false,
+        "current_localized_copy": true
+      },
+      "readiness_score": 80,
+      "required_improvements": [
+        "images_and_schema",
+        "visible_honest_content"
+      ]
+    },
+    {
+      "path": "/products/center-pilot-attachment-holder",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/center-pilot-attachment-holder",
+      "canonical": "https://advanced-fifthaxis.com/products/center-pilot-attachment-holder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Center Pilot Attachment & Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Center pilot attachment and holder assembly shown with a fastening bolt and nut. Confirm pilot dimensions, mounting interface and fit for the drilling tool before ordering.",
+      "h1": [
+        "Center Pilot Attachment & Holder"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/center-pilot-attachment-holder",
+        "ar": "https://advanced-fifthaxis.com/ar/products/center-pilot-attachment-holder"
+      },
+      "inbound_links": 7,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/cfa",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/cfa",
+      "canonical": "https://advanced-fifthaxis.com/products/cfa",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "CFA Augers | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Continuous flight auger sections and configurations for foundation drilling applications. Diameter, length, flight pitch, center tube and connection are selected to suit the project and drilling system.",
+      "h1": [
+        "CFA Augers"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/cfa",
+        "ar": "https://advanced-fifthaxis.com/ar/products/cfa"
+      },
+      "inbound_links": 5,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/cleaning-buckets",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/cleaning-buckets",
+      "canonical": "https://advanced-fifthaxis.com/products/cleaning-buckets",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Cleaning Bucket | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Cleaning bucket for clearing loose material from the bottom of foundation boreholes. Standard Kelly box: 200×200 mm. Confirm bucket diameter, bottom configuration and rig interface before ordering.",
+      "h1": [
+        "Cleaning Bucket"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/cleaning-buckets",
+        "ar": "https://advanced-fifthaxis.com/ar/products/cleaning-buckets"
+      },
+      "inbound_links": 11,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/core-barrels",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/core-barrels",
+      "canonical": "https://advanced-fifthaxis.com/products/core-barrels",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Core Barrel Drilling Tools Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Core barrel drilling tools for rock and hard formations, with cutting teeth or roller bits and a standard 200×200 mm Kelly box. Request a quote.",
+      "h1": [
+        "Core Barrels"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/core-barrels",
+        "ar": "https://advanced-fifthaxis.com/ar/products/core-barrels"
+      },
+      "inbound_links": 6,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/customized-bentonite-water-tank",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/customized-bentonite-water-tank",
+      "canonical": "https://advanced-fifthaxis.com/products/customized-bentonite-water-tank",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Customized Bentonite & Water Tank | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Custom fabricated tank for bentonite slurry or water handling on foundation projects. Confirm required capacity, dimensions, lifting points, access and pipe connections for each project.",
+      "h1": [
+        "Customized Bentonite & Water Tank"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/customized-bentonite-water-tank",
+        "ar": "https://advanced-fifthaxis.com/ar/products/customized-bentonite-water-tank"
+      },
+      "inbound_links": 6,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/drilling-bucket-helical-springs",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/drilling-bucket-helical-springs",
+      "canonical": "https://advanced-fifthaxis.com/products/drilling-bucket-helical-springs",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Drilling Bucket Helical Springs | Advanced Fifth Axis"
+      ],
+      "description": "Replacement helical springs for foundation drilling buckets in Saudi Arabia. Send bucket model, spring dimensions and quantity for a quotation.",
+      "h1": [
+        "Drilling Bucket Helical Springs"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/drilling-bucket-helical-springs",
+        "ar": "https://advanced-fifthaxis.com/ar/products/drilling-bucket-helical-springs"
+      },
+      "inbound_links": 14,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/drilling-buckets",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/drilling-buckets",
+      "canonical": "https://advanced-fifthaxis.com/products/drilling-buckets",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Rock Buckets | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Rock drilling buckets with cutting teeth for foundation work. Standard Kelly box: 200×200 mm. Confirm the diameter, teeth, shell and rig interface for each order.",
+      "h1": [
+        "Rock Buckets"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/drilling-buckets",
+        "ar": "https://advanced-fifthaxis.com/ar/products/drilling-buckets"
+      },
+      "inbound_links": 12,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/hq-round-holders",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/hq-round-holders",
+      "canonical": "https://advanced-fifthaxis.com/products/hq-round-holders",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "HQ Round Holders | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "HQ round tooth holders available with or without carbide buttons. Confirm socket dimensions, mounting details and tooth compatibility before ordering.",
+      "h1": [
+        "HQ Round Holders"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/hq-round-holders",
+        "ar": "https://advanced-fifthaxis.com/ar/products/hq-round-holders"
+      },
+      "inbound_links": 4,
+      "images": 7,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/kelly-bars",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/kelly-bars",
+      "canonical": "https://advanced-fifthaxis.com/products/kelly-bars",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Kelly Bar Repair | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs. Share photos, dimensions, the rig model and details of the damage so the repair scope and compatibility can be assessed.",
+      "h1": [
+        "Kelly Bar Repair"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/kelly-bars",
+        "ar": "https://advanced-fifthaxis.com/ar/products/kelly-bars"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/kelly-box-pins",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/kelly-box-pins",
+      "canonical": "https://advanced-fifthaxis.com/products/kelly-box-pins",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Kelly Box Pins | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Kelly box pins in outside diameters of 50 or 60 mm and corresponding lengths of 320 or 400 mm. Confirm the pin hole position and rig/tool interface before ordering.",
+      "h1": [
+        "Kelly Box Pins"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/kelly-box-pins",
+        "ar": "https://advanced-fifthaxis.com/ar/products/kelly-box-pins"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/kelly-boxes",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/kelly-boxes",
+      "canonical": "https://advanced-fifthaxis.com/products/kelly-boxes",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Kelly Box & Adapter | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Heavy-duty square Kelly boxes for rotary drilling tools in 150×150, 200×200 and 250×250 mm, plus a Kelly adapter with a 250×250 mm female connection and a 200×200 mm male connection. The standard tool connection is 200×200 mm; confirm pin-hole layout, engagement length and rig interface before ordering.",
+      "h1": [
+        "Kelly Box & Adapter"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/kelly-boxes",
+        "ar": "https://advanced-fifthaxis.com/ar/products/kelly-boxes"
+      },
+      "inbound_links": 7,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/pile-testing-reaction-beam",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/pile-testing-reaction-beam",
+      "canonical": "https://advanced-fifthaxis.com/products/pile-testing-reaction-beam",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Pile Testing Reaction Beam | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Fabricated reaction beam for pile load testing inquiries. Configuration, length, connections and load rating must be engineered and confirmed for the testing arrangement.",
+      "h1": [
+        "Pile Testing Reaction Beam"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/pile-testing-reaction-beam",
+        "ar": "https://advanced-fifthaxis.com/ar/products/pile-testing-reaction-beam"
+      },
+      "inbound_links": 7,
+      "images": 5,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/rock-augers",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/rock-augers",
+      "canonical": "https://advanced-fifthaxis.com/products/rock-augers",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Rock Augers | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Straight and conical rock augers for rotary foundation drilling with bullet teeth. Standard Kelly box: 200×200 mm. Confirm the diameter, flight geometry, pilot and rig interface for each order.",
+      "h1": [
+        "Rock Augers"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/rock-augers",
+        "ar": "https://advanced-fifthaxis.com/ar/products/rock-augers"
+      },
+      "inbound_links": 12,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/roller-bits",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/roller-bits",
+      "canonical": "https://advanced-fifthaxis.com/products/roller-bits",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Roller Drilling Bits for Rock Drilling | Advanced Fifth Axis"
+      ],
+      "description": "Roller drilling bits for rock drilling and compatible foundation tools. Send formation details, bit dimensions and tool requirements for a quotation.",
+      "h1": [
+        "Roller Bits"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/roller-bits",
+        "ar": "https://advanced-fifthaxis.com/ar/products/roller-bits"
+      },
+      "inbound_links": 4,
+      "images": 3,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/rotary-head-slide-pads",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/rotary-head-slide-pads",
+      "canonical": "https://advanced-fifthaxis.com/products/rotary-head-slide-pads",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Rotary Head Plastic Sliding Pads | Advanced Fifth Axis"
+      ],
+      "description": "POM plastic sliding pads for drilling rig rotary heads, supplied to customer-requested dimensions. Send your rig model and pad measurements for a quote.",
+      "h1": [
+        "Rotary Head Plastic Sliding Pads"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/rotary-head-slide-pads",
+        "ar": "https://advanced-fifthaxis.com/ar/products/rotary-head-slide-pads"
+      },
+      "inbound_links": 14,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/solid-wire-rope-thimble",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/solid-wire-rope-thimble",
+      "canonical": "https://advanced-fifthaxis.com/products/solid-wire-rope-thimble",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Solid Wire Rope Thimble | Advanced Fifth Axis"
+      ],
+      "description": "Solid wire rope thimbles for wire rope end connections in Saudi Arabia. Send rope diameter, dimensions and application to request the correct size.",
+      "h1": [
+        "Solid Wire Rope Thimble"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/solid-wire-rope-thimble",
+        "ar": "https://advanced-fifthaxis.com/ar/products/solid-wire-rope-thimble"
+      },
+      "inbound_links": 14,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/products/wire-tremie-pipe",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/products/wire-tremie-pipe",
+      "canonical": "https://advanced-fifthaxis.com/products/wire-tremie-pipe",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Wire Tremie Pipe Set | Foundation Drilling Saudi Arabia | Advanced Fifth Axis"
+      ],
+      "description": "Wire tremie pipe set for foundation concrete placement in 8-inch and 10-inch sizes. The full set includes a hopper, lift and suspension jig. Confirm the pipe length, connections and set configuration before ordering.",
+      "h1": [
+        "Wire Tremie Pipe Set"
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/products/wire-tremie-pipe",
+        "ar": "https://advanced-fifthaxis.com/ar/products/wire-tremie-pipe"
+      },
+      "inbound_links": 9,
+      "images": 6,
+      "schema_types": [
+        "Organization",
+        "WebSite",
+        "Product",
+        "BreadcrumbList",
+        "FAQPage"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    },
+    {
+      "path": "/tool-finder",
+      "language": "en",
+      "disposition": "retain and improve",
+      "scope": "local static export",
+      "http_status": null,
+      "http_error": null,
+      "production_verification": "not run",
+      "counterpart": "/ar/tool-finder",
+      "canonical": "https://advanced-fifthaxis.com/tool-finder",
+      "robots": "index, follow",
+      "x_robots_tag": "",
+      "title": [
+        "Find Foundation Drilling Tools | Advanced Fifth Axis"
+      ],
+      "description": "Explore drilling tool families by application and send your rig, diameter and ground conditions for technical review in Saudi Arabia.",
+      "h1": [
+        "Start with the job you need to do."
+      ],
+      "alternates": {
+        "en": "https://advanced-fifthaxis.com/tool-finder",
+        "ar": "https://advanced-fifthaxis.com/ar/tool-finder"
+      },
+      "inbound_links": 46,
+      "images": 2,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "checks": {
+        "self_canonical": true,
+        "indexable": true,
+        "language_relationship": true,
+        "unique_metadata": true,
+        "single_h1": true,
+        "sharing": true,
+        "crawlable_internal_discovery": true,
+        "images_and_schema": false,
+        "visible_honest_content": true,
+        "current_localized_copy": true
+      },
+      "readiness_score": 90,
+      "required_improvements": [
+        "images_and_schema"
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "path": "/products/kelly-adapter-250-female-200-male",
+      "destination": "/products/kelly-boxes",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/kelly-adapter-250-female-200-male/",
+      "destination": "/products/kelly-boxes",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/kelly-adapter-250-female-200-male",
+      "destination": "/ar/products/kelly-boxes",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/kelly-adapter-250-female-200-male/",
+      "destination": "/ar/products/kelly-boxes",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/casing-twister",
+      "destination": "/products/casing-drive",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/casing-twister/",
+      "destination": "/products/casing-drive",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/casing-twister",
+      "destination": "/ar/products/casing-drive",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/casing-twister/",
+      "destination": "/ar/products/casing-drive",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/c30-square-holder",
+      "destination": "/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/c30-square-holder/",
+      "destination": "/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/c30-round-holder",
+      "destination": "/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/c30-round-holder/",
+      "destination": "/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/c30-square-holder",
+      "destination": "/ar/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/c30-square-holder/",
+      "destination": "/ar/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/c30-round-holder",
+      "destination": "/ar/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/c30-round-holder/",
+      "destination": "/ar/products/c30-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/hq-68-95-holder",
+      "destination": "/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/hq-68-95-holder/",
+      "destination": "/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/hq-78-95-holder",
+      "destination": "/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/products/hq-78-95-holder/",
+      "destination": "/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/hq-68-95-holder",
+      "destination": "/ar/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/hq-68-95-holder/",
+      "destination": "/ar/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/hq-78-95-holder",
+      "destination": "/ar/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    },
+    {
+      "path": "/ar/products/hq-78-95-holder/",
+      "destination": "/ar/products/hq-round-holders",
+      "expected_status": 301,
+      "disposition": "redirect",
+      "target_exists_in_export": true,
+      "production_verification": "not run"
+    }
+  ],
+  "other_internal_paths": []
+}

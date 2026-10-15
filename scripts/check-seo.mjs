@@ -24,7 +24,14 @@ for (const [route, entry] of Object.entries(settings)) {
   const block = blocks.find(b => b.includes(`<loc>${url}</loc>`));
   assert.ok(block, `${route}: missing sitemap URL`);
   for (const lang of ['en', 'ar', 'x-default']) assert.ok(block.includes(`hreflang="${lang}"`), `${route}: missing sitemap language ${lang}`);
-  if (route.includes('/products/')) assert.ok(block.includes('<image:loc>'), `${route}: missing image discovery`);
+  if (route.includes('/products/')) {
+    const product = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+      .flatMap(m => { const data = JSON.parse(m[1]); return data['@graph'] || [data]; })
+      .find(data => data['@type'] === 'Product');
+    assert.ok(product, `${route}: missing Product entity`);
+    for (const image of product.image || []) assert.ok(block.includes(`<image:loc>${image}</image:loc>`), `${route}: missing actual product image discovery`);
+    assert.equal(block.includes('<image:loc>'), !!product.image?.length, `${route}: sitemap images must match verified product photographs`);
+  }
 }
 for (const match of directory.matchAll(/\]\(https:\/\/advanced-fifthaxis.com([^)]*)\)/g)) {
   const route = match[1];

@@ -1,0 +1,858 @@
+[
+  {
+    "path": "/",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 27
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          68,
+          52
+        ]
+      },
+      {
+        "src": "/home/foundation-drilling-showcase-optimized.webp",
+        "loaded": true,
+        "natural": [
+          960,
+          541
+        ],
+        "attributes": [
+          390,
+          776
+        ]
+      }
+    ],
+    "switcher": [
+      "/",
+      "/ar"
+    ]
+  },
+  {
+    "path": "/products",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 26
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      }
+    ],
+    "switcher": [
+      "/products",
+      "/ar/products"
+    ]
+  },
+  {
+    "path": "/products/kelly-boxes",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 23
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      },
+      {
+        "src": "/products/kelly-boxes-white-background.webp",
+        "loaded": true,
+        "natural": [
+          350,
+          394
+        ],
+        "attributes": [
+          348,
+          392
+        ]
+      },
+      {
+        "src": "/products/kelly-box-welded-steel.webp",
+        "loaded": true,
+        "natural": [
+          349,
+          320
+        ],
+        "attributes": [
+          348,
+          318
+        ]
+      }
+    ],
+    "switcher": [
+      "/products/kelly-boxes",
+      "/ar/products/kelly-boxes"
+    ]
+  },
+  {
+    "path": "/guides/kelly-connections",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 23
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      }
+    ],
+    "switcher": [
+      "/guides/kelly-connections",
+      "/ar/guides/kelly-connections"
+    ]
+  },
+  {
+    "path": "/contact",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 27
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      }
+    ],
+    "switcher": [
+      "/contact",
+      "/ar/contact"
+    ]
+  },
+  {
+    "path": "/ar",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 27
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          68,
+          52
+        ]
+      },
+      {
+        "src": "/home/foundation-drilling-showcase-optimized.webp",
+        "loaded": true,
+        "natural": [
+          960,
+          541
+        ],
+        "attributes": [
+          390,
+          776
+        ]
+      }
+    ],
+    "switcher": [
+      "/",
+      "/ar"
+    ]
+  },
+  {
+    "path": "/ar/products",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 26
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      }
+    ],
+    "switcher": [
+      "/products",
+      "/ar/products"
+    ]
+  },
+  {
+    "path": "/ar/products/kelly-boxes",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 23
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      },
+      {
+        "src": "/products/kelly-boxes-white-background.webp",
+        "loaded": true,
+        "natural": [
+          350,
+          394
+        ],
+        "attributes": [
+          348,
+          392
+        ]
+      },
+      {
+        "src": "/products/kelly-box-welded-steel.webp",
+        "loaded": true,
+        "natural": [
+          349,
+          320
+        ],
+        "attributes": [
+          348,
+          318
+        ]
+      }
+    ],
+    "switcher": [
+      "/products/kelly-boxes",
+      "/ar/products/kelly-boxes"
+    ]
+  },
+  {
+    "path": "/ar/guides/kelly-connections",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 23
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      }
+    ],
+    "switcher": [
+      "/guides/kelly-connections",
+      "/ar/guides/kelly-connections"
+    ]
+  },
+  {
+    "path": "/ar/contact",
+    "viewport": 390,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 27
+    },
+    "width": 390,
+    "scrollWidth": 390,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          74,
+          58
+        ]
+      }
+    ],
+    "switcher": [
+      "/contact",
+      "/ar/contact"
+    ]
+  },
+  {
+    "path": "/",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 27
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          106,
+          72
+        ]
+      },
+      {
+        "src": "/home/foundation-drilling-showcase-optimized.webp",
+        "loaded": true,
+        "natural": [
+          1671,
+          941
+        ],
+        "attributes": [
+          1440,
+          844
+        ]
+      }
+    ],
+    "switcher": [
+      "/",
+      "/ar"
+    ]
+  },
+  {
+    "path": "/products",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 25
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      },
+      {
+        "src": "/thumbs/large/solid-wire-rope-thimble.webp",
+        "loaded": true,
+        "natural": [
+          720,
+          720
+        ],
+        "attributes": [
+          364,
+          224
+        ]
+      },
+      {
+        "src": "/thumbs/large/rotary-head-slide-pads.jpg",
+        "loaded": true,
+        "natural": [
+          1022,
+          575
+        ],
+        "attributes": [
+          364,
+          224
+        ]
+      },
+      {
+        "src": "/thumbs/large/drilling-bucket-helical-springs.webp",
+        "loaded": true,
+        "natural": [
+          720,
+          720
+        ],
+        "attributes": [
+          364,
+          224
+        ]
+      }
+    ],
+    "switcher": [
+      "/products",
+      "/ar/products"
+    ]
+  },
+  {
+    "path": "/products/kelly-boxes",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 22
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      },
+      {
+        "src": "/products/kelly-boxes-white-background.webp",
+        "loaded": true,
+        "natural": [
+          560,
+          630
+        ],
+        "attributes": [
+          579,
+          538
+        ]
+      },
+      {
+        "src": "/products/kelly-box-welded-steel.webp",
+        "loaded": true,
+        "natural": [
+          560,
+          511
+        ],
+        "attributes": [
+          579,
+          529
+        ]
+      }
+    ],
+    "switcher": [
+      "/products/kelly-boxes",
+      "/ar/products/kelly-boxes"
+    ]
+  },
+  {
+    "path": "/guides/kelly-connections",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 22
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      }
+    ],
+    "switcher": [
+      "/guides/kelly-connections",
+      "/ar/guides/kelly-connections"
+    ]
+  },
+  {
+    "path": "/contact",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 26
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "en",
+    "dir": "",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      }
+    ],
+    "switcher": [
+      "/contact",
+      "/ar/contact"
+    ]
+  },
+  {
+    "path": "/ar",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 27
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          106,
+          72
+        ]
+      },
+      {
+        "src": "/home/foundation-drilling-showcase-optimized.webp",
+        "loaded": true,
+        "natural": [
+          1671,
+          941
+        ],
+        "attributes": [
+          1440,
+          844
+        ]
+      }
+    ],
+    "switcher": [
+      "/",
+      "/ar"
+    ]
+  },
+  {
+    "path": "/ar/products",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 25
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      },
+      {
+        "src": "/thumbs/large/solid-wire-rope-thimble.webp",
+        "loaded": true,
+        "natural": [
+          720,
+          720
+        ],
+        "attributes": [
+          364,
+          224
+        ]
+      },
+      {
+        "src": "/thumbs/large/rotary-head-slide-pads.jpg",
+        "loaded": true,
+        "natural": [
+          1022,
+          575
+        ],
+        "attributes": [
+          364,
+          224
+        ]
+      },
+      {
+        "src": "/thumbs/large/drilling-bucket-helical-springs.webp",
+        "loaded": true,
+        "natural": [
+          720,
+          720
+        ],
+        "attributes": [
+          364,
+          224
+        ]
+      }
+    ],
+    "switcher": [
+      "/products",
+      "/ar/products"
+    ]
+  },
+  {
+    "path": "/ar/products/kelly-boxes",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 22
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      },
+      {
+        "src": "/products/kelly-boxes-white-background.webp",
+        "loaded": true,
+        "natural": [
+          560,
+          630
+        ],
+        "attributes": [
+          579,
+          538
+        ]
+      },
+      {
+        "src": "/products/kelly-box-welded-steel.webp",
+        "loaded": true,
+        "natural": [
+          560,
+          511
+        ],
+        "attributes": [
+          579,
+          529
+        ]
+      }
+    ],
+    "switcher": [
+      "/products/kelly-boxes",
+      "/ar/products/kelly-boxes"
+    ]
+  },
+  {
+    "path": "/ar/guides/kelly-connections",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 22
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      }
+    ],
+    "switcher": [
+      "/guides/kelly-connections",
+      "/ar/guides/kelly-connections"
+    ]
+  },
+  {
+    "path": "/ar/contact",
+    "viewport": 1440,
+    "status": 200,
+    "errors": [],
+    "axe": {
+      "violations": [],
+      "passes": 26
+    },
+    "width": 1440,
+    "scrollWidth": 1440,
+    "lang": "ar",
+    "dir": "rtl",
+    "images": [
+      {
+        "src": "/logo-small.webp",
+        "loaded": true,
+        "natural": [
+          224,
+          185
+        ],
+        "attributes": [
+          112,
+          78
+        ]
+      }
+    ],
+    "switcher": [
+      "/contact",
+      "/ar/contact"
+    ]
+  }
+]

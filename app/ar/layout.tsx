@@ -1,3 +1,4 @@
+import { Analytics } from "@/components/Analytics";
 import { organization, website } from "@/lib/organization";
 import { withSEO } from "@/lib/seo";
 import "../globals.css";
@@ -5,17 +6,11 @@ import type { Metadata } from "next";
 export const metadata: Metadata = withSEO("/ar", {
   metadataBase: new URL("https://advanced-fifthaxis.com"),
   icons: { icon: [{ url: "/favicon.png?v=company-logo", type: "image/png", sizes: "64x64" }, { url: "/favicon.ico?v=company-logo" }], shortcut: "/favicon.ico?v=company-logo" },
-  title: "معدات حفر الأساسات في السعودية | المحور الخامس المتقدم",
+  title: "معدات حفر الأساسات في السعودية | المحور الخامس المتقدمة للصناعة",
   description: "بكيتات وأوجرات الحفر والكور بارل ومواسير التغليف وأسنان القطع في جدة، السعودية. اطلب عرض سعر حسب الموديل والمواصفات.",
-  openGraph: { type: "website", locale: "ar_SA", alternateLocale: ["en_SA"], siteName: "Advanced Fifth Axis", title: "معدات حفر الأساسات في السعودية | المحور الخامس المتقدم", description: "أدوات ومعدات حفر الأساسات ومواسير التغليف والمكونات المصنعة في جدة، المملكة العربية السعودية.", url: "/ar", images: [{ url: "/home/foundation-drilling-showcase.webp", alt: "مكونات حفر الأساسات من المحور الخامس المتقدم" }] },
-  twitter: { card: "summary_large_image", title: "المحور الخامس المتقدم", description: "معدات حفر الأساسات ومكونات الحفر في السعودية.", images: ["/home/foundation-drilling-showcase.webp"] },
+  openGraph: { type: "website", locale: "ar_SA", alternateLocale: ["en_SA"], siteName: "Advanced Fifth Axis", title: "معدات حفر الأساسات في السعودية | المحور الخامس المتقدمة للصناعة", description: "أدوات ومعدات حفر الأساسات ومواسير التغليف والمكونات المصنعة في جدة، المملكة العربية السعودية.", url: "/ar", images: [{ url: "/home/foundation-drilling-showcase.webp", alt: "مكونات حفر الأساسات من المحور الخامس المتقدمة للصناعة" }] },
+  twitter: { card: "summary_large_image", title: "المحور الخامس المتقدمة للصناعة", description: "معدات حفر الأساسات ومكونات الحفر في السعودية.", images: ["/home/foundation-drilling-showcase.webp"] },
   robots: { index: true, follow: true, googleBot: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1, "max-video-preview": -1 } },
   alternates: { canonical: "https://advanced-fifthaxis.com/ar", languages: { en: "https://advanced-fifthaxis.com/", ar: "https://advanced-fifthaxis.com/ar" } },
 });
-export default function ArabicLayout({ children }: { children: React.ReactNode }) { return <html lang="ar" dir="rtl"><head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5N43XLD871" />
-    <script dangerouslySetInnerHTML={{ __html: `window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-5N43XLD871');` }} />
-  </head><body><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organization)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(website)}}/><a className="skipLink" href="#main-content">الانتقال إلى المحتوى</a>{children}</body></html>; }
+export default function ArabicLayout({ children }: { children: React.ReactNode }) { return <html lang="ar" dir="rtl"><body><Analytics/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(organization)}}/><script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(website)}}/><a className="skipLink" href="#main-content">الانتقال إلى المحتوى</a>{children}</body></html>; }

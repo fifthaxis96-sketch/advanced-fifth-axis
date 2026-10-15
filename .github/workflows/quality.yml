@@ -32,3 +32,5 @@ jobs:
         run: npm run check:site
       - name: Check editable SEO and discovery
         run: npm run check:seo
+      - name: Check indexing, translations and preserved product decisions
+        run: node scripts/check-indexing.mjs
