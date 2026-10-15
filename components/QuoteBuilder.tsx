@@ -63,7 +63,13 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
     </div>
     <form className="simpleQuoteForm" onSubmit={continueRequest}>
       <label htmlFor="inquiry-product">{ar ? "المنتج" : "Product"} <span>{optional}</span></label>
-      <select id="inquiry-product" name="product" value={slug} onChange={event => { setSlug(event.target.value); setStatus(""); }}>
+      <select id="inquiry-product" name="product" value={slug} onChange={event => {
+        const previous = products.find(p => p.slug === slug);
+        const next = products.find(p => p.slug === event.target.value);
+        const starter = previous ? (ar ? `أود طلب عرض سعر لمنتج ${previous.nameAr}.` : `I would like a quotation for ${previous.name}.`) : "";
+        if (previous && requirement === starter) setRequirement(next ? (ar ? `أود طلب عرض سعر لمنتج ${next.nameAr}.` : `I would like a quotation for ${next.name}.`) : "");
+        setSlug(event.target.value); setStatus("");
+      }}>
         <option value="">{ar ? "اختر منتجًا أو صفه أدناه" : "Choose a product or describe it below"}</option>
         {products.map(p => <option key={p.slug} value={p.slug}>{ar ? p.nameAr : p.name}</option>)}
       </select>
