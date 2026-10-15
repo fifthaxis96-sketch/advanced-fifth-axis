@@ -161,7 +161,7 @@ export const products: Product[] = [
     images: ["/products/owner-blue-toothed-casing.webp"],
   },
   {
-    slug: "casing-twister", name: "Casing Drive", nameAr: "أداة إدارة مواسير التغليف", category: "Casing",
+    slug: "casing-drive", name: "Casing Drive", nameAr: "أداة إدارة مواسير التغليف", category: "Casing",
     description: "Casing drive shown in the supplied product photo. Confirm casing diameter, connection details and drilling rig compatibility before ordering.",
     descriptionAr: "أداة إدارة مواسير التغليف كما تظهر في صورة المنتج المقدمة. يُرجى تأكيد قطر الماسورة وتفاصيل الوصلة والتوافق مع معدة الحفر قبل الطلب.",
     variants: [], images: ["/products/casing-twister.webp"],

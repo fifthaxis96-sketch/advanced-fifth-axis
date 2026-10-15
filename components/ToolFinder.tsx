@@ -8,7 +8,7 @@ import { products, company } from "@/lib/site";
 const tasks = [
   {key:"rock", en:"Drill rock or hard formations", ar:"حفر الصخور والطبقات الصلبة", slugs:["rock-augers","drilling-buckets","core-barrels"]},
   {key:"clean", en:"Clean the bottom of a borehole", ar:"تنظيف قاع حفرة الأساسات", slugs:["cleaning-buckets"]},
-  {key:"casing", en:"Support or rotate casing", ar:"تغليف الحفرة أو تدوير المواسير", slugs:["casing","casing-twister"]},
+  {key:"casing", en:"Support or rotate casing", ar:"تغليف الحفرة أو تدوير المواسير", slugs:["casing","casing-drive"]},
   {key:"concrete", en:"Place concrete through a tremie", ar:"صب الخرسانة بواسطة مواسير التريمي", slugs:["wire-tremie-pipe"]},
   {key:"cfa", en:"Continuous flight drilling", ar:"الحفر بالأوجر المستمر", slugs:["cfa"]},
   {key:"wear", en:"Replace a cutting tooth or holder", ar:"استبدال سن أو حامل قطع", slugs:["c31hd-tooth","c30-square-holder","c30-round-holder","bfz70-tooth","bfz70-holder","roller-bits"]},
