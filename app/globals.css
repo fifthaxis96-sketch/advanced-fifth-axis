@@ -521,3 +521,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 @font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/inter-400.woff") format("woff")}
 @font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("/fonts/inter-700.woff") format("woff")}
 html[lang="en"] body,html[lang="en"] .site[lang="en"],html[lang="en"] .site[lang="en"] :is(button,input,select,textarea),html[lang="en"] .skipLink,html[lang="en"] .notFoundPage{font-family:"Inter",Arial,sans-serif}
+
+/* Arabic typography paired with English Inter. */
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/tajawal-400.woff") format("woff")}
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:700;font-display:swap;src:url("/fonts/tajawal-700.woff") format("woff")}
+html[lang="ar"] body,html[lang="ar"] .site[lang="ar"],html[lang="ar"] .site[lang="ar"] :is(button,input,select,textarea),html[lang="ar"] .skipLink,html[lang="ar"] .notFoundPage{font-family:"Tajawal",Tahoma,Arial,sans-serif}
