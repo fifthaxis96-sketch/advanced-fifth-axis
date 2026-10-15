@@ -187,9 +187,9 @@ export const products: Product[] = [
     slug: "pile-testing-reaction-beam", name: "Pile Testing Reaction Beam", nameAr: "كمرة اختبار تحميل الأساسات", category: "Fabricated Components",
     description: "Fabricated reaction beam for pile load testing inquiries. Configuration, length, connections and load rating must be engineered and confirmed for the testing arrangement.",
     descriptionAr: "كمرة مصنّعة للاستفسارات الخاصة باختبار تحميل الأساسات. يتم تصميم وتأكيد التكوين والطول والوصلات والحمولة حسب نظام الاختبار.",
-    variants: [], images: [],
-    visualNote: "A verified product photograph is pending. Send the engineered testing arrangement for fabrication review.",
-    visualNoteAr: "بانتظار صورة منتج موثقة. أرسل نظام الاختبار المعتمد هندسيًا لمراجعة التصنيع.",
+    variants: [], images: ["/products/pile-testing-reaction-beam-blue.webp"],
+    visualNote: "Reference illustration. Final beam dimensions, connections and load capacity are confirmed against the engineered testing arrangement.",
+    visualNoteAr: "صورة توضيحية مرجعية. يتم تأكيد أبعاد الكمرة والوصلات والحمولة وفق نظام الاختبار المصمم هندسيًا.",
   },
   {
     slug: "customized-bentonite-water-tank", name: "Customized Bentonite & Water Tank", nameAr: "خزان بنتونيت ومياه حسب الطلب", category: "Fabricated Components",

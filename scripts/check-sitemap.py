@@ -67,7 +67,8 @@ for path in seo:
         image_path = unquote(parsed.path)
         assert (output / image_path.lstrip("/")).is_file(), f"{path}: missing exported image {image_path}"
         assert image_path in page.images, f"{path}: image does not appear on the page (or as its thumbnail)"
-        assert not image_path.endswith("pile-testing-reaction-beam-blue.webp"), "Concept image must not be listed as a product photograph"
+        if image_path.endswith("pile-testing-reaction-beam-blue.webp") and ("/products/" in path or "/guides/" in path):
+            assert "Reference illustration" in (output / (path.lstrip("/") + ".html")).read_text() or "صورة توضيحية مرجعية" in (output / (path.lstrip("/") + ".html")).read_text(), "Beam illustration must be labeled"
     image_count += len(images)
     if path in ("/field-work", "/ar/field-work"):
         assert set(images) == {origin + src for src in page.images if src.startswith("/projects/")}, "Gallery image coverage"

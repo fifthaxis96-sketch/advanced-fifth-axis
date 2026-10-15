@@ -62,7 +62,11 @@ for (const path of paths) {
       assert.ok(!/<table/.test(html), `${path}: removed specification tables must stay removed`);
       assert.ok(html.includes(ar ? 'المواصفات حسب طلب العميل' : 'Specifications available upon customer request'));
     }
-    if (slug === 'pile-testing-reaction-beam') assert.ok(!html.includes('/products/pile-testing-reaction-beam-blue.webp'), `${path}: concept must not stand in for a product photo`);
+    if (slug === 'pile-testing-reaction-beam') {
+      assert.ok(html.includes('/products/pile-testing-reaction-beam-blue.webp'), `${path}: approved beam image must display`);
+      assert.ok(html.includes(ar ? 'صورة توضيحية مرجعية' : 'Reference illustration'), `${path}: illustration must be identified`);
+      assert.ok(!html.includes('Product image being added'), `${path}: obsolete image placeholder`);
+    }
   }
 }
 const redirects = readFileSync('public/_redirects', 'utf8').split('\n').filter(l => l.startsWith('/')).map(l => l.trim().split(/\s+/));

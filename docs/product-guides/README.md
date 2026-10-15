@@ -9,7 +9,7 @@ Adds a dedicated guide for each of the 26 current catalog entries in English and
 - Existing product questions: `content/product-guidance.json`.
 - New product-specific editorial text: `content/product-articles.json`.
 - SEO titles and descriptions remain owner-editable in `content/seo.json`.
-- No invented stock, certifications, capacities, rig compatibility or material grades. Reaction beam photo remains absent because a verified catalog photo is pending. Structural and test components require engineered project inputs.
+- No invented stock, certifications, capacities, rig compatibility or material grades. The owner-approved blue reaction beam illustration is restored with a reference-illustration label. Structural and test components require engineered project inputs.
 
 General background references consulted (not specifications or endorsements of our products):
 
