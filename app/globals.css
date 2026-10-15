@@ -481,3 +481,38 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 @media(prefers-reduced-motion:reduce){
   .site :is(.primaryButton,.outlineButton,.headerCta,.simpleQuotePrimary,.quoteListButton,.quoteAddButton,.quoteEmail,.productTile,.collectionCard,.guideCard,.hotProductThumb){transition:none;transform:none}
 }
+
+/* Approved homepage: featured tool and four complementary catalog cards. */
+.homeSelectedRange{padding-block:64px}
+.homeSelectedRange>h2{font-size:clamp(30px,3.8vw,48px);line-height:1.12;letter-spacing:-.035em;margin:14px 0 30px}
+.homeSelectedGrid{display:grid;grid-template-columns:1.05fr 1fr;gap:22px}
+.homeFeaturedProduct,.homeSquareProduct{background:#fff;border:1px solid #d7e1ea;border-radius:20px;overflow:hidden}
+.homeFeaturedProduct{display:flex;flex-direction:column;min-width:0}
+.homeFeaturedImage{display:block;padding:20px;flex:1;min-height:300px}
+.homeFeaturedImage img{display:block;width:100%;height:100%;max-height:350px;object-fit:contain}
+.homeFeaturedCopy{padding:8px 26px 26px}.homeFeaturedCopy h3{font-size:28px;line-height:1.2;margin:8px 0 12px}
+.homeFeaturedCopy p{font-size:14px;color:#526d85;line-height:1.65;margin:0 0 20px}
+.homeSelectedSquares{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.homeSquareProduct{display:flex;flex-direction:column;justify-content:flex-end;padding:20px;transition:border-color .18s,box-shadow .18s;min-width:0}
+.homeSquareProduct img{width:100%;height:160px;object-fit:contain;margin-bottom:16px}
+.homeSquareProduct h3{font-size:17px;line-height:1.35;margin:0 0 7px}
+.homeSquareProduct>span{font-size:12px;color:#526d85}
+.homeSquareProduct:hover{border-color:#7ea9cf;box-shadow:0 8px 22px #12345312}
+.homeCatalogAction{text-align:center;margin-top:30px}
+.site[dir="rtl"] .homeSelectedRange>h2{letter-spacing:0}
+/* The white frame separates each real client photograph from the section. */
+.siteHome .fieldHome .clientPhotoCollage img{border:6px solid #fff;border-radius:14px;box-shadow:0 9px 24px #142c3b1a}
+.homeQuoteSection{padding-block:60px 72px}
+.homeSimpleQuote{max-width:none;margin:0;padding:0;background:transparent;border:0;box-shadow:none}
+.homeSimpleQuote .simpleQuoteHead{margin-bottom:24px}
+.homeSimpleQuote .simpleQuoteHead h2{font-size:clamp(30px,3.5vw,44px)}
+.homeSimpleQuote .simpleQuoteForm{padding:30px;border:1px solid #d7e1ea;border-radius:20px;background:#fff;gap:12px}
+.simpleQuoteProductRow{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,1fr);gap:20px}
+.simpleQuoteField{display:grid;gap:8px;min-width:0}
+.homeSimpleQuote :is(input,select,textarea){border-radius:12px;background:#f6f8fb}
+.site .homeSimpleQuote .simpleQuotePrimary{width:auto;justify-self:start;min-width:250px;background:linear-gradient(180deg,#ffe16b,#f4c72c);color:#102b54;border-color:#edc12d;margin-top:6px}
+.homeSimpleQuote .simpleQuoteNote{text-align:start}
+#quote-builder{scroll-margin-top:150px}
+@media(max-width:800px){.homeSelectedGrid{grid-template-columns:1fr}.homeFeaturedImage{min-height:240px}.homeFeaturedImage img{height:290px}.homeSelectedRange{padding-block:42px}.homeQuoteSection{padding-block:42px 52px}}
+@media(max-width:550px){.homeSelectedGrid,.homeSelectedSquares{gap:12px}.homeSquareProduct{padding:14px}.homeSquareProduct img{height:120px}.homeSquareProduct h3{font-size:15px}.homeFeaturedCopy{padding:6px 20px 22px}.homeCatalogAction a{width:100%}.homeSimpleQuote .simpleQuoteForm{padding:20px}.simpleQuoteProductRow{grid-template-columns:1fr;gap:8px}.site .homeSimpleQuote .simpleQuotePrimary{width:100%;min-width:0}.siteHome .fieldHome .clientPhotoCollage img{border-width:5px}}
+@media(prefers-reduced-motion:reduce){.homeSquareProduct{transition:none}html{scroll-behavior:auto}}

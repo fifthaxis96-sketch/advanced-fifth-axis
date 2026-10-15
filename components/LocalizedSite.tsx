@@ -92,6 +92,7 @@ function Switcher({ lang, product, collection, section, guideSlug }: { lang: Lan
 }
 export function Header({ lang, product, collection, section, guideSlug }: { lang: Lang; product?: Product; collection?: Collection; section?: "products" | "collections" | "capabilities" | "about" | "contact" | "faq" | "privacy" | "tool-finder" | "guides" | "field-work"; guideSlug?: string }) {
   const t = copy[lang];
+  const quoteHref = !product && !collection && !section && !guideSlug ? "#quote-builder" : `${lang === "ar" ? "/ar" : ""}/contact#quote-builder`;
   return <header className="siteHeader"><div className="wrap headerInner">
     <a className="siteLogo" href={home(lang)} aria-label={lang === "ar" ? `${company.nameAr} — الرئيسية` : "Advanced Fifth Axis home"}><img src="/logo-small.webp" alt={lang === "ar" ? `شعار ${company.nameAr}` : "Advanced Fifth Axis logo"} width="112" height="92"/></a>
     <nav className="siteNav" aria-label={lang === "ar" ? "التنقل الرئيسي" : "Main navigation"}>
@@ -103,7 +104,7 @@ export function Header({ lang, product, collection, section, guideSlug }: { lang
       <a aria-current={section === "capabilities" ? "page" : undefined} href={`${lang === "ar" ? "/ar" : ""}/capabilities`}> {t.nav[2]}</a>
       <a aria-current={section === "contact" ? "page" : undefined} href={`${lang === "ar" ? "/ar" : ""}/contact`}> {t.nav[3]}</a>
     </nav>
-    <div className="headerActions"><Switcher lang={lang} product={product} collection={collection} section={section} guideSlug={guideSlug}/><a className="headerCta" href={`${lang === "ar" ? "/ar" : ""}/contact#quote-builder`}>{t.quote}</a></div>
+    <div className="headerActions"><Switcher lang={lang} product={product} collection={collection} section={section} guideSlug={guideSlug}/><a className="headerCta" href={quoteHref}>{t.quote}</a></div>
   </div></header>;
 }
 export function Footer({lang}:{lang:Lang}) {
@@ -126,6 +127,8 @@ export function HomePage({ lang }: { lang: Lang }) {
     const collection = collections.find(c => c.slug === item.collection);
     return collection ? {key:collection.slug, href:`${lang === "ar" ? "/ar" : ""}/collections/${collection.slug}`, image:item.image, name:item.name, nameAr:item.nameAr, description:collection.description, descriptionAr:collection.descriptionAr, isCollection:true} : null;
   }).filter((item): item is NonNullable<typeof item> => item !== null);
+  const featured = products.find(p => p.slug === "drilling-buckets")!;
+  const selections = ["rock-augers", "casing", "kelly-boxes", "roller-bits"].map(slug => products.find(p => p.slug === slug)!);
   return <div className="site siteHome" lang={lang} dir={lang === "ar" ? "rtl" : "ltr"}>
     <Header lang={lang}/>
     <main id="main-content">
@@ -140,7 +143,7 @@ export function HomePage({ lang }: { lang: Lang }) {
             <span className="heroShowcaseEyebrow">{t.eyebrow}</span>
             <h1>{t.headline}</h1>
             <p>{t.intro}</p>
-            <div className="heroButtons"><a className="primaryButton" href="#hot-products">{t.explore} </a><a className="primaryButton quotationButton" href={`${lang === "ar" ? "/ar" : ""}/contact#quote-builder`}>{t.quote} </a></div>
+            <div className="heroButtons"><a className="primaryButton" href="#hot-products">{t.explore} </a><a className="primaryButton quotationButton" href="#quote-builder">{t.quote} </a></div>
           </div>
           <span className="heroShowcaseCredit">{lang === "ar" ? company.nameAr : "ADVANCED FIFTH AXIS"} <span aria-hidden="true">/</span> {lang === "ar" ? "جدة، المملكة العربية السعودية" : "JEDDAH, SAUDI ARABIA"}</span>
         </div>
@@ -152,15 +155,23 @@ export function HomePage({ lang }: { lang: Lang }) {
           <div className="hotProductsAll"><a href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View all products"} </a></div>
         </div>
       </section>
-      <div className="finderPromo wrap"><div><span className="sectionKicker"><i/>{lang === "ar" ? "ابدأ بالمشروع" : "START WITH YOUR PROJECT"}</span><h2>{lang === "ar" ? "لست متأكدًا من الأداة المناسبة؟" : "Not sure which tool to ask for?"}</h2><p>{lang === "ar" ? "اختر الاستخدام وأرسل ظروف التربة والمعدة للمراجعة الفنية." : "Explore product families by application and send your rig and ground conditions for technical review."}</p></div><a className="primaryButton" href={`${lang === "ar" ? "/ar" : ""}/tool-finder`}>{lang === "ar" ? "مساعد اختيار الأدوات" : "Find a tool"}</a></div>
-      <div className="trustStrip"><div className="wrap">{t.tags.map((tag,i)=><span key={tag}><b>0{i+1}</b>{tag}</span>)}</div></div>
-      <section id="products" className="siteSection wrap"><div className="sectionHeader"><div><span className="sectionKicker"><i/> {t.productsLabel}</span><h2>{t.productsTitle}</h2></div><p>{t.productsIntro}</p></div>
-        <div className="productGrid homeProductGrid">{homeCards.map((item,i)=><a className="productTile" href={item.href} key={item.key}><div className="tileImage"><img loading="lazy" decoding="async" width="720" height="520" src={item.image ? productThumbnail(item.image) : undefined} alt={lang === "ar" ? item.nameAr : item.name}/><span className="tileIndex">{String(i+1).padStart(2,"0")}</span></div><div className="tileText"><span>{lang === "ar" ? item.name : item.nameAr}</span><h3>{lang === "ar" ? item.nameAr : item.name}</h3><p>{lang === "ar" ? item.descriptionAr : item.description}</p><b>{item.isCollection ? t.viewCollection : t.view} </b></div></a>)}</div><div className="sectionFooterCta"><a className="outlineButton" href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? "عرض جميع المنتجات" : "View full product catalog"} </a></div>
+      <section id="products" className="homeSelectedRange wrap" aria-labelledby="selected-range-title">
+        <span className="sectionKicker"><i/>{t.productsLabel}</span>
+        <h2 id="selected-range-title">{t.capabilitiesTitle}</h2>
+        <div className="homeSelectedGrid">
+          <article className="homeFeaturedProduct">
+            <a className="homeFeaturedImage" href={productUrl(lang,featured.slug)}><img src={productThumbnail(featured.images![0],"large")} {...imageSize(featured.images![0])} alt={lang === "ar" ? featured.nameAr : featured.name} loading="lazy" decoding="async"/></a>
+            <div className="homeFeaturedCopy"><h3><a href={productUrl(lang,featured.slug)}>{lang === "ar" ? featured.nameAr : featured.name}</a></h3><p>{lang === "ar" ? "بكيتات حفر الصخور بأسنان قطع. مقاس كيلي بوكس القياسي 200×200 مم؛ يتم تأكيد التكوين حسب متطلبات المشروع." : "Rock drilling buckets with cutting teeth. Standard Kelly box: 200×200 mm. Configuration confirmed for your project."}</p><a className="primaryButton" href={productUrl(lang,featured.slug)}>{t.view}</a></div>
+          </article>
+          <div className="homeSelectedSquares">{selections.map(item => <a className="homeSquareProduct" href={productUrl(lang,item.slug)} key={item.slug}><img src={productThumbnail(item.images![0])} {...imageSize(item.images![0])} alt={lang === "ar" ? item.nameAr : item.name} loading="lazy" decoding="async"/><h3>{lang === "ar" ? item.nameAr : item.name}</h3><span>{categoryLabel(lang,item.category)}</span></a>)}</div>
+        </div>
+        <div className="homeCatalogAction"><a className="primaryButton quotationButton" href={`${lang === "ar" ? "/ar" : ""}/products`}>{lang === "ar" ? `عرض جميع المنتجات والخدمات (${products.length})` : `View all ${products.length} products & services`}</a></div>
       </section>
       <PartnersSection lang={lang}/>
       <section className="fieldHome"><div className="wrap fieldHomeInner"><div><span className="sectionKicker"><i/>{lang === "ar" ? "من عملائنا" : "FROM OUR CLIENTS"}</span><h2>{lang === "ar" ? "عملاؤنا. أدواتنا. مشاريع على أرض الواقع." : "Our Clients. Our Tools. Real Projects."}</h2><p>{lang === "ar" ? "استكشف صورًا شاركها عملاؤنا من مشاريع حفر الأساسات، تعرض أدواتنا ومعداتنا أثناء العمل." : "Explore photos shared by our clients from foundation drilling projects, showcasing our tools and equipment in action."}</p><a className="primaryButton" href={`${lang === "ar" ? "/ar" : ""}/field-work`}>{lang === "ar" ? "استعرض مشاريع العملاء" : "Explore client projects"}</a></div><div className="clientPhotoCollage"><img className="clientPhotoMain" src="/projects/tool-on-rig.webp" alt={lang === "ar" ? "أداة حفر زرقاء في موقع عمل" : "Blue drilling tool at a work site"} loading="lazy" decoding="async" width="900" height="1600"/><img className="clientPhotoTop" src="/projects/roadway-foundation-rig-4080.webp" alt={lang === "ar" ? "آلة حفر أساسات بجانب الطريق" : "Foundation drilling rig beside a roadway"} loading="lazy" decoding="async" width="900" height="1200"/><img className="clientPhotoBottom" src="/projects/casing-lift-blue.webp" alt={lang === "ar" ? "مناولة مواسير في موقع العميل" : "Casing handling at a client project site"} loading="lazy" decoding="async" width="900" height="1200"/></div></div></section>
       <section className="siteSection wrap" aria-labelledby="home-guides-title"><div className="sectionHeader"><div><span className="sectionKicker"><i/>{lang === "ar" ? "معرفة فنية" : "TECHNICAL RESOURCES"}</span><h2 id="home-guides-title">{lang === "ar" ? "جهز متطلباتك قبل طلب السعر." : "Prepare a clearer drilling tool inquiry."}</h2></div><p>{lang === "ar" ? "أدلة عملية لاختيار الأداة وتجهيز الأبعاد والرسومات المطلوبة." : "Practical guides on tool selection, connections and the details needed for a quotation."}</p></div><div className="guideGrid">{guides.slice(0, 3).map(g => <a className="guideCard" href={`${lang === "ar" ? "/ar" : ""}/guides/${g.slug}`} key={g.slug}><span className="sectionKicker"><i/>{lang === "ar" ? "دليل فني" : "BUYER GUIDE"}</span><h3>{g[lang].title}</h3><p>{g[lang].description}</p><b>{lang === "ar" ? "اقرأ الدليل" : "Read guide"}</b></a>)}</div></section>
       <section id="contact" className="contactSection"><div className="wrap contactNew"><div><span className="sectionKicker"><i/> {t.contactLabel}</span><h2>{t.contactTitle}</h2><p>{t.contactIntro}</p><div className="heroButtons"><a className="primaryButton whatsappButton" href={`${whatsapp}?text=${encodeURIComponent(lang === "ar" ? "مرحبًا، أود طلب عرض سعر." : "Hello, I would like a quotation.")}`}><span className="whatsAppIcon" aria-hidden="true"><svg viewBox="0 0 32 32"><path fill="currentColor" d="M19.11 17.27c-.29-.15-1.72-.85-1.99-.94-.27-.1-.47-.15-.67.15-.2.29-.76.94-.93 1.13-.17.2-.34.22-.63.07-.29-.15-1.22-.45-2.32-1.44-.86-.77-1.44-1.72-1.61-2.01-.17-.29-.02-.45.13-.59.13-.13.29-.34.44-.51.15-.17.2-.29.29-.49.1-.2.05-.37-.02-.51-.07-.15-.67-1.61-.91-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.51.07-.78.37-.27.29-1.03 1.01-1.03 2.47 0 1.46 1.06 2.87 1.2 3.07.15.2 2.08 3.18 5.04 4.46.7.3 1.25.48 1.68.62.71.22 1.35.19 1.86.12.57-.08 1.72-.7 1.96-1.38.24-.68.24-1.26.17-1.38-.07-.12-.27-.2-.56-.34Z"/><path fill="currentColor" d="M16.03 3.2c-7.06 0-12.8 5.74-12.8 12.8 0 2.26.59 4.46 1.71 6.4L3.13 29l6.76-1.77a12.73 12.73 0 0 0 6.14 1.56h.01c7.06 0 12.8-5.74 12.8-12.8 0-3.42-1.33-6.63-3.75-9.05a12.71 12.71 0 0 0-9.06-3.74Zm0 23.43h-.01a10.6 10.6 0 0 1-5.4-1.48l-.39-.23-4.01 1.05 1.07-3.91-.25-.4A10.61 10.61 0 1 1 16.03 26.63Z"/></svg></span>{t.whatsapp} <bdi dir="ltr">{company.phoneDisplay}</bdi> </a></div></div><dl><div><dt>{t.address}</dt><dd>{lang === "ar" ? company.addressAr : company.address}</dd></div><div><dt>{t.vat}</dt><dd>{company.vat}</dd></div><div><dt>{t.registration}</dt><dd>{company.cr}</dd></div></dl></div></section>
+      <div className="homeQuoteSection wrap"><QuoteBuilder lang={lang} compact/></div>
     </main><Footer lang={lang}/>
   </div>;
 }

@@ -7,10 +7,11 @@ import { inquiryContextLines } from "@/lib/inquiry-context";
 import { trackInquiryIntent } from "@/lib/analytics";
 import { variantLabel } from "@/lib/localization";
 
-export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
+export function QuoteBuilder({ lang, compact = false }: { lang: "en" | "ar"; compact?: boolean }) {
   const ar = lang === "ar";
   const [slug, setSlug] = useState("");
   const [requirement, setRequirement] = useState("");
+  const [quantity, setQuantity] = useState("");
   const [city, setCity] = useState("");
   const [details, setDetails] = useState("");
   const [error, setError] = useState("");
@@ -48,6 +49,8 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
     const p = products.find(p => p.slug === slug);
     const lines = [ar ? "مرحبًا، أود طلب عرض سعر." : "Hello, I would like to request a quotation."];
     lines.push(...inquiryContextLines({ product: p, lang, pathname: ar ? "/ar/contact" : "/contact" }));
+    if (slug === "custom") lines.push(ar ? "المنتج: طلب خاص / تصنيع حسب الطلب" : "Product: Other / custom request");
+    if (quantity.trim()) lines.push(`${ar ? "الكمية" : "Quantity"}: ${quantity.trim()}`);
     lines.push(`${ar ? "الطلب" : "Requirement"}: ${requirement.trim()}`);
     if (city.trim()) lines.push(`${ar ? "مدينة التسليم" : "Delivery city"}: ${city.trim()}`);
     if (details.trim()) lines.push(`${ar ? "تفاصيل المشروع" : "Project details"}: ${details.trim()}`);
@@ -63,13 +66,14 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
     }
   };
 
-  return <section className="simpleQuote" id="quote-builder" aria-labelledby="simple-quote-title">
+  return <section className={`simpleQuote${compact ? " homeSimpleQuote" : ""}`} id="quote-builder" aria-labelledby="simple-quote-title">
     <div className="simpleQuoteHead">
-      <span className="sectionKicker">{ar ? "تواصل مع فريقنا" : "TALK TO OUR TEAM"}</span>
-      <h2 id="simple-quote-title">{ar ? "اطلب عرض سعر" : "Request a quotation"}</h2>
-      <p>{ar ? "أخبرنا بما تحتاجه، وسنساعدك في تأكيد المواصفات." : "Tell us what you need. We’ll help confirm the specifications."}</p>
+      <span className="sectionKicker">{compact ? (ar ? "طريقة بسيطة للاستفسار" : "A SIMPLE WAY TO ASK") : (ar ? "تواصل مع فريقنا" : "TALK TO OUR TEAM")}</span>
+      <h2 id="simple-quote-title">{compact ? (ar ? "ماذا يمكننا أن نصنع لك؟" : "What can we make for you?") : (ar ? "اطلب عرض سعر" : "Request a quotation")}</h2>
+      <p>{compact ? (ar ? "اختر المنتج، وصف طلبك، ثم تابع في واتساب." : "Choose a product. Tell us what you need. Continue in WhatsApp.") : (ar ? "أخبرنا بما تحتاجه، وسنساعدك في تأكيد المواصفات." : "Tell us what you need. We’ll help confirm the specifications.")}</p>
     </div>
     <form className="simpleQuoteForm" onSubmit={continueRequest}>
+      <div className="simpleQuoteProductRow"><div className="simpleQuoteField">
       <label htmlFor="inquiry-product">{ar ? "المنتج" : "Product"} <span>{optional}</span></label>
       <select id="inquiry-product" name="product" value={slug} onChange={event => {
         const previous = products.find(p => p.slug === slug);
@@ -80,14 +84,16 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
       }}>
         <option value="">{ar ? "اختر منتجًا أو صفه أدناه" : "Choose a product or describe it below"}</option>
         {products.map(p => <option key={p.slug} value={p.slug}>{ar ? p.nameAr : p.name}</option>)}
+        <option value="custom">{ar ? "أخرى / طلب خاص" : "Other / custom request"}</option>
       </select>
+      </div><div className="simpleQuoteField"><label htmlFor="inquiry-quantity">{ar ? "الكمية" : "Quantity"} <span>{optional}</span></label><input id="inquiry-quantity" name="quantity" type="number" min="1" step="1" value={quantity} onChange={event => { setQuantity(event.target.value); setStatus(""); }} placeholder={ar ? "مثال: 2" : "e.g. 2"}/></div></div>
       <label htmlFor="inquiry-requirement">{ar ? "طلبك" : "Your requirement"} <span>{ar ? "(مطلوب)" : "(required)"}</span></label>
       <textarea id="inquiry-requirement" name="requirement" ref={input} required maxLength={2000} rows={3} value={requirement}
         placeholder={ar ? "مثال: عدد 2 بكيت حفر صخور بقطر 1200 مم لمعدة Bauer." : "Example: 2 rock buckets, 1200 mm, for a Bauer rig."}
         aria-invalid={error ? true : undefined} aria-describedby={error ? "inquiry-error" : undefined}
         onInvalid={() => setError(errorText)} onChange={event => { setRequirement(event.target.value); setError(""); setStatus(""); }} />
       {error && <p className="simpleQuoteError" id="inquiry-error" role="alert">{error}</p>}
-      <details className="simpleQuoteDetails">
+      {!compact && <details className="simpleQuoteDetails">
         <summary>{ar ? "أضف تفاصيل المشروع" : "Add project details"} <span>{optional}</span></summary>
         <div>
           <label htmlFor="inquiry-city">{ar ? "مدينة التسليم" : "Delivery city"} <span>{optional}</span></label>
@@ -95,9 +101,9 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
           <label htmlFor="inquiry-details">{ar ? "موديل المعدة أو تفاصيل أخرى" : "Rig model or other details"} <span>{optional}</span></label>
           <input id="inquiry-details" name="details" value={details} maxLength={300} onChange={event => setDetails(event.target.value)} placeholder={ar ? "إن كانت متوفرة" : "Only if known"} />
         </div>
-      </details>
+      </details>}
       <button type="submit" name="channel" value="whatsapp" className="simpleQuotePrimary">{ar ? "المتابعة في واتساب" : "Continue in WhatsApp"} </button>
-      <button type="submit" name="channel" value="email" className="simpleQuoteEmail">{ar ? "إرسال الطلب عبر البريد بدلًا من ذلك" : "Email this request instead"}</button>
+      {!compact && <button type="submit" name="channel" value="email" className="simpleQuoteEmail">{ar ? "إرسال الطلب عبر البريد بدلًا من ذلك" : "Email this request instead"}</button>}
       <p className="simpleQuoteNote">{ar ? "راجع الطلب وأرسله في واتساب. يمكنك إرفاق الصور أو الرسومات هناك." : "Review and send in WhatsApp. Attach photos or drawings there."}</p>
       <p className="simpleQuoteStatus" role="status" aria-live="polite">{status}</p>
     </form>
