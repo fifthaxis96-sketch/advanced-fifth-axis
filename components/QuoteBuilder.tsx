@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState, type FormEvent } from "react";
 import { company, products } from "@/lib/site";
 import { readQuoteList } from "@/lib/quote-list";
+import { inquiryContextLines } from "@/lib/inquiry-context";
 
 export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
   const ar = lang === "ar";
@@ -34,13 +35,17 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
     }
   }, [ar]);
 
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent("afa-inquiry-product-change", { detail: slug }));
+  }, [slug]);
+
   const continueRequest = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (!requirement.trim()) { setError(errorText); input.current?.focus(); return; }
     setError("");
     const p = products.find(p => p.slug === slug);
     const lines = [ar ? "مرحبًا، أود طلب عرض سعر." : "Hello, I would like to request a quotation."];
-    if (p) lines.push(`${ar ? "المنتج" : "Product"}: ${ar ? p.nameAr : p.name}`);
+    lines.push(...inquiryContextLines({ product: p, lang, pathname: ar ? "/ar/contact" : "/contact" }));
     lines.push(`${ar ? "الطلب" : "Requirement"}: ${requirement.trim()}`);
     if (city.trim()) lines.push(`${ar ? "مدينة التسليم" : "Delivery city"}: ${city.trim()}`);
     if (details.trim()) lines.push(`${ar ? "تفاصيل المشروع" : "Project details"}: ${details.trim()}`);
