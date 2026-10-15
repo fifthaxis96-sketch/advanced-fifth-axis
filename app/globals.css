@@ -516,3 +516,8 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 @media(max-width:800px){.homeSelectedGrid{grid-template-columns:1fr}.homeFeaturedImage{min-height:240px}.homeFeaturedImage img{height:290px}.homeSelectedRange{padding-block:42px}.homeQuoteSection{padding-block:42px 52px}}
 @media(max-width:550px){.homeSelectedGrid,.homeSelectedSquares{gap:12px}.homeSquareProduct{padding:14px}.homeSquareProduct img{height:120px}.homeSquareProduct h3{font-size:15px}.homeFeaturedCopy{padding:6px 20px 22px}.homeCatalogAction a{width:100%}.homeSimpleQuote .simpleQuoteForm{padding:20px}.simpleQuoteProductRow{grid-template-columns:1fr;gap:8px}.site .homeSimpleQuote .simpleQuotePrimary{width:100%;min-width:0}.siteHome .fieldHome .clientPhotoCollage img{border-width:5px}}
 @media(prefers-reduced-motion:reduce){.homeSquareProduct{transition:none}html{scroll-behavior:auto}}
+
+/* English typography: self-hosted Inter; Arabic retains its existing font. */
+@font-face{font-family:"Inter";font-style:normal;font-weight:400;font-display:swap;src:url("/fonts/inter-400.woff") format("woff")}
+@font-face{font-family:"Inter";font-style:normal;font-weight:700;font-display:swap;src:url("/fonts/inter-700.woff") format("woff")}
+html[lang="en"] body,html[lang="en"] .site[lang="en"],html[lang="en"] .site[lang="en"] :is(button,input,select,textarea),html[lang="en"] .skipLink,html[lang="en"] .notFoundPage{font-family:"Inter",Arial,sans-serif}
