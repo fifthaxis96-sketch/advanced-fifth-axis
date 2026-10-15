@@ -1,4 +1,27 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{text-decoration:none;color:inherit}.wrap{max-width:1280px;margin:auto;padding:0 32px}
+.simpleQuote{scroll-margin-top:110px;margin:64px auto 0;max-width:640px;padding:36px;background:#fff;border:1px solid #d4dfeb;border-radius:12px;box-shadow:0 8px 28px #12375b08}
+.simpleQuoteHead h2{font-size:clamp(28px,3vw,36px);line-height:1.15;letter-spacing:-.035em;margin:16px 0 12px}
+.simpleQuoteHead p{font-size:16px;color:#52657c;line-height:1.65;margin:0 0 28px}
+.simpleQuoteForm{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}
+.simpleQuoteForm label{font-size:14px;font-weight:700;line-height:1.5;margin-top:8px}
+.simpleQuoteForm label span,.simpleQuoteDetails summary span{font-size:13px;font-weight:400;color:#52657c}
+.simpleQuoteForm input,.simpleQuoteForm select,.simpleQuoteForm textarea{display:block;width:100%;min-width:0;min-height:48px;border:1px solid #bbcbdc;border-radius:5px;background:#fff;color:#172b44;padding:12px;font:400 16px/1.5 Arial,Tahoma,sans-serif}
+.simpleQuoteForm textarea{min-height:112px;resize:vertical}
+.simpleQuoteForm input::placeholder,.simpleQuoteForm textarea::placeholder{color:#61748b;opacity:1}
+.simpleQuoteForm :is(input,select,textarea,button,summary):focus-visible{outline:3px solid #0873c8;outline-offset:3px}
+.simpleQuoteForm textarea[aria-invalid=true]{border-color:#a32222}
+.simpleQuoteDetails{margin:11px 0 14px;padding-block:9px;border-block:1px solid #dbe3ed}
+.simpleQuoteDetails summary{padding-block:10px;min-height:44px;font-size:14px;font-weight:700;color:#0c58a2;cursor:pointer}
+.simpleQuoteDetails>div{display:grid;gap:9px;padding-bottom:12px}
+.simpleQuotePrimary{display:flex;align-items:center;justify-content:center;gap:12px;min-height:50px;width:100%;border:1px solid #0c58a2;border-radius:5px;background:#0c58a2;color:#fff;font:700 16px/1.4 Arial,Tahoma,sans-serif;padding:13px 18px;cursor:pointer}
+.simpleQuotePrimary:hover{background:#073b74;border-color:#073b74}
+.simpleQuoteEmail{justify-self:center;min-height:44px;max-width:100%;border:0;background:transparent;color:#0c58a2;padding:10px 6px;font:400 14px/1.5 Arial,Tahoma,sans-serif;text-decoration:underline;text-underline-offset:4px;cursor:pointer}
+.simpleQuoteEmail:hover{color:#073b74}
+.simpleQuoteNote,.simpleQuoteStatus{font-size:13px;line-height:1.6;text-align:center;color:#52657c;margin:0}
+.simpleQuoteError{font-size:14px;color:#a32222;margin:0;line-height:1.5}
+.simpleQuoteStatus:empty{display:none}
+.simpleQuoteStatus:not(:empty){padding:12px;margin-top:5px;background:#eef5fc;color:#173d68;border-radius:5px}
+@media(max-width:600px){.simpleQuote{padding:24px 18px;margin-top:40px;scroll-margin-top:110px}.simpleQuoteHead .sectionKicker{letter-spacing:.08em}.simpleQuoteDetails summary span{display:inline-block}}
 /* Public bilingual storefront */
 .site{background:#f6f8fb;color:#172b44;min-height:100vh;font-family:Arial,Tahoma,sans-serif}
 .site .wrap{max-width:1280px;padding-inline:32px}
