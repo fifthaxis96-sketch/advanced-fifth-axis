@@ -358,5 +358,213 @@
   "/ar/products/hq-round-holders": {
     "title": "حوامل أسنان HQ الدائرية | المحور الخامس المتقدمة للصناعة",
     "description": "حوامل أسنان HQ دائرية مع أزرار كربيد أو بدونها. حدد الخيار وأبعاد التجويف وتفاصيل التثبيت لتأكيد المجموعة."
+  },
+  "/guides/rock-augers-guide": {
+    "title": "Rock auger selection: flights, teeth and drilling diameter",
+    "description": "Rock auger selection: flights, teeth and drilling diameter. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/rock-augers-guide": {
+    "title": "اختيار أوجر الصخور: الحلزون والأسنان وقطر الحفر",
+    "description": "اختيار أوجر الصخور: الحلزون والأسنان وقطر الحفر. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/drilling-buckets-guide": {
+    "title": "Rock drilling buckets: shell size, cutting teeth and selection",
+    "description": "Rock drilling buckets: shell size, cutting teeth and selection. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/drilling-buckets-guide": {
+    "title": "بكيت حفر الصخور: أبعاد الجسم وأسنان القطع والاختيار",
+    "description": "بكيت حفر الصخور: أبعاد الجسم وأسنان القطع والاختيار. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/cleaning-buckets-guide": {
+    "title": "Borehole cleaning buckets: bottom-cleaning use and dimensions",
+    "description": "Borehole cleaning buckets: bottom-cleaning use and dimensions. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/cleaning-buckets-guide": {
+    "title": "بكيت تنظيف قاع الحفر: الاستخدام والأبعاد المطلوبة",
+    "description": "بكيت تنظيف قاع الحفر: الاستخدام والأبعاد المطلوبة. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/core-barrels-guide": {
+    "title": "Foundation core barrels: bullet teeth versus roller bits",
+    "description": "Foundation core barrels: bullet teeth versus roller bits. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/core-barrels-guide": {
+    "title": "كور بارل الأساسات: الأسنان الصخرية أم الرولر بت؟",
+    "description": "كور بارل الأساسات: الأسنان الصخرية أم الرولر بت؟. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/wire-tremie-pipe-guide": {
+    "title": "Tremie pipe sets: 8-inch and 10-inch components explained",
+    "description": "Tremie pipe sets: 8-inch and 10-inch components explained. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/wire-tremie-pipe-guide": {
+    "title": "مجموعات مواسير التريمي: شرح مقاسي 8 و10 بوصات",
+    "description": "مجموعات مواسير التريمي: شرح مقاسي 8 و10 بوصات. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/casing-guide": {
+    "title": "Foundation drilling casing: sections, shoes and joint selection",
+    "description": "Foundation drilling casing: sections, shoes and joint selection. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/casing-guide": {
+    "title": "مواسير تغليف حفر الأساسات: المقاطع والأحذية والوصلات",
+    "description": "مواسير تغليف حفر الأساسات: المقاطع والأحذية والوصلات. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/casing-drive-guide": {
+    "title": "Casing drive adapters: rig interface and engagement checks",
+    "description": "Casing drive adapters: rig interface and engagement checks. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/casing-drive-guide": {
+    "title": "أداة إدارة التغليف: واجهة المعدة وأبعاد التعشيق",
+    "description": "أداة إدارة التغليف: واجهة المعدة وأبعاد التعشيق. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/cfa-guide": {
+    "title": "CFA auger sections: flight pitch, center tube and couplings",
+    "description": "CFA auger sections: flight pitch, center tube and couplings. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/cfa-guide": {
+    "title": "مقاطع أوجر CFA: خطوة الحلزون والأنبوب والوصلات",
+    "description": "مقاطع أوجر CFA: خطوة الحلزون والأنبوب والوصلات. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/kelly-boxes-guide": {
+    "title": "Kelly boxes and adapters: square sizes and connection fit",
+    "description": "Kelly boxes and adapters: square sizes and connection fit. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/kelly-boxes-guide": {
+    "title": "الكيلي بوكس والوصلات: المقاسات المربعة وتوافق التركيب",
+    "description": "الكيلي بوكس والوصلات: المقاسات المربعة وتوافق التركيب. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/kelly-bars-guide": {
+    "title": "Kelly bar repair: friction, interlocking and conversion assessment",
+    "description": "Kelly bar repair: friction, interlocking and conversion assessment. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/kelly-bars-guide": {
+    "title": "إصلاح كيلي بار: الاحتكاك والتعشيق وتقييم التحويل",
+    "description": "إصلاح كيلي بار: الاحتكاك والتعشيق وتقييم التحويل. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/kelly-box-pins-guide": {
+    "title": "Kelly box pins: 50 mm and 60 mm dimensions explained",
+    "description": "Kelly box pins: 50 mm and 60 mm dimensions explained. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/kelly-box-pins-guide": {
+    "title": "بنوز الكيلي بوكس: شرح أبعاد 50 و60 مم",
+    "description": "بنوز الكيلي بوكس: شرح أبعاد 50 و60 مم. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/rotary-head-slide-pads-guide": {
+    "title": "POM rotary head sliding pads: replacement measurements",
+    "description": "POM rotary head sliding pads: replacement measurements. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/rotary-head-slide-pads-guide": {
+    "title": "بطانات انزلاق رأس الحفر من POM: قياسات الاستبدال",
+    "description": "بطانات انزلاق رأس الحفر من POM: قياسات الاستبدال. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/drilling-bucket-helical-springs-guide": {
+    "title": "Drilling bucket springs: measuring a helical replacement",
+    "description": "Drilling bucket springs: measuring a helical replacement. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/drilling-bucket-helical-springs-guide": {
+    "title": "نوابض بكيت الحفر: قياس النابض الحلزوني البديل",
+    "description": "نوابض بكيت الحفر: قياس النابض الحلزوني البديل. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/solid-wire-rope-thimble-guide": {
+    "title": "Solid wire rope thimbles: rope size and eye-connection fit",
+    "description": "Solid wire rope thimbles: rope size and eye-connection fit. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/solid-wire-rope-thimble-guide": {
+    "title": "كشتبان الحبل الفولاذي المصمت: قطر الحبل وتوافق العين",
+    "description": "كشتبان الحبل الفولاذي المصمت: قطر الحبل وتوافق العين. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/roller-bits-guide": {
+    "title": "8-1/2-inch roller bits for foundation tools: selection checks",
+    "description": "8-1/2-inch roller bits for foundation tools: selection checks. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/roller-bits-guide": {
+    "title": "رولر بت 8-1/2 بوصة لأدوات الأساسات: مراجعة الاختيار",
+    "description": "رولر بت 8-1/2 بوصة لأدوات الأساسات: مراجعة الاختيار. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/center-pilot-attachment-holder-guide": {
+    "title": "Center pilot and holder: tool alignment and assembly dimensions",
+    "description": "Center pilot and holder: tool alignment and assembly dimensions. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/center-pilot-attachment-holder-guide": {
+    "title": "السن المركزي والحامل: توجيه الأداة وأبعاد المجموعة",
+    "description": "السن المركزي والحامل: توجيه الأداة وأبعاد المجموعة. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/bfz70-tooth-guide": {
+    "title": "BFZ70 cutting tooth: seating, holder and replacement selection",
+    "description": "BFZ70 cutting tooth: seating, holder and replacement selection. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/bfz70-tooth-guide": {
+    "title": "سن BFZ70: التثبيت والحامل واختيار البديل",
+    "description": "سن BFZ70: التثبيت والحامل واختيار البديل. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/bfz70-holder-guide": {
+    "title": "BFZ70 tooth holders: mounting footprint and tooth seating",
+    "description": "BFZ70 tooth holders: mounting footprint and tooth seating. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/bfz70-holder-guide": {
+    "title": "حوامل BFZ70: قاعدة التركيب وتجويف السن",
+    "description": "حوامل BFZ70: قاعدة التركيب وتجويف السن. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/c31hd-tooth-guide": {
+    "title": "C31HD drilling teeth: shank measurements and holder fit",
+    "description": "C31HD drilling teeth: shank measurements and holder fit. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/c31hd-tooth-guide": {
+    "title": "أسنان C31HD: قياسات الساق والتوافق مع الحامل",
+    "description": "أسنان C31HD: قياسات الساق والتوافق مع الحامل. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/c30-holders-guide": {
+    "title": "C30 square and round holders: choosing the mounting shape",
+    "description": "C30 square and round holders: choosing the mounting shape. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/c30-holders-guide": {
+    "title": "حوامل C30 المربعة والدائرية: اختيار شكل القاعدة",
+    "description": "حوامل C30 المربعة والدائرية: اختيار شكل القاعدة. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/b-47k22h-tooth-guide": {
+    "title": "B-47K22H cutting teeth: replacement identification guide",
+    "description": "B-47K22H cutting teeth: replacement identification guide. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/b-47k22h-tooth-guide": {
+    "title": "أسنان B-47K22H: دليل تحديد القطعة البديلة",
+    "description": "أسنان B-47K22H: دليل تحديد القطعة البديلة. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/hq-round-holders-guide": {
+    "title": "HQ round tooth holders: model, carbide option and dimensions",
+    "description": "HQ round tooth holders: model, carbide option and dimensions. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/hq-round-holders-guide": {
+    "title": "حوامل HQ الدائرية: الموديل وخيار الكربيد والأبعاد",
+    "description": "حوامل HQ الدائرية: الموديل وخيار الكربيد والأبعاد. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/b43-holder-guide": {
+    "title": "B43 tooth holder: interface and installation requirements",
+    "description": "B43 tooth holder: interface and installation requirements. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/b43-holder-guide": {
+    "title": "حامل B43: متطلبات الواجهة والتركيب",
+    "description": "حامل B43: متطلبات الواجهة والتركيب. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/pile-testing-reaction-beam-guide": {
+    "title": "Pile load-test reaction beams: fabrication information to specify",
+    "description": "Pile load-test reaction beams: fabrication information to specify. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/pile-testing-reaction-beam-guide": {
+    "title": "كمرات رد الفعل لاختبار الأساسات: بيانات التصنيع",
+    "description": "كمرات رد الفعل لاختبار الأساسات: بيانات التصنيع. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/customized-bentonite-water-tank-guide": {
+    "title": "Bentonite and water tanks: capacity, access and nozzle planning",
+    "description": "Bentonite and water tanks: capacity, access and nozzle planning. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/customized-bentonite-water-tank-guide": {
+    "title": "خزانات البنتونيت والمياه: السعة والفتحات والوصلات",
+    "description": "خزانات البنتونيت والمياه: السعة والفتحات والوصلات. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
+  },
+  "/guides/bi-directional-static-axial-load-plate-guide": {
+    "title": "Bi-directional load-test plates: drawing and interface requirements",
+    "description": "Bi-directional load-test plates: drawing and interface requirements. Uses, catalog options and specification checks for Saudi foundation projects. Request a quotation from Advanced Fifth Axis in Jeddah."
+  },
+  "/ar/guides/bi-directional-static-axial-load-plate-guide": {
+    "title": "صفائح اختبار التحميل ثنائي الاتجاه: الرسم والواجهات",
+    "description": "صفائح اختبار التحميل ثنائي الاتجاه: الرسم والواجهات. شرح الاستخدام والمقاسات وخيارات الكتالوج وبيانات طلب السعر لمشاريع الأساسات في السعودية من المحور الخامس المتقدمة في جدة."
   }
 }

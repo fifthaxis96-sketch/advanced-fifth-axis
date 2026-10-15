@@ -1,3 +1,4 @@
+import { products } from "@/lib/site";
 import { withSEO } from "@/lib/seo";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
@@ -14,8 +15,9 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const { slug } = await params, g = guides.find(item => item.slug === slug);
   if (!g) notFound();
   const base = "https://advanced-fifthaxis.com", url = `${base}/guides/${slug}`;
+  const product = products.find(p => p.slug === g.productSlug);
   const graph = { "@context": "https://schema.org", "@graph": [
-    { "@type": "Article", headline: g.en.title, description: g.en.description, inLanguage: "en", mainEntityOfPage: url, author: { "@type": "Organization", name: "Advanced Fifth Axis", url: base }, publisher: { "@type": "Organization", name: "Advanced Fifth Axis", url: base } },
+    { "@type": "Article", ...(product ? { about: { "@id": `${base}/products/${product.slug}#product`, "@type": "Thing", name: product.name }, image: product.images?.map(src => `${base}${src}`) } : {}), headline: g.en.title, description: g.en.description, inLanguage: "en", mainEntityOfPage: url, author: { "@type": "Organization", name: "Advanced Fifth Axis", url: base }, publisher: { "@type": "Organization", name: "Advanced Fifth Axis", url: base } },
     { "@type": "BreadcrumbList", itemListElement: [{ "@type": "ListItem", position: 1, name: "Home", item: base }, { "@type": "ListItem", position: 2, name: "Guides", item: `${base}/guides` }, { "@type": "ListItem", position: 3, name: g.en.title, item: url }] }
   ] };
   return <><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph) }}/><GuideView lang="en" guide={g}/></>;

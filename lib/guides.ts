@@ -1,6 +1,7 @@
+import { productArticles } from "@/lib/product-articles";
 export type GuideSection = { heading: string; paragraphs?: string[]; bullets?: string[] };
 export type GuideTranslation = { title: string; description: string; intro: string; sections: GuideSection[]; takeaway: string };
-export type Guide = { slug: string; en: GuideTranslation; ar: GuideTranslation; related: string[] };
+export type Guide = { slug: string; en: GuideTranslation; ar: GuideTranslation; related: string[]; productSlug?: string };
 export const guides: Guide[] = [
   {
     slug: "drilling-tool-selection",
@@ -159,5 +160,6 @@ export const guides: Guide[] = [
       ],
       takeaway: "اختر المنتج في نموذج عرض السعر المبسط واكتب طلبك. تابع في واتساب أو البريد الإلكتروني، ثم أرفق الرسومات هناك للمراجعة الفنية."
     }
-  }
+  },
+  ...productArticles
 ];

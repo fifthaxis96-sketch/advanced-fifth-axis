@@ -436,3 +436,5 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 
 /* Keep mobile contact shortcuts in flow so they cannot cover headings or fields. */
 @media(max-width:600px){.floatingContacts{position:static;transform:none;width:auto;display:flex;justify-content:center;gap:12px;padding:20px;background:#071e3a}.floatingContacts a{transform:none;border-radius:12px}.floatingContacts a:hover,.floatingContacts a:focus-visible{transform:none}}
+
+.guideProductImage{display:block;width:100%;max-width:560px;height:auto;max-height:420px;object-fit:contain;background:#f6f8fa;border-radius:12px;margin-block:20px}.guideProductSummary a{color:#155ca0}.guideArticle .rockBucketTableScroll{max-width:100%;overflow-x:auto}

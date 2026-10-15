@@ -1,6 +1,11 @@
 import { Header, Footer, type Lang } from "@/components/LocalizedSite";
 import { guides, type Guide } from "@/lib/guides";
 import { products } from "@/lib/site";
+import { imageSize } from "@/lib/images";
+import { RockBucketSpecs } from "@/components/RockBucketSpecs";
+import { AugerSpecs } from "@/components/AugerSpecs";
+import { CoreBarrelSpecs } from "@/components/CoreBarrelSpecs";
+import { CleaningBucketSpecs } from "@/components/CleaningBucketSpecs";
 
 const prefix = (lang: Lang) => lang === "ar" ? "/ar" : "";
 export function GuideIndex({ lang }: { lang: Lang }) {
@@ -13,10 +18,16 @@ export function GuideIndex({ lang }: { lang: Lang }) {
 }
 export function GuideView({ lang, guide }: { lang: Lang; guide: Guide }) {
   const ar = lang === "ar", t = guide[lang];
+  const product = products.find(p => p.slug === guide.productSlug);
   return <div className="site" lang={lang} dir={ar ? "rtl" : "ltr"}><Header lang={lang} guideSlug={guide.slug}/><main id="main-content" className="wrap catalogPage guidePage">
     <nav className="breadcrumbs" aria-label={ar ? "مسار التنقل" : "Breadcrumb"}><a href={ar ? "/ar" : "/"}>{ar ? "الرئيسية" : "Home"}</a><span>/</span><a href={`${prefix(lang)}/guides`}>{ar ? "الأدلة الفنية" : "Guides"}</a><span>/</span><span>{t.title}</span></nav>
     <article className="guideArticle"><header className="catalogHero"><span className="sectionKicker"><i/>{ar ? "دليل فني" : "TECHNICAL GUIDE"}</span><h1>{t.title}</h1><p>{t.intro}</p></header>
+      {product && <section className="guideProductSummary"><h2>{ar ? product.nameAr : product.name}</h2>{product.images?.[0] && <a href={`${prefix(lang)}/products/${product.slug}`}><img className="guideProductImage" src={product.images[0]} {...imageSize(product.images[0])} alt={ar ? product.nameAr : product.name} decoding="async" /></a>}<p><a href={`${prefix(lang)}/products/${product.slug}`}>{ar ? "صور المنتج وخيارات الطلب" : "View product photos and inquiry options"} ↗</a></p></section>}
       {t.sections.map(section => <section key={section.heading}><h2>{section.heading}</h2>{section.paragraphs?.map(p => <p key={p}>{p}</p>)}{section.bullets && <ul>{section.bullets.map(b => <li key={b}>{b}</li>)}</ul>}</section>)}
+      {product?.slug === "drilling-buckets" && <RockBucketSpecs lang={lang}/>}
+      {product?.slug === "rock-augers" && <AugerSpecs lang={lang}/>}
+      {product?.slug === "core-barrels" && <CoreBarrelSpecs lang={lang}/>}
+      {product?.slug === "cleaning-buckets" && <CleaningBucketSpecs lang={lang}/>}
       <aside className="guideTakeaway"><h2>{ar ? "الخطوة التالية" : "Next step"}</h2><p>{t.takeaway}</p><a className="primaryButton" href={`${prefix(lang)}/contact#quote-builder`}>{ar ? "اطلب عرض سعر" : "Request a quotation"} ↗</a></aside>
     </article>
     <section className="guideRelated"><h2>{ar ? "المنتجات ذات الصلة" : "Related products"}</h2><div className="guideLinks">{guide.related.map(slug => {const p = products.find(item => item.slug === slug); return p && <a key={slug} href={`${prefix(lang)}/products/${slug}`}>{ar ? p.nameAr : p.name} ↗</a>;})}</div><a href={`${prefix(lang)}/guides`}>{ar ? "جميع الأدلة" : "All guides"} ↗</a></section>
