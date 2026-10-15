@@ -1,6 +1,7 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0}a{text-decoration:none;color:inherit}.wrap{max-width:1280px;margin:auto;padding:0 32px}
 .simpleQuote{scroll-margin-top:110px;margin:64px auto 0;max-width:640px;padding:36px;background:#fff;border:1px solid #d4dfeb;border-radius:12px;box-shadow:0 8px 28px #12375b08}
 .simpleQuoteHead h2{font-size:clamp(28px,3vw,36px);line-height:1.15;letter-spacing:-.035em;margin:16px 0 12px}
+.simpleQuote+.contactCards{margin-top:40px}
 .simpleQuoteHead p{font-size:16px;color:#52657c;line-height:1.65;margin:0 0 28px}
 .simpleQuoteForm{display:grid;grid-template-columns:minmax(0,1fr);gap:9px}
 .simpleQuoteForm label{font-size:14px;font-weight:700;line-height:1.5;margin-top:8px}

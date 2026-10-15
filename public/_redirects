@@ -19,3 +19,13 @@
 /ar/products/c30-square-holder/ /ar/products/c30-holders 301
 /ar/products/c30-round-holder /ar/products/c30-holders 301
 /ar/products/c30-round-holder/ /ar/products/c30-holders 301
+
+# Consolidate HQ round holders with and without carbide buttons.
+/products/hq-68-95-holder /products/hq-round-holders 301
+/products/hq-68-95-holder/ /products/hq-round-holders 301
+/products/hq-78-95-holder /products/hq-round-holders 301
+/products/hq-78-95-holder/ /products/hq-round-holders 301
+/ar/products/hq-68-95-holder /ar/products/hq-round-holders 301
+/ar/products/hq-68-95-holder/ /ar/products/hq-round-holders 301
+/ar/products/hq-78-95-holder /ar/products/hq-round-holders 301
+/ar/products/hq-78-95-holder/ /ar/products/hq-round-holders 301

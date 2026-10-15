@@ -97,16 +97,11 @@ export const products: Product[] = [
     variants: [], images: ["/products/b-47k22h-tooth.webp"],
   },
   {
-    slug: "hq-68-95-holder", name: "HQ-68/95 Holder", nameAr: "حامل سن HQ-68/95", category: "Wear Parts",
-    description: "HQ-68/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering.",
-    descriptionAr: "حامل سن HQ-68/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب.",
-    variants: [], images: ["/products/hq-68-95-holder.webp"],
-  },
-  {
-    slug: "hq-78-95-holder", name: "HQ-78/95 Holder", nameAr: "حامل سن HQ-78/95", category: "Wear Parts",
-    description: "HQ-78/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering.",
-    descriptionAr: "حامل سن HQ-78/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب.",
-    variants: [], images: ["/products/hq-78-95-holder.webp"],
+    slug: "hq-round-holders", name: "HQ Round Holders", nameAr: "حوامل أسنان HQ الدائرية", category: "Wear Parts",
+    description: "HQ round tooth holders available with or without carbide buttons. Confirm socket dimensions, mounting details and tooth compatibility before ordering.",
+    descriptionAr: "حوامل أسنان HQ دائرية متوفرة مع أزرار كربيد أو بدونها. يُرجى تأكيد أبعاد التجويف وتفاصيل التثبيت وتوافق السن قبل الطلب.",
+    variants: ["With carbide buttons", "Without carbide buttons"],
+    images: ["/products/hq-68-95-holder.webp", "/products/hq-78-95-holder.webp"],
   },
   {
     slug: "b43-holder", name: "B43 Holder", nameAr: "حامل سن B43", category: "Wear Parts",

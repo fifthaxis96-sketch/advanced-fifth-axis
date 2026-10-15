@@ -123,14 +123,6 @@
     "title": "بكيتات حفر الصخور | معدات حفر الأساسات السعودية",
     "description": "بكيتات حفر الصخور بأسنان قطع لأعمال الأساسات. مقاس كيلي بوكس القياسي 200×200 مم. يُرجى تأكيد القطر والأسنان وجسم البكيت والتوافق مع المعدة لكل طلب."
   },
-  "/ar/products/hq-68-95-holder": {
-    "title": "حامل سن HQ-68/95 | معدات حفر الأساسات السعودية",
-    "description": "حامل سن HQ-68/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب."
-  },
-  "/ar/products/hq-78-95-holder": {
-    "title": "حامل سن HQ-78/95 | معدات حفر الأساسات السعودية",
-    "description": "حامل سن HQ-78/95 كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التجويف وطريقة التثبيت وتوافق السن قبل الطلب."
-  },
   "/ar/products/kelly-bars": {
     "title": "إصلاح قضبان كيلي | معدات حفر الأساسات السعودية",
     "description": "خدمات إصلاح قضبان كيلي التعشيق والاحتكاك لمعدات الحفر الدوار. أرسل الصور والأبعاد وموديل المعدة وتفاصيل التلف لتقييم نطاق الإصلاح والتوافق."
@@ -291,14 +283,6 @@
     "title": "Rock Buckets | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
     "description": "Rock drilling buckets with cutting teeth for foundation work. Standard Kelly box: 200×200 mm. Confirm the diameter, teeth, shell and rig interface for each order."
   },
-  "/products/hq-68-95-holder": {
-    "title": "HQ-68/95 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
-    "description": "HQ-68/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering."
-  },
-  "/products/hq-78-95-holder": {
-    "title": "HQ-78/95 Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
-    "description": "HQ-78/95 tooth holder shown in the supplied product photograph. Confirm socket dimensions, mounting method and tooth compatibility before ordering."
-  },
   "/products/kelly-bars": {
     "title": "Kelly Bar Repair | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
     "description": "Repair services for interlocking and friction Kelly bars used on rotary drilling rigs. Share photos, dimensions, the rig model and details of the damage so the repair scope and compatibility can be assessed."
@@ -366,5 +350,13 @@
   "/ar/products/c30-holders": {
     "title": "حوامل أسنان C30 مربعة ودائرية | معدات حفر الأساسات السعودية",
     "description": "حوامل أسنان C30 بشكلين مربع ودائري. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
+  },
+  "/products/hq-round-holders": {
+    "title": "HQ Round Holders | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "HQ round tooth holders available with or without carbide buttons. Confirm socket dimensions, mounting details and tooth compatibility before ordering."
+  },
+  "/ar/products/hq-round-holders": {
+    "title": "حوامل أسنان HQ الدائرية | معدات حفر الأساسات السعودية",
+    "description": "حوامل أسنان HQ دائرية متوفرة مع أزرار كربيد أو بدونها. يُرجى تأكيد أبعاد التجويف وتفاصيل التثبيت وتوافق السن قبل الطلب."
   }
 }
