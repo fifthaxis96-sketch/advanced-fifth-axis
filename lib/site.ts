@@ -157,7 +157,7 @@ export const products: Product[] = [
     slug: "casing", name: "Casing & Components", nameAr: "مواسير التغليف وملحقاتها", category: "Casing",
     description: "Foundation drilling casing and related components for bore support and casing operations. Diameter, wall arrangement, joint type, length and tool interface are confirmed for the project before supply.",
     descriptionAr: "مواسير تغليف ومكونات مرتبطة بحفر الأساسات لدعم الحفرة وعمليات التغليف. يتم تأكيد القطر وتركيب الجدار ونوع الوصلة والطول وواجهة الأداة حسب المشروع قبل التوريد.",
-    variants: ["Double wall casing", "Casing drive", "Casing shoe"],
+    variants: ["Single wall casing", "Casing shoe"],
     images: ["/products/owner-blue-toothed-casing.webp"],
   },
   {
