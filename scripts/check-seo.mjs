@@ -24,6 +24,25 @@ for (const [route, entry] of Object.entries(settings)) {
   const block = blocks.find(b => b.includes(`<loc>${url}</loc>`));
   assert.ok(block, `${route}: missing sitemap URL`);
   for (const lang of ['en', 'ar', 'x-default']) assert.ok(block.includes(`hreflang="${lang}"`), `${route}: missing sitemap language ${lang}`);
+  if (route.includes('/guides/')) {
+    const entities = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
+      .flatMap(m => { const data = JSON.parse(m[1]); return data['@graph'] || [data]; });
+    const article = entities.find(n => n['@type'] === 'Article');
+    assert.ok(article, `${route}: missing Article entity`);
+    assert.equal(article.headline, entry.title, `${route}: Article headline must match editable title`);
+    assert.equal(article.description, entry.description, `${route}: Article description must match editable description`);
+    if (article.about?.['@id']) {
+      const target = new URL(article.about['@id']);
+      const productHtml = readFileSync(`out${target.pathname}.html`, 'utf8');
+      assert.ok(productHtml.includes(`"@id":"${article.about['@id']}"`), `${route}: undefined product entity reference`);
+    }
+    if (article.image?.length) {
+      const social = html.match(/<meta property="og:image" content="([^"]*)"/)?.[1];
+      const twitter = html.match(/<meta name="twitter:image" content="([^"]*)"/)?.[1];
+      assert.equal(social, article.image[0], `${route}: use article product image for sharing`);
+      assert.equal(twitter, article.image[0], `${route}: consistent Twitter article image`);
+    }
+  }
   if (route.includes('/products/')) {
     const product = [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)]
       .flatMap(m => { const data = JSON.parse(m[1]); return data['@graph'] || [data]; })

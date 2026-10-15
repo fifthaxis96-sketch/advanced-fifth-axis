@@ -1,0 +1,45 @@
+{
+  "canonical_pages": 142,
+  "http_200": 142,
+  "issues": [],
+  "crawl_client": "AdvancedFifthAxis-SiteAudit/1.0 (+https://advanced-fifthaxis.com/)",
+  "coverage": [
+    "status",
+    "canonical",
+    "robots",
+    "document language",
+    "H1",
+    "configured description",
+    "image alt and dimensions",
+    "duplicate IDs",
+    "JSON-LD parsing",
+    "local fragment targets"
+  ],
+  "support_files": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "final": "https://advanced-fifthaxis.com/robots.txt",
+      "type": "text/plain",
+      "sample": "User-Agent: *\nAllow: /\n\nHost: https://advanced-fifthaxis.com\nSitemap: https://advanced-fifthaxis.com/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "final": "https://advanced-fifthaxis.com/sitemap.xml",
+      "type": "application/xml",
+      "sample": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:image=\"http://w"
+    },
+    {
+      "path": "/llms.txt",
+      "status": 200,
+      "final": "https://advanced-fifthaxis.com/llms.txt",
+      "type": "text/plain",
+      "sample": "# Advanced Fifth Axis\n\n> Foundation drilling tools, casing, wear parts, Kelly systems and custom steel fabrication in Je"
+    },
+    {
+      "path": "/this-page-does-not-exist-audit-20261016",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

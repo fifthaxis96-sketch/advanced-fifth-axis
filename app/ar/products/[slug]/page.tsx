@@ -30,7 +30,7 @@ export default async function ProductPage({params}:{params:Promise<{slug:string}
   const graph={
     "@context":"https://schema.org",
     "@graph":[
-      {"@type":"Product",name:p.nameAr,alternateName:p.name,description:p.descriptionAr,image:p.images?.map(src=>base+src),brand:{"@type":"Brand",name:"Advanced Fifth Axis"},category:p.category,url},
+      {"@type":"Product","@id":`${base}/products/${p.slug}#product`,name:p.nameAr,alternateName:p.name,description:p.descriptionAr,image:p.images?.map(src=>base+src),brand:{"@type":"Brand",name:"Advanced Fifth Axis"},category:p.category,url},
       {"@type":"BreadcrumbList",itemListElement:[
         {"@type":"ListItem",position:1,name:"الرئيسية",item:`${base}/ar`},
         {"@type":"ListItem",position:2,name:"المنتجات",item:`${base}/ar/products`},

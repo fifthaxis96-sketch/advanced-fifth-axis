@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 export const metadata: Metadata = { title: "Page not found", robots: { index: false, follow: false }, alternates: { canonical: null } };
 export default function NotFound(){
-  return <main className="notFoundPage">
+  return <main id="main-content" className="notFoundPage">
     <div className="notFoundCard">
       <img src="/advanced-fifth-axis-logo.webp" alt="Advanced Fifth Axis" width="637" height="527"/>
       <span>404</span>

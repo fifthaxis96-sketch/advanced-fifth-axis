@@ -48,7 +48,7 @@ export function QuoteBuilder({ lang, compact = false }: { lang: "en" | "ar"; com
     setError("");
     const p = products.find(p => p.slug === slug);
     const lines = [ar ? "مرحبًا، أود طلب عرض سعر." : "Hello, I would like to request a quotation."];
-    lines.push(...inquiryContextLines({ product: p, lang, pathname: ar ? "/ar/contact" : "/contact" }));
+    lines.push(...inquiryContextLines({ product: p, lang, pathname: compact ? (ar ? "/ar" : "/") : (ar ? "/ar/contact" : "/contact") }));
     if (slug === "custom") lines.push(ar ? "المنتج: طلب خاص / تصنيع حسب الطلب" : "Product: Other / custom request");
     if (quantity.trim()) lines.push(`${ar ? "الكمية" : "Quantity"}: ${quantity.trim()}`);
     lines.push(`${ar ? "الطلب" : "Requirement"}: ${requirement.trim()}`);
