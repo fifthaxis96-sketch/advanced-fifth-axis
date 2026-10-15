@@ -3,20 +3,11 @@ import type { Product } from "./site";
 const origin = "https://advanced-fifthaxis.com";
 type Context = { product?: Product; lang: "en" | "ar"; pathname?: string; variant?: string };
 
-export function inquiryContextLines({ product, lang, pathname = "/", variant }: Context): string[] {
-  const ar = lang === "ar";
-  if (!product) return [`${ar ? "الصفحة" : "Page"}: ${origin}${pathname}`];
-  const page = `${origin}${ar ? "/ar" : ""}/products/${product.slug}`;
-  const lines = [
-    `${ar ? "المنتج" : "Product"}: ${ar ? product.nameAr : product.name}`,
-    `${ar ? "مرجع المنتج" : "Product reference"}: ${product.slug}`,
-  ];
-  if (variant && product.variants.includes(variant)) lines.push(`${ar ? "الخيار" : "Option"}: ${variant}`);
-  lines.push(`${ar ? "رابط المنتج" : "Product page"}: ${page}`);
-  for (const [index, image] of (product.images || []).entries()) {
-    lines.push(`${ar ? "صورة المنتج" : "Product photo"}${index ? ` ${index + 1}` : ""}: ${origin}${image}`);
-  }
-  return lines;
+// A single page link lets WhatsApp create the product preview without repeating its details.
+export function inquiryContextLines({ product, lang, pathname = "/" }: Context): string[] {
+  return [product
+    ? `${origin}${lang === "ar" ? "/ar" : ""}/products/${product.slug}`
+    : `${origin}${pathname}`];
 }
 
 export function inquiryLinks(context: Context, phone: string, email: string) {
