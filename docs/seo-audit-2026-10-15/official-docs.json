@@ -1,0 +1,142 @@
+[
+  {
+    "name": "localized",
+    "url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "final_url": "https://developers.google.com/search/docs/specialty/international/localized-versions",
+    "status": 200,
+    "excerpts": [
+      "Each language version must list itself as well as all other language versions.",
+      "Alternate URLs must be fully-qualified, including the transport method (http/https), so:",
+      "Consider adding a fallback page for unmatched languages, especially on language/country selectors or auto-redirecting home pages. Use the the x-default value:",
+      "<link rel=\"alternate\" href=\"https://example.com/\" hreflang=\"x-default\" />",
+      "the page, or x-default to match any language not explicitly listed by an",
+      "The fully-qualified URL for the version of this page for the specified language/region.",
+      "<link rel=\"alternate\" hreflang=\"x-default\"",
+      "The fully-qualified URL of the alternate page corresponding to the locale string assigned",
+      "the page, or x-default to matches any language not explicitly listed by an",
+      "Use the x-default value for unmatched languages",
+      "The reserved x-default value is used when no other language/region matches the",
+      "the x-default value for any page, it was designed for language selector pages and",
+      "There's no need to specify a language code for the x-default value; the page is",
+      "To implement the hreflang=\"x-default\" annotation, add an additional",
+      "<link rel=\"alternate\" href=\"https://example.com/country-selector\" hreflang=\"x-default\" />",
+      "Missing return links: If page X links to page Y, page Y must link back to page X. If",
+      "[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Missing the information I need\",\"missingTheInformationINeed\",\"thumb-down\"],[\"Too complicated / too many steps\",\"tooComplicatedTooManySteps\",\"thumb-down\"],[\"Out of date\",\"outOfDate\",\"thumb-down\"],[\"Samples / code issue\",\"samplesCodeIssue\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-09-21 UTC.\"],[],[\"To help Google direct users to the correct language/region version of your pages, use `hreflang` attributes. Implement these via HTML `\\u003clink\\u003e` tags, HTTP headers, or XML sitemaps, ensuring bidirectional linking among all variants. Use ISO codes for language (639-1) and region (3166-1 Alpha 2) and provide an `x-default` for unmatched languages. Verify all pages must link to all of the variants including themselves, and use valid, fully-qualified URLs. Use debugging tools to maintain `hreflang` tags.\\n\"]]"
+    ]
+  },
+  {
+    "name": "canonical",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "final_url": "https://developers.google.com/search/docs/crawling-indexing/consolidate-duplicate-urls",
+    "status": 200,
+    "excerpts": [
+      "<link rel=\"canonical\" href=\"https://example.com/dresses/green-dresses\" />",
+      "rel=\"canonical\" link element to the canonical page itself as well.",
+      "<link rel=\"canonical\" href=\"https://example.com/dresses/green-dresses\" />",
+      "Use absolute paths rather than relative paths with the rel=\"canonical\"",
+      "The rel=\"canonical\" link element is only accepted if it",
+      "If you use JavaScript to add the rel=\"canonical\" link element,",
+      "with a rel=\"canonical\" target attribute as defined by",
+      "their own URL, you can return a rel=\"canonical\" HTTP header to tell",
+      "Link: <https://www.example.com/downloads/white-paper.pdf>; rel=\"canonical\"",
+      "As with the rel=\"canonical\" link element, use absolute URLs",
+      "listed in a sitemap are suggested as canonicals; Google will decide which pages",
+      "Supplying the preferred canonical URLs in the sitemaps is a straightforward way of defining",
+      "canonicals for a large site, and sitemaps are a useful way to tell Google which pages",
+      "For the quickest effect, use HTTP (also known as server-side) redirects.",
+      "Pick one of those URLs as your canonical URL, and use redirects to send traffic from",
+      "The HTTPS page redirects users to or through an HTTP page.",
+      "The HTTPS page has a rel=\"canonical\" link",
+      "Add redirects from the HTTP page to the HTTPS page.",
+      "Add a rel=\"canonical\" link from the HTTP",
+      "Avoid bad TLS/SSL certificates and HTTPS-to-HTTP redirects because they cause Google",
+      "Don't include the HTTP version of your pages in your sitemap or",
+      "[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Missing the information I need\",\"missingTheInformationINeed\",\"thumb-down\"],[\"Too complicated / too many steps\",\"tooComplicatedTooManySteps\",\"thumb-down\"],[\"Out of date\",\"outOfDate\",\"thumb-down\"],[\"Samples / code issue\",\"samplesCodeIssue\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-07-10 UTC.\"],[],[\"Canonical URLs are specified through redirects, `rel=\\\"canonical\\\"` link elements or HTTP headers, or sitemap inclusion. Redirects are strongest, used for deprecation; `rel=\\\"canonical\\\"` methods are strong signals for HTML or non-HTML files respectively. Sitemaps are a weaker signal. Use consistent absolute URLs, avoid `robots.txt` and `noindex`. Multiple methods can be used for stronger signaling. For HTTPS and HTTP variations, redirect from HTTP to HTTPS and ensure correct certificate usage. Prefer HTTPS versions in sitemaps and `hreflang` implementation.\\n\"]]"
+    ]
+  },
+  {
+    "name": "product",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+    "final_url": "https://developers.google.com/search/docs/appearance/structured-data/product-snippet",
+    "status": 200,
+    "excerpts": [
+      "Review type is described separately in the",
+      "The following properties are additional properties for the Review type to help people",
+      "see a high-level summary of the pros and cons of an editorial product review.",
+      "review, you can explicitly provide this information by adding the positiveNotes and/or",
+      "negativeNotes properties to your nested product review. Be sure to follow the",
+      "Positive and negative notes (pros and cons) inside the Review type make use",
+      "The following properties are used to capture pros and cons in a review.",
+      "The position of the review. Position 1 signifies the first statement in the list.",
+      "offers within a product, use the following properties of the schema.org",
+      "If you use both the offers.price and offers.priceSpecification",
+      "the offers.price property and ignore the offers.priceSpecification",
+      "determine the currency more accurately, but required for merchant listing experiences.",
+      "it avoids pricing ambiguities and it's required for merchant",
+      "other offers. For example, it can be used for a product that is being sold by multiple merchants.",
+      "When marking up aggregate offers within a product, use the following properties of the schema.org",
+      "The lowest price of all offers available. Use a decimal separator (.) when",
+      "The highest price of all offers available. Use a floating point number if necessary.",
+      "The number of offers for the product.",
+      "For other product related pages such as product reviews and aggregator sites.",
+      "Review the guidelines again to identify if your content isn't compliant",
+      "guide to review a step-by-step approach to identify, fix, and validate these issues in Search Console.",
+      "[[[\"Easy to understand\",\"easyToUnderstand\",\"thumb-up\"],[\"Solved my problem\",\"solvedMyProblem\",\"thumb-up\"],[\"Other\",\"otherUp\",\"thumb-up\"]],[[\"Missing the information I need\",\"missingTheInformationINeed\",\"thumb-down\"],[\"Too complicated / too many steps\",\"tooComplicatedTooManySteps\",\"thumb-down\"],[\"Out of date\",\"outOfDate\",\"thumb-down\"],[\"Samples / code issue\",\"samplesCodeIssue\",\"thumb-down\"],[\"Other\",\"otherDown\",\"thumb-down\"]],[\"Last updated 2026-09-08 UTC.\"],[],[\"Structured data enhances product visibility in search results using formats like JSON-LD, RDFa, and Microdata. To implement, add required properties to pages, validate with testing tools, and deploy incrementally. Key properties include product `name`, `offers`, `review`, and `aggregateRating`. Aggregate offers, pros and cons sections, and unit prices are supported. Use a sitemap to keep changes updated, and use the Search Console to monitor performance, fix issues, and analyze traffic related to rich results.\\n\"]]"
+    ]
+  },
+  {
+    "name": "faq",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/faqpage",
+    "final_url": "https://developers.google.com/search/updates#removing-faq-rich-result",
+    "status": 200,
+    "excerpts": [
+      "Removing documentation for the FAQ rich result feature",
+      "What: Removed documentation for the FAQ rich result feature.",
+      "Why: The FAQ rich result feature is no longer shown in Google Search results, as announced in the changelog entry in May 2026.",
+      "Why: This feature will no longer appear in Google Search starting May 7, 2026."
+    ]
+  },
+  {
+    "name": "ai",
+    "url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "final_url": "https://developers.google.com/search/docs/appearance/ai-features",
+    "status": 200,
+    "excerpts": [
+      "Understand how structured data works",
+      "Generate structured data with JavaScript",
+      "and AI Mode). There are no additional requirements to appear in AI Overviews or AI Mode,",
+      "nor other special optimizations necessary. That said, it's always good to review the",
+      "technical requirements for Google Search,",
+      "Technical requirements for appearing in AI features",
+      "Search technical requirements. There are no",
+      "Just because a page meets all requirements, best practices, and complies",
+      "You don't need to create new machine readable files, AI text files, or markup to",
+      "appear in these features. There's also no special schema.org structured data that you need to add."
+    ]
+  },
+  {
+    "name": "sitemap",
+    "url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "final_url": "https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap",
+    "status": 200,
+    "excerpts": [
+      "Google ignores <priority> and <changefreq> values.",
+      "Google uses the <lastmod> value if it's consistently and verifiably (for",
+      "example by comparing to the last modification of the page) accurate.",
+      "The <lastmod> value should reflect the date and time of the last",
+      "Keep in mind that submitting a sitemap is merely a hint: it doesn't guarantee that Google will"
+    ]
+  },
+  {
+    "name": "indexing-api",
+    "url": "https://developers.google.com/search/apis/indexing-api/v3/using-api",
+    "final_url": "https://developers.google.com/search/apis/indexing-api/v3/using-api",
+    "status": 200,
+    "excerpts": [
+      "also get the status of notifications that you have sent to Google. The Indexing API can only be",
+      "BroadcastEvent embedded in a VideoObject.",
+      "You can submit one URL only in the body of an update request, or combine up to 100 requests",
+      "URL; it only returns whether you successfully submitted a request."
+    ]
+  }
+]

@@ -87,6 +87,11 @@ def main():
         try:
             with urlopen(args.base.rstrip("/") + path, timeout=25) as r:
                 return path, r.read().decode(), r.status, {k.lower(): v for k,v in r.headers.items()}, None
+        except HTTPError as e:
+            headers = {k.lower(): v for k,v in e.headers.items()}
+            error_body = e.read(2000).decode(errors="replace")
+            reason = f"HTTP {e.code}: Cloudflare error 1010" if "error code: 1010" in error_body else str(e)
+            return path, "", e.code, headers, reason
         except Exception as e:
             return path, "", getattr(e, "code", None), {}, str(e)
 
@@ -109,7 +114,10 @@ def main():
         ar = path == "/ar" or path.startswith("/ar/")
         enpath = re.sub(r"^/ar(?=/|$)", "", path) or "/"
         counterpart = enpath if ar else "/ar" + ("" if path == "/" else path)
-        row = {"path": path, "language": "ar" if ar else "en", "disposition": "retain and improve", "scope": scope, "http_status": status, "http_error": error, "production_verification": "blocked: network proxy denies destination" if remote and error and "403" in error else ("verified HTTP response" if remote and not error else "not run"), "counterpart": counterpart}
+        verification = "not run"
+        if remote:
+            verification = "blocked: Cloudflare error 1010" if error and "Cloudflare error 1010" in error else ("blocked: " + error if error else "verified HTTP response")
+        row = {"path": path, "language": "ar" if ar else "en", "disposition": "retain and improve", "scope": scope, "http_status": status, "http_error": error, "production_verification": verification, "counterpart": counterpart, "cf_ray": headers.get("cf-ray")}
         if path in pages:
             p = pages[path]
             nodes = [n for schema in p.schemas for n in schema.get("@graph", [schema])]

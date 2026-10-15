@@ -1,0 +1,29 @@
+{
+  "source_commit": "1a21c4907aa2a61c4c6e24d38dbc3a3ecc596393",
+  "branch": "main",
+  "push": "succeeded; remote main confirmed at source SHA after push",
+  "quality_workflow": {
+    "id": 38763936275,
+    "head_sha": "1a21c4907aa2a61c4c6e24d38dbc3a3ecc596393",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/fifthaxis96-sketch/advanced-fifth-axis/actions/runs/38763936275"
+  },
+  "cloudflare_deployment": "unverified; local CLI unauthenticated; GitHub deployments list empty; no build ID or deployed version observed",
+  "production_canonical_page_responses": {
+    "count": 90,
+    "status": 403,
+    "body": "error code: 1010",
+    "provider": "Cloudflare",
+    "cf_ray": "Per-URL values recorded in production-audit.json"
+  },
+  "www_redirect": {
+    "status": 301,
+    "source": "https://www.advanced-fifthaxis.com/products?audit=1",
+    "destination": "https://advanced-fifthaxis.com/products?audit=1",
+    "scope": "one observed production rule preserves path/query; apex response then blocked"
+  },
+  "browser": "Chromium external navigation failed TLS trust; verification was not disabled",
+  "google_indexing": "unavailable; no valid Google credential or Search Console connector",
+  "production_verified": false
+}

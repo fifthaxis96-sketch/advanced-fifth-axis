@@ -1,0 +1,18 @@
+[
+  {
+    "path": "/",
+    "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://advanced-fifthaxis.com/\nCall log:\n  - navigating to \"https://advanced-fifthaxis.com/\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "path": "/ar",
+    "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://advanced-fifthaxis.com/ar\nCall log:\n  - navigating to \"https://advanced-fifthaxis.com/ar\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "path": "/robots.txt",
+    "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://advanced-fifthaxis.com/robots.txt\nCall log:\n  - navigating to \"https://advanced-fifthaxis.com/robots.txt\", waiting until \"domcontentloaded\"\n"
+  },
+  {
+    "path": "/sitemap.xml",
+    "error": "Page.goto: net::ERR_CERT_AUTHORITY_INVALID at https://advanced-fifthaxis.com/sitemap.xml\nCall log:\n  - navigating to \"https://advanced-fifthaxis.com/sitemap.xml\", waiting until \"domcontentloaded\"\n"
+  }
+]

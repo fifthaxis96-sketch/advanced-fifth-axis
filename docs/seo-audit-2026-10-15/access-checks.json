@@ -1,12 +1,29 @@
 {
   "date": "2026-10-15",
-  "native_git_read": "git ls-remote succeeded for the configured HTTPS origin",
-  "git_push_dry_run_before_commit": "Everything up-to-date; this alone does not prove a later push or deployment succeeded",
-  "github_api": "gh api repository, check-runs and workflow-runs requests returned Forbidden; injected GH_TOKEN name is present but its value was never printed",
-  "cloudflare_cli": "wrangler whoami: You are not authenticated. No Cloudflare binding was present in inspected environment configuration or variable names",
-  "public_site_and_google_docs": "HTTPS CONNECT denied by network proxy with 403 Forbidden, including escalated public read attempt",
-  "google_search_console": "No callable connector exposed; no current property, permission or indexing result available",
-  "bing_and_indexnow": "No callable connector exposed; no existing IndexNow key in inspected repository/configuration; no submission performed",
-  "runtime_network": "Required domain additions saved in environment draft; save does not apply runtime access",
-  "credential_handling": "Inspected names/presence and tool status only; no secret values printed, copied or requested in chat"
+  "initial_network": "CONNECT requests denied initially; draft domains saved; GitHub API and official Google docs later became reachable",
+  "native_git": "Source commit pushed and remote main verified; injected binding reused",
+  "github_api": "Quality run passed for source commit; repository permissions include push. Secrets listing denied with Resource not accessible by integration; no attempt to extract secrets",
+  "cloudflare_cli": "whoami unauthenticated; CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID absent; no credential binding in inspected draft",
+  "production_http": "90 known canonical pages return HTTP 403, Cloudflare error 1010; verified TLS HTTP client retains certificate checks; cannot infer verified Googlebot behavior",
+  "google_credentials": "GOOGLE_APPLICATION_CREDENTIALS points to an empty JSON object; no usable credential. GSC_ACCESS_TOKEN absent. No Search Console/Analytics/Bing connector exposed",
+  "pagespeed": "API returned HTTP 429, so no PageSpeed field score obtained",
+  "browser_tls": "External Chromium requests fail ERR_CERT_AUTHORITY_INVALID. Broad CA-store change was rejected by automatic approval review; no TLS bypass performed",
+  "draft_requirements_saved": {
+    "secrets": [
+      "CLOUDFLARE_API_TOKEN",
+      "GSC_ACCESS_TOKEN"
+    ],
+    "variables": [
+      "CLOUDFLARE_ACCOUNT_ID",
+      "GSC_PROPERTY"
+    ],
+    "secret_destinations": [
+      "api.cloudflare.com",
+      "www.googleapis.com",
+      "searchconsole.googleapis.com"
+    ],
+    "runtime_application": "not established by draft save"
+  },
+  "credential_handling": "Names, field presence and statuses only; no token/key values printed or copied",
+  "cloudflare_plugin": "User explicitly requested the Cloudflare plugin after the initial push. The link was received, but tool discovery exposed no callable Cloudflare tools; no plugin account operation was possible. Prefer this plugin when its tools are enabled."
 }
