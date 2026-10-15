@@ -438,3 +438,46 @@ button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-vis
 @media(max-width:600px){.floatingContacts{position:static;transform:none;width:auto;display:flex;justify-content:center;gap:12px;padding:20px;background:#071e3a}.floatingContacts a{transform:none;border-radius:12px}.floatingContacts a:hover,.floatingContacts a:focus-visible{transform:none}}
 
 .guideProductImage{display:block;width:100%;max-width:560px;height:auto;max-height:420px;object-fit:contain;background:#f6f8fa;border-radius:12px;margin-block:20px}.guideProductSummary a{color:#155ca0}.guideArticle .rockBucketTableScroll{max-width:100%;overflow-x:auto}
+
+/* Approved option 2: soft rounded actions, with stationary labels. */
+.site :is(.primaryButton,.outlineButton,.headerCta,.simpleQuotePrimary,.quoteListButton,.quoteAddButton,.quoteEmail),
+.site :is(.tileText b,.collectionCard b,.guideCard b,.hotProductsAll a){
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:48px;padding:13px 24px;border-radius:999px;border:1px solid #1878c2;
+  font-weight:750;line-height:1.4;text-align:center;text-decoration:none;
+  background:linear-gradient(180deg,#167bc6,#07579c);color:#fff;
+  box-shadow:inset 0 1px 0 #ffffff38,0 5px 12px #092f5426;
+  transition:background .16s,box-shadow .16s,transform .12s;
+}
+.site :is(.tileText b,.collectionCard b,.guideCard b){align-self:flex-start;font-size:13px;margin-top:auto}
+.site .guideCard{display:flex;flex-direction:column}.site .guideCard b{margin-top:24px}
+.site :is(.headerCta,.primaryButton.quotationButton){
+  background:linear-gradient(180deg,#ffe16b,#f4c72c);color:#102b54;border-color:#edc12d;
+  box-shadow:inset 0 1px 0 #ffffff90,0 5px 12px #092f5426;
+}
+.site .outlineButton,.site .hotProductsAll a,.site .guideCard b{
+  background:#fff;color:#105995;border-color:#9fbed7;box-shadow:0 3px 9px #092f5412;
+}
+.site .heroShowcase .primaryButton:not(.quotationButton){background:linear-gradient(180deg,#167bc6,#07579c);color:#fff}
+.site :is(.primaryButton,.headerCta,.simpleQuotePrimary,.quoteListButton,.quoteAddButton):hover,
+.site :is(.productTile,.collectionCard):hover :is(.tileText b,.collectionCard b){box-shadow:inset 0 1px 0 #ffffff55,0 7px 16px #092f5433}
+.site :is(.outlineButton,.hotProductsAll a,.guideCard b):hover{background:#eaf3fc;color:#084b86}
+.site :is(.primaryButton,.outlineButton,.headerCta,.simpleQuotePrimary,.quoteListButton,.quoteAddButton,.quoteEmail):active{
+  transform:translateY(2px);box-shadow:inset 0 2px 4px #092f5420,0 1px 3px #092f5420;
+}
+.site :is(.productTile,.collectionCard,.guideCard):hover,
+.site .hotProduct:hover .hotProductThumb,.site .hotProduct:focus-visible .hotProductThumb{transform:none}
+.site :is(.productTile,.collectionCard){border-radius:16px;overflow:hidden}
+.site .siteNav a[aria-current="page"]{text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:2px}
+.site :is(a,button):focus-visible{outline:3px solid #e6a900;outline-offset:4px}
+@media(max-width:1000px){.site .siteNav a{display:inline-flex;align-items:center;min-height:44px}}
+@media(max-width:600px){
+  .site .heroButtons{flex-direction:column;align-items:stretch}
+  .site .heroButtons :is(.primaryButton,.outlineButton){width:100%;min-height:48px;font-size:14px}
+  .site .productDetails>.primaryButton,.site .finderPromo>.primaryButton,.site .collectionCta>.primaryButton{width:100%}
+  .site .hotProductsNav{width:44px;height:44px}
+  .site .hotProductsSlider{grid-template-columns:44px minmax(0,1fr) 44px}
+}
+@media(prefers-reduced-motion:reduce){
+  .site :is(.primaryButton,.outlineButton,.headerCta,.simpleQuotePrimary,.quoteListButton,.quoteAddButton,.quoteEmail,.productTile,.collectionCard,.guideCard,.hotProductThumb){transition:none;transform:none}
+}

@@ -96,7 +96,7 @@ export function QuoteBuilder({ lang }: { lang: "en" | "ar" }) {
           <input id="inquiry-details" name="details" value={details} maxLength={300} onChange={event => setDetails(event.target.value)} placeholder={ar ? "إن كانت متوفرة" : "Only if known"} />
         </div>
       </details>
-      <button type="submit" name="channel" value="whatsapp" className="simpleQuotePrimary">{ar ? "المتابعة في واتساب" : "Continue in WhatsApp"} <span aria-hidden="true">↗</span></button>
+      <button type="submit" name="channel" value="whatsapp" className="simpleQuotePrimary">{ar ? "المتابعة في واتساب" : "Continue in WhatsApp"} </button>
       <button type="submit" name="channel" value="email" className="simpleQuoteEmail">{ar ? "إرسال الطلب عبر البريد بدلًا من ذلك" : "Email this request instead"}</button>
       <p className="simpleQuoteNote">{ar ? "راجع الطلب وأرسله في واتساب. يمكنك إرفاق الصور أو الرسومات هناك." : "Review and send in WhatsApp. Attach photos or drawings there."}</p>
       <p className="simpleQuoteStatus" role="status" aria-live="polite">{status}</p>

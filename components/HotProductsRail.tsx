@@ -50,7 +50,6 @@ export function HotProductsRail({ items, lang }: { items: HotItem[]; lang: "en" 
       {items.map(item => <a className="hotProduct" href={item.href} key={item.key} draggable={false}>
         <span className="hotProductThumb">{item.image && <img src={productThumbnail(item.image,"small")} alt={item.name} loading="lazy" decoding="async" width="100" height="100" draggable={false}/>}</span>
         <span className="hotProductName">{item.name}</span>
-        <span className="hotProductArrow" aria-hidden="true">↗</span>
       </a>)}
     </div>
     <button type="button" className="hotProductsNav" onClick={() => scroll(1)} aria-label={lang === "ar" ? "المنتجات التالية" : "Next products"}>{lang === "ar" ? "‹" : "›"}</button>
