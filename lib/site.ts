@@ -84,16 +84,11 @@ export const products: Product[] = [
     variants: [], images: ["/products/c31hd-tooth.webp"],
   },
   {
-    slug: "c30-square-holder", name: "C30 Square Holder", nameAr: "حامل سن C30 مربع", category: "Wear Parts",
-    description: "C30 square holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering.",
-    descriptionAr: "حامل سن C30 المربع كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
-    variants: [], images: ["/products/c30-square-holder-20260927.webp"],
-  },
-  {
-    slug: "c30-round-holder", name: "C30 Round Holder", nameAr: "حامل سن C30 دائري", category: "Wear Parts",
-    description: "C30 round holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering.",
-    descriptionAr: "حامل سن C30 الدائري كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
-    variants: [], images: ["/products/c30-round-holder.webp"],
+    slug: "c30-holders", name: "C30 Square & Round Holders", nameAr: "حوامل أسنان C30 مربعة ودائرية", category: "Wear Parts",
+    description: "C30 tooth holders available in square and round shapes. Confirm the mounting dimensions and tooth compatibility before ordering.",
+    descriptionAr: "حوامل أسنان C30 بشكلين مربع ودائري. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب.",
+    variants: ["Square holder", "Round holder"],
+    images: ["/products/c30-square-holder-20260927.webp", "/products/c30-round-holder.webp"],
   },
   {
     slug: "b-47k22h-tooth", name: "B-47K22H Cutting Tooth", nameAr: "سن حفر B-47K22H", category: "Wear Parts",

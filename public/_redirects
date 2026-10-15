@@ -9,3 +9,13 @@
 /products/casing-twister/ /products/casing-drive 301
 /ar/products/casing-twister /ar/products/casing-drive 301
 /ar/products/casing-twister/ /ar/products/casing-drive 301
+
+# Consolidate the C30 holder shapes into one product.
+/products/c30-square-holder /products/c30-holders 301
+/products/c30-square-holder/ /products/c30-holders 301
+/products/c30-round-holder /products/c30-holders 301
+/products/c30-round-holder/ /products/c30-holders 301
+/ar/products/c30-square-holder /ar/products/c30-holders 301
+/ar/products/c30-square-holder/ /ar/products/c30-holders 301
+/ar/products/c30-round-holder /ar/products/c30-holders 301
+/ar/products/c30-round-holder/ /ar/products/c30-holders 301

@@ -11,7 +11,7 @@ const tasks = [
   {key:"casing", en:"Support or rotate casing", ar:"تغليف الحفرة أو تدوير المواسير", slugs:["casing","casing-drive"]},
   {key:"concrete", en:"Place concrete through a tremie", ar:"صب الخرسانة بواسطة مواسير التريمي", slugs:["wire-tremie-pipe"]},
   {key:"cfa", en:"Continuous flight drilling", ar:"الحفر بالأوجر المستمر", slugs:["cfa"]},
-  {key:"wear", en:"Replace a cutting tooth or holder", ar:"استبدال سن أو حامل قطع", slugs:["c31hd-tooth","c30-square-holder","c30-round-holder","bfz70-tooth","bfz70-holder","roller-bits"]},
+  {key:"wear", en:"Replace a cutting tooth or holder", ar:"استبدال سن أو حامل قطع", slugs:["c31hd-tooth","c30-holders","bfz70-tooth","bfz70-holder","roller-bits"]},
   {key:"kelly", en:"Connect or repair Kelly equipment", ar:"وصلة كيلي أو إصلاح قضبان كيلي", slugs:["kelly-boxes","kelly-box-pins","kelly-bars"]},
   {key:"custom", en:"Custom fabrication or testing equipment", ar:"تصنيع مخصص أو معدات اختبار", slugs:["pile-testing-reaction-beam","customized-bentonite-water-tank"]},
 ];

@@ -87,14 +87,6 @@
     "title": "صفيحة اختبار التحميل المحوري الساكن ثنائي الاتجاه | معدات حفر الأساسات السعودية",
     "description": "صفيحة تُصنع حسب الطلب لاختبار التحميل المحوري الساكن ثنائي الاتجاه. يتم تصنيع القطر والسماكة والفتحات وتوزيعها وفق رسومات المشروع المعتمدة. أرفق الأبعاد المطلوبة ونظام الاختبار ومتطلبات التصميم مع طلب عرض السعر."
   },
-  "/ar/products/c30-round-holder": {
-    "title": "حامل سن C30 دائري | معدات حفر الأساسات السعودية",
-    "description": "حامل سن C30 الدائري كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
-  },
-  "/ar/products/c30-square-holder": {
-    "title": "حامل سن C30 مربع | معدات حفر الأساسات السعودية",
-    "description": "حامل سن C30 المربع كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
-  },
   "/ar/products/c31hd-tooth": {
     "title": "سن حفر C31HD | معدات حفر الأساسات السعودية",
     "description": "سن حفر C31HD كما يظهر في صورة المنتج المقدمة. يُرجى تأكيد مقاس الساق والحامل المطابق والكمية المطلوبة قبل الطلب."
@@ -263,14 +255,6 @@
     "title": "Bi-Directional Static Axial Load Plate | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
     "description": "Custom-made load plate for bi-directional static axial load testing. Plate diameter, thickness, openings and layout are manufactured to confirmed project drawings. Include the required dimensions, testing arrangement and design requirements with your quotation request."
   },
-  "/products/c30-round-holder": {
-    "title": "C30 Round Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
-    "description": "C30 round holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering."
-  },
-  "/products/c30-square-holder": {
-    "title": "C30 Square Holder | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
-    "description": "C30 square holder shown in the supplied product photograph. Confirm the mounting dimensions and tooth compatibility before ordering."
-  },
   "/products/c31hd-tooth": {
     "title": "C31HD Tooth | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
     "description": "C31HD cutting tooth shown in the supplied product photograph. Confirm the shank, matching holder and required quantity before ordering."
@@ -374,5 +358,13 @@
   "/ar/products/drilling-bucket-helical-springs": {
     "title": "نوابض حلزونية لبكيتات الحفر | المحور الخامس المتقدم",
     "description": "نوابض حلزونية بديلة لبكيتات حفر الأساسات في السعودية. أرسل موديل البكيت وأبعاد النابض والكمية المطلوبة لتأكيد القطعة المناسبة وطلب عرض سعر."
+  },
+  "/products/c30-holders": {
+    "title": "C30 Square & Round Holders | Foundation Drilling Saudi Arabia | Advanced Fifth Axis",
+    "description": "C30 tooth holders available in square and round shapes. Confirm the mounting dimensions and tooth compatibility before ordering."
+  },
+  "/ar/products/c30-holders": {
+    "title": "حوامل أسنان C30 مربعة ودائرية | معدات حفر الأساسات السعودية",
+    "description": "حوامل أسنان C30 بشكلين مربع ودائري. يُرجى تأكيد أبعاد التثبيت وتوافق السن قبل الطلب."
   }
 }
