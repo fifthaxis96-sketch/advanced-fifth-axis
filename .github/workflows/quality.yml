@@ -34,3 +34,5 @@ jobs:
         run: npm run check:seo
       - name: Check indexing, translations and preserved product decisions
         run: node scripts/check-indexing.mjs
+      - name: Check sitemap pages, language pairs, images and dates
+        run: python3 scripts/check-sitemap.py

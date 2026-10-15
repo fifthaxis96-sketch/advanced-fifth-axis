@@ -33,6 +33,8 @@ Product names, bilingual descriptions, variants, image paths, collections, and c
 
 ## SEO
 
+The [latest sitemap update](docs/sitemap-update-2026-10-15.md) covers the newer 142-page inventory, including all bilingual product guides.
+
 See the [15 October implementation report](docs/seo-implementation-2026-10-15.md) for current local verification, the URL inventory and keyword map, and explicitly blocked production/account checks. Older audit documents are historical snapshots.
 
 Product-specific selection questions are in `content/product-guidance.json`; Arabic option labels are in `content/variants-ar.json`. After changing real images or regenerating thumbnails, run `python scripts/generate-image-metadata.py` to refresh intrinsic dimensions. Preserve original photographs; optimized hero and logo files are compressed/resized derivatives of the existing assets.

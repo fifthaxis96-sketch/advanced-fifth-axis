@@ -54,3 +54,18 @@ The wildcard robots rule permits compliant crawlers, including search and AI cra
 - [Supported meta tags](https://developers.google.com/search/docs/crawling-indexing/special-tags)
 - [Google AI features](https://developers.google.com/search/docs/appearance/ai-features)
 - [Sitemap submission](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap)
+
+## Sitemap coverage and modification dates
+
+`app/sitemap.ts` derives canonical English and Arabic page URLs from `content/seo.json`, including all guides. Each page must have its language counterpart. The sitemap includes reciprocal `en`, `ar` and `x-default` alternatives plus relevant visible product, catalog, collection, home and gallery images. Redirects, parameter variants, 404 pages and support files stay outside the page sitemap.
+
+`content/sitemap-dates.json` stores actual content modification dates, not build/deployment times. The initial dates are backed by these repository commits:
+
+- `1a21c4907aa2a61c4c6e24d38dbc3a3ecc596393`, `2026-10-15T15:50:49Z`: the bilingual site-wide content, metadata and shared presentation update.
+- `be0574714005368e40196250bba59c48dc78487e`, `2026-10-15T16:57:11Z`: the 52 product-guide pages and the home, guide-index and product pages whose guide content or links changed.
+
+The Arabic product-guide entries additionally record the shared company-name correction made at `2026-10-15T17:32:31Z` in this sitemap update.
+
+Update only the affected route's date after a meaningful, verified content change. Leave a new page's date absent when no reliable date is available. Publishing, rebuilding, changing sitemap code or requesting indexing does not itself justify refreshing every page's date. Google ignores `priority` and `changefreq`, so the sitemap omits them.
+
+After building, run `python3 scripts/check-sitemap.py`. This verifies exact exported-page coverage, uniqueness, reciprocal language URLs, canonical/indexability agreement, dates, visible image references and robots sitemap discovery.

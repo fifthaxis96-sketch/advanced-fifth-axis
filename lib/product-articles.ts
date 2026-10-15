@@ -1,6 +1,6 @@
 import articles from "@/content/product-articles.json";
 import guidance from "@/content/product-guidance.json";
-import { products, relatedProducts } from "@/lib/site";
+import { products, relatedProducts, company } from "@/lib/site";
 import { variantLabel } from "@/lib/localization";
 import type { Guide, GuideTranslation } from "@/lib/guides";
 
@@ -32,7 +32,7 @@ export const productArticles: Guide[] = products.map(product => {
           "State the delivery city, required date and project documentation requirements. Confirm the included components before ordering."
         ] }
       ],
-      takeaway: ar ? `راجع صفحة ${name} للصور وخيارات الطلب، ثم أرسل الأبعاد لمراجعتها مع فريق المحور الخامس المتقدمة في جدة. يتم تأكيد التكوين والتوفر وموعد التسليم خلال عرض السعر.` : `Review the ${name} product page for photos and inquiry options, then send your dimensions to the Advanced Fifth Axis team in Jeddah. Configuration, availability and delivery are confirmed during quotation.`
+      takeaway: ar ? `راجع صفحة ${name} للصور وخيارات الطلب، ثم أرسل الأبعاد لمراجعتها مع فريق ${company.nameAr} في جدة. يتم تأكيد التكوين والتوفر وموعد التسليم خلال عرض السعر.` : `Review the ${name} product page for photos and inquiry options, then send your dimensions to the Advanced Fifth Axis team in Jeddah. Configuration, availability and delivery are confirmed during quotation.`
     };
   };
   return { slug: `${product.slug}-guide`, productSlug: product.slug, related: [product.slug, ...relatedProducts(product).map(p => p.slug)], en: translate("en"), ar: translate("ar") };
