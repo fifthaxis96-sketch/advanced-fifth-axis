@@ -80,7 +80,9 @@
 .variantPhoto a{font-size:11px;align-self:flex-end}
 .variantPending{display:block;padding:12px 13px 0}
 /* Product catalog without photographs. */
-.productTile{position:relative}
+.productTile{position:relative;display:flex;flex-direction:column;min-width:0}
+.productTile>.tileImage{flex-shrink:0}
+.productTile>.tileText{flex:1}
 .tileIndexText{position:static;display:inline-block;margin:22px 0 0 25px}
 .productLayout{grid-template-columns:minmax(0,760px);gap:0;align-items:start}
 .productDetails{max-width:760px}
